@@ -1,0 +1,1422 @@
+/* BRAND COLOR: #FF934A & #101 */
+
+body {
+	background: black;
+	    background: rgb(5,0,5);
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    color: rgba(255,255,255,.9);
+}
+
+body::selection, body::-moz-selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.page-id-503 h4 {
+	color: white;
+}
+
+html {
+	background: black;
+	    background: rgb(5,0,5);
+}
+
+p {
+	line-height: 2em;
+	color: #999;
+}
+
+.home .site-container .site-header .wrap {
+	display: block;
+	background-position: top 80px;
+	background-position: center 80px;
+}
+
+.site-inner {
+	padding-top: 0px;
+	max-width: 100%;
+}
+
+.filter-drop-spacer {
+	display: none !important;
+}
+
+.entry-header {
+	margin-top: -400px;
+    margin-bottom: 330px;
+}
+
+.page-id-332 .entry-header {
+	margin-bottom: 100px;
+}
+
+.page-id-353 .entry-header {
+	margin-bottom: 0px;
+}
+
+.entry-title {
+    color: rgba(255,255,255,.9);
+    text-shadow: -3px -3px 0px #111;
+    font-family: serif;
+}
+
+.genesis-nav-menu .menu-item {
+	background: rgb(255,147,74);
+}
+
+.entry {
+	margin-bottom: 0px;
+}
+
+.entry-content {
+	padding: 20px;
+}
+
+.page-id-503 .entry-content {
+	margin-top: -200px;
+}
+
+.home-page-5 div .wrap {
+	max-width: 100%;
+}
+
+.lyric_wrap {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.site-header .home-down {
+	width: 100%;
+    min-height:1000px;
+    display: block;
+}
+
+.site-header .fa-angle-down {
+	text-align: center;
+    width: 100%;
+    text-shadow: 0px 3px 7px black;
+    font-size: 6em;
+    color: rgba(255,255,255,.8);
+    margin-top: 650px;
+    margin-bottom: 100px;
+}
+
+.home-page-5, .home-page-3 {
+	position:relative;
+}
+
+.content .entry {
+    background: black;
+        background: rgb(5,0,5);
+
+}
+
+input[type="text"], textarea {
+	border-radius: 3px;
+	background: #111;
+	border: none;
+	border: 2px solid #222;
+	color: white;	
+}
+
+label {
+	color: white;
+}
+
+.featured_image_wrapper {
+	width: 100%;
+	height:500px;
+	background-size:cover;
+	
+}
+
+article {
+	background: black;
+	    background: rgb(5,0,5);
+}
+
+.title-area {
+	padding: 0px;
+}
+
+.nav-primary {
+    box-shadow: 0px 0px 10px #999;
+    background: rgb(5,0,5);
+}
+
+.nav-primary.fix {
+	background: rgba(0,0,0, .7);
+	box-shadow: 0px 0px 10px #999;
+}
+
+.genesis-nav-menu .sub-menu a {
+	background: black;
+	
+}
+
+.genesis-nav-menu a {
+	font-family: sans-serif;
+}
+
+.sb_instagram_header a {
+	margin: 0 auto;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    text-align: center;
+    max-width: 530px;
+    float: none !important;
+}
+
+#sb_instagram .sb_instagram_header h3 {
+	color: white;
+}
+
+.gform_body {
+	background: transparent;
+}
+
+.added_to_cart {
+	margin-left: 10px;
+    text-transform: uppercase;
+}
+
+/* COLOR ENTIRE MOBILE MENU THE BRAND COLOR */
+.nav-primary, .genesis-nav-menu .menu-item, .genesis-nav-menu .widget-area, .sub-menu, .nav-primary .wrap, .genesis-nav-menu {
+	background: rgb(5,0,5);
+
+}
+
+.genesis-nav-menu .sub-menu {
+	border: 1px solid #222;
+}
+
+button.menu-toggle, button.sub-menu-toggle {
+	color: white;
+}
+
+.menu-toggle .activated {
+	color: #101;
+}
+
+.nav-primary div ul li a span {
+	color: white;
+}
+
+.genesis-nav-menu .widget-area {
+    padding: 6px 0 0 0;
+    background: rgb(5,0,5);
+}
+
+.genesis-nav-menu .widget {
+    margin-bottom: -100px;
+    margin-top: 50px;
+}
+
+.site-header {
+	background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 7px !important;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255,255,255,.9);
+	line-height: 1;
+}
+
+.woocommerce ul.products li.product h3 {
+	letter-spacing: 1px !important;
+	text-transform:none;
+}
+
+.widgettitle {
+	color: #fff;    
+	font-family: inherit;
+    font-weight: 700;
+}
+
+h5, h6 {
+	color: #999;    
+	font-family: inherit;
+    font-weight: 700;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+
+p {
+	color: #999;
+}
+
+.menu-toggle, .sub-menu-toggle {
+	padding-top: 30px;
+}
+
+.social_stickers_widget div a img {
+	filter: grayscale(1.0);
+	-webkit-filter: grayscale(1.0);
+	 -webkit-transition: filter .5s, -webkit-filter .5s .5s;
+     -moz-transition: filter .5s, -webkit-filter .5s .5s;
+      -ms-transition: filter .5s, -webkit-filter .5s .5s;
+          transition: filter .5s, -webkit-filter .5s .5s;
+}
+
+.social_stickers_widget div a img:hover {
+	filter: none;
+	-webkit-filter: none;
+}
+
+.music_wrapper {
+    max-width: 1400px;
+	margin:0 auto;
+}
+
+.music_wrapper iframe {
+	width: 100% !important;
+	padding: 10px;
+}
+
+.music_wrapper h4 {
+	color: rgba(255,255,255,.9);
+	font-size: 3em;
+	font-family: serif;
+}
+
+.music_wrapper .info_wrap {
+	width: 100%;
+	padding:10px;
+}
+
+
+/* HOME TOP START */
+
+.home-top, .home-top div, .home-top div .wrap, .home-top div .wrap section {
+	position: relative;
+	z-index: 0;
+} 
+
+.home-top .textwidget, .home-top h4 {
+	z-index: 1;
+}
+
+.home-top div div section div div p {
+	font-size: 25px;
+    color: white;
+    padding: 0px;
+}
+
+.home-top div .wrap {
+    background: rgba(0,0,0, 0.8);
+    border-radius: 2px;
+}
+
+.prettycreative-home .site-inner .widget-area {
+	padding: 0px;
+}
+
+.home-top div .wrap, .home-top div .wrap section, .home-top div .wrap {
+	height: 800px;
+}
+
+.home-top div .wrap section .widget-wrap {
+	position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    z-index:1;
+}
+
+.home-top div .wrap {
+	width: 100%;
+	max-width: 100% !important;
+}
+
+.home-top .widget-title, .entry-title {
+	font-size: 3em;
+}
+
+.home-top .widget-title {
+    color: rgba(255,255,255,.9);
+    text-shadow: -3px -3px 0px #111;
+    font-family: serif;
+}
+
+.home-top .one-widget .widget {
+/* 	padding: 200px 20px; */
+    width: 100%;
+    position: relative;
+}
+
+
+
+.widget_products {
+	width: 100% !important;
+}
+
+#text-16, #text-18 {
+	width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 0px;
+    height: 70px;
+}
+
+.cta, #text-15 div div a, #text-16 .widget-wrap .textwidget h4 a, input[type="submit"] {
+	background: #FF934A !important;
+	border: none !important;
+	color: white !important;
+    padding: 10px !important;
+    border-radius: 3px !important;
+    transition-property: background, border-radius !important;
+	transition-duration: 1s !important;
+	transition-timing-function: linear !important;
+	box-shadow: 0px 0px 11px #222 !important;
+	outline: none !important;
+}
+
+.home-page-2 #text-18 .textwidget {
+	position:relative;
+	height:760px;
+}
+
+#text-18 {
+	height: 100%;
+}
+
+.home-page-2 .cta {
+	position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    width: 122px;
+}
+
+.cta:hover, #text-15 div div a:hover, #text-16 .widget-wrap .textwidget h4 a:hover, input[type="submit"]:hover {
+	border-radius: 50% !important;
+}
+
+input[type="submit"] {
+    background: cadetblue;
+    margin: 0 auto;
+    display: block;
+}
+
+.page-id-137 h3 {
+	    margin-top: 60px;
+}
+
+#social_stickers_widget-3 .widget-wrap a {
+	float: left;
+	padding: 5px;
+}
+
+.home-top {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+.home-top .logo_wrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.archive .site-container .site-inner .featured_image_wrapper {
+	display: none;
+}
+
+.archive .site-container .site-inner, .single .site-container .site-inner {
+	margin-top: 80px;
+}
+
+.archive .site-container .site-inner main, .single .site-container .site-inner main {
+	padding: 20px;
+}
+
+.archive .page-title {
+	font-size: 8em;
+    font-family: serif !important;
+}
+
+.single .content .entry {
+	border-bottom: none !important;
+}
+
+.gform_wrapper {
+	max-width: 1000px !important;
+	margin: 0 auto !important;
+}
+
+.gforms_confirmation_message {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.page-id-220 .woocommerce, .page-id-221 .woocommerce {
+	margin-top: 200px;
+}
+
+#text-20 { /* shopping cart */
+	height: 44px;
+	position:absolute;
+	left:120px;
+	display: none;
+}
+
+#text-20 div div a {
+	padding: 0px;
+	color: whitesmoke;
+}
+
+.fa-shopping-cart.fa-3x {
+	font-size: 3.5em;
+}
+
+.post-type-archive-product .site-container {
+	background: url('/wp-content/uploads/sites/14/2016/10/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Looking-Down-GRADIENT-OPAC.png');
+	background-size: contain;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0px 80px;
+}
+
+.woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-info:before {
+	background: rgb(255,147,74) !important;	
+}
+
+.woocommerce .woocommerce-info, .woocommerce-page .woocommerce-info {
+	background: rgb(255,147,74) !important;
+	color: white;
+	text-shadow: none;
+}
+
+.woocommerce table.shop_table, .woocommerce-page table.shop_table {
+	background: rgb(255,147,74);
+	border:1px solid #111 !important;
+}
+
+.woocommerce input.input-text.qty.text, .woocommerce table.cart td.actions .coupon .input-text {
+	background: rgb(255,147,74);
+	border:1px solid #111 !important;
+	color: rgba(255,255,255,.9);
+}
+
+div.payment_box, ul.payment_methods, div.form-row {
+	background: rgb(255,147,74) !important;
+}
+
+.woocommerce table.cart td.actions .coupon .input-text::placeholder, .woocommerce table.cart td.actions .coupon .input-text::-webkit-input-placeholder, .woocommerce table.cart td.actions .coupon .input-text::-moz-placeholder, .woocommerce table.cart td.actions .coupon .input-text:-mox-placeholder, .woocommerce table.cart td.actions .coupon .input-text:-ms-input-placeholder {
+	color: rgba(255,255,255,.9);
+}
+
+.select2-results .select2-highlighted {
+    background: rgb(255,147,74);
+    color: white;
+}
+
+.woocommerce-cart table.cart img {
+	width: 150px;
+}
+
+.woocommerce .cart .button, .woocommerce .cart input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce input.button {
+	background: #FF934A !important;
+	color: rgba(255,255,255,.9) !important;
+}
+
+.page-id-221 h4 {
+	    margin-top: 40px;
+    color: rgba(255,255,255,.9);
+}
+
+.post-type-archive-product .site-container .content .entry {
+	background: transparent;
+}
+
+.post-type-archive-product {
+	background: black;
+}
+
+.sidebar-primary, #text-6 {
+	margin-top: 100px;
+}
+
+#spotify_widget {
+	top: 20px;
+    position: relative;
+}
+
+.tmls.style1.no_image .tmls_next_prev {
+	position: relative;
+}
+
+#text-12 .widget-wrap .textwidget {
+	text-align: center;
+}
+
+#text-3 .widget-wrap .textwidget {
+	min-height: 150px;
+}
+
+.prettycreative-home .site-inner .home-subscribe-widget .widget-area {
+	padding: 10px 0px 0px 0px;
+}
+
+#text-3 .widget-title {
+	color: #222;
+}
+
+.ytc_description {
+	overflow: hidden;
+}
+
+#___ytsubscribe_0, #___ytsubscribe_1 {
+	margin: 0 auto !important; 
+	display: block !important;
+}
+
+
+#text-2 .widget-wrap, #text-10 .widget-wrap {
+	background: rgba(255,255,255,.85);
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px 1px #333;
+}
+
+#text-11, #text-14 {
+	margin-bottom: 30px;
+}
+
+#text-14 .widget-wrap .textwidget iframe, #spotify_widget {
+	margin: 0 auto;
+    display: block;
+}
+
+#text-11 .widget-wrap h4 {
+	padding: 0px;
+}
+
+#text-3 .widget-wrap .textwidget {
+	text-align: center;
+}
+
+#social_stickers_widget-2 {
+	text-align: center;
+}
+
+.home-subscribe-widget {
+	display: none;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100vh;
+    background: rgba(0,0,0,.98);
+    z-index: 10;
+}
+
+.home-subscribe-widget div .wrap {
+	margin-top: 90px;
+	max-width: 600px;
+	height:100vh;
+}
+
+.home-subscribe-widget h4 {
+	font-size: 2.7em;
+	font-family: serif;
+	border-bottom: none;
+	margin-bottom: 0px;
+    padding: 0px;
+}
+
+.fa-close {
+    position: absolute;
+    right: 150px;
+}
+
+/* LIGHTBOX TITLE */
+#text-21 {
+	float: none;
+    width: 100%;
+    text-align: center;
+}
+
+#text-22 {
+	float: none;
+    width: 100%;
+    text-align: center;
+}
+
+#text-23 {
+	float: none;
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+.sidebar-content .sidebar-primary, .sidebar-sidebar-content .sidebar-primary {
+	display: none;
+}
+
+.ytc_video_container {
+	padding: 30px;
+	width: 100% !important;
+}
+
+.youtube_channel .ytc_link {
+	text-align: center;
+}
+
+.youtube_channel .ytc_link a {
+	color: white;
+	font-size: 2em;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #FF934A;
+    border-radius: 5px;
+    color: white;
+    transition: background 1s;
+}
+
+.youtube_channel .ytc_link a:hover {
+	background: #FF934A;	
+}
+
+#text-6 {
+	text-align: center;
+}
+
+.sidebar .widget {
+	margin-bottom: 100px;
+}
+
+#lessons {
+	display: none;
+}
+
+.new_shit a {
+	font-size: 1em !important;
+	color: tomato;
+	font-weight: bold;
+	background: snow;
+    border-radius: 30px;
+    padding: 0px 25px;
+    text-align:center;
+    display: block;
+}
+
+.new_shit a:hover {
+	color:deepskyblue;
+}
+
+#home-page-5 {
+	display: none;
+}
+
+
+
+hr {
+	margin: 40px 0px;
+	border: 1px solid #FF934A;
+}
+
+.site-inner {
+	padding: 0px;
+}
+
+
+
+/* FEATURED PRODUCTS START */
+
+.home-page-1 {
+/* 	background-image:url('/wp-content/themes/Pretty%20Creative/img/grayson-erhard-purple-texture.png'); */
+	background-size:cover;
+	background: rgba(0,0,0,.8);
+}
+
+.home .product-title, .home .woocommerce-Price-amount {
+	display: none;
+}
+
+.woocommerce ul.product_list_widget li a img:hover, .woocommerce ul.products li.product a img:hover {
+	background: #ff7b29;
+	border-radius: 50%;
+}
+
+.woocommerce ul.product_list_widget li a {
+	margin: 10px
+}
+
+#woocommerce_products-2 .widget-wrap h4 {
+	font-size: 2em;
+	margin-top: 40px;
+}
+
+.woocommerce ul.product_list_widget li a img, .woocommerce ul.products li.product a img {
+	width: auto !important;
+	transition-property: background, border-radius;
+	transition-duration: .5s;
+	transition-timing-function: linear;
+	border-radius: 10%;
+	float: none;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0px 0px 50px -10px #555;
+}
+
+/* FEATURED PRODUCTS END */
+
+
+
+
+
+
+/* SHOWS START */
+
+.home-page-2 {
+	background: url('/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Hair.png') !important;
+    height: 800px;
+    overflow: hidden;
+	background: rgba(51,3,3,.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.prettycreative-home .site-inner .home-page-2 .widget-area {
+	padding: 0px;
+}
+
+.prettycreative-home .content .home-page-2 .one-widget .widget {
+	padding: 0px;
+}
+
+.home-page-2 .wrap {
+	padding: 0px;
+}
+
+.home-page-2 .wrap widget {
+	padding: 0px;
+}
+
+.home #bit-widget-0 {
+	position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 80px auto;
+    color: white;
+    z-index: 1;
+    height: 280px;
+    display: block;
+}
+
+.bit-track-artist-header {
+	border: none !important;
+}
+
+.error404 main {
+	margin-top: 80px;
+}
+
+.error404 input[type="submit"] {
+	display: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+	color: rgb(5,0,5);
+}
+
+.bit-events tr:hover {
+	background: rgba(5,0,5,.9);
+}
+
+.bit-header:hover {
+	background: transparent !important;
+}
+
+.bandsintown-header:hover {
+	background: transparent !important;
+}
+
+.content .sidebar {
+	display: none !important;
+}
+
+.home video {
+	display: none;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.home-page-2 .widget-title {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	left: 0;
+	right: 0;
+	color: white;
+}
+
+#text-5 .widget-wrap h4 {
+	font-size: 2em;
+	margin-top: 20px;
+	border-bottom: none;
+}
+
+#bit-events tr.no-dates td a {
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    transition: border-radius 2s;
+}
+
+#bit-events tr.no-dates td a:hover {
+    border-radius: 30px;
+}
+
+#bit-events td .bit-uiButton {
+	height: auto;
+}
+
+.bit-date {
+	width: 60px;
+}
+
+.lineup {
+	display: none !important;
+}
+
+.bit-events tr {
+	background: transparent;
+	transition: background 0.5s;
+}
+
+/* SHOWS END */
+
+
+
+
+
+
+
+/* .home-page-3 START */
+
+.home_social_wrap {
+	width: 100%;
+	float: left;
+	background-size: 620px 620px !important;
+    background-position: -85px 0px !important;
+	transition:all 0.5s !important;
+	-webkit-transition:all 0.5s !important;
+	-o-transition:all 0.5s !important;
+	-moz-transition:all 0.5s !important;
+}
+
+.home_social_wrap:hover {
+	background-size: 600px 600px !important;
+    background-position:-85px 0px !important;
+    cursor: pointer;
+}
+
+.home_social_wrap div a {
+	padding: 0px;
+	transition: padding 0.5s;
+}
+
+.home_social_wrap div a:hover {
+	padding: 20px;
+}
+
+.home-page-3 .widget-area .wrap {
+	margin: 0px;
+	max-width: 100%;
+	padding: 0px;
+}
+
+.home_social_wrap div {
+    background: rgba(255,147,74,.05);
+}
+
+.even_overlay {
+/*         background: rgba(255,255,255,.7) !important; */
+/* background: rgba(175,0,255,.25) !important; */
+}
+
+.dunlop {
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+.home_social_wrap div a {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    height: 300px;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-weight: bold;
+}
+
+.even_overlay a {
+	color: #FF934A;
+}
+
+.home_social_wrap div a:hover {
+	background: rgba(0,0,0,.5);	
+	cursor: pointer;
+}
+
+.home_social_wrap div {
+	position:relative;
+}
+
+.home_social_wrap div p {
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+/* .home-page-3 START */
+
+
+/* FOOTER START */
+
+.site-footer, #ssl, .footer-widgets {
+	background: rgba(5,0,5,.98);
+}
+
+#ssl {
+	text-align: center;
+	padding:20px;
+}
+
+.footer-widgets li {
+	border: none;
+}
+
+.footer-widgets {
+	position:relative;
+}
+
+
+ul.dark li.tweets_avatar {
+	background: transparent !important;	
+}
+
+.fetched_tweets.dark > li {
+	border: none !important;
+}
+
+.footer-widgets h4.widget-title {
+	border: none;
+	color: rgba(255,255,255,.9);
+    font-family: serif;
+    margin: 100px 0px;
+    font-size: 2em;
+}
+
+.footer-widgets .gform_wrapper .gform_footer {
+	margin: 0px;
+}
+
+.footer-widgets .gfield_label {
+	color: white;
+}
+
+.footer-widgets .gform_wrapper ul.gform_fields li.gfield {
+	padding: 0px;
+}
+
+.footer-widgets .ginput_container input, input, select, textarea, .select2-container .select2-choice {
+	border-radius: 3px;
+	background: rgba(255,147,74,.05) !important;
+	border: none;
+	border: 2px solid #222;
+	color: #888 !important;
+}
+
+.footer-widgets-2 .widget-title {
+    text-align: center;
+}
+
+.tmls_text {
+	color: #ebebeb !important;
+}
+
+.fetched_tweets.dark .tweets_avatar .tweet_data a {
+	color: #FF934A !important;
+}
+
+.site-footer p {
+    line-height: 2;
+}
+
+/* FOOTER END */
+
+
+
+@media screen and (min-width: 768px) {
+	
+	.site-header {
+		display:none;
+	}
+	
+	.nav-primary, .genesis-nav-menu .menu-item, .genesis-nav-menu .widget-area, .sub-menu, .nav-primary .wrap, .genesis-nav-menu, aside {
+		background: transparent;
+	}
+	
+	nav .wrap ul .widget-area {
+		display: none !important;
+	}
+	
+	.home-top .widget-title, .entry-title {
+		font-size: 7em;
+	}
+	
+	.home-subscribe-widget {
+		display: block;
+	}
+	
+	.home_social_wrap div{
+	    width: 100%;
+	    height: 300px;
+	}
+	
+	.home_social_wrap {
+		height: 300px;
+	    float: left;
+	    width: 50%;
+	}
+	
+	.music_wrapper iframe {
+		width: 50% !important;
+		float: left;
+	}
+	
+	.music_wrapper .info_wrap {
+		width: 50% !important;
+		float: left;
+	}
+	
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+		margin: 0px;
+		width: 25%;
+		padding: 40px;
+	}
+	
+	.home-top div div section div div p {
+	    padding: 0px 40px;
+	}
+	
+	.home-page-3 {
+		height: 600px;
+	}
+	
+	.home-page-3 .widget-area .wrap section {
+		margin: 0px !important;
+	}
+	
+	.site-container {
+		background: transparent;
+	}
+	
+	.site-header {
+ 	   min-height: 100px;
+ 	   background: transparent;
+	}
+	
+	.home .site-container header .wrap {
+/* 		background-image: url('/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Vogue-smaller.jpg'); */
+background:transparent;
+		min-height: 1000px;
+		background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: top 80px;
+	    background-attachment: fixed;
+	    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+	}
+	
+	.page-id-503 .content {
+		width: 100%;
+	}
+	
+	.title-area {
+		display: none;
+	}
+
+	.genesis-nav-menu .widget-area {
+		padding: 6px 0px 0px 0px;
+	}
+
+	.genesis-nav-menu .widget {
+	    margin-bottom: 0px;
+	    margin-top: 0px;
+	}
+
+	.nav-primary {
+		height: 55px;
+		background: transparent;
+	}
+	
+	#home-page-5 {
+		display: block;
+	}
+	
+	.nav-primary .genesis-nav-menu .menu-item a:hover, .current_page_item, .current_page_parent {
+		background: rgba(255,147,74, 0.8);
+		color: white;
+	}
+	
+	.nav-primary .genesis-nav-menu .current-menu-item > a, .nav-primary .genesis-nav-menu .current_page_parent a {
+		color: white;
+	}
+	
+	.nav-primary .genesis-nav-menu .sub-menu a {
+		color: #8d8d8d !important;
+	}
+	
+	.nav-primary .genesis-nav-menu .sub-menu a:hover {
+		color: white !important;
+	}
+	
+
+	.home video {
+		display: block;
+		object-fit: cover;
+		margin-top: 36px;
+	}
+	
+	.home_video {
+		position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    z-index: -1;
+	}
+
+	.new_shit a {
+		font-size: 1.5em !important;
+	}
+
+	.sidebar-primary, #text-6 {
+		margin-top: 0px;
+	}
+	
+	.sidebar section {
+		margin-bottom: 20px;
+	}
+
+	.home .youtube_channel.responsive .ytc_video_container {
+		float: left;
+	}
+	
+	.ytc_video_container {
+		width: 50% !important;
+	}
+	
+	.home .youtube_channel.responsive .ytc_video_container h3 {
+		height: 50px;
+	}
+	
+	#social_stickers_widget-3 {
+		display: none;
+	}
+	
+	.sidebar-primary {
+		margin-top: 0px;
+	}
+	
+	.woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li {
+		width: 33.3%;
+		float: left;
+	}
+	
+}
+
+@media screen and (min-width: 1165px) {
+	
+
+/* FEATURED PRODUCTS START */
+	.home-page-1 {
+		padding: 100px;
+	}
+/* FEATURED PRODUCTS END */
+	
+	.home .site-container .site-header .wrap {
+		display: none;
+	}
+	
+	.home .site-header {
+		display: block;
+	}
+
+	.home-page-3 {
+		height: 300px;
+	}
+	
+	.home_social_wrap {
+		width: 25% !important;
+	}
+
+	.home-top div div section div div p {
+	    padding: 0px 200px;
+	}
+
+	nav .wrap ul .widget-area {
+		display: block !important;
+	}
+	
+	#text-20 {
+		position: relative;
+		display: block;
+		left: 0;
+	}
+	
+	.home_social_wrap:hover {
+		background-size: 600px 600px !important;
+	}
+	
+	#social_stickers_widget-3 {
+		display: block;
+	}
+	
+	.page-id-503 .sidebar {
+		display: none;
+	}
+	
+	body {
+/* 		background-image: url('/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Vogue-smaller.jpg'); */
+/* 		min-height: 2000px; */
+background: transparent;
+		background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: -200px 70px;
+	    background-attachment: fixed;
+	    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+	}
+	
+	.page-id-503 .entry-title {
+		margin-bottom: 0px;
+	}
+	
+	.page-id-503 {
+		background: url('/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Pro%20Press.jpg');
+		background-repeat:no-repeat;
+		background-position: -200px 0px;
+	}
+	
+	.page-id-503 h3 {
+		margin-top: 0px;
+		line-height:2em;
+		color: #ebebeb;
+	}
+	
+	.page-id-503 p {
+		color: #ebebeb;
+		line-height: 2em;
+	}
+	
+	
+	
+	.page-id-503 .content {
+		width:100%;
+	}
+	
+	.page-id-503 article {
+		max-width: 1400px;
+	}
+	
+	.page-id-503 .entry-content {
+		width: 600px;
+		padding:20px;
+		float:right;
+		clear: both;
+	}
+	
+	.page-id-503 .entry-header{
+		width: 600px;
+		float:right;
+		margin-bottom: 0px;
+	}
+	
+	.home {
+		background: black;
+		background: rgb(5,0,5);
+		
+	}
+	
+	.page-id-503 .site-inner, .page-id-503 .content .entry {
+		background: transparent;
+	    border: none;
+	}
+	
+}

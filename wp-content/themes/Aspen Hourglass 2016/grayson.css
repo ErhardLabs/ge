@@ -1,0 +1,171 @@
+/* BRAND COLOR: #399ab4 */
+
+#social_stickers_widget-3 .widget-wrap a {
+	float: left;
+	padding: 5px;
+}
+
+.home-top {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+.home-page-1 .woocommerce .product_list_widget li a img {
+	width: auto !important;
+}
+
+.sidebar-primary, #text-6 {
+	margin-top: 100px;
+}
+
+#spotify_widget {
+	top: 20px;
+    position: relative;
+}
+
+.tmls.style1.no_image .tmls_next_prev {
+	position: relative;
+}
+
+#woocommerce_products-2 .widget-wrap h4, #text-5 .widget-wrap h4 {
+	font-size: 2em;
+}
+
+#cta {
+	color: white;
+	font-size: 1.5em;
+	margin-right: 10px;
+}
+
+.prettycreative-home .site-inner .home-subscribe-widget .widget-area {
+	padding: 10px 0px 40px 0px;
+}
+
+#text-3 .widget-title {
+	color: #222;
+}
+
+#text-2 .widget-wrap, #text-10 .widget-wrap {
+	background: rgba(255,255,255,.85);
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px 1px #333;
+}
+
+#text-3 .widget-wrap .textwidget {
+	text-align: center;
+}
+
+#social_stickers_widget-2 {
+	text-align: center;
+}
+
+.home-portfolio-widget, .home-subscribe-widget {
+	background: #399ab4;
+}
+
+.home-page-2 {
+	background: url('images/Grayson Erhard - Adept Adapt - Cover.jpg') #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 600px;
+    background-attachment: fixed;
+}
+
+.prettycreative-home .site-inner .home-page-2 .widget-area {
+    padding: 15px;
+    text-align: center;
+}
+
+.ytc_video_container {
+	padding: 30px;
+}
+
+.youtube_channel .ytc_link {
+	text-align: center;
+}
+
+.youtube_channel .ytc_link a {
+	color: white;
+	font-size: 2em;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #bb0000;
+    border-radius: 5px;
+    color: white;
+    transition: background 1s;
+}
+
+.youtube_channel .ytc_link a:hover {
+	background: #399ab4;	
+}
+
+.buy_now {
+	color: white;
+	font-size: 2em;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: green;
+    border-radius: 5px;
+    color: white;
+    transition: background 1s;	
+}
+
+.buy_now:hover {
+	background: #399ab4;
+	color: white;
+}
+
+#text-6 {
+	text-align: center;
+}
+
+.sidebar .widget {
+	margin-bottom: 100px;
+}
+
+#lessons {
+	display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.sidebar-primary, #text-6 {
+		margin-top: 0px;
+	}
+	
+	.sidebar section {
+		margin-bottom: 20px;
+	}
+	
+	#menu-item-149 {
+		display: none;
+	}
+
+	.home .youtube_channel.responsive .ytc_video_container {
+		width: 50% !important;
+		float: left;
+	}
+	
+	.home .youtube_channel.responsive .ytc_video_container h3 {
+		height: 50px;
+	}
+	
+	#social_stickers_widget-3 {
+		display: none;
+	}
+	
+	.sidebar-primary {
+		margin-top: 0px;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	#social_stickers_widget-3 {
+		display: block;
+	}
+}
