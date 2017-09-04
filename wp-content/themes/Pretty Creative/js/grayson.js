@@ -1,29 +1,31 @@
 $=jQuery;
 
-$('.home-subscribe-widget').hide();
-
-$('.filter-drop-spacer').remove();
-
-$('.cta.add_to_cart_button').unbind().click(function() {
-	$(this).html('Added!');
-});
-
-$('.fa-shopping-cart').addClass('fa-3x');
-
-$('.close').unbind().click(function(e) {
-	e.preventDefault();
-	var today = new Date();
-    var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
-    
-	document.cookie = 
-		'disableLandingPagePopUp=1; '+
-		'expires='+nextweek+';' +
-		'path=/';
-		
-	$('.home-subscribe-widget').fadeOut('fast');
-})
 
 $(document).ready(function() {
+
+
+  $('.home-subscribe-widget').hide();
+
+  $('.filter-drop-spacer').remove();
+
+  $('.cta.add_to_cart_button').unbind().click(function() {
+    $(this).html('Added!');
+  });
+
+  $('.fa-shopping-cart').addClass('fa-3x');
+
+  $('.close').unbind().click(function(e) {
+    e.preventDefault();
+    var today = new Date();
+    var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
+
+    document.cookie =
+        'disableLandingPagePopUp=1; '+
+        'expires='+nextweek+';' +
+        'path=/';
+
+    $('.home-subscribe-widget').fadeOut('fast');
+  });
 	
 	
 	// $('#social_stickers_widget-3').html().replace('spotify.png', 's.png');
@@ -43,32 +45,6 @@ $(document).ready(function() {
 		$('.home-page-2').css({'background-attachment': 'scroll'});
 	
 	} else { // DESKTOP AND TABLET VIEW
-
-
-
-
-
-    $('#read-more').unbind().click(function(e) {
-
-      e.preventDefault();
-
-      $('#slider').show();
-      $('#slider').animate({
-        right: '0%'
-      }, 1000, function() {});
-
-
-      $('.fa-times-circle').unbind().click(function() {
-
-        $('#slider').animate({
-          right: '-40%'
-        }, 1000, function() {
-          $('#slider').hide();
-        });
-      });
-
-
-    });
 
 
 
