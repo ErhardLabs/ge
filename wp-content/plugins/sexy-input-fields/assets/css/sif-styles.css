@@ -1,0 +1,46 @@
+.sexy-field label {
+  position: relative !important;
+  -webkit-transition-duration: 0.2s !important;
+  transition-duration: 0.2s !important;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  color: #767881 !important;
+  font-weight: unset !important;
+}
+
+.sexy-field input[type=text] {
+  position: relative;
+  width: 90% !important;
+  bottom: 30px;
+  border: none !important;
+  box-shadow: 0 3px #ffffff, 0 5px rgba(0, 0, 0, 0.16) !important;
+  color: #3c3c50 !important;
+  background: transparent !important;
+  outline: none !important;
+  height: 30px !important;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  font-size: 26px !important;
+}
+
+.animate {
+  -webkit-transform: translateY(-25px) translateX(-80px) scale(0.6);
+  transform: translateY(-25px) translateX(-80px) scale(0.6);
+}
+
+.animate-2{
+  -webkit-transform: translateY(-25px) translateX(-173px) scale(0.6);
+  transform: translateY(-25px) translateX(-173px) scale(0.6);
+}
+
+select {
+  position: relative !important;
+  bottom: 35px !important;
+  right: 8px !important;
+  border: none !important;
+  box-shadow: 0 3px #ffffff, 0 5px rgba(0, 0, 0, 0.16) !important;
+}
+
+select {
+  color: #767881 !important;
+}

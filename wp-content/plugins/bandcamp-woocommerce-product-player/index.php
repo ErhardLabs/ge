@@ -16,8 +16,8 @@ function slider_scripts() {
 
   wp_enqueue_style('bwpp-style', WP_PLUGIN_URL.'/bandcamp-woocommerce-product-player/assets/css/bwpp-styles.css');
 
-  wp_register_script('bwpp', WP_PLUGIN_URL.'/bandcamp-woocommerce-product-player/assets/js/bwpp.js', array('jquery'), false, true);
-
-  wp_enqueue_script('slider-div');
+//  wp_register_script('bwpp', WP_PLUGIN_URL.'/bandcamp-woocommerce-product-player/assets/js/bwpp.js', array('jquery'), false, true);
+//
+//  wp_enqueue_script('bwpp');
 
 }
