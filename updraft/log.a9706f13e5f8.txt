@@ -1,0 +1,160 @@
+0000.000 (0) Opened log file at time: Wed, 01 Nov 2017 05:44:41 +0000 on https://grayson.wpengine.com/
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.2 PHP: 5.6.31-4+wpengine10 (apache2handler, Linux pod-101219 3.13.0-129-generic #178-Ubuntu SMP Fri Aug 11 12:48:20 UTC 2017 x86_64) MySQL: 5.6.37 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 79M | 80M) multisite: Y openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.008 (0) Free space on disk containing Updraft's temporary directory: Unknown
+0000.013 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.016 (0) Semaphore (fd, wp_14_options) being initialised
+0000.034 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.045 (0) Set semaphore last lock (fd) time to 2017-11-01 05:44:41
+0000.048 (0) Semaphore lock (fd) complete
+0000.077 (0) Backup run: resumption=0, nonce=a9706f13e5f8, begun at=1509515081 (0s ago), job type=backup
+0000.082 (0) Scheduling a resumption (1) after 300 seconds (1509515381) in case this run gets aborted
+0000.095 (0) Checking if we have a zip executable available
+0000.101 (0) Creation of backups of directories: beginning
+0000.113 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.437 (0) Total entities for the zip file: 1391 directories, 9430 files (0 skipped as non-modified), 127.7 MB
+0002.449 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0002.456 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0002.463 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0002.469 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0002.474 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0002.478 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9 MB, 9430 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0004.004 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 600 files added (on-disk size: 4651.3 KB)
+0004.012 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 700 files added (on-disk size: 4651.3 KB)
+0004.018 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 800 files added (on-disk size: 4651.3 KB)
+0004.025 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 900 files added (on-disk size: 4651.3 KB)
+0004.032 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1000 files added (on-disk size: 4651.3 KB)
+0004.035 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.8 MB, 9430 files batched, 501 (1002) added so far); re-opening (prior size: 4651.3 KB)
+0004.923 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1100 files added (on-disk size: 6490.1 KB)
+0004.930 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1200 files added (on-disk size: 6490.1 KB)
+0004.937 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1300 files added (on-disk size: 6490.1 KB)
+0004.944 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1400 files added (on-disk size: 6490.1 KB)
+0004.951 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1500 files added (on-disk size: 6490.1 KB)
+0004.954 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (15.5 MB, 9430 files batched, 501 (1503) added so far); re-opening (prior size: 6490.1 KB)
+0006.827 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1600 files added (on-disk size: 11084.5 KB)
+0006.835 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1700 files added (on-disk size: 11084.5 KB)
+0006.842 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1800 files added (on-disk size: 11084.5 KB)
+0006.850 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 1900 files added (on-disk size: 11084.5 KB)
+0006.857 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2000 files added (on-disk size: 11084.5 KB)
+0006.860 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.9 MB, 9430 files batched, 501 (2004) added so far); re-opening (prior size: 11084.5 KB)
+0007.099 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2100 files added (on-disk size: 11799.7 KB)
+0007.107 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2200 files added (on-disk size: 11799.7 KB)
+0007.114 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2300 files added (on-disk size: 11799.7 KB)
+0007.120 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2400 files added (on-disk size: 11799.7 KB)
+0007.126 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2500 files added (on-disk size: 11799.7 KB)
+0007.129 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.2 MB, 9430 files batched, 501 (2505) added so far); re-opening (prior size: 11799.7 KB)
+0007.749 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2600 files added (on-disk size: 13816.5 KB)
+0007.757 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2700 files added (on-disk size: 13816.5 KB)
+0007.763 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2800 files added (on-disk size: 13816.5 KB)
+0007.770 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 2900 files added (on-disk size: 13816.5 KB)
+0007.776 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3000 files added (on-disk size: 13816.5 KB)
+0007.780 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.1 MB, 9430 files batched, 501 (3006) added so far); re-opening (prior size: 13816.5 KB)
+0009.248 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3100 files added (on-disk size: 17921.1 KB)
+0009.256 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3200 files added (on-disk size: 17921.1 KB)
+0009.262 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3300 files added (on-disk size: 17921.1 KB)
+0009.269 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3400 files added (on-disk size: 17921.1 KB)
+0009.275 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3500 files added (on-disk size: 17921.1 KB)
+0009.279 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10 MB, 9430 files batched, 501 (3507) added so far); re-opening (prior size: 17921.1 KB)
+0011.713 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3600 files added (on-disk size: 22023.7 KB)
+0011.722 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3700 files added (on-disk size: 22023.7 KB)
+0011.730 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3800 files added (on-disk size: 22023.7 KB)
+0011.738 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 3900 files added (on-disk size: 22023.7 KB)
+0011.746 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4000 files added (on-disk size: 22023.7 KB)
+0011.751 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.9 MB, 9430 files batched, 501 (4008) added so far); re-opening (prior size: 22023.7 KB)
+0012.608 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4100 files added (on-disk size: 24667.1 KB)
+0012.616 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4200 files added (on-disk size: 24667.1 KB)
+0012.623 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4300 files added (on-disk size: 24667.1 KB)
+0012.630 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4400 files added (on-disk size: 24667.1 KB)
+0012.636 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4500 files added (on-disk size: 24667.1 KB)
+0012.640 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 9430 files batched, 501 (4509) added so far); re-opening (prior size: 24667.1 KB)
+0013.149 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4600 files added (on-disk size: 25826.2 KB)
+0013.157 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4700 files added (on-disk size: 25826.2 KB)
+0013.164 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4800 files added (on-disk size: 25826.2 KB)
+0013.171 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 4900 files added (on-disk size: 25826.2 KB)
+0013.178 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5000 files added (on-disk size: 25826.2 KB)
+0013.182 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.1 MB, 9430 files batched, 501 (5010) added so far); re-opening (prior size: 25826.2 KB)
+0013.560 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5100 files added (on-disk size: 26031.9 KB)
+0013.568 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5200 files added (on-disk size: 26031.9 KB)
+0013.575 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5300 files added (on-disk size: 26031.9 KB)
+0013.582 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5400 files added (on-disk size: 26031.9 KB)
+0013.588 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5500 files added (on-disk size: 26031.9 KB)
+0013.592 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.7 MB, 9430 files batched, 501 (5511) added so far); re-opening (prior size: 26031.9 KB)
+0014.661 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5600 files added (on-disk size: 29078.1 KB)
+0014.669 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5700 files added (on-disk size: 29078.1 KB)
+0014.676 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5800 files added (on-disk size: 29078.1 KB)
+0014.682 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 5900 files added (on-disk size: 29078.1 KB)
+0014.689 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6000 files added (on-disk size: 29078.1 KB)
+0014.693 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.2 MB, 9430 files batched, 501 (6012) added so far); re-opening (prior size: 29078.1 KB)
+0015.661 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6100 files added (on-disk size: 30818.5 KB)
+0015.669 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6200 files added (on-disk size: 30818.5 KB)
+0015.676 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6300 files added (on-disk size: 30818.5 KB)
+0015.682 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6400 files added (on-disk size: 30818.5 KB)
+0015.690 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6500 files added (on-disk size: 30818.5 KB)
+0015.695 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.7 MB, 9430 files batched, 501 (6513) added so far); re-opening (prior size: 30818.5 KB)
+0016.314 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6600 files added (on-disk size: 32617.6 KB)
+0016.321 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6700 files added (on-disk size: 32617.6 KB)
+0016.327 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6800 files added (on-disk size: 32617.6 KB)
+0016.333 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 6900 files added (on-disk size: 32617.6 KB)
+0016.340 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7000 files added (on-disk size: 32617.6 KB)
+0016.344 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.9 MB, 9430 files batched, 501 (7014) added so far); re-opening (prior size: 32617.6 KB)
+0018.273 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7100 files added (on-disk size: 42264.8 KB)
+0018.281 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7200 files added (on-disk size: 42264.8 KB)
+0018.288 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7300 files added (on-disk size: 42264.8 KB)
+0018.295 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7400 files added (on-disk size: 42264.8 KB)
+0018.302 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7500 files added (on-disk size: 42264.8 KB)
+0018.306 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.5 MB, 9430 files batched, 501 (7515) added so far); re-opening (prior size: 42264.8 KB)
+0019.849 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7600 files added (on-disk size: 45103.2 KB)
+0019.856 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7700 files added (on-disk size: 45103.2 KB)
+0019.863 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7800 files added (on-disk size: 45103.2 KB)
+0019.869 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 7900 files added (on-disk size: 45103.2 KB)
+0019.876 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8000 files added (on-disk size: 45103.2 KB)
+0019.880 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.6 MB, 9430 files batched, 501 (8016) added so far); re-opening (prior size: 45103.2 KB)
+0021.366 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8100 files added (on-disk size: 46710.3 KB)
+0021.373 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8200 files added (on-disk size: 46710.3 KB)
+0021.379 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8300 files added (on-disk size: 46710.3 KB)
+0021.386 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8400 files added (on-disk size: 46710.3 KB)
+0021.392 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8500 files added (on-disk size: 46710.3 KB)
+0021.396 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.4 MB, 9430 files batched, 501 (8517) added so far); re-opening (prior size: 46710.3 KB)
+0022.433 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8600 files added (on-disk size: 47505.3 KB)
+0022.442 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8700 files added (on-disk size: 47505.3 KB)
+0022.449 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8800 files added (on-disk size: 47505.3 KB)
+0022.457 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 8900 files added (on-disk size: 47505.3 KB)
+0022.464 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 9000 files added (on-disk size: 47505.3 KB)
+0022.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.5 MB, 9430 files batched, 501 (9018) added so far); re-opening (prior size: 47505.3 KB)
+0025.058 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 9100 files added (on-disk size: 52662.2 KB)
+0025.065 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 9200 files added (on-disk size: 52662.2 KB)
+0025.072 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 9300 files added (on-disk size: 52662.2 KB)
+0025.078 (0) Zip: backup_2017-10-31-2344_Grayson_Erhard_a9706f13e5f8-plugins.zip.tmp: 9400 files added (on-disk size: 52662.2 KB)
+0026.838 (0) Created plugins zip (0) - 55149 KB in 26.7 s (2063.9 KB/s) (sha1: 5361205e2bbe1cedea3a3f33f5f4f886b0c09eb5, sha256: 749434d7fb20125124f4d8f4b44f2df4822acc3ae541d4cf05cdda9aeeb84736)
+0026.847 (0) Beginning creation of dump of themes (split every: 400 MB)
+0027.403 (0) Total entities for the zip file: 205 directories, 998 files (0 skipped as non-modified), 74.7 MB
+0027.409 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (29.6 MB, 998 files batched, 26 (26) added so far); re-opening (prior size: 0 KB)
+0029.420 (0) User request for abort: backup job will be immediately halted
+0029.426 (0) Decremented the semaphore (fd) by 1
+0029.432 (0) Semaphore (fd) unlocked
+0029.436 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0029.446 (0) No email will/can be sent - the user has not configured an email address.
+0029.449 (0) The backup was aborted by the user
+0000.000 (1) Opened log file at time: Wed, 01 Nov 2017 05:50:08 +0000 on https://grayson.wpengine.com/
+0000.004 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.2 PHP: 5.6.31-4+wpengine10 (apache2handler, Linux pod-101219 3.13.0-129-generic #178-Ubuntu SMP Fri Aug 11 12:48:20 UTC 2017 x86_64) MySQL: 5.6.37 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.7M | 69.3M) multisite: Y openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.008 (1) Free space on disk containing Updraft's temporary directory: Unknown
+0000.012 (1) This backup task (a9706f13e5f8) failed to load its job data (possible database server malfunction), but appears to be only recently started: scheduling a fresh resumption in order to try again, and then ending this resumption (1509515408.75, ) (existing jobdata keys: )
+0000.016 (1) Rescheduling resumption 2: moving to 120 seconds from now (1509515528)
+0000.000 (2) Opened log file at time: Wed, 01 Nov 2017 05:52:08 +0000 on https://grayson.wpengine.com/
+0000.004 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.2 PHP: 5.6.31-4+wpengine10 (apache2handler, Linux pod-101219 3.13.0-129-generic #178-Ubuntu SMP Fri Aug 11 12:48:20 UTC 2017 x86_64) MySQL: 5.6.37 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.8M | 69.8M) multisite: Y openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.021 (2) Free space on disk containing Updraft's temporary directory: Unknown
+0000.030 (2) This backup task (a9706f13e5f8) failed to load its job data (possible database server malfunction), but appears to be only recently started: scheduling a fresh resumption in order to try again, and then ending this resumption (1509515528.99, ) (existing jobdata keys: )
+0000.059 (2) Rescheduling resumption 3: moving to 120 seconds from now (1509515649)
+0000.000 (3) Opened log file at time: Wed, 01 Nov 2017 05:54:16 +0000 on https://grayson.wpengine.com/
+0000.004 (3) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.2 PHP: 5.6.31-4+wpengine10 (apache2handler, Linux pod-101219 3.13.0-129-generic #178-Ubuntu SMP Fri Aug 11 12:48:20 UTC 2017 x86_64) MySQL: 5.6.37 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.8M | 70.3M) multisite: Y openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.008 (3) Free space on disk containing Updraft's temporary directory: Unknown
+0000.043 (3) This backup task (a9706f13e5f8) failed to load its job data (possible database server malfunction), but appears to be only recently started: scheduling a fresh resumption in order to try again, and then ending this resumption (1509515656.1, ) (existing jobdata keys: )
+0000.047 (3) Rescheduling resumption 4: moving to 120 seconds from now (1509515776)
+0000.000 (4) Opened log file at time: Wed, 01 Nov 2017 05:58:44 +0000 on https://grayson.wpengine.com/
+0000.004 (4) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.2 PHP: 5.6.31-4+wpengine10 (apache2handler, Linux pod-101219 3.13.0-129-generic #178-Ubuntu SMP Fri Aug 11 12:48:20 UTC 2017 x86_64) MySQL: 5.6.37 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.8M | 69.5M) multisite: Y openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.008 (4) Free space on disk containing Updraft's temporary directory: Unknown
+0000.012 (4) This backup task (a9706f13e5f8) failed to load its job data (possible database server malfunction), but appears to be only recently started: scheduling a fresh resumption in order to try again, and then ending this resumption (1509515924.87, ) (existing jobdata keys: )
+0000.016 (4) Rescheduling resumption 5: moving to 120 seconds from now (1509516044)
+0000.000 (5) Opened log file at time: Wed, 01 Nov 2017 06:34:57 +0000 on https://grayson.wpengine.com/
+0000.026 (5) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.2 PHP: 5.6.31-4+wpengine10 (apache2handler, Linux pod-101219 3.13.0-129-generic #178-Ubuntu SMP Fri Aug 11 12:48:20 UTC 2017 x86_64) MySQL: 5.6.37 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.8M | 70M) multisite: Y openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.030 (5) Free space on disk containing Updraft's temporary directory: Unknown
+0000.034 (5) This backup task (a9706f13e5f8) is either complete or began over 2 days ago: ending (1509518097.22, ) (existing jobdata keys: )

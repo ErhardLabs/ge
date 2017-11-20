@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url("../fonts/MavenPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MavenPro-Black";
+    src: url("../fonts/MavenPro-Black.ttf");
+}
+
+h1, .home-page-2 .widget-wrap h4 {
+    font-family: "MavenPro-Black", sans-serif !important;
+    letter-spacing: 0 !important;
+}
+
+.home .site-inner {
+    margin-top: 78px !important;
+}
+
+.genesis-nav-menu a,
+.genesis-nav-menu a span {
+    font-family: "MavenPro-Bold";
+}
+
+.home-top {
+    display: none;
+}
+
+.home .home-top p{
+    font-family: "MavenPro-Regular", sans-serif !important;
+    font-size: 24px !important;
+}
+
+.home .video-background {
+    opacity: .7;
+    background-image: radial-gradient(50% 96%, #7F8C8D 0%, #1B1400 96%);
+}
+
+
+.home-down {
+    display: none;
+}
+
+.home-top {
+    background-image: none !important;
+    background: transparent !important;
+    height: 100vh;
+}
+
+.divider {
+    width: 15%;
+    margin: 0 auto !important;
+    border: 1px solid white;
+
+}
+
+#powered {
+    display: none !important;
+}
+
+.archive.woocommerce .products {
+    padding-top: 50px;
+}
+
+.archive.woocommerce .woocommerce-ordering {
+    margin: 0 auto !important;
+    width: 50%;
+    float: none !important;
+}
+
+.cta,
+.gform_wrapper .gform_footer input.button {
+    box-shadow: inset 0 0 0 4px #ffe593 !important;
+    color: #ffe593 !important;
+    -webkit-transition: color 0.25s 0.08333s !important;
+    transition: color 0.25s 0.08333s !important;
+    position: relative !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    line-height: 1.5 !important;
+    font: 700 .7rem 'Roboto Slab', sans-serif !important;
+    padding: 1em 2em !important;
+    letter-spacing: 0.05rem !important;
+    margin: 0 auto !important;
+}
+
+.archive.woocommerce .price {
+    text-align: center;
+}
+
+.archive.woocommerce .price del {
+    display: inline-block !important;
+}
+
+.woocommerce-Price-amount {
+    font-family: "MavenPro-Regular", sans-serif !important;
+    font-size: 1.5em;
+}
+
+.archive.woocommerce .product .add_to_cart_button {
+    text-align: center !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.woocommerce-loop-product__title {
+    font-family: "MavenPro-Medium", sans-serif !important;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    width: 48%;
+}
+
+.genesis-nav-menu {
+    padding: 15px 0 15px 0;
+}
+
+.site-footer {
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+}
+
+.songkick-widget .no-events p {
+    color: white;
+    font-family: "MavenPro-Regular", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.songkick-widget body.light {
+    background: none !important;
+}
+
+.songkick-widget .light .results {
+    border: none !important;
+}
+
+.footer-logo {
+    width: 90px;
+    padding-bottom: 10px;
+    opacity: 0.4;
+}
+
+.footer-widgets-1 {
+    width: 100% !important;
+}
+
+.site-footer {
+    padding: 20px 0 !important;
+    /*!* IE10+ *!*/
+    /*background-image: -ms-linear-gradient(bottom, #000000 0%, #7F8C8D 225%);*/
+
+    /*!* Mozilla Firefox *!*/
+    /*background-image: -moz-linear-gradient(bottom, #000000 0%, #7F8C8D 225%);*/
+
+    /*!* Opera *!*/
+    /*background-image: -o-linear-gradient(bottom, #000000 0%, #7F8C8D 225%);*/
+
+    /*!* Webkit (Safari/Chrome 10) *!*/
+    /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(225, #7F8C8D));*/
+
+    /*!* Webkit (Chrome 11+) *!*/
+    /*background-image: -webkit-linear-gradient(bottom, #000000 0%, #7F8C8D 225%);*/
+
+    /*!* W3C Markup *!*/
+    /*background-image: linear-gradient(to top, #000000 0%, #7F8C8D 225%);*/
+    background-image: linear-gradient(-174deg, #7F8C8D -84%, #000000 45%) !important;
+}
+
+/* =================================
+  Tablet Layout Styles
+==================================== */
+
+@media (min-width: 769px) {
+    #media_image-2 {
+        top: 10px;
+    }
+
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+        width: 48%;
+    }
+
+    .cta,
+    .gform_wrapper .gform_footer input.button {
+        font-size: 1em !important;
+    }
+
+    .home-top {
+        display: block;
+    }
+
+    .home .home-top p{
+        font-family: "MavenPro-Regular", sans-serif !important;
+        font-size: 20px !important;
+        text-transform: uppercase;
+    }
+
+    .home .video-background {
+        opacity: .7;
+        background-image: radial-gradient(50% 96%, #7F8C8D 0%, #1B1400 96%);
+    }
+
+}
+
+/* =================================
+  Desktop Layout Styles
+==================================== */
+
+@media (min-width: 1025px) {
+
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+        width: 25%;
+    }
+
+    .archive.woocommerce .woocommerce-ordering {
+        width: 20%;
+    }
+}

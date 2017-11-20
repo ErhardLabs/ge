@@ -1,0 +1,7 @@
+.wp-animation{
+    opacity: 0;
+}
+
+.wp-animation.animated{
+    opacity: 1;
+}

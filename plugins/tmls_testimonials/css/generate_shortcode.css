@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ======================= Generate Shortcode ======================= */
+
+
+#tmls_gene_short_title {
+	font-weight:normal;
+	color:#777777;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #DDDDDD;
+	margin:0px 20px 20px 0px;
+}
+
+#tmls_gene_short_leftSidebar {
+	width:220px;
+	float:left;
+	border:1px solid #DDDDDD;
+	background-color:#ffffff;
+	padding:0px 10px 10px 10px;
+}
+
+#tmls_gene_short_leftSidebar .tmls_sectionTitle {
+	margin:20px -10px -11px -10px;
+	padding:7px 10px;
+	background-color:#DDDDDD;
+	font-weight:bold;
+}
+#tmls_gene_short_leftSidebar .tmls_sectionTitle:first-child {
+	margin-top:0px;
+}
+
+#tmls_gene_short_leftSidebar .row {
+	display:block;
+	margin-top:10px;
+	padding-top:10px;
+	border-top:1px solid #DDDDDD;
+}
+#tmls_gene_short_leftSidebar .row:first-child {
+	margin-top:0px;
+	padding-top:0px;
+	border-top:none;
+}
+#tmls_gene_short_leftSidebar .row label {
+	display:block;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+#tmls_gene_short_leftSidebar .row select,
+#tmls_gene_short_leftSidebar .row input[type="text"] {
+	width:218px;
+	margin:0px;
+}
+
+#tmls_gene_short_leftSidebar .row .button-primary {
+	height: 26px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#tmls_gene_short_leftSidebar .row.border_options,
+#tmls_gene_short_leftSidebar .row.grid_options {
+	display:none;
+}
+
+#noteParagraph {
+	margin:0px 20px 20px 262px;
+	color:#777777;
+}
+#tmls_div_shortcode {
+	background-color: #fffbcc;
+	border:1px solid #e6db55;
+	padding:10px;
+	margin:0px 20px 20px 262px;
+	color:#777777;
+}
+
+#tmls_gene_short_preview {
+	padding:25px;
+	margin:0px 20px 0px 262px;
+	border:1px solid #DDDDDD;
+	background-color:#ffffff;
+}
+
+.tmls_farbtastic {
+	display:none;
+}
+
+.horizontalRuler {
+	border: 0;
+	color: #DCDCDC;
+	background-color: #DCDCDC;
+	height: 1px;
+	width: 100%;
+	text-align: left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
