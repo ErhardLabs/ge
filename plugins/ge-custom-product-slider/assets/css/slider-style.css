@@ -41,14 +41,6 @@
     background-image: linear-gradient(171deg, #686546 -50%, #000000 45%) !important;
 }
 
-.horizontal-divider {
-    width: 50%;
-    margin: 0 auto !important;
-    margin-top: -5px !important;
-    border: 1px solid white;
-
-}
-
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
@@ -90,6 +82,10 @@
     display: none;
 }
 
+.ge-flexslider .ge-slider-product {
+  margin-top: 20px;
+}
+
 .ge-slider-product-headline.mobile h1 {
     font-size: 32px !important;
 }
@@ -116,7 +112,7 @@
     position: relative;
     width: 200px;
     height: auto;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0 0 10px 0;
 }
 
@@ -125,29 +121,25 @@
     height: 200px;
 }
 
-.horizontal-divider {
-    display: none;
-}
+/*.ge-flexslider .ge-slider-product:hover > .record {*/
+    /*-webkit-animation-name: spin;*/
+    /*-webkit-animation-duration: 4000ms;*/
+    /*-webkit-animation-iteration-count: infinite;*/
+    /*-webkit-animation-timing-function: linear;*/
+    /*-moz-animation-name: spin;*/
+    /*-moz-animation-duration: 4000ms;*/
+    /*-moz-animation-iteration-count: infinite;*/
+    /*-moz-animation-timing-function: linear;*/
+    /*-ms-animation-name: spin;*/
+    /*-ms-animation-duration: 4000ms;*/
+    /*-ms-animation-iteration-count: infinite;*/
+    /*-ms-animation-timing-function: linear;*/
 
-.ge-flexslider .ge-slider-product:hover > .record {
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+    /*animation-name: spin;*/
+    /*animation-duration: 4000ms;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+/*}*/
 
 .ge-flexslider .ge-slider-product .record,
 .ge-flexslider .ge-slider-product .tabs {
@@ -157,10 +149,10 @@
 }
 
 .ge-flexslider .ge-slider-product .record {
-    left: 80px;
+    left: 43px;
 }
 .ge-flexslider .ge-slider-product .tabs {
-    left: 80px;
+    left: 43px;
 }
 
 .ge-flexslider .ge-slider-product-headline,
@@ -194,23 +186,23 @@
     border: 1px solid white !important;
 }
 
-.slider {
+.video-slider {
     position: relative;
 }
 
-.slider:hover .flex-direction-nav a {
+.video-slider:hover .flex-direction-nav a {
     opacity: 1;
 }
 
-.slider:hover .flex-direction-nav .flex-next {
+.video-slider:hover .flex-direction-nav .flex-next {
     right: 10px;
 }
 
-.slider:hover .flex-direction-nav .flex-prev {
+.video-slider:hover .flex-direction-nav .flex-prev {
     left: 10px;
 }
 
-.slider .flex-control-nav {
+.video-slider .flex-control-nav {
     bottom: -10px !important;
 }
 
@@ -226,7 +218,7 @@
     padding: 0 !important;
 }
 
-.home-page-2 .slider {
+.home-page-2 .video-slider {
     padding: 20px 0 30px 0;
 }
 
@@ -243,8 +235,19 @@
 ==================================== */
 
 @media (min-width: 769px) {
+  
+    .ge-flexslider .ge-slider-product .tabs {
+      left: 64px;  
+      
+    }
+    
+    .ge-flexslider .ge-slider-product .record {
+    left: 80px;
+}
+    
     .ge-flexslider .ge-slider-product {
         width: 300px;
+
     }
 
     .ge-flexslider .ge-slider-product .record {
@@ -257,7 +260,7 @@
     }
 
     .home-page-2 .youtube_channel {
-        padding: 40px;
+        padding: 0 40px;
     }
 
     .ge-slider-product-headline.mobile h1 {
@@ -271,9 +274,6 @@
 ==================================== */
 
 @media (min-width: 1025px) {
-    .horizontal-divider {
-        display: block;
-    }
 
     .ge-flexslider .desktop {
         display: block;
@@ -285,6 +285,10 @@
 
     .ge-flexslider .ge-slider {
         display: flex;
+    }
+    
+    .ge-flexslider .ge-slider-product {
+        margin: 0 auto;
     }
 
     .ge-flexslider .ge-slider-left,
@@ -308,8 +312,12 @@
         margin: 20px 0 40px 0;
     }
 
-    .home-page-2 .slider {
+    .home-page-2 .video-slider {
         padding: 0;
+    }
+
+    .home-page-2 .youtube_channel {
+        padding: 0 150px;
     }
 
 }

@@ -685,8 +685,8 @@ padding-bottom: 650px;
 
 #slider input[type=submit],
 #slider .checkout-button {
-	    background: #ECA76F!important;
-    color: black !important;
+	    background: #ECA76F;
+    color: black;
     font-weight: bold !important;
     font-size: 16px !important;
     padding: 22px;

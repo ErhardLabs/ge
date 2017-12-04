@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.slider').flexslider({
+  $('.video-slider').flexslider({
     selector: ".youtube_channel > .ytc_video_container",
     slideshow: false
   });

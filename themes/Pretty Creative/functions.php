@@ -191,6 +191,33 @@ function custom_subscribe_widget() {
 ) );
 }
 
+add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_4');
+
+function ge_home_page_4() {
+  echo '<div class="shows">
+          <h1>SHOWS</h1>
+          <hr class="horizontal-divider">';
+    echo '<div class="songkick-data">';      
+/*
+  echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent"></a>
+<script src="//widget.songkick.com/widget.js"></script>';
+*/
+
+echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
+<script src="//widget.songkick.com/widget.js"></script>';
+    echo '</div>';
+  echo '</div>';
+}
+
+
+/*
+add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_5');
+
+function ge_home_page_5() {
+    echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
+}
+*/
+
 
 //Position Widget's before footer on ALL PAGES
 //add_action('genesis_before_footer', 'social_links');
@@ -538,3 +565,13 @@ function add_product_slider() {
 
 //Remove Woocommerce SKU's
 add_filter( 'wc_product_sku_enabled', '__return_false' );
+
+// Remove Woocommerce Tabs from single product page
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+// Remove Upsells From Their Default Position
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+ 
+ 
+

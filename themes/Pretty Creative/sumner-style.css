@@ -1,3 +1,5 @@
+/* Yo */
+
 @font-face {
     font-family: "MavenPro-Regular";
     src: url("../fonts/MavenPro-Regular.ttf");
@@ -8,13 +10,29 @@
     src: url("../fonts/MavenPro-Black.ttf");
 }
 
-h1, .home-page-2 .widget-wrap h4 {
+h1 {
     font-family: "MavenPro-Black", sans-serif !important;
-    letter-spacing: 0 !important;
+    letter-spacing: 2px !important;
 }
 
-.home .site-inner {
-    margin-top: 78px !important;
+
+#gform_widget-5 .ginput_container.ginput_container_email {
+  margin-top: 45px;
+}
+
+.horizontal-divider {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid white;
+
+}
+
+.horizontal-divider.desktop {
+    display: none;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 .genesis-nav-menu a,
@@ -31,11 +49,11 @@ h1, .home-page-2 .widget-wrap h4 {
     font-size: 24px !important;
 }
 
-.home .video-background {
-    opacity: .7;
+.home .video-foreground {
+    opacity: .8;
     background-image: radial-gradient(50% 96%, #7F8C8D 0%, #1B1400 96%);
+    
 }
-
 
 .home-down {
     display: none;
@@ -44,7 +62,26 @@ h1, .home-page-2 .widget-wrap h4 {
 .home-top {
     background-image: none !important;
     background: transparent !important;
-    height: 100vh;
+}
+
+.home-page-1 {
+    padding: 30px 30px 0 30px;
+}
+
+.home-page-1 .widget {
+  padding: 0;
+}
+
+.home-page-2 hr, .home-page-5 hr   {
+  width: 50%;
+}
+
+.horizontal-divider.mobile {
+  margin-top: -23px
+}
+
+.home-page-4 hr {
+  width: 25%;
 }
 
 .divider {
@@ -168,12 +205,45 @@ h1, .home-page-2 .widget-wrap h4 {
     /*background-image: linear-gradient(to top, #000000 0%, #7F8C8D 225%);*/
     background-image: linear-gradient(-174deg, #7F8C8D -84%, #000000 45%) !important;
 }
+    
+.footer-widgets #gform_fields_1 {
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.footer-widgets .gform_body {
+  padding: 3em 0 5em 0;
+}
+
+#input_1_2 {
+  border-radius: 0;
+  background: none;
+  
+}
+
 
 /* =================================
   Tablet Layout Styles
 ==================================== */
 
 @media (min-width: 769px) {
+  
+   .home-page-2 hr, .home-page-4 hr, .home-page-5 hr, .footer-widgets hr, .horizontal-divider.mobile {
+     width: 15%;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      
+    }
+    
+    .home .site-inner {
+    margin-top: 78px !important;
+}
+  
+    .home-page-1 {
+      padding: 100px 100px 0 100px;
+    }
     #media_image-2 {
         top: 10px;
     }
@@ -196,11 +266,15 @@ h1, .home-page-2 .widget-wrap h4 {
         font-size: 20px !important;
         text-transform: uppercase;
     }
-
-    .home .video-background {
-        opacity: .7;
-        background-image: radial-gradient(50% 96%, #7F8C8D 0%, #1B1400 96%);
+    
+    .footer-widgets #gform_fields_1 {
+      width: 50%;
     }
+    
+    .footer-widgets {
+      padding: 40px 40px 0 40px;
+    }
+    
 
 }
 
@@ -209,6 +283,14 @@ h1, .home-page-2 .widget-wrap h4 {
 ==================================== */
 
 @media (min-width: 1025px) {
+  
+    .horizontal-divider.mobile {
+        display: none;
+    }
+    
+    .horizontal-divider.desktop {
+        display: block;
+    }
 
     .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
         width: 25%;
@@ -216,5 +298,9 @@ h1, .home-page-2 .widget-wrap h4 {
 
     .archive.woocommerce .woocommerce-ordering {
         width: 20%;
+    }
+    
+    .home-page-1, .home-page-2, .home-page-4, .home-page-5 {
+      padding: 50px 100px 50px 100px;
     }
 }

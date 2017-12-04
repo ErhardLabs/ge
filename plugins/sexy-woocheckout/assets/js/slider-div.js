@@ -68,24 +68,26 @@ function initialize() {
 
   });
 
-	// ABOUT - GE.COM
-  // $('#read-more').unbind().click(function (e) {
-  //
-   //  e.preventDefault();
-  //
-   //  view_slider($(window).width(), 'Read More', $(this));
-  //
-  // });
+	//ABOUT - GE.COM
+  $('#read-more').unbind().click(function (e) {
+
+    e.preventDefault();
+
+    view_slider($(window).width(), 'Read More', $(this));
+
+  });
 
 
-	// CONTACT - GE.COM
-	// $('nav #menu-item-792').unbind().click(function (e) {
-  //
-	// 	e.preventDefault();
-  //
-	// 	view_slider($(window).width(), 'Contact', $(this));
-  //
-	// });
+	//CONTACT - GE.COM
+	$('nav #menu-item-792').unbind().click(function (e) {
+
+	  // console.log('contact');
+
+		e.preventDefault();
+
+		view_slider($(window).width(), 'Contact', $(this));
+
+	});
 	
 }
 

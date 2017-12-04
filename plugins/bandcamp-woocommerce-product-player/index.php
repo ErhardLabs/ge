@@ -26,6 +26,8 @@ function bwpp_scripts() {
 add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_general_fields' );
 function woo_add_custom_general_fields() {
 
+    //TODO: MAKE RADIO BUTTON: TRACK/ALBUM
+
   global $woocommerce, $post;
 
   echo '<div class="options_group">';
@@ -85,6 +87,8 @@ function new_product_image_iframe() {
 
 
   } else {
+
+      //TODO: PULL IN TEMPLATE
 
     if (is_single()) {
 // DISPLAY USUAL PRODUCT IMAGE
