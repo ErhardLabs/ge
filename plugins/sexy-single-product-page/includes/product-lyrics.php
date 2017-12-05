@@ -1,4 +1,4 @@
-<div class="sexy_product_lyrics">
+<div class="sexy_product_lyrics ssp_div">
   
   <div class="sexy_product_lyrics_wrap">
     <?php 

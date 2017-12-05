@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,wBAAS;EACP,KAAK,EAAE,IAAI;AAGb,gCAAiB;EACf,OAAO,EAAE,CAAC",
+"sources": ["sexy-single-product.scss"],
+"names": [],
+"file": "sexy-single-product.css"
+}

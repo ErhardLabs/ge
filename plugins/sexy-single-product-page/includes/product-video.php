@@ -1,5 +1,5 @@
 
-<div class="sexy_product_video">
+<div class="sexy_product_video ssp_div">
   <div class="sexy_product_video_wrap">
     <?php 
       global $product;

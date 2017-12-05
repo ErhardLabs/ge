@@ -40,14 +40,14 @@ function sexy_get_product_image() {
   echo '<img class="sexy_single_product_background" style="position:absolute; opacity:0; z-index:-100;" src="' . $image[0] .'" data-id="'. $id . '">';
 }
   
-//add_action( 'woocommerce_after_single_product_summary', 'sexy_product_video', 10 );
+add_action( 'woocommerce_after_single_product_summary', 'sexy_product_video', 10 );
 
 function sexy_product_video() {
   include_once( SEXY_SINGLE_PRODUCT_PATH . 'includes/product-video.php' );
 
 }
 
-add_action( 'woocommerce_after_single_product', 'sexy_product_lyrics', 10, 0 );
+//add_action( 'woocommerce_after_single_product', 'sexy_product_lyrics', 10, 0 );
 
 function sexy_product_lyrics() {
   include_once( SEXY_SINGLE_PRODUCT_PATH . 'includes/product-lyrics.php' );
@@ -55,7 +55,7 @@ function sexy_product_lyrics() {
 }
 
 
-add_action( 'woocommerce_after_single_product', 'sexy_output_upsells', 15, 0 );
+//add_action( 'woocommerce_after_single_product', 'sexy_output_upsells', 15, 0 );
 
 function sexy_output_upsells() {
   woocommerce_upsell_display( 2,2 );
