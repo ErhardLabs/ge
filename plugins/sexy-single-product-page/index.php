@@ -42,3 +42,14 @@ function sexy_output_upsells() {
   woocommerce_upsell_display( 2,2 );
   
 }
+
+function sexy_get_product_image() {
+  global $product;
+  $id = $product->get_id();
+  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'single-post-thumbnail' );
+
+  d($id);
+  d($image);
+
+  echo '<img src="' . $image[0] .'" data-id="'. $id . '">';
+}
