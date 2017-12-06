@@ -42,7 +42,12 @@
     left: 0;
     box-shadow: 0px 0px 16px 0px black; }
 .single-product .sexy_product_lyrics {
-  padding: 50px; }
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
   .single-product .sexy_product_lyrics .lyrics {
     padding: 20px 100px 20px 100px;
     text-align: center; }

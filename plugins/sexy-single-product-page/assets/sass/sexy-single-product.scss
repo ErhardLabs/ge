@@ -71,6 +71,11 @@
 
   .sexy_product_lyrics {
     padding: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 
     .lyrics {
       padding: 20px 100px 20px 100px;

@@ -1,6 +1,5 @@
 <?php if ( get_field("lyrics" ) ) :
-$lyrics = get_field("lyrics" );
-?>
+$lyrics = get_field("lyrics" ); ?>
 <div class="sexy_product_lyrics ssp_div">
   <div class="sexy_product_lyrics_wrap">
     <div class="lyrics_title">

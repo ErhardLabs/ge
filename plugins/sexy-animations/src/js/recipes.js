@@ -36,6 +36,11 @@ $( document ).ready(function() {
   $('.archive.woocommerce .product').addClass('wp-animation').addClass('wp-fadeInUp');
   $('.archive.woocommerce .woocommerce-ordering select').addClass('wp-animation').addClass('wp-fadeInUp');
   $('.archive .page-title').addClass('wp-animation').addClass('wp-fadeInUp');
-  
+
+  /******** Single Product Page's Recipe ******/
+
+  //fadeIn
+
+
 
 });

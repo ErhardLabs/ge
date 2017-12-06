@@ -19,6 +19,10 @@ function sexy_single_product_scripts_styles() {
   wp_enqueue_style('sexy-single-product-css', SEXY_SINGLE_PRODUCT_URL .'assets/css/sexy-single-product.css');
   wp_register_script('sexy-single-product-js', SEXY_SINGLE_PRODUCT_URL .'assets/js/sexy-single-product.js');
 
+  wp_localize_script('sexy-single-product-js', 'SEXY_LOCAL_PHP', array(
+    'siteUrl' => get_bloginfo( 'url')
+  ) );
+
   wp_enqueue_script('sexy-single-product-js');
 
 }
