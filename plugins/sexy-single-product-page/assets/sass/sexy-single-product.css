@@ -1,5 +1,7 @@
 .single-product .ssp_div {
   clear: both; }
+.single-product .woocommerce div.product div.images {
+  margin-bottom: 0; }
 .single-product .site-inner main.content {
   padding: 0 !important; }
   .single-product .site-inner main.content .product {
@@ -12,8 +14,12 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   z-index: 0;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   filter: blur(20px); }
 .single-product .summary, .single-product .sexy_product_video {
   position: relative; }
@@ -33,7 +39,8 @@
     height: 100%;
     max-height: 640px;
     top: 0;
-    left: 0; }
+    left: 0;
+    box-shadow: 0px 0px 16px 0px black; }
 .single-product .sexy_product_lyrics {
   padding: 50px; }
   .single-product .sexy_product_lyrics .lyrics {

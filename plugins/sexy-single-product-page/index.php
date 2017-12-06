@@ -28,10 +28,12 @@ add_action( 'woocommerce_before_single_product_summary', 'sexy_get_product_image
 function sexy_get_product_image() {
   global $product;
   $id = $product->get_id();
-  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'single-post-thumbnail' );
+  if ( has_post_thumbnail( $id ) ) {
+    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'single-post-thumbnail' );
 
-  echo '<div class="sexy_single_product_background" style="background-image: url(' . $image[0] . ');">';
-  echo '</div>';
+    echo '<div class="sexy_single_product_background" style="background-image: url(' . $image[0] . ');">';
+    echo '</div>';
+  }
 }
 
 add_action( 'woocommerce_after_single_product_summary', 'sexy_product_video', 15 );
