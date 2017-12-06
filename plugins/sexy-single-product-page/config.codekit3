@@ -10,7 +10,7 @@
 "creatorBuild": "26148",
 "files": {
 	"\/assets\/css\/sexy-single-product.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -46,8 +46,21 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/sass\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/sexy-single-product-min.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -57,7 +70,7 @@
 		"oS": 3
 		},
 	"\/assets\/sass\/sexy-single-product.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -79,19 +92,12 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/css\/sexy-single-product.css",
 		"oF": 1,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/assets\/sass\/sexy-single-product.scss___jb_tmp___": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/sass\/sexy-single-product.scss___jb_tmp___",
-		"oF": 0
 		},
 	"\/config.rb": {
 		"ft": 131072,
@@ -1893,7 +1899,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {

@@ -29,16 +29,8 @@ function sexy_get_product_image() {
   global $product;
   $id = $product->get_id();
   $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'single-post-thumbnail' );
-//  $data = array(
-//    'product_image' => $image
-//  );
-//
-//  d($data);
-//
-//  wp_localize_script('sexy-single-product-js', 'sexy_single_product_php_vars', $data);
 
   echo '<div class="sexy_single_product_background" style="background-image: url(' . $image[0] . ');">';
-  //echo '<img style="position:absolute; opacity:0; z-index:-100;" src="' . $image[0] .'" data-id="'. $id . '">';
   echo '</div>';
 }
 

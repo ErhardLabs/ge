@@ -4,7 +4,6 @@
     <?php 
       global $product;
       $id = $product->get_id();
-      echo $id;
     ?>
     
     <div class="lyrics_title">

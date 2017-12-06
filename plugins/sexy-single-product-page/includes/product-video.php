@@ -3,12 +3,17 @@
     <?php 
       global $product;
       $id = $product->get_id();
-      echo $id;
     ?>
-
     <div class="sexy_video_container">
         <div class="sexy_video_wrap">
-            <img src="http://grayson.wpengine.com/wp-content/uploads/sites/14/2016/01/Grayson-Erhard-Stevie-Wonder-Performing.jpg">
+            <?php $product_video = get_field("product_video" );
+                if ( $product_video ) :
+                  preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $product_video, $matches);
+                  $id = $matches[1];
+                  ?>
+            <iframe src="https://www.youtube.com/embed/<?php echo $id ?>?rel=0&showinfo=0&color=white&iv_load_policy=3"
+                    frameborder="0" allowfullscreen></iframe>
+            <?php endif; ?>
         </div>
     </div>
 
