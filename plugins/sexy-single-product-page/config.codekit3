@@ -26,6 +26,16 @@
 		"oAP": "\/assets\/css\/sexy-single-product.css.map",
 		"oF": 0
 		},
+	"\/assets\/js\/sexy-single-product-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/sexy-single-product-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/js\/sexy-single-product.js": {
 		"ft": 64,
 		"ma": 0,
@@ -76,9 +86,15 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/config.rb": {
+	"\/assets\/sass\/sexy-single-product.scss___jb_tmp___": {
 		"cB": 0,
 		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/sass\/sexy-single-product.scss___jb_tmp___",
+		"oF": 0
+		},
+	"\/config.rb": {
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0

@@ -4,10 +4,26 @@
     clear: both;
   }
 
-  .site-inner main {
-    padding: 0;
+  .site-inner main.content {
+    padding: 0 !important;
   }
 
+  .sexy_single_product_background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    background-size: cover;
+    filter: blur(20px);
+  }
+
+  .summary, .sexy_product_video {
+    position: relative;
+  }
 
 }
 

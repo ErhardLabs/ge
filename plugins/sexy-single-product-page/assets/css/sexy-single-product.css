@@ -1,6 +1,19 @@
 .single-product .ssp_div {
   clear: both; }
-.single-product .site-inner main {
-  padding: 0; }
+.single-product .site-inner main.content {
+  padding: 0 !important; }
+.single-product .sexy_single_product_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  background-size: cover;
+  filter: blur(20px); }
+.single-product .summary, .single-product .sexy_product_video {
+  position: relative; }
 
 /*# sourceMappingURL=sexy-single-product.css.map */

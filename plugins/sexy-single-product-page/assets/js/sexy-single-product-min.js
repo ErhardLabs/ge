@@ -1,0 +1,1 @@
+$=jQuery,$(document).ready(function(){var r=$(".sexy_single_product_background").prop("src")});
