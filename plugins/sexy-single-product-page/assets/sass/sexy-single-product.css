@@ -18,6 +18,7 @@
 .single-product .summary, .single-product .sexy_product_video {
   position: relative; }
 .single-product .sexy_product_video {
+  padding-top: 100px;
   text-align: center; }
   .single-product .sexy_product_video .sexy_video_wrap {
     max-width: 1100px;
