@@ -36,6 +36,15 @@ $( document ).ready(function() {
   $('.archive.woocommerce .product').addClass('wp-animation').addClass('wp-fadeInUp');
   $('.archive.woocommerce .woocommerce-ordering select').addClass('wp-animation').addClass('wp-fadeInUp');
   $('.archive .page-title').addClass('wp-animation').addClass('wp-fadeInUp');
-  
+
+  /******** Single Product Page's Recipe ******/
+
+  //fadeIn
+  $('.single-product div.product .bwpp_iframe_wrap').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-2');
+  $('.single-product .ssp_video').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-1');
+  $('.single-product .lyrics_title').addClass('wp-animation').addClass('wp-fadeIn');
+  $('.single-product .lyrics').addClass('wp-animation').addClass('wp-fadeIn');
+  $('.single-product .upsells').addClass('wp-animation').addClass('wp-fadeInUp');
+
 
 });

@@ -18,6 +18,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   -webkit-filter: blur(20px);
   filter: blur(20px); }
@@ -42,29 +45,32 @@
     max-height: 640px;
     top: 0;
     left: 0;
-    -webkit-box-shadow: 0px 0px 16px 0px black;
-            box-shadow: 0px 0px 16px 0px black; }
+    box-shadow: 0px 0px 16px 0px black; }
 .single-product .ssp_lyrics {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position: relative;
   padding: 50px; }
   .single-product .ssp_lyrics .ssp_lyrics_background {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 140, 141, 0.0902)), to(#000000));
-    background: linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%); }
+    background: -moz-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: -webkit-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: -o-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: -ms-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%); }
   .single-product .ssp_lyrics .ssp_lyrics_wrap {
     position: relative;
     z-index: 1; }
   .single-product .ssp_lyrics .lyrics {
     padding: 20px 100px 20px 100px;
     text-align: center; }
-.single-product .up-sells .woocommerce-loop-product__link img.wp-post-image {
+.single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
   display: none; }
 .single-product .up-sells ul.products {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 .single-product .up-sells li.product {
   text-align: center;

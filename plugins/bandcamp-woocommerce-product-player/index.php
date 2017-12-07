@@ -72,7 +72,7 @@ function new_product_image_iframe() {
     if (is_single()) {
       ?>
       <div class="bwpp_iframe_wrap">
-        <iframe class="bwpp" style="border: 0; width: 100%; height: 100vh;" src="https://bandcamp.com/EmbeddedPlayer/<?php echo $bandcampID; ?>/size=large/bgcol=000/linkcol=e99708/tracklist=false/transparent=true/" seamless></iframe>
+        <iframe class="bwpp" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/<?php echo $bandcampID; ?>/size=large/bgcol=000/linkcol=e99708/tracklist=false/transparent=true/" seamless></iframe>
       </div>
       <?php
     } else {
@@ -80,7 +80,7 @@ function new_product_image_iframe() {
 
       ?>
       <div class="bwpp_iframe_wrap">
-        <iframe class="bwpp" style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/<?php echo $bandcampID; ?>/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless></iframe>
+        <iframe class="bwpp" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/<?php echo $bandcampID; ?>/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless></iframe>
       </div>
       <?php
     }
