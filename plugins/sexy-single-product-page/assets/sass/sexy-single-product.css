@@ -1,3 +1,11 @@
+.ssp_background, .single-product .ssp_background_image, .single-product .ssp_lyrics .ssp_lyrics_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0; }
+
 .single-product .ssp_div {
   clear: both; }
 .single-product .woocommerce div.product div.images {
@@ -5,35 +13,32 @@
 .single-product .site-inner main.content {
   padding: 0 !important; }
   .single-product .site-inner main.content .product {
-    padding: 50px; }
-.single-product .sexy_single_product_background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+    padding: 4em; }
+.single-product .ssp_background_image {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  z-index: 0;
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(20px);
   filter: blur(20px); }
-.single-product .summary, .single-product .sexy_product_video {
+.single-product .summary, .single-product .ssp_video {
   position: relative; }
-.single-product .sexy_product_video {
-  padding-top: 100px;
+.single-product .ssp_video {
+  padding: 7em 0 7em 0;
   text-align: center; }
-  .single-product .sexy_product_video .sexy_video_wrap {
+  .single-product .ssp_video .ssp_container {
+    max-height: 640px; }
+  .single-product .ssp_video .ssp_video_wrap {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
     height: 0;
     overflow: hidden;
     padding-bottom: 56.25%; }
-  .single-product .sexy_product_video iframe {
+  .single-product .ssp_video iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -41,15 +46,35 @@
     top: 0;
     left: 0;
     box-shadow: 0px 0px 16px 0px black; }
-.single-product .sexy_product_lyrics {
-  padding: 50px;
+.single-product .ssp_lyrics {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
-  position: relative; }
-  .single-product .sexy_product_lyrics .lyrics {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 50px; }
+  .single-product .ssp_lyrics .ssp_lyrics_background {
+    background: -moz-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: -webkit-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: -o-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: -ms-linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%);
+    background: linear-gradient(-180deg, rgba(127, 140, 141, 0.0901960784) 0%, #000000 100%); }
+  .single-product .ssp_lyrics .ssp_lyrics_wrap {
+    position: relative;
+    z-index: 1; }
+  .single-product .ssp_lyrics .lyrics {
     padding: 20px 100px 20px 100px;
     text-align: center; }
+.single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
+  display: none; }
+.single-product .up-sells ul.products {
+  display: flex; }
+.single-product .up-sells li.product {
+  text-align: center;
+  margin: 0 auto !important;
+  width: 48% !important; }
 
 /*# sourceMappingURL=sexy-single-product.css.map */

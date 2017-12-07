@@ -3,9 +3,9 @@
   preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $product_video, $matches);
   $id = $matches[1];
   ?>
-<div class="sexy_product_video ssp_div">
-  <div class="sexy_product_video_wrap">
-        <div class="sexy_video_wrap">
+<div class="ssp_video ssp_div">
+  <div class="ssp_container">
+        <div class="ssp_video_wrap">
             <iframe src="https://www.youtube.com/embed/<?php echo $id ?>?rel=0&showinfo=0&color=white&iv_load_policy=3"
                     frameborder="0" allowfullscreen></iframe>
         </div>

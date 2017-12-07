@@ -572,6 +572,3 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_p
 // Remove Upsells From Their Default Position
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
- 
- 
-

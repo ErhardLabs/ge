@@ -1,3 +1,7 @@
+@import 'utilities/_variables';
+@import 'utilities/_mixins';
+@import 'utilities/_partials';
+
 .single-product {
 
   .ssp_div {
@@ -12,42 +16,38 @@
 
   .site-inner main.content {
     padding: 0 !important;
-
     .product {
-      padding: 50px;
+      padding: 4em;
 
     }
 
   }
 
-  .sexy_single_product_background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: 0;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    filter: blur(20px);
+  .ssp_background_image {
+    @extend .ssp_background;
+    @include background-image-properties(no-repeat, center, fixed, cover);
+    @include blur(20px);
 
   }
 
-  .summary, .sexy_product_video {
+  //.ssp_background{
+  //  @extend .background;
+  //
+  //}
+
+  .summary, .ssp_video {
     position: relative;
 
   }
 
-  .sexy_product_video {
-    padding-top: 100px;
+  .ssp_video {
+    padding: 7em 0 7em 0;
     text-align: center;
+    .ssp_container {
+      max-height: 640px;
 
-    .sexy_video_wrap {
+    }
+    .ssp_video_wrap {
       max-width: 1100px;
       margin: 0 auto;
       position: relative;
@@ -56,7 +56,6 @@
       padding-bottom: 56.25%;
 
     }
-
     iframe {
       position: absolute;
       width: 100%;
@@ -67,19 +66,46 @@
       box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
 
     }
+
   }
 
-  .sexy_product_lyrics {
-    padding: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  .ssp_lyrics {
+    @include background-image-properties(no-repeat, center, fixed, cover);
     position: relative;
+    padding: 50px;
+    .ssp_lyrics_background{
+      @extend .ssp_background;
+      @include linear-gradient(-180deg, rgba(127, 140, 141, 0.09019607843137255), 0%, #000000, 100%);
 
+    }
+    .ssp_lyrics_wrap {
+      position: relative;
+      z-index: 1;
+
+    }
     .lyrics {
       padding: 20px 100px 20px 100px;
       text-align: center;
+
+    }
+
+  }
+
+  .up-sells {
+
+    .woocommerce-LoopProduct-link img.wp-post-image {
+      display: none;
+
+    }
+    ul.products {
+      display: flex;
+
+    }
+    li.product {
+      text-align: center;
+      margin: 0 auto !important;
+      width: 48% !important;
+
     }
 
   }
