@@ -6,8 +6,10 @@
   bottom: 0;
   z-index: 0; }
 
+/*yo*/
 .single-product .ssp_div {
-  clear: both; }
+  clear: both;
+  display: block; }
 .single-product .woocommerce div.product div.images {
   margin-bottom: 0; }
 .single-product .site-inner main.content {

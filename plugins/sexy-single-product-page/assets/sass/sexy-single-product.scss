@@ -1,11 +1,12 @@
 @import 'utilities/_variables';
 @import 'utilities/_mixins';
 @import 'utilities/_partials';
-
+/*yo*/
 .single-product {
 
   .ssp_div {
     clear: both;
+    display: block;
 
   }
 
