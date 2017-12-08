@@ -3,7 +3,7 @@
 // ======================================
 
 // Media queries
-@mixin mq($break) {
+@mixin media-query($break) {
   $value: map-get($breakpoints, $break);
   $sm: map-get($breakpoints, 'sm');
 

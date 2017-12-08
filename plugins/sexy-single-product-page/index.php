@@ -40,9 +40,9 @@ function ssp_add_custom_fields() {
     array(
       'id'          => '_youtube_text_area',
       'label'       => __( 'YouTube Videos', 'woocommerce' ),
-      'placeholder' => __( 'YouTube URL', 'woocommerce' ),
+      'placeholder' => __( 'Separate each YouTube Video url with a comma', 'woocommerce' ),
       'desc_tip'    => 'true',
-      'description' => __( 'Enter YouTube Video url', 'woocommerce' )
+      'description' => __( 'Separate each YouTube Video url with a comma', 'woocommerce' )
     )
   );
 
@@ -54,9 +54,9 @@ function ssp_add_custom_fields() {
     array(
       'id'          => '_lyrics_text_area',
       'label'       => __( 'Song Lyrics', 'woocommerce' ),
-      'placeholder' => 'Lyrics',
+      'placeholder' => __( 'Enter Lyrics line by line', 'woocommerce' ),
       'desc_tip'    => 'true',
-      'description' => __( 'Enter Song Lyrics', 'woocommerce' )
+      'description' => __( 'Separate each stanza on a new line', 'woocommerce' )
     )
   );
 

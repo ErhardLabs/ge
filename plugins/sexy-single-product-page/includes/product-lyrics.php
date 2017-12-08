@@ -1,5 +1,5 @@
-<?php if ( get_field("lyrics" ) ) :
-$lyrics = get_field("lyrics" ); ?>
+<?php if ( !empty( get_post_meta( get_the_ID(), '_lyrics_text_area', true) ) ) :
+$lyrics = get_post_meta( get_the_ID(), '_lyrics_text_area', true ); ?>
 <div class="ssp_lyrics ssp_div">
     <div class="ssp_lyrics_background"></div>
   <div class="ssp_lyrics_wrap">
@@ -7,7 +7,9 @@ $lyrics = get_field("lyrics" ); ?>
       <h1>LYRICS</h1>
     </div>
     <div class="lyrics">
-        <p><?php echo $lyrics; ?></p>
+        <p><?php
+        //Preserve line breaks to create stanza
+        echo wpautop( $lyrics ); ?></p>
     </div>
   </div>
 </div>
