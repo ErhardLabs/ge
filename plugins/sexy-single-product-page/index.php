@@ -27,6 +27,58 @@ function ssp_scripts_styles() {
 
 }
 
+// Create Custom Fields
+add_action( 'woocommerce_product_options_general_product_data', 'ssp_add_custom_fields' );
+
+function ssp_add_custom_fields() {
+
+  global $woocommerce, $post;
+
+  echo '<div class="options_group">';
+
+  woocommerce_wp_textarea_input(
+    array(
+      'id'          => '_youtube_text_area',
+      'label'       => __( 'YouTube Videos', 'woocommerce' ),
+      'placeholder' => __( 'YouTube URL', 'woocommerce' ),
+      'desc_tip'    => 'true',
+      'description' => __( 'Enter YouTube Video url', 'woocommerce' )
+    )
+  );
+
+  echo '</div>';
+
+  echo '<div class="options_group">';
+
+  woocommerce_wp_textarea_input(
+    array(
+      'id'          => '_lyrics_text_area',
+      'label'       => __( 'Song Lyrics', 'woocommerce' ),
+      'placeholder' => 'Lyrics',
+      'desc_tip'    => 'true',
+      'description' => __( 'Enter Song Lyrics', 'woocommerce' )
+    )
+  );
+
+  echo '</div>';
+
+}
+
+// Save Custom Fields
+add_action( 'woocommerce_process_product_meta', 'ssp_save_custom_fields' );
+
+function ssp_save_custom_fields($post_id) {
+  $youtube_text_area = $_POST['_youtube_text_area'];
+  $lyrics_text_area = $_POST['_lyrics_text_area'];
+
+  if( !empty( $youtube_text_area  ) )
+    update_post_meta( $post_id, '_youtube_text_area', esc_attr( $youtube_text_area ) );
+
+  if( !empty( $lyrics_text_area   ) )
+    update_post_meta( $post_id, '_lyrics_text_area', esc_attr( $lyrics_text_area ) );
+
+}
+
 add_action( 'woocommerce_before_single_product_summary', 'ssp_get_product_image', 10 );
 
 function ssp_get_product_image() {
