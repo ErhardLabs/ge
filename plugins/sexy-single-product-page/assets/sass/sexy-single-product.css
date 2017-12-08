@@ -6,7 +6,6 @@
   bottom: 0;
   z-index: 0; }
 
-/*yo*/
 .single-product .ssp_div {
   clear: both;
   display: block; }
@@ -16,6 +15,10 @@
   padding: 0 !important; }
   .single-product .site-inner main.content .product {
     padding: 4em; }
+  .single-product .site-inner main.content .entry-title {
+    text-shadow: 0px 1px 1px #111; }
+  .single-product .site-inner main.content .woocommerce-product-details__short-description {
+    text-shadow: 1px 1px 1px black; }
 .single-product .ssp_background_image {
   background-repeat: no-repeat;
   background-position: center;
