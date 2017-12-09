@@ -219,6 +219,101 @@ h1 {
   
 }
 
+/******* Contact Form ********/
+.slider #gform_widget-6 .gfield_label {
+  display: inherit;
+  color: white !important;
+}
+
+.slider #gform_widget-6 .gform_title {
+  font-size: 2em !important;
+}
+
+.slider #gform_widget-6 .gform_title:after {
+  content: "";
+  border-top: 2px solid;
+  width: 2em;
+  display: block;
+  margin: .2em auto;
+}
+
+.slider #gform_widget-6 .ginput_container_radio {
+  float: left;
+  position: relative;
+  left: 50%;
+  padding-bottom: 30px;
+}
+
+.slider #gform_widget-6 .gform_wrapper ul.gform_fields li.gfield {
+  padding-right: 0 !important;
+}
+
+.slider #gform_widget-6 #field_7_21 .gfield_radio {
+  text-align: left;
+  position: relative;
+  left: -25%;
+}
+
+.slider #gform_widget-6 .gfield_radio {
+  text-align: left;
+  position: relative;
+  left: -50%;
+}
+
+.slider #gform_widget-6 input[type=radio] {
+  margin-top: -1px !important;
+  vertical-align: middle;
+}
+
+.slider #gform_widget-6 .gfield_required {
+  display: none;
+}
+
+.slider #gform_widget-6 input[type=text]::-webkit-input-placeholder,
+.slider #gform_widget-6 input[type=email]::-webkit-input-placeholder,
+.slider #gform_widget-6 input[type=tel]::-webkit-input-placeholder,
+#slider input[type=url]::-webkit-input-placeholder,
+#slider input[type=number]::-webkit-input-placeholder,
+.slider #gform_widget-6 input[type=text],
+.slider #gform_widget-6 input[type=email],
+.slider #gform_widget-6 input[type=tel],
+.slider #gform_widget-6 .ginput_container_textarea .textarea {
+  font-size: 12px !important;
+  -webkit-box-shadow: unset !important;
+  -moz-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+
+.slider #gform_widget-6 .ginput_container_textarea .textarea {
+  border: none;
+  padding: 10px 0;
+  background: none !important;
+}
+
+.slider #gform_widget-6 select {
+  padding-top: 1em;
+  color: #888 !important;
+  box-shadow: none !important;
+}
+
+.slider #gform_widget-6 .address_country {
+  margin-top: -8px !important;
+}
+
+.slider #gform_widget-6 .ginput_container_time select{
+  bottom: 8px !important;
+}
+
+#field_7_18 .clear-multi,
+#field_7_19 .clear-multi {
+  justify-content: center;
+}
+
+.slider #gform_widget-6 #field_7_20,
+.slider #gform_widget-6 .ginput_complex,
+.slider #gform_widget-6 #field_7_25 {
+  padding-top: 30px;
+}
 
 /* =================================
   Tablet Layout Styles

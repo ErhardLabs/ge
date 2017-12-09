@@ -11,9 +11,19 @@ jQuery( document ).ready(function(){
   $('.ssp_lyrics').css('background-image', 'url(' + $randomImage + ')');
 
   // Create FlexSlider from array of videos
-  $('.ssp_container').flexslider({
+  $('.single-product  .ssp_container').flexslider({
     selector: ".ssp_video_wrap",
-    slideshow: false
+    slideshow: false,
+    touch: true
   });
+
+  //Upsell slider
+  // $('.single-product .upsells').flexslider({
+  //   selector: ".products > .product",
+  //   slideshow: false,
+  //   touch: true,
+  //   minItems: 3,
+  //   maxItems: 3
+  // });
 
 });
