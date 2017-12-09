@@ -15,12 +15,15 @@ function genesis_sample_google_fonts() {
 	wp_enqueue_script( 'sticky-nav', get_bloginfo( 'stylesheet_directory' ) . '/js/sticky-nav.js', array( 'jquery', 'font-awesome' ), '', true );
 	wp_enqueue_script( 'prettycreative-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery', 'font-awesome' ), '1.0.0', true );
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/2412d65cf4.js', array(), '', true );
-	wp_enqueue_script( 'song-kick', get_bloginfo( 'stylesheet_directory' ) . '/js/widget.js', array(), '', true );
+
 }
 
 add_action('genesis_footer', 'custom_script');
 function custom_script() {
-	wp_register_script ('grayson', get_bloginfo( 'stylesheet_directory' ) . '/js/grayson.js', array( 'jquery', 'font-awesome' ),'1.0.1',true);
+    wp_register_script ('grayson', get_bloginfo( 'stylesheet_directory' ) . '/js/grayson.js', array( 'jquery', 'font-awesome' ),'1.0.1',true);
+  wp_enqueue_script( 'song-kick', get_bloginfo( 'stylesheet_directory' ) . '/js/widget.js', array(), '', true );
+  wp_enqueue_script('autosize', get_bloginfo( 'stylesheet_directory' )  . '/lib/js/autosize.min.js', array('jquery'), false, true);
+  wp_enqueue_script('sumner-js', get_bloginfo( 'stylesheet_directory' )  . '/js/sumner.js', array('jquery'), false, true);
 	wp_enqueue_script( 'grayson');
 }
 

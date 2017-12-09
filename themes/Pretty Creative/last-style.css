@@ -2480,39 +2480,6 @@ text-align: center;
     .video-foreground { width: 300%; left: -100%; }
 }
 
-#slider input {
-    border-bottom: solid 1px #ECA76F !important;
-    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
-    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #ECA76F 4%) !important;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ECA76F 4%) !important;
-    background-position: -400px 0 !important;
-    background-size: 400px 100% !important;
-    background-repeat: no-repeat !important;
-    color: white !important;
-    font-weight: 200;
-}
-
-#slider input:focus {
-    box-shadow: none !important;
-    outline: none !important;
-    background-position: 0 0 !important;
-}
-
-/* ///////////////////////////////
-
-
-Animate the placeholders on focus
-
-
-////////////////////////////////*/
-
-/*input::-webkit-input-placeholder {*/
-/*-webkit-transition: all 0.3s ease-in-out !important;*/
-/*transition: all 0.3s ease-in-out !important;*/
-/*}*/
-
-
 input::placeholder, textarea::placeholder {
     color: #777 !important;
 }
