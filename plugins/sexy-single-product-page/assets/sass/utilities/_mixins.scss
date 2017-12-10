@@ -1,0 +1,47 @@
+// ======================================
+//  Mixins
+// ======================================
+
+// Media queries
+@mixin media-query($break) {
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'sm');
+
+  @if $value < $sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+@mixin linear-gradient($direction, $color1, $percent1, $color2, $percent2){
+
+  background: -moz-linear-gradient($direction, $color1 $percent1, $color2 $percent2); // Firefox
+  background: -webkit-linear-gradient($direction, $color1 $percent1, $color2 $percent2); // Safari
+  background: -o-linear-gradient($direction, $color1 $percent1, $color2 $percent2); // Opera
+  background: -ms-linear-gradient($direction, $color1 $percent1, $color2 $percent2); // IE
+  background: linear-gradient($direction, $color1 $percent1, $color2 $percent2); // Standard Syntax
+
+}
+
+@mixin blur($amount) {
+
+  -webkit-filter: blur($amount); // Ch 23+, Saf 6.0+, BB 10.0+
+          filter: blur($amount); // FF 35+
+
+}
+
+@mixin background-image-properties($repeat, $position, $attachement, $size ){
+  background-repeat: $repeat;
+  background-position: $position;
+  background-attachment: $attachement;
+  -webkit-background-size: $size; // Safari
+     -moz-background-size: $size; // Firefox
+       -o-background-size: $size; // Opera
+          background-size: $size; // Standard
+}
