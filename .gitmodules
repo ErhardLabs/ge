@@ -1,3 +1,6 @@
 [submodule "plugins/sexy-animations"]
 	path = plugins/sexy-animations
 	url = https://github.com/ErhardLabs/sexy-animations.git
+[submodule "plugins/sexy-woocheckout"]
+	path = plugins/sexy-woocheckout
+	url = https://github.com/ErhardLabs/sexy-woocheckout.git
