@@ -242,7 +242,7 @@ function apply_coupon(element) {
 	var coupon = $('.checkout_coupon input[name="coupon_code"]').val();
 
 	if (coupon != '') {
-		$.post('?wc-ajax=apply_coupon', {security: localized_config.apply_coupon_nonce,coupon_code : coupon}).done(function(data) {
+		$.post('?wc-ajax=apply_coupon', {security: localized_sexy_config.apply_coupon_nonce,coupon_code : coupon}).done(function(data) {
 			ajax_refresh_cart_and_checkout(data);
 		});
 	}
@@ -253,7 +253,7 @@ function remove_coupon(element) {
 
 	var coupon = $(element).data('coupon');
 
-	$.post('?wc-ajax=remove_coupon', {security: localized_config.remove_coupon_nonce, coupon : coupon}).done(function(data) {
+	$.post('?wc-ajax=remove_coupon', {security: localized_sexy_config.remove_coupon_nonce, coupon : coupon}).done(function(data) {
 		ajax_refresh_cart_and_checkout(data);
 	});
 
@@ -271,7 +271,7 @@ function woo_update_qty(qty, currentVal, item_hash) {
 
   var data = {
 	        action: 'sexy_update_total_price',
-	        security: localized_config.update_total_price_nonce,
+	        security: localized_sexy_config.update_total_price_nonce,
 	        quantity: currentVal,
 	        hash : item_hash
 	    };
@@ -340,7 +340,7 @@ function update_cart_totals(previousData) {
 }
 
 function update_checkout_totals(previousData) {
-	$.post('?wc-ajax=update_order_review', {security: localized_config.update_order_review}).done(function(checkoutData) {
+	$.post('?wc-ajax=update_order_review', {security: localized_sexy_config.update_order_review}).done(function(checkoutData) {
 
 		$('.woocommerce-checkout-review-order-table').html(checkoutData.fragments['.woocommerce-checkout-review-order-table']);
 

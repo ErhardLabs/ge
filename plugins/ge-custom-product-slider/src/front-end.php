@@ -96,6 +96,7 @@ function get_slider_left( $loop, $args, $slider_num ) {
                 <div class="ge-slider-product-headline mobile">';
             get_headline( $args );
             echo '</div>';
+            echo '<hr class="horizontal-divider mobile">';
                 get_product_image( $loop, $args );
     echo '</div>';
 
@@ -107,7 +108,7 @@ function get_slider_right( $loop, $args, $product ) {
                         <div class="ge-slider-product-headline desktop">';
                             get_headline( $args );
                        echo '</div>
-                        <hr class="horizontal-divider">
+                        <hr class="horizontal-divider desktop">
                         <div class="ge-slider-product-title">';
                             the_title('<h3>', '</h3>');
                 echo '</div>
@@ -127,7 +128,7 @@ function get_slider_right( $loop, $args, $product ) {
 function get_headline( $args ) {
   echo ' <h1>';
   if ( $args['product_cat'] == 'music' ) {
-   echo'Newest Release';
+   echo'Newest Music';
 
   } elseif ( $args['product_cat'] == 'tabs' ) {
 

@@ -15,12 +15,15 @@ function genesis_sample_google_fonts() {
 	wp_enqueue_script( 'sticky-nav', get_bloginfo( 'stylesheet_directory' ) . '/js/sticky-nav.js', array( 'jquery', 'font-awesome' ), '', true );
 	wp_enqueue_script( 'prettycreative-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery', 'font-awesome' ), '1.0.0', true );
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/2412d65cf4.js', array(), '', true );
-	wp_enqueue_script( 'song-kick', get_bloginfo( 'stylesheet_directory' ) . '/js/widget.js', array(), '', true );
+
 }
 
 add_action('genesis_footer', 'custom_script');
 function custom_script() {
-	wp_register_script ('grayson', get_bloginfo( 'stylesheet_directory' ) . '/js/grayson.js', array( 'jquery', 'font-awesome' ),'1.0.1',true);
+    wp_register_script ('grayson', get_bloginfo( 'stylesheet_directory' ) . '/js/grayson.js', array( 'jquery', 'font-awesome' ),'1.0.1',true);
+  wp_enqueue_script( 'song-kick', get_bloginfo( 'stylesheet_directory' ) . '/js/widget.js', array(), '', true );
+  wp_enqueue_script('autosize', get_bloginfo( 'stylesheet_directory' )  . '/lib/js/autosize.min.js', array('jquery'), false, true);
+  wp_enqueue_script('sumner-js', get_bloginfo( 'stylesheet_directory' )  . '/js/sumner.js', array('jquery'), false, true);
 	wp_enqueue_script( 'grayson');
 }
 
@@ -190,6 +193,33 @@ function custom_subscribe_widget() {
 'after' => '</div>',
 ) );
 }
+
+add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_4');
+
+function ge_home_page_4() {
+  echo '<div class="shows">
+          <h1>SHOWS</h1>
+          <hr class="horizontal-divider">';
+    echo '<div class="songkick-data">';      
+/*
+  echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent"></a>
+<script src="//widget.songkick.com/widget.js"></script>';
+*/
+
+echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
+<script src="//widget.songkick.com/widget.js"></script>';
+    echo '</div>';
+  echo '</div>';
+}
+
+
+/*
+add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_5');
+
+function ge_home_page_5() {
+    echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
+}
+*/
 
 
 //Position Widget's before footer on ALL PAGES
@@ -538,3 +568,10 @@ function add_product_slider() {
 
 //Remove Woocommerce SKU's
 add_filter( 'wc_product_sku_enabled', '__return_false' );
+
+// Remove Woocommerce Tabs from single product page
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+// Remove Upsells From Their Default Position
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
