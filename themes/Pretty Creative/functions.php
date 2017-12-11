@@ -575,3 +575,42 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_p
 // Remove Upsells From Their Default Position
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+
+
+
+/**
+ * Open a preview e-mail.
+ * Make sure to use the dropdown and edit the URL variables afterwards
+ * https://example.org/wp-admin/admin-ajax.php?action=previewemail&file=emails/customer-processing-order.php&order=180
+ * @return null
+ */
+function previewEmail() {
+
+  if (is_admin()) {
+    $default_path = WC()->plugin_path() . '/templates/';
+
+    $files = scandir($default_path . 'emails');
+    $exclude = array( '.', '..', 'email-header.php', 'email-footer.php','plain' );
+    $list = array_diff($files,$exclude);
+    ?><form method="get" action="<?php echo site_url(); ?>/wp-admin/admin-ajax.php">
+    <input type="hidden" name="order" value="2055">
+    <input type="hidden" name="action" value="previewemail">
+    <select name="file">
+      <?php
+      foreach( $list as $item ){ ?>
+        <option value="<?php echo $item; ?>"><?php echo str_replace('.php', '', $item); ?></option>
+      <?php } ?>
+    </select><input type="submit" value="Go"></form><?php
+    global $order;
+    $order = new WC_Order($_GET['order']);
+    wc_get_template( 'emails/email-header.php', array( 'order' => $order ) );
+
+
+    wc_get_template( 'emails/'.$_GET['file'], array( 'order' => $order ) );
+    wc_get_template( 'emails/email-footer.php', array( 'order' => $order ) );
+
+  }
+  return null;
+}
+
+add_action('wp_ajax_previewemail', 'previewEmail');
