@@ -1555,9 +1555,9 @@ video, .home #yt_home_embed
 
 #ssl
 {
-	text-align: center;
-	right: 0;
-	position: absolute;
+	/*text-align: center;*/
+	/*right: 0;*/
+	/*position: absolute;*/
 	padding: 20px;
 }
 

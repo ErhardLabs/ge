@@ -81,3 +81,14 @@ function ge_custom_slider_shortcode( $atts = null, $content = null ){
 }
 add_shortcode( 'ge_custom_slider', 'ge_custom_slider_shortcode' );
 
+
+// Add product slider to each category page
+
+add_action('woocommerce_before_shop_loop', 'add_product_slider');
+
+function add_product_slider() {
+
+  echo do_shortcode( '[ge_custom_slider]' );
+
+}
+

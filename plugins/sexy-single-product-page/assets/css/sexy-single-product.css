@@ -28,12 +28,19 @@
 /* line 24, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .entry-title {
   text-shadow: 0 1px 1px #111;
+  font-size: 2.5em;
 }
-/* line 28, ../sass/sexy-single-product.scss */
+/* line 29, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .price {
+  text-align: center;
+}
+/* line 33, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .woocommerce-product-details__short-description {
   text-shadow: 1px 1px 1px black;
+  font-family: "MavenPro-Regular", sans-serif;
+  font-size: 1.2em;
 }
-/* line 34, ../sass/sexy-single-product.scss */
+/* line 41, ../sass/sexy-single-product.scss */
 .single-product .ssp_background_image {
   background-repeat: no-repeat;
   background-position: center;
@@ -45,53 +52,53 @@
   -webkit-filter: blur(20px);
   filter: blur(20px);
 }
-/* line 46, ../sass/sexy-single-product.scss */
+/* line 53, ../sass/sexy-single-product.scss */
 .single-product .summary, .single-product .ssp_video {
   position: relative;
 }
-/* line 51, ../sass/sexy-single-product.scss */
+/* line 58, ../sass/sexy-single-product.scss */
 .single-product .ssp_video {
   padding-top: 7em;
   padding-bottom: 4em;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 57, ../sass/sexy-single-product.scss */
+  /* line 64, ../sass/sexy-single-product.scss */
   .single-product .ssp_video:hover .flex-direction-nav a {
     opacity: 1;
   }
-  /* line 61, ../sass/sexy-single-product.scss */
+  /* line 68, ../sass/sexy-single-product.scss */
   .single-product .ssp_video .flex-direction-nav .flex-next {
     right: -90px;
   }
-  /* line 65, ../sass/sexy-single-product.scss */
+  /* line 72, ../sass/sexy-single-product.scss */
   .single-product .ssp_video .flex-direction-nav .flex-prev {
     left: -90px;
   }
-  /* line 69, ../sass/sexy-single-product.scss */
+  /* line 76, ../sass/sexy-single-product.scss */
   .single-product .ssp_video:hover .flex-direction-nav .flex-next {
     right: -50px;
   }
-  /* line 74, ../sass/sexy-single-product.scss */
+  /* line 81, ../sass/sexy-single-product.scss */
   .single-product .ssp_video:hover .flex-direction-nav .flex-prev {
     left: -50px;
   }
 }
 @media (min-width: 992px) {
-  /* line 51, ../sass/sexy-single-product.scss */
+  /* line 58, ../sass/sexy-single-product.scss */
   .single-product .ssp_video {
     padding-left: 7em;
     padding-right: 7em;
   }
 }
 @media (min-width: 1500px) {
-  /* line 51, ../sass/sexy-single-product.scss */
+  /* line 58, ../sass/sexy-single-product.scss */
   .single-product .ssp_video {
     padding-left: 20em;
     padding-right: 20em;
   }
 }
-/* line 89, ../sass/sexy-single-product.scss */
+/* line 96, ../sass/sexy-single-product.scss */
 .single-product .ssp_video .ssp_container {
   max-height: 640px;
   display: inline-block;
@@ -100,13 +107,13 @@
   box-sizing: border-box;
   width: 100%;
 }
-/* line 98, ../sass/sexy-single-product.scss */
+/* line 105, ../sass/sexy-single-product.scss */
 .single-product .ssp_video .ssp_video_wrap {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
 }
-/* line 104, ../sass/sexy-single-product.scss */
+/* line 111, ../sass/sexy-single-product.scss */
 .single-product .ssp_video iframe {
   position: absolute;
   width: 100%;
@@ -116,7 +123,7 @@
   left: 0;
   box-shadow: 0 0 16px 0 black;
 }
-/* line 117, ../sass/sexy-single-product.scss */
+/* line 124, ../sass/sexy-single-product.scss */
 .single-product .ssp_lyrics {
   background-repeat: no-repeat;
   background-position: center;
@@ -128,7 +135,11 @@
   position: relative;
   padding: 50px;
 }
-/* line 121, ../sass/sexy-single-product.scss */
+/* line 129, ../sass/sexy-single-product.scss */
+.single-product .ssp_lyrics h1 {
+  font-size: 2.5em;
+}
+/* line 132, ../sass/sexy-single-product.scss */
 .single-product .ssp_lyrics .ssp_lyrics_background {
   background: -moz-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: -webkit-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
@@ -136,47 +147,52 @@
   background: -ms-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
 }
-/* line 126, ../sass/sexy-single-product.scss */
+/* line 137, ../sass/sexy-single-product.scss */
 .single-product .ssp_lyrics .ssp_lyrics_wrap {
   position: relative;
   z-index: 1;
 }
-/* line 131, ../sass/sexy-single-product.scss */
+/* line 142, ../sass/sexy-single-product.scss */
 .single-product .ssp_lyrics .lyrics {
   padding: 20px 0 20px 0;
   text-align: center;
 }
-/* line 141, ../sass/sexy-single-product.scss */
+/* line 152, ../sass/sexy-single-product.scss */
+.single-product .up-sells h2 {
+  font-family: "MavenPro-Black", sans-serif;
+  font-size: 2.5em;
+}
+/* line 157, ../sass/sexy-single-product.scss */
 .single-product .up-sells .flex-direction-nav a {
   opacity: 1;
 }
-/* line 145, ../sass/sexy-single-product.scss */
+/* line 161, ../sass/sexy-single-product.scss */
 .single-product .up-sells .flex-direction-nav .flex-next {
   right: -90px;
 }
-/* line 149, ../sass/sexy-single-product.scss */
+/* line 165, ../sass/sexy-single-product.scss */
 .single-product .up-sells .flex-direction-nav .flex-prev {
   left: -90px;
 }
-/* line 153, ../sass/sexy-single-product.scss */
+/* line 169, ../sass/sexy-single-product.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-next {
   right: -50px;
 }
-/* line 158, ../sass/sexy-single-product.scss */
+/* line 174, ../sass/sexy-single-product.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-prev {
   left: -50px;
 }
-/* line 163, ../sass/sexy-single-product.scss */
+/* line 179, ../sass/sexy-single-product.scss */
 .single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
   display: none;
 }
-/* line 167, ../sass/sexy-single-product.scss */
+/* line 183, ../sass/sexy-single-product.scss */
 .single-product .up-sells ul.products {
   display: flex;
 }
-/* line 171, ../sass/sexy-single-product.scss */
+/* line 187, ../sass/sexy-single-product.scss */
 .single-product .up-sells li.product {
   text-align: center;
   margin: 0 auto !important;
-  width: 48% !important;
+  width: 35% !important;
 }

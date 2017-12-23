@@ -198,13 +198,8 @@ add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_4');
 
 function ge_home_page_4() {
   echo '<div class="shows">
-          <h1>SHOWS</h1>
-          <hr class="horizontal-divider">';
+          <h1>SHOWS</h1>';
     echo '<div class="songkick-data">';      
-/*
-  echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent"></a>
-<script src="//widget.songkick.com/widget.js"></script>';
-*/
 
 echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
 <script src="//widget.songkick.com/widget.js"></script>';
@@ -545,26 +540,6 @@ function form_submit_button( $button, $form ) {
 // Removes showing results
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
-
-
-add_action('woocommerce_before_shop_loop', 'add_horizontal_divider');
-
-function add_horizontal_divider() {
-
-  echo '<hr class="divider">';
-
-}
-
-
-// Add product slider to each category page
-
-add_action('woocommerce_before_shop_loop', 'add_product_slider');
-
-function add_product_slider() {
-
-  echo do_shortcode( '[ge_custom_slider]' );
-
-}
 
 //Remove Woocommerce SKU's
 //add_filter( 'wc_product_sku_enabled', '__return_false' );

@@ -102,7 +102,6 @@ function get_slider_left( $loop, $args, $slider_num ) {
                 <div class="ge-slider-product-headline mobile">';
             get_headline( $args );
             echo '</div>';
-            echo '<hr class="horizontal-divider mobile">';
                 get_product_image( $loop, $args );
     echo '</div>';
 
@@ -113,8 +112,7 @@ function get_slider_right( $loop, $args, $product ) {
                     <div class="ge-slider-product-meta">
                         <div class="ge-slider-product-headline desktop">';
                             get_headline( $args );
-                       echo '</div>
-                        <hr class="horizontal-divider desktop">
+                       echo '</div>                 
                         <div class="ge-slider-product-title">';
                             the_title('<h3>', '</h3>');
                 echo '</div>
