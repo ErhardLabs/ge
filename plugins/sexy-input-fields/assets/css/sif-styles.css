@@ -10,7 +10,7 @@ label {
 
 input[type=text], input[type=email], input[type=tel] {
   position: relative;
-  /*width: 90% !important;*/
+  width: 90% !important;
   bottom: 30px;
   border: none !important;
   box-shadow: 0 3px #ffffff, 0 5px rgba(0, 0, 0, 0.16) !important;

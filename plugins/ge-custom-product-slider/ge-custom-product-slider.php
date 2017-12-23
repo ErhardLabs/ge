@@ -60,10 +60,17 @@ function ge_custom_slider_widgets() {
 
 add_action( 'widgets_init', 'ge_custom_slider_widgets' );
 
-//[ge_custom_slider]
-function ge_custom_slider_shortcode( $atts, $content = null ){
+//[ge_custom_slider free="false"]
+function ge_custom_slider_shortcode( $atts = null, $content = null ){
 
   ob_start();
+
+  $atts = shortcode_atts(  array(
+      'free' => 'false'
+    ), $atts
+  );
+
+  extract($atts);
 
   require( 'src/front-end.php' );
 

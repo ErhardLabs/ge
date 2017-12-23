@@ -567,7 +567,7 @@ function add_product_slider() {
 }
 
 //Remove Woocommerce SKU's
-add_filter( 'wc_product_sku_enabled', '__return_false' );
+//add_filter( 'wc_product_sku_enabled', '__return_false' );
 
 // Remove Woocommerce Tabs from single product page
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );

@@ -1,5 +1,11 @@
 <?php
 
+function get_attributes( $atts ){
+    if( $atts['free'] == "true" ) {
+
+    }
+}
+
 function product_music( $num_products ) {
 
   $slider_num = 1;
@@ -148,12 +154,7 @@ function get_product_image( $loop, $args ) {
 
   echo '<div class="ge-slider-product">';
     if ( has_post_thumbnail( $loop->post->ID ) ) {
-
         echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
-
-    } else {
-
-        echo '<img class="product-shadow" src="'.woocommerce_placeholder_img_src().'" alt="Placeholder"/>';
     }
 
   get_product_background_svg( $args );
@@ -183,6 +184,7 @@ function get_product_background_svg( $args ) {
   <ul class="slides">
       <?php
       $classes = get_body_class();
+      get_attributes( $atts );
       if ( in_array('home',$classes ) ) {
         product_music( 1 );
         product_tabs( 1 );

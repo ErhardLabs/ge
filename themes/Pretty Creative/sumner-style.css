@@ -104,7 +104,8 @@ h1 {
 }
 
 .cta,
-.gform_wrapper .gform_footer input.button {
+.gform_wrapper .gform_footer input.button,
+.single-product .single_add_to_cart_button {
     box-shadow: inset 0 0 0 4px #ffe593 !important;
     color: #ffe593 !important;
     -webkit-transition: color 0.25s 0.08333s !important;
