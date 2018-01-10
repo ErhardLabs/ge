@@ -589,3 +589,10 @@ function previewEmail() {
 }
 
 add_action('wp_ajax_previewemail', 'previewEmail');
+
+add_filter('genesis_attr_nav-primary', 'add_nav_class');
+
+function add_nav_class( $attributes ) {
+    $attributes['class'] .= ' nav-down';
+    return $attributes;
+}

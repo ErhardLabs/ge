@@ -87,7 +87,7 @@ function product_merch( $num_products ) {
 
     $_product = new WC_Product( get_the_ID() );
 
-    get_slider_left( $loop, $args, $slider_num );
+    get_slider_left( $loop, $args, $slider_num, $_product );
 
     get_slider_right( $loop, $args, $_product );
 
@@ -111,16 +111,22 @@ function get_slider_right( $loop, $args, $product ) {
     echo '<div class="ge-slider-right">
                     <div class="ge-slider-product-meta">
                         <div class="ge-slider-product-headline desktop">';
+
                             get_headline( $args );
-                       echo '</div>                 
+
+                       echo '</div>                
                         <div class="ge-slider-product-title">';
+
                             the_title('<h3>', '</h3>');
+
                 echo '</div>
                         <div class="ge-slider-product-price">';
                             echo '<h3>$' . $product->price . '</h3>' ;
                 echo ' </div>
                     <div class="ge-slider-add-to-cart">';
-                            woocommerce_template_loop_add_to_cart( $loop->post, $product ); ;
+
+                            woocommerce_template_loop_add_to_cart( $loop->post, $product );
+
                     echo'</div>
                 </div>
             </div>
@@ -152,7 +158,10 @@ function get_product_image( $loop, $args ) {
 
   echo '<div class="ge-slider-product">';
     if ( has_post_thumbnail( $loop->post->ID ) ) {
-        echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
+      echo '<a href="'.get_permalink($loop->post->ID).'">'; //start product link
+      echo get_the_post_thumbnail($loop->post->ID, array( 500, 500 ));
+      echo '</a>'; // close product link
+
     }
 
   get_product_background_svg( $args );

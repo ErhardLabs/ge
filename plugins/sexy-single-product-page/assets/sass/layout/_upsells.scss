@@ -1,0 +1,57 @@
+.single-product .up-sells {
+
+  background: #000000;
+  padding: 2em 4em;
+
+  h2 {
+    font-family: "MavenPro-Black", sans-serif;
+    font-size: 2.5em;
+    @include media-query('med') {
+      font-size: 4.5em;
+    }
+  }
+
+  .flex-direction-nav a {
+    opacity: 1;
+
+  }
+  .flex-direction-nav .flex-next {
+    right: -90px;
+
+  }
+  .flex-direction-nav .flex-prev {
+    left: -90px;
+
+  }
+  &:hover .flex-direction-nav .flex-next {
+    right: -50px;
+
+  }
+
+  &:hover .flex-direction-nav .flex-prev {
+    left: -50px;
+
+  }
+
+  // Hide the extra image
+  .woocommerce-LoopProduct-link img.wp-post-image {
+    display: none;
+
+  }
+
+  ul.products {
+    display: flex;
+    margin: 0;
+  }
+  li.product {
+    text-align: center;
+    margin: 0 auto !important;
+    width: 48% !important;
+    padding: 0 !important;
+    @include media-query('med') {
+      padding: 2em !important;
+    }
+
+  }
+
+}

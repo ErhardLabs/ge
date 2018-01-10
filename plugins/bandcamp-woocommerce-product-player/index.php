@@ -64,7 +64,6 @@ function new_product_image_iframe() {
 
   global $post;
 
-
   $bandcampID = get_post_meta($post->ID, '_text_field', true);
 
   if ($bandcampID) {
@@ -90,7 +89,7 @@ function new_product_image_iframe() {
 
       //TODO: PULL IN TEMPLATE
 
-    if (is_single()) {
+    if ( is_single() ) {
 // DISPLAY USUAL PRODUCT IMAGE
 
       $columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
@@ -113,15 +112,15 @@ function new_product_image_iframe() {
           'data-large_image_height' => $full_size_image[2],
       );
 
-      if ( has_post_thumbnail() ) {
-        $html  = '<div data-thumb="' . get_the_post_thumbnail_url( $post->ID, 'shop_thumbnail' ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_size_image[0] ) . '">';
-        $html .= get_the_post_thumbnail( $post->ID, 'shop_single', $attributes );
-        $html .= '</a></div>';
-      } else {
-        $html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-        $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-        $html .= '</div>';
-      }
+    if ( has_post_thumbnail() ) {
+      $html = '<div data-thumb="' . get_the_post_thumbnail_url( $post->ID, 'shop_thumbnail' ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_size_image[0] ) . '">';
+      $html .= get_the_post_thumbnail( $post->ID, 'shop_single', $attributes );
+      $html .= '</a></div>';
+    } else {
+      $html = '<div class="woocommerce-product-gallery__image--placeholder">';
+      $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+      $html .= '</div>';
+    }
 
       echo $html;
 
@@ -131,12 +130,6 @@ function new_product_image_iframe() {
       add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
     }
 
-
-
-
-
   }
-
-
 
 }

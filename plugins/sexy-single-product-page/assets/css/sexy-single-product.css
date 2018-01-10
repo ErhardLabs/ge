@@ -1,5 +1,5 @@
 /* line 5, ../sass/utilities/_partials.scss */
-.ssp_background, .single-product .ssp_background_image, .single-product .ssp_lyrics .ssp_lyrics_background {
+.ssp_background, .ssp_lyrics .ssp_lyrics_background, .single-product .ssp_background_image {
   position: absolute;
   top: 0;
   right: 0;
@@ -8,98 +8,50 @@
   z-index: 0;
 }
 
-/* line 6, ../sass/sexy-single-product.scss */
-.single-product .ssp_div {
-  clear: both;
-  display: block;
-}
-/* line 12, ../sass/sexy-single-product.scss */
-.single-product .woocommerce div.product div.images {
-  margin-bottom: 0;
-}
-/* line 17, ../sass/sexy-single-product.scss */
-.single-product .site-inner main.content {
-  padding: 0 !important;
-}
-/* line 19, ../sass/sexy-single-product.scss */
-.single-product .site-inner main.content .product {
-  padding: 4em;
-}
-/* line 24, ../sass/sexy-single-product.scss */
-.single-product .site-inner main.content .entry-title {
-  text-shadow: 0 1px 1px #111;
-  font-size: 2.5em;
-}
-/* line 29, ../sass/sexy-single-product.scss */
-.single-product .site-inner main.content .price {
-  text-align: center;
-}
-/* line 33, ../sass/sexy-single-product.scss */
-.single-product .site-inner main.content .woocommerce-product-details__short-description {
-  text-shadow: 1px 1px 1px black;
-  font-family: "MavenPro-Regular", sans-serif;
-  font-size: 1.2em;
-}
-/* line 41, ../sass/sexy-single-product.scss */
-.single-product .ssp_background_image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter: blur(20px);
-  filter: blur(20px);
-}
-/* line 53, ../sass/sexy-single-product.scss */
-.single-product .summary, .single-product .ssp_video {
-  position: relative;
-}
-/* line 58, ../sass/sexy-single-product.scss */
-.single-product .ssp_video {
+/* line 1, ../sass/layout/_video.scss */
+.ssp_video {
   padding-top: 7em;
   padding-bottom: 4em;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 64, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video:hover .flex-direction-nav a {
+  /* line 7, ../sass/layout/_video.scss */
+  .ssp_video:hover .flex-direction-nav a {
     opacity: 1;
   }
-  /* line 68, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video .flex-direction-nav .flex-next {
+  /* line 11, ../sass/layout/_video.scss */
+  .ssp_video .flex-direction-nav .flex-next {
     right: -90px;
   }
-  /* line 72, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video .flex-direction-nav .flex-prev {
+  /* line 15, ../sass/layout/_video.scss */
+  .ssp_video .flex-direction-nav .flex-prev {
     left: -90px;
   }
-  /* line 76, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video:hover .flex-direction-nav .flex-next {
+  /* line 19, ../sass/layout/_video.scss */
+  .ssp_video:hover .flex-direction-nav .flex-next {
     right: -50px;
   }
-  /* line 81, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video:hover .flex-direction-nav .flex-prev {
+  /* line 24, ../sass/layout/_video.scss */
+  .ssp_video:hover .flex-direction-nav .flex-prev {
     left: -50px;
   }
 }
 @media (min-width: 992px) {
-  /* line 58, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video {
+  /* line 1, ../sass/layout/_video.scss */
+  .ssp_video {
     padding-left: 7em;
     padding-right: 7em;
   }
 }
 @media (min-width: 1500px) {
-  /* line 58, ../sass/sexy-single-product.scss */
-  .single-product .ssp_video {
+  /* line 1, ../sass/layout/_video.scss */
+  .ssp_video {
     padding-left: 20em;
     padding-right: 20em;
   }
 }
-/* line 96, ../sass/sexy-single-product.scss */
-.single-product .ssp_video .ssp_container {
+/* line 39, ../sass/layout/_video.scss */
+.ssp_video .ssp_container {
   max-height: 640px;
   display: inline-block;
   clear: both;
@@ -107,14 +59,14 @@
   box-sizing: border-box;
   width: 100%;
 }
-/* line 105, ../sass/sexy-single-product.scss */
-.single-product .ssp_video .ssp_video_wrap {
+/* line 48, ../sass/layout/_video.scss */
+.ssp_video .ssp_video_wrap {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
 }
-/* line 111, ../sass/sexy-single-product.scss */
-.single-product .ssp_video iframe {
+/* line 54, ../sass/layout/_video.scss */
+.ssp_video iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -123,8 +75,9 @@
   left: 0;
   box-shadow: 0 0 16px 0 black;
 }
-/* line 124, ../sass/sexy-single-product.scss */
-.single-product .ssp_lyrics {
+
+/* line 1, ../sass/layout/_lyrics.scss */
+.ssp_lyrics {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -135,64 +88,148 @@
   position: relative;
   padding: 50px;
 }
-/* line 129, ../sass/sexy-single-product.scss */
-.single-product .ssp_lyrics h1 {
+/* line 6, ../sass/layout/_lyrics.scss */
+.ssp_lyrics h1 {
   font-size: 2.5em;
 }
-/* line 132, ../sass/sexy-single-product.scss */
-.single-product .ssp_lyrics .ssp_lyrics_background {
+/* line 9, ../sass/layout/_lyrics.scss */
+.ssp_lyrics .ssp_lyrics_background {
   background: -moz-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: -webkit-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: -o-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: -ms-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
 }
-/* line 137, ../sass/sexy-single-product.scss */
-.single-product .ssp_lyrics .ssp_lyrics_wrap {
+/* line 14, ../sass/layout/_lyrics.scss */
+.ssp_lyrics .ssp_lyrics_wrap {
   position: relative;
   z-index: 1;
 }
-/* line 142, ../sass/sexy-single-product.scss */
-.single-product .ssp_lyrics .lyrics {
+/* line 19, ../sass/layout/_lyrics.scss */
+.ssp_lyrics .lyrics {
   padding: 20px 0 20px 0;
   text-align: center;
 }
-/* line 152, ../sass/sexy-single-product.scss */
+
+/* line 1, ../sass/layout/_upsells.scss */
+.single-product .up-sells {
+  background: #000000;
+  padding: 2em 4em;
+}
+/* line 6, ../sass/layout/_upsells.scss */
 .single-product .up-sells h2 {
   font-family: "MavenPro-Black", sans-serif;
   font-size: 2.5em;
 }
-/* line 157, ../sass/sexy-single-product.scss */
+@media (min-width: 768px) {
+  /* line 6, ../sass/layout/_upsells.scss */
+  .single-product .up-sells h2 {
+    font-size: 4.5em;
+  }
+}
+/* line 14, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav a {
   opacity: 1;
 }
-/* line 161, ../sass/sexy-single-product.scss */
+/* line 18, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav .flex-next {
   right: -90px;
 }
-/* line 165, ../sass/sexy-single-product.scss */
+/* line 22, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav .flex-prev {
   left: -90px;
 }
-/* line 169, ../sass/sexy-single-product.scss */
+/* line 26, ../sass/layout/_upsells.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-next {
   right: -50px;
 }
-/* line 174, ../sass/sexy-single-product.scss */
+/* line 31, ../sass/layout/_upsells.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-prev {
   left: -50px;
 }
-/* line 179, ../sass/sexy-single-product.scss */
+/* line 37, ../sass/layout/_upsells.scss */
 .single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
   display: none;
 }
-/* line 183, ../sass/sexy-single-product.scss */
+/* line 42, ../sass/layout/_upsells.scss */
 .single-product .up-sells ul.products {
   display: flex;
+  margin: 0;
 }
-/* line 187, ../sass/sexy-single-product.scss */
+/* line 46, ../sass/layout/_upsells.scss */
 .single-product .up-sells li.product {
   text-align: center;
   margin: 0 auto !important;
-  width: 35% !important;
+  width: 48% !important;
+  padding: 0 !important;
+}
+@media (min-width: 768px) {
+  /* line 46, ../sass/layout/_upsells.scss */
+  .single-product .up-sells li.product {
+    padding: 2em !important;
+  }
+}
+
+/* line 11, ../sass/sexy-single-product.scss */
+.single-product .ssp_div {
+  clear: both;
+  display: block;
+}
+/* line 17, ../sass/sexy-single-product.scss */
+.single-product .woocommerce div.product div.images {
+  margin-bottom: 0;
+}
+/* line 22, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content {
+  padding: 0 !important;
+}
+/* line 24, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .product {
+  padding: 4em;
+}
+/* line 28, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .summary .product_meta {
+  display: none;
+}
+/* line 32, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  /* line 32, ../sass/sexy-single-product.scss */
+  .single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
+    width: 48%;
+  }
+}
+/* line 39, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .entry-title {
+  text-shadow: 0 1px 1px #111;
+  font-size: 2.5em !important;
+}
+/* line 44, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .price {
+  text-align: center;
+}
+/* line 48, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .woocommerce-product-details__short-description {
+  text-shadow: 1px 1px 1px black;
+  font-family: "MavenPro-Regular", sans-serif;
+  font-size: 1.2em;
+}
+/* line 56, ../sass/sexy-single-product.scss */
+.single-product .ssp_background_image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  position: fixed;
+}
+/* line 69, ../sass/sexy-single-product.scss */
+.single-product .summary, .single-product .ssp_video {
+  position: relative;
 }

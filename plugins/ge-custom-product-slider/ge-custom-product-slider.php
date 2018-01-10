@@ -88,7 +88,9 @@ add_action('woocommerce_before_shop_loop', 'add_product_slider');
 
 function add_product_slider() {
 
+  echo '<div class="wrap">';
   echo do_shortcode( '[ge_custom_slider]' );
+  echo '</div>';
 
 }
 

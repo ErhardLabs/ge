@@ -192,7 +192,7 @@ section.related.products h2 {
 }
 
 #media_image-2 {
-  position: fixed;
+  position: absolute;
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -383,7 +383,7 @@ article
 
 .nav-primary
 {
-	/*height: 53px;*/
+	height: 80px;
 	/*box-shadow: 0 0 10px #eca76f;*/
 	background: #000
 }
@@ -391,7 +391,6 @@ article
 .nav-primary.fix
 {
 	background: rgba(0,0,0,.9);
-	box-shadow: 0 0 10px #ffe593
 }
 
 .genesis-nav-menu .sub-menu a
@@ -684,11 +683,12 @@ nav {
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   z-index: 9999;
 }
 
 .site-inner {
-  margin-top: 100px !important;
+  margin-top: 80px !important;
 }
 
 /*
@@ -821,40 +821,39 @@ input[type="submit"], .button
 
 .page-id-137 h3
 {
-	margin-top: 60px
+	margin-top: 60px;
 }
 
 #social_stickers_widget-3 .widget-wrap a
 {
 	float: left;
-	padding: 5px
+	padding: 5px;
 }
 
 .home-top
 {
 	background-size: cover!important;
-	background-repeat: no-repeat!important
+	background-repeat: no-repeat!important;
 }
 
 .home-top .logo_wrap
 {
-	max-width: 800px;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .archive .site-container .site-inner .featured_image_wrapper
 {
-	display: none
+	display: none;
 }
 
 .archive .site-container .site-inner,.single .site-container .site-inner
 {
-	margin-top: 80px
+	margin-top: 80px;
 }
 
 .archive .site-container .site-inner main,.single .site-container .site-inner main
 {
-	padding: 20px
+	padding: 20px 4em;
 }
 
 .archive .page-title
@@ -903,7 +902,7 @@ input[type="submit"], .button
 
 .fa-shopping-cart.fa-3x
 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin-top: 8px;
   margin-left: 10px;
 }
@@ -1587,7 +1586,7 @@ ul.dark li.tweets_avatar
 	color: rgba(255,255,255,.9);
 	font-family: serif;
 	margin: 100px 0;
-	font-size: 1.5em;
+	font-size: .5em;
 }
 
 .footer-widgets .gform_wrapper .gform_footer
@@ -1796,15 +1795,10 @@ text-align: center;
 
 }
 
-
-
-
-
-
 @media screen and (min-width: 768px) {
 
 	.nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
-		font-size: 12px;
+		font-size: 15px;
 	}
 
 	.music_wrapper_2 {

@@ -1,0 +1,25 @@
+.ssp_lyrics {
+  @include background-image-properties(no-repeat, center, fixed, cover);
+  position: relative;
+  padding: 50px;
+
+  h1 {
+    font-size: 2.5em;
+  }
+  .ssp_lyrics_background{
+    @extend .ssp_background;
+    @include linear-gradient(-180deg, rgba(127, 140, 141, 0.09019607843137255), 0%, #000000, 100%);
+
+  }
+  .ssp_lyrics_wrap {
+    position: relative;
+    z-index: 1;
+
+  }
+  .lyrics {
+    padding: 20px 0 20px 0;
+    text-align: center;
+
+  }
+
+}
