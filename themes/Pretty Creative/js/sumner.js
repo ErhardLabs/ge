@@ -3,6 +3,7 @@ jQuery(document).ready(function() {
   // Auto size the textareas in the contact form
   autosize($('.ginput_container_textarea .textarea'));
 
+  // Add button style class
   $(".woocommerce-checkout .button").addClass("cta");
 
   // Hide Header on on scroll down
@@ -33,11 +34,11 @@ jQuery(document).ready(function() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
       // Scroll Down
-      $('nav').removeClass('nav-down').addClass('nav-up');
+      $('.nav-primary').removeClass('nav-down').addClass('nav-up');
     } else {
       // Scroll Up
       if(st + $(window).height() < $(document).height()) {
-        $('nav').removeClass('nav-up').addClass('nav-down');
+        $('.nav-primary').removeClass('nav-up').addClass('nav-down');
       }
     }
 

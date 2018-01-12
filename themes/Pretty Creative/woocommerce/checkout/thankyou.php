@@ -38,40 +38,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     <?php else : ?>
 
-      <p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
+            <?php
 
-      <ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
+          echo '<div class="background_image" style="background-image: url(/wp-content/uploads/sites/14/2016/10/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Hair.jpg);"></div>'; ?>
 
-        <li class="woocommerce-order-overview__order order">
-          <?php _e( 'Order number:', 'woocommerce' ); ?>
-          <strong><?php echo $order->get_order_number(); ?></strong>
-        </li>
 
-        <li class="woocommerce-order-overview__date date">
-          <?php _e( 'Date:', 'woocommerce' ); ?>
-          <strong><?php echo wc_format_datetime( $order->get_date_created() ); ?></strong>
-        </li>
-
-        <?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
-          <li class="woocommerce-order-overview__email email">
-            <?php _e( 'Email:', 'woocommerce' ); ?>
-            <strong><?php echo $order->get_billing_email(); ?></strong>
-          </li>
-        <?php endif; ?>
-
-        <li class="woocommerce-order-overview__total total">
-          <?php _e( 'Total:', 'woocommerce' ); ?>
-          <strong><?php echo $order->get_formatted_order_total(); ?></strong>
-        </li>
-
-        <?php if ( $order->get_payment_method_title() ) : ?>
-          <li class="woocommerce-order-overview__payment-method method">
-            <?php _e( 'Payment method:', 'woocommerce' ); ?>
-            <strong><?php echo wp_kses_post( $order->get_payment_method_title() ); ?></strong>
-          </li>
-        <?php endif; ?>
-
-      </ul>
+          <h1 class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you', 'woocommerce' ), $order ); ?></h1>
 
     <?php endif; ?>
 
@@ -83,5 +55,19 @@ if ( ! defined( 'ABSPATH' ) ) {
     <p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
 
   <?php endif; ?>
-
+    <div class="thankyou-continue">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <a href="/shop">Continue Shopping</a>
+    </div>
+    <hr>
+    <div class="stay-connected">
+        <h1>Stay Connected</h1>
+        <div class="thankyou-icons">
+            <a href="https://www.facebook.com/GraysonErhardMusic/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/grayson_erhard/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/GraysnE"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/GraysonErhard"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://open.spotify.com/artist/7MkVirJ8M6XVDBLrHZLPMd"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+        </div>
+    </div>
 </div>

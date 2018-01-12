@@ -679,7 +679,7 @@ button.menu-toggle, button.sub-menu-toggle {
 	height: 70px
 }
 
-nav {
+.nav-primary {
   position: fixed;
   left: 0;
   right: 0;

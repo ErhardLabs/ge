@@ -202,19 +202,11 @@
   padding-bottom: 30px;
 }
 
-.archive.woocommerce .ge-flexslider {
-  padding: 4em 4em 2em 4em;
-}
-
 /* =================================
   Tablet Layout Styles
 ==================================== */
 
 @media (min-width: 769px) {
-
-  .ge-flexslider .ge-slider-right {
-    padding-right: 3em;
-  }
 
   .ge-flexslider .ge-slider-product .tabs {
     left: 64px;
@@ -236,6 +228,10 @@
 
   .ge-flexslider .ge-slider-product .record {
     left: 120px;
+  }
+
+  .archive.woocommerce .ge-flexslider {
+    padding: 4em 4em 2em 4em;
   }
 
 }
@@ -283,9 +279,6 @@
 
 @media (min-width: 1500px) {
 
-  .ge-flexslider .ge-slider-right {
-    padding-left: 0;
-  }
   .ge-flexslider .ge-slider-product {
     width: 500px;
   }
