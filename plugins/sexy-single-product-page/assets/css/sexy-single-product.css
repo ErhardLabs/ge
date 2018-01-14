@@ -113,50 +113,51 @@
 
 /* line 1, ../sass/layout/_upsells.scss */
 .single-product .up-sells {
+  position: relative;
   background: #000000;
   padding: 2em 4em;
 }
-/* line 6, ../sass/layout/_upsells.scss */
+/* line 7, ../sass/layout/_upsells.scss */
 .single-product .up-sells h2 {
   font-family: "MavenPro-Black", sans-serif;
   font-size: 2.5em;
 }
-@media (min-width: 768px) {
-  /* line 6, ../sass/layout/_upsells.scss */
+@media (min-width: 992px) {
+  /* line 7, ../sass/layout/_upsells.scss */
   .single-product .up-sells h2 {
     font-size: 4.5em;
   }
 }
-/* line 14, ../sass/layout/_upsells.scss */
+/* line 15, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav a {
   opacity: 1;
 }
-/* line 18, ../sass/layout/_upsells.scss */
+/* line 19, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav .flex-next {
   right: -90px;
 }
-/* line 22, ../sass/layout/_upsells.scss */
+/* line 23, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav .flex-prev {
   left: -90px;
 }
-/* line 26, ../sass/layout/_upsells.scss */
+/* line 27, ../sass/layout/_upsells.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-next {
   right: -50px;
 }
-/* line 31, ../sass/layout/_upsells.scss */
+/* line 32, ../sass/layout/_upsells.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-prev {
   left: -50px;
 }
-/* line 37, ../sass/layout/_upsells.scss */
+/* line 38, ../sass/layout/_upsells.scss */
 .single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
   display: none;
 }
-/* line 42, ../sass/layout/_upsells.scss */
+/* line 43, ../sass/layout/_upsells.scss */
 .single-product .up-sells ul.products {
   display: flex;
   margin: 0;
 }
-/* line 46, ../sass/layout/_upsells.scss */
+/* line 47, ../sass/layout/_upsells.scss */
 .single-product .up-sells li.product {
   text-align: center;
   margin: 0 auto !important;
@@ -164,7 +165,7 @@
   padding: 0 !important;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/layout/_upsells.scss */
+  /* line 47, ../sass/layout/_upsells.scss */
   .single-product .up-sells li.product {
     padding: 2em !important;
   }

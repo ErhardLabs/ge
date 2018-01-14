@@ -902,7 +902,7 @@ input[type="submit"], .button
 
 .fa-shopping-cart.fa-3x
 {
-  font-size: 3.5em;
+  /*font-size: 3.5em;*/
   margin-top: 8px;
   margin-left: 10px;
 }
@@ -944,11 +944,9 @@ input[type="submit"], .button
 	border: 1px solid #111!important
 }
 
-.woocommerce input.input-text.qty.text,.woocommerce table.cart td.actions .coupon .input-text
-{
-	background: #eca76f;
-	border: 1px solid #111!important;
-	color: hsla(0,0,100%,.9)
+.woocommerce input.input-text.qty.text,.woocommerce table.cart td.actions .coupon .input-text {
+	border: 1px solid #fff !important;
+	color: #fff !important;
 }
 
 div.payment_box,ul.payment_methods,div.form-row
@@ -1584,9 +1582,9 @@ ul.dark li.tweets_avatar
 {
 	border: none;
 	color: rgba(255,255,255,.9);
-	font-family: serif;
+	font-family: "MavenPro-Medium" !important;
 	margin: 100px 0;
-	font-size: .5em;
+
 }
 
 .footer-widgets .gform_wrapper .gform_footer

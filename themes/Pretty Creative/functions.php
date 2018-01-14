@@ -30,8 +30,9 @@ function custom_script() {
 add_action( 'wp_enqueue_scripts', 'custom_style' );
 function custom_style() {
 	//wp_enqueue_style( 'grayson', get_bloginfo( 'stylesheet_directory' ) . '/grayson.css', array('woocommerce-layout', 'woocommerce-smallscreen', 'woocommerce-general'), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'last-style', get_bloginfo( 'stylesheet_directory' ) . '/last-style.css', array('wptt_front'), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'sumner-style', get_bloginfo( 'stylesheet_directory' ) . '/sumner-style.css', array('wptt_front'), CHILD_THEME_VERSION );
+  wp_enqueue_style( 'last-style', get_bloginfo( 'stylesheet_directory' ) . '/last-style.css', array('wptt_front'), CHILD_THEME_VERSION );
+  wp_enqueue_style( 'sumner-style', get_bloginfo( 'stylesheet_directory' ) . '/sumner-style.css', array('wptt_front'), CHILD_THEME_VERSION );
+
 }
 
 //* Add HTML5 markup structure

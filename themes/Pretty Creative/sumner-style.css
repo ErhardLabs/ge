@@ -61,11 +61,6 @@ h1::after, .home h2::after {
   font-family: "MavenPro-Bold";
 }
 
-.home-top {
-  padding-right: 4em;
-  padding-left: 4em;
-}
-
 .home-top #text-15 .widget-wrap {
   position: absolute;
   top: 45%;
@@ -381,6 +376,21 @@ h1::after, .home h2::after {
   padding-top: 30px;
 }
 
+/* Shop category */
+
+.woocommerce-ordering select {
+  display: none;
+  /*font-size: .7em;*/
+  /*color: white !important;*/
+  /*border-radius: 0 !important;*/
+  /*-webkit-appearance: none;*/
+  /*-moz-appearance: none;*/
+  /*background: url(/wp-content/uploads/sites/14/2018/01/dropdown.png) no-repeat 100% 0 !important;*/
+  /*height: 35px;*/
+  /*overflow: hidden;*/
+  /*cursor: pointer;*/
+}
+
 /* Thank You Page */
 
 .woocommerce-order-received .background_image {
@@ -468,6 +478,11 @@ h1::after, .home h2::after {
     font-size: 2.5em;
   }
 
+  .home-top {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+
   .home-page-1 {
     padding: 4em 4em 2em 4em;
   }
@@ -536,6 +551,10 @@ h1::after, .home h2::after {
     font-size: 4em;
   }
 
+  .woocommerce-ordering select {
+    font-size: 1em;
+  }
+
 }
 
 /* =================================
@@ -572,4 +591,5 @@ h1::after, .home h2::after {
   .woocommerce-order-received .entry-content {
     padding: 0;
   }
+
 }
