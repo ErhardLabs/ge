@@ -116,8 +116,7 @@ function get_slider_right( $loop, $args, $product ) {
 
                        echo '</div>                
                         <div class="ge-slider-product-title">';
-
-                            the_title('<h3>', '</h3>');
+                            the_title('<h3><a href="' . get_permalink($product->get_id()) . '">', '</a></h3>');
 
                 echo '</div>
                         <div class="ge-slider-product-price">';

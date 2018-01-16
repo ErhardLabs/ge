@@ -16,6 +16,7 @@ define('SSP_PATH', plugin_dir_path(__FILE__));
 
 add_action('wp_enqueue_scripts', 'ssp_scripts_styles');
 function ssp_scripts_styles() {
+
   wp_enqueue_style('sexy-single-product-css', SSP_URL .'assets/css/sexy-single-product.css');
   wp_register_script('sexy-single-product-js', SSP_URL .'assets/js/sexy-single-product.js');
 
@@ -48,34 +49,17 @@ function ssp_add_custom_fields() {
 
   echo '</div>';
 
-  echo '<div class="options_group">';
-
-  woocommerce_wp_textarea_input(
-    array(
-      'id'          => '_lyrics_text_area',
-      'label'       => __( 'Song Lyrics', 'woocommerce' ),
-      'placeholder' => __( 'Enter Lyrics line by line', 'woocommerce' ),
-      'desc_tip'    => 'true',
-      'description' => __( 'Separate each stanza on a new line', 'woocommerce' )
-    )
-  );
-
-  echo '</div>';
-
 }
 
 // Save Custom Fields
 add_action( 'woocommerce_process_product_meta', 'ssp_save_custom_fields' );
 
 function ssp_save_custom_fields($post_id) {
+
   $youtube_text_area = $_POST['_youtube_text_area'];
-  $lyrics_text_area = $_POST['_lyrics_text_area'];
 
   if( !empty( $youtube_text_area  ) )
     update_post_meta( $post_id, '_youtube_text_area', esc_attr( $youtube_text_area ) );
-
-  if( !empty( $lyrics_text_area   ) )
-    update_post_meta( $post_id, '_lyrics_text_area', esc_attr( $lyrics_text_area ) );
 
 }
 
@@ -99,14 +83,12 @@ add_action( 'woocommerce_after_single_product_summary', 'ssp_video', 15 );
 
 function ssp_video() {
   include_once( SSP_PATH . 'includes/product-video.php' );
-
 }
 
 add_action( 'woocommerce_after_single_product', 'ssp_lyrics', 10 );
 
 function ssp_lyrics() {
   include_once( SSP_PATH . 'includes/product-lyrics.php' );
-
 }
 
 
@@ -114,5 +96,4 @@ add_action( 'woocommerce_after_single_product', 'ssp_output_upsells', 15 );
 
 function ssp_output_upsells() {
   woocommerce_upsell_display( 4,3 );
-
 }
