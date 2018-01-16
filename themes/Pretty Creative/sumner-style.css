@@ -18,7 +18,7 @@ h1 {
   /*margin-top: 30px;*/
 /*}*/
 
-h1::after, .home h2::after {
+h1::after, .home h2::after, #slider #text-30 h4::after {
   content: "";
   border-top: 2px solid;
   width: 2em;
@@ -72,8 +72,10 @@ h1::after, .home h2::after {
   padding: 4em 0 2em 0;
 }
 
-.home-page-1 .wrap {
+.home-page-1 .wrap, .archive .wrap {
   padding: 0;
+  margin: 0 !important;
+  max-width: none !important;
 }
 
 .home-page-1 .ge-flexslider .slides {
@@ -376,7 +378,41 @@ h1::after, .home h2::after {
   padding-top: 30px;
 }
 
+/**** About ********/
+
+#slider #text-30 {
+  position: relative;
+  top: 6%;
+}
+
+#slider #text-30 h4 {
+  text-align: center;
+  font-size: 2em;
+}
+
 /* Shop category */
+
+.woocommerce-archive-top-div {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.archive main.content {
+  padding: 0 !important;
+}
+
+.archive .products {
+  padding: 2em !important;
+  margin: 0 !important;
+}
+
+.archive .ge-flexslider,
+.archive .products {
+  background: #000;
+  margin: 0;
+}
 
 .woocommerce-ordering select {
   display: none;
@@ -484,7 +520,7 @@ h1::after, .home h2::after {
   }
 
   .home-page-1 {
-    padding: 4em 4em 2em 4em;
+    padding: 4em 0;
   }
 
   .nav-primary {

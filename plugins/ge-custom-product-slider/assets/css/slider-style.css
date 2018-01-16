@@ -256,7 +256,7 @@
 
   .ge-flexslider .ge-slider {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .ge-flexslider .ge-slider-product {
