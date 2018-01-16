@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(this).html('Added!');
   });
 
-  $('.fa-shopping-cart').addClass('fa-3x');
+  // $('.fa-shopping-cart').addClass('fa-3x');
 
   $('.close').unbind().click(function(e) {
     e.preventDefault();
@@ -51,8 +51,7 @@ $(document).ready(function() {
 
   if ($(window).width() < 768) {
 
-    // REMOVE HOME VIDEO IF IT'S MOBILE
-    $('.video-background').remove();
+
 
     $('.featured_image_wrapper').css({'background-attachment': 'scroll'});
     $('.home-top').css({'background-attachment': 'scroll'});
@@ -77,8 +76,7 @@ $(document).ready(function() {
 
     var fullPath = location.pathname + location.search + location.hash;
 
-    // MUTE VIDEO PLAYER
-    if(fullPath == "/") {
+    if(fullPath === "/") {
 
       $('.site-header').append('<span class="home-down"><i class="fa fa-angle-down"></i></span>');
 
@@ -96,37 +94,7 @@ $(document).ready(function() {
       });
 
 
-      var homeVideo = $('#landing_yt_player').data('id');
 
-      // INSERT VIDEO PLAYER
-      $('body').prepend(
-          '<div class="video-background">'+
-          '<div class="video-foreground">'+
-          '<iframe class="home_video" id="yt_home_embed" width="1280" height="720" src="https://www.youtube.com/embed/'+homeVideo+'?rel=0&controls=0&showinfo=0&autoplay=1&loop=1&enablejsapi=1&playlist=79EUORqIh0c" frameborder="0" allowfullscreen volume="0"></iframe>'+
-          '</div>'+
-          '</div>'
-      );
-
-      // This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-
-
-      // LOAD iFrame after content loads and a button is clicked
-      var div, n,
-          v = document.getElementsByClassName("youtube-player");
-      for (n = 0; n < v.length; n++) {
-        div = document.createElement("div");
-        div.setAttribute("data-id", v[n].dataset.id);
-        div.innerHTML = labnolThumb(v[n].dataset.id);
-        div.onclick = labnolIframe;
-        v[n].appendChild(div);
-      }
 
     }
 
@@ -155,36 +123,7 @@ $(document).ready(function() {
 if ($('p').hasClass('confirmed')) { $('.instructions').hide(); }
 
 
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('yt_home_embed', {
-    events: {
-      'onReady': onPlayerReady
-    }
-  });
-}
 
-function onPlayerReady() {
-  player.playVideo();
-  // Mute!
-  player.mute();
-}
-
-
-function labnolThumb(id) {
-  var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
-      play = '<div class="play"></div>';
-  return thumb.replace("ID", id) + play;
-}
-
-function labnolIframe() {
-  var iframe = document.createElement("iframe");
-  var embed = "https://www.youtube.com/embed/ID?autoplay=1?showinfo=0";
-  iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-  iframe.setAttribute("frameborder", "0");
-  iframe.setAttribute("allowfullscreen", "1");
-  this.parentNode.replaceChild(iframe, this);
-
-}
 
 function readCookie(name) {
   var nameEQ = name + "=";

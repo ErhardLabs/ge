@@ -900,18 +900,15 @@ input[type="submit"], .button
 	color: #f5f5f5
 }
 
-.fa-shopping-cart.fa-3x
-{
-  /*font-size: 3.5em;*/
-  margin-top: 8px;
-  margin-left: 10px;
+.fa-shopping-cart {
+	font-size: 1.5em !important;
+	margin-top: 12px;
+	margin-left: 5px;
 }
 
-.fa-shopping-cart.fa-3x:hover {
-  color: #ffe593;
+.fa-shopping-cart:hover {
+	color: #ffe593;
 }
-
-
 
 .genesis-nav-menu aside {
   padding: 0px !important;
@@ -2537,4 +2534,23 @@ input[type="text"], textarea {
 
 .wc-item-downloads a:hover {
     color: #eca76f !important;
+}
+
+#text-33 {
+	width:100%;
+}
+
+#text-33 .widget-wrap h4 {
+	display: block;
+}
+
+#text-33 .widget-wrap .textwidget p {
+	display: block;
+	max-width: 200px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+#text-33 .widget-wrap .textwidget p a {
+	display: block;
 }
