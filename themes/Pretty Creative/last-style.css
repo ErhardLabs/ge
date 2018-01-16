@@ -347,12 +347,6 @@ section.related.products h2 {
 	position: relative
 }
 
-.content .entry
-{
-	background: #000;
-	background: #000
-}
-
 input[type="text"],textarea
 {
 	background: #111;
@@ -2553,4 +2547,12 @@ input[type="text"], textarea {
 
 #text-33 .widget-wrap .textwidget p a {
 	display: block;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+  min-height: 67px;
+}
+
+.woocommerce ul.products li.product .price {
+  margin-bottom: 1em;
 }

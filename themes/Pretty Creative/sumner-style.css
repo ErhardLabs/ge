@@ -393,25 +393,27 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 /* Shop category */
 
 .woocommerce-archive-top-div {
-  height: 80vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(transparent 65%,rgba(0,0,0,.2));
 }
 
 .archive main.content {
   padding: 0 !important;
 }
 
-.archive .products {
-  padding: 2em !important;
-  margin: 0 !important;
-}
-
 .archive .ge-flexslider,
 .archive .products {
-  background: #000;
+  background: linear-gradient(rgba(0,0,0,.2), #000 80%);
   margin: 0;
+}
+
+.archive .products {
+  padding: 4em 2em !important;
+  margin: 0 !important;
+  background: linear-gradient(#000 92%, rgba(0,0,0,.5));
 }
 
 .woocommerce-ordering select {
