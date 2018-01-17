@@ -22,12 +22,6 @@ $(document).ready(function() {
 
   $('.filter-drop-spacer').remove();
 
-  $('.cta.add_to_cart_button').unbind().click(function() {
-    $(this).html('Added!');
-  });
-
-  // $('.fa-shopping-cart').addClass('fa-3x');
-
   $('.close').unbind().click(function(e) {
     e.preventDefault();
     var today = new Date();
