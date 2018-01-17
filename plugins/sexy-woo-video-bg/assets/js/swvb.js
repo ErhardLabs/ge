@@ -4,14 +4,15 @@ $(document).ready(function() {
   
   let homeVideo = $('#landing_yt_player').data('id');
 
+
   if (typeof homeVideo !== 'undefined') {
 
     let fullPath = location.pathname + location.search + location.hash;
 
-    console.log(fullPath);
+
 
     if ((fullPath === "/") || (fullPath.indexOf('products') !== -1)) {
-
+console.log(fullPath);
       // INSERT VIDEO PLAYER
       $('body').prepend(
           '<div class="video-background">' +

@@ -1,6 +1,5 @@
 $=jQuery;
 
-
 $(document).ready(function() {
 
   $('#place_order').unbind().click(function(e) {
