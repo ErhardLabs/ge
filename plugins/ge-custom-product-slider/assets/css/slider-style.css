@@ -86,6 +86,10 @@
   margin-top: 20px;
 }
 
+.ge-flexslider .ge-slider {
+  padding: 0 2em;
+}
+
 .ge-flexslider .ge-slider-product-headline.mobile{
   padding: 0 0 30px 0;
 }
@@ -209,7 +213,7 @@
 @media (min-width: 769px) {
 
   .ge-flexslider .ge-slider-product .tabs {
-    left: 64px;
+    left: 86px;
 
   }
 
@@ -227,7 +231,7 @@
   }
 
   .ge-flexslider .ge-slider-product .record {
-    left: 120px;
+    left: 160px;
   }
 
   .archive.woocommerce .ge-flexslider {
@@ -243,7 +247,7 @@
 @media (min-width: 1025px) {
 
   .ge-flexslider .ge-slider-right {
-    padding-left: 3em;
+    padding-left: 5em;
   }
 
   .ge-flexslider .desktop {
