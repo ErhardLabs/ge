@@ -598,12 +598,3 @@ function add_nav_class( $attributes ) {
     return $attributes;
 }
 
-add_action('genesis_archive_title_descriptions', 'add_category_page_top_div');
-function add_category_page_top_div() {
-    echo '<div class="woocommerce-archive-top-div">';
-}
-
-add_action('woocommerce_archive_description', 'add_category_page_top_div_end');
-function add_category_page_top_div_end() {
-	echo '</div>';
-}
