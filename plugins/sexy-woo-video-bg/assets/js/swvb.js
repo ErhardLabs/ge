@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 
 
-    if ((fullPath === "/") || (fullPath.indexOf('products') !== -1)) {
+    if ((fullPath === "/") || (fullPath.indexOf('products') !== -1) || (fullPath === "/#") || (fullPath === "/#/")) {
 console.log(fullPath);
       // INSERT VIDEO PLAYER
       $('body').prepend(

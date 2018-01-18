@@ -1801,6 +1801,11 @@ text-align: center;
 }
 
 
+.footer-contact {
+	display: block;
+}
+
+
 @media screen and (min-width: 585px) {
 
 	/*.post-type-archive-product .custom_shop_links {*/

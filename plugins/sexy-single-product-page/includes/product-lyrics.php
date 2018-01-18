@@ -1,11 +1,11 @@
 <?php
-if (has_excerpt()) :
+if (get_the_content() !== '') :
   ?>
   <div class="ssp_lyrics ssp_div">
       <div class="ssp_lyrics_background"></div>
     <div class="ssp_lyrics_wrap">
       <div class="lyrics_title">
-        <h1>LYRICS</h1>
+        <h3>LYRICS</h3>
       </div>
       <div class="lyrics">
         <?php the_content(); ?>

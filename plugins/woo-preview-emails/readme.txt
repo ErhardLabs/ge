@@ -3,7 +3,7 @@ Contributors: digamberpradhan
 Tags: WooCommerce, Emails, Preview, WooCommerce Preview Emails
 Requires at least: 3.8
 Tested up to: 4.8
-Stable tag: 1.2.11
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,10 @@ You can now send test mails, to test on actual devices
 4. Example
 5. Send emails to yourself to check on other devices
 == Changelog ==
-= 1.2.11 = 
+= 1.3.0 =
+Fixed issue where emails send function was causing fatal error, thanks to @prasidhda https://profiles.wordpress.org/prasidhda
+
+= 1.2.11 =
 Added WC version compatibility check https://woocommerce.wordpress.com/2017/08/28/new-version-check-in-woocommerce-3-2/ 
 
 = 1.2.10 =
@@ -51,7 +54,6 @@ Added WC version compatibility check https://woocommerce.wordpress.com/2017/08/2
 - Formatted Code to make it easier for other developers to review
 - Removed filter after adding when sending tested emails to avoid unwanted emails being sent to customers
 - Tested against recent version of WordPress and WooCommerce
-
 
 = 1.2.7 =
 - Fix: issue with wrong constant being used for file path https://wordpress.org/support/topic/php-notice-in-php-7-0-x/ 
@@ -87,3 +89,10 @@ Plugin is now translation ready, please find the .pot file in /languages
 
 = 1.0 =
 * First Version
+
+
+
+
+
+
+

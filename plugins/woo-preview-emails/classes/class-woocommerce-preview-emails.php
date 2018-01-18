@@ -1,6 +1,7 @@
 <?php
+/*
+ * Main Class to handle preview emails*/
 if( !class_exists('WooCommercePreviewEmails') ):
-
 class WooCommercePreviewEmails{
 	/**
 	 * Instance of this class.
