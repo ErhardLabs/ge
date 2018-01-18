@@ -2467,11 +2467,12 @@ input::placeholder, textarea::placeholder {
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     background: #000;
     border: none;
-    border-bottom: 2px solid #fef;
+    border-bottom: 2px solid #fff;
     height: auto;
-    color: #888;
-    line-height: 44px;
+    color: #fff;
+    line-height: 43px;
     margin-top: -3px;
+
 }
 
 .select2-results__option {
@@ -2493,7 +2494,7 @@ input::placeholder, textarea::placeholder {
 
 input[type="text"], textarea {
     border: none;
-    border-bottom: 2px solid #fef;
+    border-bottom: 2px solid #fff;
 }
 
 .woocommerce-checkout .col2-set .col-1,
@@ -2502,7 +2503,7 @@ input[type="text"], textarea {
 }
 
 .woocommerce-checkout .entry-content .woocommerce {
-    max-width: 768px;
+    max-width: 600px;
     margin: 0 auto;
 }
 

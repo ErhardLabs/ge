@@ -188,8 +188,9 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 .woocommerce-Price-amount {
-  font-family: "MavenPro-Regular", sans-serif !important;
+  font-family: "roboto", sans-serif !important;
   font-size: 1.5em;
+  font-weight: 100;
 }
 
 .archive.woocommerce .product .add_to_cart_button {
@@ -431,15 +432,70 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 .woocommerce-ordering select {
   display: none;
-  /*font-size: .7em;*/
-  /*color: white !important;*/
-  /*border-radius: 0 !important;*/
-  /*-webkit-appearance: none;*/
-  /*-moz-appearance: none;*/
-  /*background: url(/wp-content/uploads/sites/14/2018/01/dropdown.png) no-repeat 100% 0 !important;*/
-  /*height: 35px;*/
-  /*overflow: hidden;*/
-  /*cursor: pointer;*/
+}
+
+/* Checkout Page */
+
+.woocommerce-checkout .woocommerce-billing-fields form .form-row,
+.woocommerce-checkout .woocommerce-shipping-fields form .form-row {
+  padding: 1em 2px;
+}
+
+.woocommerce-checkout input[type=text]::-webkit-input-placeholder,
+.woocommerce-checkout input[type=email]::-webkit-input-placeholder,
+.woocommerce-checkout input[type=tel]::-webkit-input-placeholder,
+.woocommerce-checkout input[type=url]::-webkit-input-placeholder,
+.woocommerce-checkout input[type=number]::-webkit-input-placeholder,
+.woocommerce-checkout textarea::-webkit-input-placeholder {
+  font-family: 'roboto', sans-serif;
+  color: #fff !important;
+}
+
+.woocommerce-checkout input[type=text],
+.woocommerce-checkout input[type=email],
+.woocommerce-checkout input[type=tel],
+.woocommerce-checkout input[type=url],
+.woocommerce-checkout input[type=number],
+.woocommerce-checkout textarea,
+.woocommerce-checkout .select2-selection__placeholder {
+  font-family: 'roboto', sans-serif;
+  color: #fff !important;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields h3 {
+  padding: 2em 0;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+
+}
+
+.woocommerce-checkout th.product-name,
+.woocommerce-checkout th.product-total {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.woocommerce-checkout #order_review_heading {
+  display: none;
+}
+
+.woocommerce-checkout #ship-to-different-address {
+  padding: 1em 0;
+}
+
+.woocommerce-checkout .checkout_coupon {
+  padding: 2em !important;
+}
+
+.woocommerce-checkout #ship-to-different-address span {
+  top: 2px;
+  position: relative;
+}
+
+.woocommerce-checkout .shipping_address label {
+  display: none !important;
 }
 
 /* Thank You Page */
