@@ -94,8 +94,6 @@
     right: -50px; }
   .single-product .up-sells:hover .flex-direction-nav .flex-prev {
     left: -50px; }
-  .single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
-    display: none; }
   .single-product .up-sells ul.products {
     display: flex;
     margin: 0; }
