@@ -14,7 +14,6 @@
   padding-bottom: 4em;
   text-align: center;
 }
-
 @media (max-width: 575px) {
   /* line 7, ../sass/layout/_video.scss */
   .ssp_video .flex-direction-nav .flex-next {
@@ -260,7 +259,15 @@
   font-family: "MavenPro-Regular", sans-serif;
   font-size: 1.2em;
 }
-/* line 71, ../sass/sexy-single-product.scss */
+/* line 69, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .woocommerce-product-details__short-description ol li, .single-product .site-inner main.content .woocommerce-product-details__short-description ul li {
+  list-style-type: circle;
+}
+/* line 73, ../sass/sexy-single-product.scss */
+.single-product .site-inner main.content .variations tbody {
+  border: none;
+}
+/* line 79, ../sass/sexy-single-product.scss */
 .single-product .ssp_background_image {
   background-repeat: no-repeat;
   background-position: center;
@@ -273,7 +280,7 @@
   filter: blur(20px);
   position: fixed;
 }
-/* line 84, ../sass/sexy-single-product.scss */
+/* line 92, ../sass/sexy-single-product.scss */
 .single-product .summary, .single-product .ssp_video {
   position: relative;
 }

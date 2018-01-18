@@ -279,36 +279,40 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 /******* Contact Form ********/
 
-.slider .gform_wrapper .gform_body {
+#slider .gform_wrapper .gform_body {
   max-width: 400px;
   margin: 0 auto;
   padding: 0 2em;
 }
 
-.slider #gform_widget-6 div.ginput_container {
-  margin-top: 4em;
+#slider .gform_widget div.ginput_container {
+  margin-top: 4em !important;
 }
 
-.slider #gform_widget-6 .gform_wrapper .gform_footer {
-  padding-top: 7em;
+#slider .gform_widget .gform_wrapper .gform_footer {
+  padding-top: 6em !important;
 }
 
-.slider #gform_widget-6 .gfield_label {
+#slider .gform_widget .gfield_label {
   display: inherit;
   color: white !important;
 }
 
-.slider #gform_widget-6 input[type=email],
-.slider #gform_widget-6 input[type=text],
-.slider #gform_widget-6 textarea {
-  height: 60px;
+#slider .gform_widget input[type=email],
+#slider .gform_widget input[type=text],
+#slider .gform_widget textarea {
+  height: 60px !important;
 }
 
-.slider #gform_widget-6 .gform_title {
+#slider .gform_widget textarea {
+  width: 90%;
+}
+
+#slider .gform_widget .gform_title {
   font-size: 2em !important;
 }
 
-.slider #gform_widget-6 .gform_title:after {
+#slider .gform_widget .gform_title:after {
   content: "";
   border-top: 2px solid;
   width: 2em;
@@ -316,47 +320,29 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   margin: .2em auto;
 }
 
-.slider #gform_widget-6 .ginput_container_radio {
-  float: left;
-  position: relative;
-  left: 50%;
-  padding-bottom: 30px;
-}
 
-.slider #gform_widget-6 .gform_wrapper ul.gform_fields li.gfield {
+#slider .gform_widget .gform_wrapper ul.gform_fields li.gfield {
   padding-right: 0 !important;
 }
 
-.slider #gform_widget-6 #field_7_21 .gfield_radio {
-  text-align: left;
-  position: relative;
-  left: -25%;
-}
-
-.slider #gform_widget-6 .gfield_radio {
-  text-align: left;
-  position: relative;
-  left: -50%;
-}
-
-.slider #gform_widget-6 input[type=radio] {
+#slider .gform_widget input[type=radio] {
   margin-top: -1px !important;
   vertical-align: middle;
 }
 
-.slider #gform_widget-6 .gfield_required {
+#slider .gform_widget .gfield_required {
   display: none;
 }
 
-#slider #gform_widget-6 input[type=text]::-webkit-input-placeholder,
-#slider #gform_widget-6 input[type=email]::-webkit-input-placeholder,
-#slider #gform_widget-6 input[type=tel]::-webkit-input-placeholder,
+#slider .gform_widget input[type=text]::-webkit-input-placeholder,
+#slider .gform_widget input[type=email]::-webkit-input-placeholder,
+#slider .gform_widget input[type=tel]::-webkit-input-placeholder,
 #slider input[type=url]::-webkit-input-placeholder,
 #slider input[type=number]::-webkit-input-placeholder,
-#slider #gform_widget-6 input[type=text],
-#slider #gform_widget-6 input[type=email],
-#slider #gform_widget-6 input[type=tel],
-#slider #gform_widget-6 .ginput_container_textarea textarea::-webkit-input-placeholder {
+#slider .gform_widget input[type=text],
+#slider .gform_widget input[type=email],
+#slider .gform_widget input[type=tel],
+#slider .gform_widget .ginput_container_textarea textarea::-webkit-input-placeholder {
   font-size: 16px !important;
   -webkit-box-shadow: unset !important;
   -moz-box-shadow: unset !important;
@@ -364,37 +350,21 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   color: #fff !important;
 }
 
-.slider #gform_widget-6 .ginput_container_textarea .textarea {
+#slider .gform_widget .ginput_container_textarea .textarea {
   border: none;
   padding: 15px 2px;
   background: none !important;
 }
 
-.slider #gform_widget-6 select {
+#slider .gform_widget select {
   padding-top: 1em;
   color: #888 !important;
   box-shadow: none !important;
 }
 
-.slider #gform_widget-6 .address_country {
+#slider .gform_widget .address_country {
   margin-top: -8px !important;
 }
-
-.slider #gform_widget-6 .ginput_container_time select{
-  bottom: 8px !important;
-}
-
-#field_7_18 .clear-multi,
-#field_7_19 .clear-multi {
-  justify-content: center;
-}
-
-.slider #gform_widget-6 #field_7_20,
-.slider #gform_widget-6 .ginput_complex,
-.slider #gform_widget-6 #field_7_25 {
-  padding-top: 30px;
-}
-
 /**** About ********/
 
 #slider #text-30 {
