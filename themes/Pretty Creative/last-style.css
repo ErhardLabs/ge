@@ -383,7 +383,7 @@ article
 
 .nav-primary.fix
 {
-	background: rgba(0,0,0,.9);
+	background: linear-gradient(#000, rgba(0,0,0,.7));
 }
 
 .genesis-nav-menu .sub-menu a
@@ -2429,10 +2429,13 @@ text-align: center;
 }
 
 .video-background {
-    background: #000;
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -99;
+	background: #000;
+	position: fixed;
+	top: -20px;
+	right: 0;
+	left: 0;
+	bottom: -20px;
+	z-index: -99;
 }
 
 .video-foreground, .video-background iframe {
