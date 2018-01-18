@@ -598,3 +598,18 @@ function add_nav_class( $attributes ) {
     return $attributes;
 }
 
+
+
+
+
+
+add_action('woocommerce_before_shop_loop', 'ge_add_custom_links_to_store_page', 10);
+function ge_add_custom_links_to_store_page() {
+    ?>
+      <div class="custom_shop_links">
+        <a href="/products/music">MUSIC</a>
+        <a href="/products/tabs">TABS</a>
+        <a href="/products/merch">MERCH</a>
+      </div>
+    <?php
+}
