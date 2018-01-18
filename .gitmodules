@@ -4,3 +4,6 @@
 [submodule "plugins/sexy-ajax-woocheckout"]
 	path = plugins/sexy-ajax-woocheckout
 	url = https://github.com/ErhardLabs/sexy-ajax-woocheckout.git
+[submodule "plugins/bandcamp-woocommerce-product-player"]
+	path = plugins/bandcamp-woocommerce-product-player
+	url = https://github.com/ErhardLabs/bandcamp-woocommerce-product-player.git
