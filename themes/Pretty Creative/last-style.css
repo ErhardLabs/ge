@@ -2593,3 +2593,11 @@ input[type="text"], textarea {
 .woocommerce ul.products li.product .price {
   margin-bottom: 1em;
 }
+
+.woocommerce-checkout .genesis-nav-menu .menu-item {
+	display: none !important;
+}
+
+.woocommerce-checkout .genesis-nav-menu .fa-shopping-cart {
+	display: none !important;
+}
