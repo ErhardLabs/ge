@@ -1772,6 +1772,20 @@ text-align: center;
 }
 
 
+.custom_shop_links {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0 20px;
+	background: linear-gradient(#000, transparent, #000);
+}
+
+.custom_shop_links a {
+	padding: 15px;
+	font-size: 2em;
+}
+
+
 @media screen and (min-width: 585px) {
 
   #menu-item-1233, #menu-item-1237, #menu-item-1238, #menu-item-1239 {
