@@ -201,9 +201,9 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   font-family: "MavenPro-Medium", sans-serif !important;
 }
 
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-  width: 48%;
-}
+/*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {*/
+  /*width: 48%;*/
+/*}*/
 
 .genesis-nav-menu {
   padding: 15px 0 15px 0;
@@ -622,9 +622,9 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
     top: 10px;
   }
 
-  .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-    width: 50%;
-  }
+  /*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {*/
+    /*width: 50%;*/
+  /*}*/
 
   .cta,
   .gform_wrapper .gform_footer input.button {
@@ -686,9 +686,9 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
     display: block;
   }
 
-  .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-    width: 25%;
-  }
+  /*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {*/
+    /*width: 25%;*/
+  /*}*/
 
   .archive.woocommerce .woocommerce-ordering {
     width: 20%;

@@ -1914,13 +1914,6 @@ text-align: center;
 		float: right;
 	}
 
-	.woocommerce ul.products li.product,.woocommerce-page ul.products li.product
-	{
-		margin: 0;
-		/*width: 25%;*/
-		padding: 40px
-	}
-
 	.home .songkick-widget
 	{
 		margin: 0px auto;
