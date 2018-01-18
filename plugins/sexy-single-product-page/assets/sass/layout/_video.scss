@@ -3,7 +3,19 @@
   padding-bottom: 4em;
   text-align: center;
 
-  @include media-query('med') {
+  @include media-query('xs') {
+    .flex-direction-nav .flex-next {
+      right: -40px;
+
+    }
+    .flex-direction-nav .flex-prev {
+      left: -40px;
+
+    }
+
+  }
+
+  @include media-query('sm') {
     &:hover .flex-direction-nav a {
       opacity: 1;
 
