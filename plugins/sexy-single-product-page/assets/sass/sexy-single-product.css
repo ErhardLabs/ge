@@ -127,6 +127,8 @@
       .single-product .up-sells .add_to_cart_button {
         font: 200 .5rem 'Roboto Slab', sans-serif !important; } }
 
+.single-product span.onsale {
+  display: none; }
 .single-product .ssp_div {
   clear: both;
   display: block; }

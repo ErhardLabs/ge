@@ -379,6 +379,16 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 /* Shop category */
 
+.woocommerce.archive span.onsale {
+  top: -15px !important;
+  left: 50% !important;
+  right: unset !important;
+  margin: 0 !important;
+  transform: translate(-50%) !important;
+  -webkit-transform: translate(-50%) !important; /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: translate(-50%) !important; /* IE 9 */
+}
+
 .archive main.content {
   padding: 0 !important;
 }
