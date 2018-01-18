@@ -304,10 +304,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   height: 60px !important;
 }
 
-#slider .gform_widget textarea {
-  width: 90%;
-}
-
 #slider .gform_widget .gform_title {
   font-size: 2em !important;
 }
@@ -319,7 +315,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   display: block;
   margin: .2em auto;
 }
-
 
 #slider .gform_widget .gform_wrapper ul.gform_fields li.gfield {
   padding-right: 0 !important;
