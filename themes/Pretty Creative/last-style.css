@@ -7,7 +7,7 @@ html {
 
 body
 {
-	/*background: #000;*/
+	background: #000;
 	-webkit-animation: fadein 2s;
 /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 2s;
@@ -855,6 +855,7 @@ input[type="submit"], .button
 	font-size: 6em !important;
 	font-family: "MavenPro-Black", sans-serif !important;
 	/*margin-bottom: 50px;*/
+	padding: 1em;
 }
 
 .single .content .entry
@@ -2206,13 +2207,6 @@ text-align: center;
     }
 }
 
-.video-background {
-    background: #000;
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -99;
-}
-
 .video-foreground, .video-background iframe {
     position: absolute;
     top: 0;
@@ -2437,7 +2431,6 @@ text-align: center;
     background: #000;
     position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -99;
 }
 
 .video-foreground, .video-background iframe {
