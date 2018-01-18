@@ -33,9 +33,9 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   top: -80px !important;
 }
 
-.nav-primary {
-  padding: 0 2em;
-}
+/*.nav-primary {*/
+  /*padding: 0 2em;*/
+/*}*/
 
 #gform_widget-5 .ginput_container.ginput_container_email {
   margin-top: 45px;
@@ -72,7 +72,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   padding: 4em 0 2em 0;
 }
 
-.home-page-1 .wrap, .archive .wrap {
+.home-page-1 .wrap, .archive .content .wrap {
   padding: 0;
   margin: 0 !important;
   max-width: none !important;
@@ -97,7 +97,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 
 .footer-widgets {
-  padding: 40px 4em 2em 4em;
+  padding: 40px 2em 2em 2em;
 }
 .site-footer {
   position: relative;
@@ -162,8 +162,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 .cta,
-.gform_wrapper .gform_footer input.button,
-.single-product .single_add_to_cart_button {
+.gform_wrapper .gform_footer input.button {
   box-shadow: inset 0 0 0 4px #ffe593 !important;
   color: #ffe593 !important;
   -webkit-transition: color 0.25s 0.08333s !important;
