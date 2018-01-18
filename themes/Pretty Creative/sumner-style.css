@@ -14,10 +14,6 @@ h1 {
   font-size: 2.5em;
 }
 
-/*.admin-bar.logged-in .nav-primary {*/
-  /*margin-top: 30px;*/
-/*}*/
-
 h1::after, .home h2::after, #slider #text-30 h4::after {
   content: "";
   border-top: 2px solid;
@@ -35,6 +31,10 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 .nav-up {
   top: -80px !important;
+}
+
+.nav-primary {
+  padding: 0 2em;
 }
 
 #gform_widget-5 .ginput_container.ginput_container_email {
@@ -283,9 +283,30 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 /******* Contact Form ********/
+
+.slider .gform_wrapper .gform_body {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.slider #gform_widget-6 div.ginput_container {
+  margin-top: 4em;
+}
+
+.slider #gform_widget-6 .gform_wrapper .gform_footer {
+  padding-top: 4em;
+}
+
 .slider #gform_widget-6 .gfield_label {
   display: inherit;
   color: white !important;
+}
+
+.slider #gform_widget-6 input[type=email],
+.slider #gform_widget-6 input[type=text],
+.slider #gform_widget-6 textarea {
+  height: 40px;
 }
 
 .slider #gform_widget-6 .gform_title {
@@ -392,21 +413,13 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 /* Shop category */
 
-.woocommerce-archive-top-div {
-  height: 25vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(transparent 65%,rgba(0,0,0,.2));
-}
-
 .archive main.content {
   padding: 0 !important;
 }
 
 .archive .ge-flexslider,
 .archive .products {
-  background: linear-gradient(rgba(0,0,0,.2), #000 80%);
+  background: linear-gradient(rgba(0,0,0,0), #000 80%);
   margin: 0;
 }
 
@@ -521,12 +534,12 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
     padding-left: 4em;
   }
 
-  .home-page-1 {
-    padding: 4em 0;
-  }
-
   .nav-primary {
     padding: 0 4em;
+  }
+
+  .home-page-1 {
+    padding: 4em 0;
   }
 
   .home-page-1 .ge-flexslider .slides {

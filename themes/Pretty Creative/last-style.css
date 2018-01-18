@@ -7,7 +7,6 @@ html {
 
 body
 {
-	background: #000;
 	-webkit-animation: fadein 2s;
 /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 2s;
@@ -20,8 +19,8 @@ body
 	color: hsla(0,0,100%,.9);
 }
 
-.home body {
-  background: #7F8C8D;
+body.home {
+  background: #000;
 }
 
 body::selection,body::-moz-selection
@@ -2201,7 +2200,6 @@ text-align: center;
     .home
     {
         background: #000;
-        background: #000
     }
 
     .page-id-503 .site-inner,.page-id-503 .content .entry
@@ -2420,8 +2418,7 @@ text-align: center;
 
     .home
     {
-        background: #000;
-        background: #000
+        background: #000 !important;
     }
 
     .page-id-503 .site-inner,.page-id-503 .content .entry
@@ -2438,6 +2435,7 @@ text-align: center;
 	right: 0;
 	left: 0;
 	bottom: -20px;
+	z-index: -99;
 }
 
 .video-foreground, .video-background iframe {
