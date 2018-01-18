@@ -148,10 +148,6 @@
 .single-product .up-sells:hover .flex-direction-nav .flex-prev {
   left: -50px;
 }
-/* line 38, ../sass/layout/_upsells.scss */
-.single-product .up-sells .woocommerce-LoopProduct-link img.wp-post-image {
-  display: none;
-}
 /* line 43, ../sass/layout/_upsells.scss */
 .single-product .up-sells ul.products {
   display: flex;

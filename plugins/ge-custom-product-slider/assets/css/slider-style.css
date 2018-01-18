@@ -62,6 +62,10 @@
   100% { left: 0; }
 }
 
+.flexslider {
+  margin: 0;
+}
+
 .product-shadow {
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
@@ -211,6 +215,10 @@
 ==================================== */
 
 @media (min-width: 769px) {
+
+  .flexslider {
+    padding: 0 0 2em;
+  }
 
   .ge-flexslider .ge-slider-product .tabs {
     left: 86px;
