@@ -21,11 +21,11 @@
   }
   /* line 11, ../sass/layout/_video.scss */
   .ssp_video .flex-direction-nav .flex-next {
-    right: -90px;
+    right: -50px;
   }
   /* line 15, ../sass/layout/_video.scss */
   .ssp_video .flex-direction-nav .flex-prev {
-    left: -90px;
+    left: -50px;
   }
   /* line 19, ../sass/layout/_video.scss */
   .ssp_video:hover .flex-direction-nav .flex-next {
@@ -164,6 +164,27 @@
   /* line 47, ../sass/layout/_upsells.scss */
   .single-product .up-sells li.product {
     padding: 2em !important;
+  }
+}
+/* line 58, ../sass/layout/_upsells.scss */
+.single-product .up-sells .add_to_cart_button {
+  box-shadow: inset 0 0 0 4px #ffe593 !important;
+  color: #ffe593 !important;
+  -webkit-transition: color 0.25s 0.08333s !important;
+  transition: color 0.25s 0.08333s !important;
+  position: relative !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  line-height: 1.5 !important;
+  padding: 1em 2em !important;
+  letter-spacing: 0.05rem !important;
+  margin: 0 auto !important;
+}
+@media (max-width: 575px) {
+  /* line 58, ../sass/layout/_upsells.scss */
+  .single-product .up-sells .add_to_cart_button {
+    font: 200 .5rem 'Roboto Slab', sans-serif !important;
   }
 }
 
