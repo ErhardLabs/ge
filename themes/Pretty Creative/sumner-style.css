@@ -189,7 +189,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 .woocommerce-Price-amount {
   font-family: "roboto", sans-serif !important;
-  font-size: 1.5em;
   font-weight: 100;
 }
 
@@ -436,8 +435,8 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 /* Checkout Page */
 
-.woocommerce-checkout .woocommerce-billing-fields form .form-row,
-.woocommerce-checkout .woocommerce-shipping-fields form .form-row {
+.woocommerce-checkout .woocommerce-billing-fields .form-row,
+.woocommerce-checkout .woocommerce-shipping-fields .form-row {
   padding: 1em 2px;
 }
 
@@ -460,6 +459,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 .woocommerce-checkout .select2-selection__placeholder {
   font-family: 'roboto', sans-serif;
   color: #fff !important;
+  font-weight: 100;
 }
 
 .woocommerce-checkout .woocommerce-billing-fields h3 {
