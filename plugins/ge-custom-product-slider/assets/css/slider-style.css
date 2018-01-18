@@ -211,6 +211,29 @@
 }
 
 /* =================================
+  Extra small Screens
+==================================== */
+
+@media (max-width: 350px) {
+
+  .ge-flexslider .ge-slider-product .tabs {
+    left: 27px;
+  }
+  .ge-flexslider .ge-slider-product .record {
+    left: 17px;
+  }
+}
+
+
+@media (max-width: 575px) {
+
+  .ge-flexslider .ge-slider {
+    padding: 0;
+  }
+}
+
+
+/* =================================
   Tablet Layout Styles
 ==================================== */
 

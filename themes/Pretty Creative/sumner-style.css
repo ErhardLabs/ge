@@ -201,10 +201,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   font-family: "MavenPro-Medium", sans-serif !important;
 }
 
-/*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {*/
-  /*width: 48%;*/
-/*}*/
-
 .genesis-nav-menu {
   padding: 15px 0 15px 0;
 }
@@ -294,7 +290,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 .slider #gform_widget-6 .gform_wrapper .gform_footer {
-  padding-top: 4em;
+  padding-top: 7em;
 }
 
 .slider #gform_widget-6 .gfield_label {
@@ -305,7 +301,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 .slider #gform_widget-6 input[type=email],
 .slider #gform_widget-6 input[type=text],
 .slider #gform_widget-6 textarea {
-  height: 40px;
+  height: 60px;
 }
 
 .slider #gform_widget-6 .gform_title {
@@ -352,24 +348,25 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   display: none;
 }
 
-.slider #gform_widget-6 input[type=text]::-webkit-input-placeholder,
-.slider #gform_widget-6 input[type=email]::-webkit-input-placeholder,
-.slider #gform_widget-6 input[type=tel]::-webkit-input-placeholder,
+#slider #gform_widget-6 input[type=text]::-webkit-input-placeholder,
+#slider #gform_widget-6 input[type=email]::-webkit-input-placeholder,
+#slider #gform_widget-6 input[type=tel]::-webkit-input-placeholder,
 #slider input[type=url]::-webkit-input-placeholder,
 #slider input[type=number]::-webkit-input-placeholder,
-.slider #gform_widget-6 input[type=text],
-.slider #gform_widget-6 input[type=email],
-.slider #gform_widget-6 input[type=tel],
-.slider #gform_widget-6 .ginput_container_textarea .textarea {
-  font-size: 12px !important;
+#slider #gform_widget-6 input[type=text],
+#slider #gform_widget-6 input[type=email],
+#slider #gform_widget-6 input[type=tel],
+#slider #gform_widget-6 .ginput_container_textarea textarea::-webkit-input-placeholder {
+  font-size: 16px !important;
   -webkit-box-shadow: unset !important;
   -moz-box-shadow: unset !important;
   box-shadow: unset !important;
+  color: #fff !important;
 }
 
 .slider #gform_widget-6 .ginput_container_textarea .textarea {
   border: none;
-  padding: 10px 0;
+  padding: 15px 2px;
   background: none !important;
 }
 
@@ -433,6 +430,16 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 /* Checkout Page */
+
+.woocommerce-checkout article {
+  background: #1C1D1F;
+}
+
+.woocommerce-checkout div.form-row,
+.woocommerce-checkout ul.payment_methods,
+.woocommerce-checkout div.payment_box {
+  background: #1C1D1F !important;
+}
 
 .woocommerce-checkout .woocommerce-billing-fields .form-row,
 .woocommerce-checkout .woocommerce-shipping-fields .form-row {
@@ -574,6 +581,19 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+
+  .woocommerce-checkout form .form-row-first {
+    float: none;
+    width: 100%;
+  }
+
+  .woocommerce-checkout form .form-row-last {
+    float: none;
+    width: 100%;
+  }
+}
+
 /* =================================
   Tablet Layout Styles
 ==================================== */
@@ -610,10 +630,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
     width: 15%;
   }
 
-  /*.home h1, .archive h1 {*/
-    /*font-size: 4.5em;*/
-  /*}*/
-
   .home .site-inner {
     margin-top: 78px !important;
   }
@@ -621,10 +637,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   #media_image-2 {
     top: 10px;
   }
-
-  /*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {*/
-    /*width: 50%;*/
-  /*}*/
 
   .cta,
   .gform_wrapper .gform_footer input.button {
@@ -685,10 +697,6 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   .horizontal-divider.desktop {
     display: block;
   }
-
-  /*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {*/
-    /*width: 25%;*/
-  /*}*/
 
   .archive.woocommerce .woocommerce-ordering {
     width: 20%;

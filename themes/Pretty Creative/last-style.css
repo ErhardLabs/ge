@@ -940,11 +940,6 @@ input[type="submit"], .button
 	color: #fff !important;
 }
 
-div.payment_box,ul.payment_methods,div.form-row
-{
-	background: #000 !important
-}
-
 .woocommerce table.cart td.actions .coupon .input-text::placeholder,.woocommerce table.cart td.actions .coupon .input-text::-webkit-input-placeholder,.woocommerce table.cart td.actions .coupon .input-text::-moz-placeholder,.woocommerce table.cart td.actions .coupon .input-text:-mox-placeholder,.woocommerce table.cart td.actions .coupon .input-text:-ms-input-placeholder
 {
 	color: hsla(0,0,100%,.9)
@@ -1599,7 +1594,7 @@ ul.dark li.tweets_avatar
 
 .footer-widgets .ginput_container input,input,select,textarea,.select2-container .select2-choice
 {
-	background: rgba(0,0,0,.05)!important;
+	background: rgba(0,0,0,0)!important;
   border: none;
 	border-bottom: 2px solid #fefefe;
 	color: #888!important
@@ -1890,7 +1885,7 @@ text-align: center;
 		width: 80%;
 	}
 
-	.woocommerce-cart .entry-content, .woocommerce-checkout .entry-content {
+	.woocommerce-cart .entry-content {
 		padding-top: 80px;
 	}
 
@@ -2499,7 +2494,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    background: #000;
+    background: #1C1D1F;
     border: none;
     border-bottom: 2px solid #fff;
     height: auto;
