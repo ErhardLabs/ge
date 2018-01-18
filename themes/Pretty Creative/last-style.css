@@ -2589,3 +2589,7 @@ input[type="text"], textarea {
 .woocommerce-checkout .genesis-nav-menu .fa-shopping-cart {
 	display: none !important;
 }
+
+.wc_payment_method {
+	margin: 30px 0;
+}
