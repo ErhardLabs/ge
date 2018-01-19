@@ -31,8 +31,8 @@
 
 @mixin blur($amount) {
 
-  -webkit-filter: blur($amount); // Ch 23+, Saf 6.0+, BB 10.0+
-          filter: blur($amount); // FF 35+
+  -webkit-filter: blur($amount) brightness(50%); // Ch 23+, Saf 6.0+, BB 10.0+
+          filter: blur($amount) brightness(50%); // FF 35+
 
 }
 

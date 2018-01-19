@@ -199,7 +199,7 @@ add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_4');
 
 function ge_home_page_4() {
   echo '<div class="shows">
-          <h1>SHOWS</h1>';
+          <h3>SHOWS</h3>';
     echo '<div class="songkick-data">';      
 
 echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>

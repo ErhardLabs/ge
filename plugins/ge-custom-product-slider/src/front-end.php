@@ -116,11 +116,11 @@ function get_slider_right( $loop, $args, $product ) {
 
                        echo '</div>                
                         <div class="ge-slider-product-title">';
-                            the_title('<h3><a href="' . get_permalink($product->get_id()) . '">', '</a></h3>');
+                            the_title('<h4><a href="' . get_permalink($product->get_id()) . '">', '</a></h4>');
 
                 echo '</div>
                         <div class="ge-slider-product-price">';
-                            echo '<h3>$' . $product->price . '</h3>' ;
+                            echo '<h4>$' . $product->price . '</h4>' ;
                 echo ' </div>
                     <div class="ge-slider-add-to-cart">';
 
@@ -135,7 +135,7 @@ function get_slider_right( $loop, $args, $product ) {
 }
 
 function get_headline( $args ) {
-  echo ' <h1>';
+  echo ' <h3>';
   if ( $args['product_cat'] == 'music' ) {
    echo'Newest Music';
 
@@ -149,7 +149,7 @@ function get_headline( $args ) {
 
   }
 
-  echo '</h1>';
+  echo '</h3>';
 
 }
 

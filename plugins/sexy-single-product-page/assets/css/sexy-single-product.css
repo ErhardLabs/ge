@@ -99,7 +99,7 @@
   padding: 50px;
 }
 /* line 6, ../sass/layout/_lyrics.scss */
-.ssp_lyrics h1 {
+.ssp_lyrics h1, .ssp_lyrics h3 {
   font-size: 2.5em;
 }
 /* line 9, ../sass/layout/_lyrics.scss */
@@ -280,8 +280,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-filter: blur(20px);
-  filter: blur(20px);
+  -webkit-filter: blur(20px) brightness(50%);
+  filter: blur(20px) brightness(50%);
   position: fixed;
 }
 /* line 96, ../sass/sexy-single-product.scss */

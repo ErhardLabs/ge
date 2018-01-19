@@ -5,11 +5,15 @@
 
 /******* FONTS *********/
 
+.ge-flexslider h4 {
+  text-align: center;
+}
+
 .listings-height {
   display: none !important;
 }
 
-.ge-flexslider .ge-slider-product-headline h1 {
+.ge-flexslider .ge-slider-product-headline h3 {
   font-family: "MavenPro-Black", sans-serif !important;
   margin: 0 !important;
 }
@@ -18,12 +22,12 @@
   padding-top: 15px;
 }
 
-.ge-flexslider .ge-slider-product-title h3 {
+.ge-flexslider .ge-slider-product-title h4 {
   font-family: "MavenPro-Regular", sans-serif !important;
   margin: 0 !important;
 }
 
-.ge-flexslider .ge-slider-product-price h3 {
+.ge-flexslider .ge-slider-product-price h4 {
   font-family: "MavenPro-Bold", sans-serif !important;
   font-size: 24px !important;
 }
@@ -103,11 +107,11 @@
   border: none !important;
 }
 
-.ge-flexslider .ge-slider-product-headline h1 {
+.ge-flexslider .ge-slider-product-headline h3 {
   letter-spacing: 2px !important;
 }
 
-.ge-flexslider .ge-slider-product-title h3 {
+.ge-flexslider .ge-slider-product-title h4 {
   letter-spacing: 4px !important;
   font-size: 24px;
 }
@@ -298,7 +302,7 @@
     margin: 0 auto;
   }
 
-  .ge-flexslider .ge-slider-product-headline.desktop h1 {
+  .ge-flexslider .ge-slider-product-headline.desktop h3 {
     font-size: 3.5em !important;
   }
 

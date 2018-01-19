@@ -8,13 +8,18 @@
   src: url("/fonts/MavenPro-Black.ttf");
 }
 
-h1 {
+h1, h3 {
   font-family: "MavenPro-Black", sans-serif !important;
   letter-spacing: 2px !important;
   font-size: 2.5em;
 }
 
-h1::after, .home h2::after, #slider #text-30 h4::after {
+.footer-widgets h3 {
+  letter-spacing: 2px !important;
+  font-size: 2.5em;
+}
+
+h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   content: "";
   border-top: 2px solid;
   width: 2em;
@@ -91,7 +96,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
   padding: 2em 0;
 }
 
-.home-page-2 h1 {
+.home-page-2 h3 {
   margin-bottom: 1em;
 }
 
@@ -374,7 +379,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
 
 /* Shop category */
 
-.woocommerce.archive span.onsale {
+.woocommerce span.onsale {
   top: -15px !important;
   left: 50% !important;
   right: unset !important;
@@ -660,7 +665,7 @@ h1::after, .home h2::after, #slider #text-30 h4::after {
     max-width: 800px;
   }
 
-  h1 {
+  h1, h3 {
     font-size: 4.5em !important;
 
   }
