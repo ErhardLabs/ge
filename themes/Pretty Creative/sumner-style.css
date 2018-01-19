@@ -423,6 +423,12 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   line-height: 2em;
 }
 
+.woocommerce-checkout h3#ship-to-different-address {
+  font-size: 1.3em !important;
+  float: none !important;
+  text-align: center;
+}
+
 .woocommerce-checkout div.form-row,
 .woocommerce-checkout ul.payment_methods,
 .woocommerce-checkout div.payment_box {
