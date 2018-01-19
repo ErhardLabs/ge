@@ -1,11 +1,11 @@
 @font-face {
   font-family: "MavenPro-Regular";
-  src: url("/fonts/MavenPro-Regular.ttf");
+  src: url("fonts/MavenPro-Regular.ttf");
 }
 
 @font-face {
   font-family: "MavenPro-Black";
-  src: url("/fonts/MavenPro-Black.ttf");
+  src: url("fonts/MavenPro-Black.ttf");
 }
 
 h1, h3 {
@@ -63,7 +63,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 
 .genesis-nav-menu a,
 .genesis-nav-menu a span {
-  font-family: "MavenPro-Bold";
+  font-family: "MavenPro-Black";
 }
 
 .home-top #text-15 .widget-wrap {
@@ -295,7 +295,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 #slider .gform_widget .gform_wrapper .gform_footer {
-  padding-top: 6em !important;
+  padding: 6em 0 !important;
 }
 
 #slider .gform_widget .gfield_label {
