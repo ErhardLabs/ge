@@ -1,7 +1,7 @@
 $=jQuery;
 
 $(document).ready(function() {
-  
+
   let homeVideo = $('#landing_yt_player').data('id');
 
 
@@ -9,10 +9,8 @@ $(document).ready(function() {
 
     let fullPath = location.pathname + location.search + location.hash;
 
+    if ((fullPath.indexOf('/') >= 0) || (fullPath.indexOf('products') !== -1)) {
 
-
-    if ((fullPath === "/") || (fullPath.indexOf('products') !== -1) || (fullPath === "/#") || (fullPath === "/#/")) {
-console.log(fullPath);
       // INSERT VIDEO PLAYER
       $('body').prepend(
           '<div class="video-background">' +
@@ -44,14 +42,14 @@ console.log(fullPath);
       }
 
     }
-    
+
   }
 
   // REMOVE HOME VIDEO IF IT'S MOBILE
   if ($(window).width() < 768) {
     // $('.video-background').remove();
   }
-  
+
 
 });
 

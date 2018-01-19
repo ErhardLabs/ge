@@ -10,26 +10,26 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 //* Enqueue Google Fonts
 add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
 function genesis_sample_google_fonts() {
-	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300', array(), CHILD_THEME_VERSION );
-	wp_enqueue_script( 'sticky-nav', get_bloginfo( 'stylesheet_directory' ) . '/js/sticky-nav.js', array( 'jquery', 'font-awesome' ), '', true );
-	wp_enqueue_script( 'prettycreative-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery', 'font-awesome' ), '1.0.0', true );
-	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/2412d65cf4.js', array(), '', true );
+  wp_enqueue_style( 'dashicons' );
+  wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300', array(), CHILD_THEME_VERSION );
+  wp_enqueue_script( 'sticky-nav', get_bloginfo( 'stylesheet_directory' ) . '/js/sticky-nav.js', array( 'jquery', 'font-awesome' ), '', true );
+  wp_enqueue_script( 'prettycreative-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery', 'font-awesome' ), '1.0.0', true );
+  wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/2412d65cf4.js', array(), '', true );
 
 }
 
 add_action('genesis_footer', 'custom_script');
 function custom_script() {
-    wp_register_script ('grayson', get_bloginfo( 'stylesheet_directory' ) . '/js/grayson.js', array( 'jquery', 'font-awesome' ),'1.0.1',true);
+  wp_register_script ('grayson', get_bloginfo( 'stylesheet_directory' ) . '/js/grayson.js', array( 'jquery', 'font-awesome' ),'1.0.1',true);
   wp_enqueue_script( 'song-kick', get_bloginfo( 'stylesheet_directory' ) . '/js/widget.js', array(), '', true );
   wp_enqueue_script('autosize', get_bloginfo( 'stylesheet_directory' )  . '/lib/js/autosize.min.js', array('jquery'), false, true);
   wp_enqueue_script('sumner-js', get_bloginfo( 'stylesheet_directory' )  . '/js/sumner.js', array('jquery'), false, true);
-	wp_enqueue_script( 'grayson');
+  wp_enqueue_script( 'grayson');
 }
 
 add_action( 'wp_enqueue_scripts', 'custom_style' );
 function custom_style() {
-	//wp_enqueue_style( 'grayson', get_bloginfo( 'stylesheet_directory' ) . '/grayson.css', array('woocommerce-layout', 'woocommerce-smallscreen', 'woocommerce-general'), CHILD_THEME_VERSION );
+  //wp_enqueue_style( 'grayson', get_bloginfo( 'stylesheet_directory' ) . '/grayson.css', array('woocommerce-layout', 'woocommerce-smallscreen', 'woocommerce-general'), CHILD_THEME_VERSION );
   wp_enqueue_style( 'last-style', get_bloginfo( 'stylesheet_directory' ) . '/last-style.css', false, CHILD_THEME_VERSION );
   wp_enqueue_style( 'sumner-style', get_bloginfo( 'stylesheet_directory' ) . '/sumner-style.css', false, CHILD_THEME_VERSION );
 
@@ -46,10 +46,10 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
-	'width'           => 300,
-	'height'          => 300,
-	'header-selector' => '.site-title a',
-	'header-text'     => false,
+    'width'           => 300,
+    'height'          => 300,
+    'header-selector' => '.site-title a',
+    'header-text'     => false,
 ) );
 
 //* Add support for 2-column footer widgets
@@ -66,8 +66,8 @@ add_image_size( 'home-page-featured', 800, 800, true );
 add_filter( 'comment_form_defaults', 'prettycreative_remove_comment_form_allowed_tags' );
 function prettycreative_remove_comment_form_allowed_tags( $defaults ) {
 
-	$defaults['comment_notes_after'] = '';
-	return $defaults;
+  $defaults['comment_notes_after'] = '';
+  return $defaults;
 
 }
 
@@ -78,8 +78,8 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 add_filter('genesis_footer_creds_text', 'prettycreative_footer_creds_filter');
 function prettycreative_footer_creds_filter( $creds ) {
 
-	$creds = '[footer_copyright] &middot; Pretty Creative WordPress Theme by, <a href="http://prettydarncute.com">Pretty Darn Cute Design</a>';
-	return $creds;
+  $creds = '[footer_copyright] &middot; Pretty Creative WordPress Theme by, <a href="http://prettydarncute.com">Pretty Darn Cute Design</a>';
+  return $creds;
 
 }
 
@@ -87,8 +87,8 @@ function prettycreative_footer_creds_filter( $creds ) {
 add_filter( 'genesis_comment_list_args', 'prettycreative_comments_gravatar' );
 function prettycreative_comments_gravatar( $args ) {
 
-	$args['avatar_size'] = 120;
-	return $args;
+  $args['avatar_size'] = 120;
+  return $args;
 
 }
 
@@ -96,7 +96,7 @@ function prettycreative_comments_gravatar( $args ) {
 add_filter( 'genesis_author_box_gravatar_size', 'prettycreative_author_box_gravatar' );
 function prettycreative_author_box_gravatar( $size ) {
 
-	return 120;
+  return 120;
 
 }
 
@@ -108,34 +108,34 @@ add_action( 'genesis_before_header', 'genesis_do_nav' );
 add_theme_support( 'genesis-connect-woocommerce' );
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
-    add_theme_support( 'woocommerce' );
+  add_theme_support( 'woocommerce' );
 }
 
 //* Customize the entry meta
 add_filter( 'genesis_post_info', 'prettycreative_post_info_filter' );
 function prettycreative_post_info_filter($post_info) {
-	$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';
-	return $post_info;
+  $post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';
+  return $post_info;
 }
 
 //* Add Author Box Widget
 add_filter( 'genesis_author_box', 'prettycreative_author_box', 10, 6 );
 function prettycreative_author_box( $output, $context, $pattern, $gravatar, $title, $description ) {
-	if ( is_active_sidebar( 'author-box-custom' ) ) {
-		ob_start();
-		genesis_widget_area( 'author-box-custom', array( 'before' => '<div class="author-box-custom">', 'after' => '</div>', ) );
-		$description .= ob_get_contents();
-		ob_end_clean();
-	}
-	$output = sprintf( $pattern, $gravatar, $title, $description );
-	return $output;
+  if ( is_active_sidebar( 'author-box-custom' ) ) {
+    ob_start();
+    genesis_widget_area( 'author-box-custom', array( 'before' => '<div class="author-box-custom">', 'after' => '</div>', ) );
+    $description .= ob_get_contents();
+    ob_end_clean();
+  }
+  $output = sprintf( $pattern, $gravatar, $title, $description );
+  return $output;
 }
 
 //* Add Support for Comment Numbering
 add_action ( 'genesis_before_comment', 'prettycreative_numbered_comments' );
 function prettycreative_numbered_comments () {
 
-    if (function_exists( 'gtcn_comment_numbering' ))
+  if (function_exists( 'gtcn_comment_numbering' ))
     echo gtcn_comment_numbering($comment->comment_ID, $args);
 
 }
@@ -144,28 +144,28 @@ function prettycreative_numbered_comments () {
 add_filter( 'excerpt_length', 'prettycreative_excerpt_length' );
 function prettycreative_excerpt_length( $length ) {
 
-	return 70; 
+  return 70;
 
 }
 
 //* Genesis Previous/Next Post Post Navigation 
 add_action( 'genesis_before_comments', 'prettycreative_prev_next_post_nav' );
- 
+
 function prettycreative_prev_next_post_nav() {
-  
-	if ( is_single() ) {
- 
-		echo '<div class="prev-next-navigation">';
-		previous_post_link( '<div class="previous">%link</div>', '%title' );
-		next_post_link( '<div class="next">%link</div>', '%title' );
-		echo '</div><!-- .prev-next-navigation -->';
-	}
+
+  if ( is_single() ) {
+
+    echo '<div class="prev-next-navigation">';
+    previous_post_link( '<div class="previous">%link</div>', '%title' );
+    next_post_link( '<div class="next">%link</div>', '%title' );
+    echo '</div><!-- .prev-next-navigation -->';
+  }
 }
 
 //* Add Read More Link for Custom Excerpts
 function excerpt_read_more_link($output) {
-	global $post;
-	return $output . '<a href="'. get_permalink($post->ID) . '"> <div class="readmorelink"><div class="rmtext">[ Read More ]</div></div></a>';
+  global $post;
+  return $output . '<a href="'. get_permalink($post->ID) . '"> <div class="readmorelink"><div class="rmtext">[ Read More ]</div></div></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
@@ -179,20 +179,20 @@ add_action( 'genesis_before_footer', 'genesis_do_subnav' );
 add_filter( 'wp_nav_menu_args', 'prettycreative_secondary_menu_args' );
 function prettycreative_secondary_menu_args( $args ){
 
-	if( 'secondary' != $args['theme_location'] )
-	return $args;
+  if( 'secondary' != $args['theme_location'] )
+    return $args;
 
-	$args['depth'] = 1;
-	return $args;
+  $args['depth'] = 1;
+  return $args;
 }
- 
+
 //* Subscribe Widget
 add_action( 'genesis_before_header', 'custom_subscribe_widget' );
 function custom_subscribe_widget() {
-	genesis_widget_area( 'subscribewidget', array(
-'before' => '<div class=subscribe-widget widget-area">',
-'after' => '</div>',
-) );
+  genesis_widget_area( 'subscribewidget', array(
+      'before' => '<div class=subscribe-widget widget-area">',
+      'after' => '</div>',
+  ) );
 }
 
 add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_4');
@@ -200,11 +200,11 @@ add_action('genesis_before_home-page-4_widget_area', 'ge_home_page_4');
 function ge_home_page_4() {
   echo '<div class="shows">
           <h3>SHOWS</h3>';
-    echo '<div class="songkick-data">';      
+  echo '<div class="songkick-data">';
 
-echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
+  echo '<a href="http://www.songkick.com/artists/4403183" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
 <script src="//widget.songkick.com/widget.js"></script>';
-    echo '</div>';
+  echo '</div>';
   echo '</div>';
 }
 
@@ -243,7 +243,7 @@ add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 )
 add_filter( 'genesis_search_text', 'prettycreative_search_text' );
 function prettycreative_search_text( $text ) {
 
-	return esc_attr( 'search' );
+  return esc_attr( 'search' );
 
 }
 
@@ -252,45 +252,45 @@ unregister_sidebar( 'header-right' );
 
 //* Setup widget counts
 function prettycreative_count_widgets( $id ) {
-	global $sidebars_widgets;
+  global $sidebars_widgets;
 
-	if ( isset( $sidebars_widgets[ $id ] ) ) {
-		return count( $sidebars_widgets[ $id ] );
-	}
+  if ( isset( $sidebars_widgets[ $id ] ) ) {
+    return count( $sidebars_widgets[ $id ] );
+  }
 
 }
 
 function prettycreative_widget_area_class( $id ) {
-	$count = prettycreative_count_widgets( $id );
+  $count = prettycreative_count_widgets( $id );
 
-	$class = '';
+  $class = '';
 
-	if( $count == 1 || $count < 9 ) {
+  if( $count == 1 || $count < 9 ) {
 
-		$classes = array(
-			'zero',
-			'one',
-			'two',
-			'three',
-			'four',
-			'five',
-			'six',
-			'seven',
-			'eight',
-		);
+    $classes = array(
+        'zero',
+        'one',
+        'two',
+        'three',
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+    );
 
-		$class = $classes[ $count ] . '-widget';
-		$class = $count == 1 ? $class : $class . 's';
+    $class = $classes[ $count ] . '-widget';
+    $class = $count == 1 ? $class : $class . 's';
 
-		return $class;
+    return $class;
 
-	} else {
+  } else {
 
-		$class = 'widget-thirds';
-		
-		return $class;
+    $class = 'widget-thirds';
 
-	}
+    return $class;
+
+  }
 
 }
 
@@ -298,20 +298,20 @@ function prettycreative_widget_area_class( $id ) {
 add_filter( 'genesis_search_button_text', 'prettycreative_search_button_text' );
 function prettycreative_search_button_text( $text ) {
 
-	return esc_attr( '&#xf179;' );
+  return esc_attr( '&#xf179;' );
 
 }
 add_filter( 'genesis_nav_items', 'prettycreative_social_icons', 10, 2 );
 add_filter( 'wp_nav_menu_items', 'prettycreative_social_icons', 10, 2 );
 
 function prettycreative_social_icons($menu, $args) {
-	$args = (array)$args;
-	if ( 'primary' !== $args['theme_location'] )
-		return $menu;
-	ob_start();
-	genesis_widget_area('nav-widget-area');
-	$social = ob_get_clean();
-	return $menu . $social;
+  $args = (array)$args;
+  if ( 'primary' !== $args['theme_location'] )
+    return $menu;
+  ob_start();
+  genesis_widget_area('nav-widget-area');
+  $social = ob_get_clean();
+  return $menu . $social;
 }
 
 /**
@@ -325,10 +325,10 @@ function prettycreative_social_icons($menu, $args) {
  * @return string $headline
  */
 function be_default_category_title( $headline, $term ) {
-	if( ( is_category() || is_tag() || is_tax() ) && empty( $headline ) )
-		$headline = $term->name;
-		
-	return $headline;
+  if( ( is_category() || is_tag() || is_tax() ) && empty( $headline ) )
+    $headline = $term->name;
+
+  return $headline;
 }
 add_filter( 'genesis_term_meta_headline', 'be_default_category_title', 10, 2 );
 
@@ -348,23 +348,23 @@ add_filter( 'genesis_term_meta_headline', 'be_default_category_title', 10, 2 );
  * @return string The image filename if the extension is allowed; otherwise, the setting default.
  */
 function theme_slug_sanitize_image( $image, $setting ) {
-	/*
-	 * Array of valid image file types.
-	 *
-	 * The array includes image mime types that are included in wp_get_mime_types()
-	 */
-	$mimes = array(
-		'jpg|jpeg|jpe' => 'image/jpeg',
-		'gif'          => 'image/gif',
-		'png'          => 'image/png',
-		'bmp'          => 'image/bmp',
-		'tif|tiff'     => 'image/tiff',
-		'ico'          => 'image/x-icon'
-	);
-	// Return an array with file extension and mime_type.
-	$file = wp_check_filetype( $image, $mimes );
-	// If $image has a valid mime_type, return it; otherwise, return the default.
-	return ( $file['ext'] ? $image : $setting->default );
+  /*
+   * Array of valid image file types.
+   *
+   * The array includes image mime types that are included in wp_get_mime_types()
+   */
+  $mimes = array(
+      'jpg|jpeg|jpe' => 'image/jpeg',
+      'gif'          => 'image/gif',
+      'png'          => 'image/png',
+      'bmp'          => 'image/bmp',
+      'tif|tiff'     => 'image/tiff',
+      'ico'          => 'image/x-icon'
+  );
+  // Return an array with file extension and mime_type.
+  $file = wp_check_filetype( $image, $mimes );
+  // If $image has a valid mime_type, return it; otherwise, return the default.
+  return ( $file['ext'] ? $image : $setting->default );
 }
 
 /**
@@ -376,58 +376,58 @@ function theme_slug_sanitize_image( $image, $setting ) {
  */
 function pc_register_theme_customizer( $wp_customize ){
 
-	/*
-	 * Failsafe is safe
-	 */
-	if ( ! isset( $wp_customize ) ) {
-		return;
-	}
+  /*
+   * Failsafe is safe
+   */
+  if ( ! isset( $wp_customize ) ) {
+    return;
+  }
 
-	/**
-	 * Add 'Home Top' Section.
-	 */
-	$wp_customize->add_section(
-		// $id
-		'pc_section_home_top',
-		// $args
-		array(
-			'title'			=> __( 'Home Top', 'theme-slug' ),
-			// 'description'	=> __( 'Some description for the options in the Home Top section', 'theme-slug' ),
-		)
-	);
+  /**
+   * Add 'Home Top' Section.
+   */
+  $wp_customize->add_section(
+  // $id
+      'pc_section_home_top',
+      // $args
+      array(
+          'title'			=> __( 'Home Top', 'theme-slug' ),
+        // 'description'	=> __( 'Some description for the options in the Home Top section', 'theme-slug' ),
+      )
+  );
 
-	/**
-	 * Add 'Home Top Background Image' Setting.
-	 */
-	$wp_customize->add_setting(
-		// $id
-		'pc_home_top_background_image',
-		// $args
-		array(
-			'default'		=> get_stylesheet_directory_uri() . '/images/bg-home.jpg',
-			'sanitize_callback'	=> 'theme_slug_sanitize_image',
-			'transport'		=> 'postMessage'
-		)
-	);
+  /**
+   * Add 'Home Top Background Image' Setting.
+   */
+  $wp_customize->add_setting(
+  // $id
+      'pc_home_top_background_image',
+      // $args
+      array(
+          'default'		=> get_stylesheet_directory_uri() . '/images/bg-home.jpg',
+          'sanitize_callback'	=> 'theme_slug_sanitize_image',
+          'transport'		=> 'postMessage'
+      )
+  );
 
-	/**
-	 * Add 'Home Top Background Image' image upload Control.
-	 */
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-			// $wp_customize object
-			$wp_customize,
-			// $id
-			'pc_home_top_background_image',
-			// $args
-			array(
-				'settings'		=> 'pc_home_top_background_image',
-				'section'		=> 'pc_section_home_top',
-				'label'			=> __( 'Home Top Background Image', 'theme-slug' ),
-				'description'	=> __( 'Select the image to be used for Home Top Background.', 'theme-slug' )
-			)
-		)
-	);
+  /**
+   * Add 'Home Top Background Image' image upload Control.
+   */
+  $wp_customize->add_control(
+      new WP_Customize_Image_Control(
+      // $wp_customize object
+          $wp_customize,
+          // $id
+          'pc_home_top_background_image',
+          // $args
+          array(
+              'settings'		=> 'pc_home_top_background_image',
+              'section'		=> 'pc_section_home_top',
+              'label'			=> __( 'Home Top Background Image', 'theme-slug' ),
+              'description'	=> __( 'Select the image to be used for Home Top Background.', 'theme-slug' )
+          )
+      )
+  );
 
 }
 
@@ -439,15 +439,15 @@ add_action( 'customize_register', 'pc_register_theme_customizer' );
  * by reading the value from the theme mod value in the options table.
  */
 function pc_customizer_css() {
-?>
-	 <style type="text/css">
-		<?php if ( 0 < count( strlen( ( $home_top_background_image_url = get_theme_mod( 'pc_home_top_background_image' ) ) ) ) ) { ?>
-			.home-top {
-				background-image: url( <?php echo $home_top_background_image_url; ?> );
-			}
-		<?php } // end if ?>
-	 </style>
-<?php
+  ?>
+  <style type="text/css">
+    <?php if ( 0 < count( strlen( ( $home_top_background_image_url = get_theme_mod( 'pc_home_top_background_image' ) ) ) ) ) { ?>
+    .home-top {
+      background-image: url( <?php echo $home_top_background_image_url; ?> );
+    }
+    <?php } // end if ?>
+  </style>
+  <?php
 } // end pc_customizer_css
 add_action( 'wp_head', 'pc_customizer_css');
 /**
@@ -458,84 +458,84 @@ add_action( 'wp_head', 'pc_customizer_css');
  * @version    0.3.0
  */
 function pc_customizer_live_preview() {
-	wp_enqueue_script(
-		'pc-theme-customizer',
-		get_stylesheet_directory_uri() . '/js/theme-customizer.js',
-		array( 'customize-preview' ),
-		'0.1.0',
-		true
-	);
+  wp_enqueue_script(
+      'pc-theme-customizer',
+      get_stylesheet_directory_uri() . '/js/theme-customizer.js',
+      array( 'customize-preview' ),
+      '0.1.0',
+      true
+  );
 } // end pc_customizer_live_preview
 add_action( 'customize_preview_init', 'pc_customizer_live_preview' );
 
 //* Register widget areas
 genesis_register_sidebar( array(
-	'id'          => 'home-subscribe-widget',
-	'name'        => __( 'Home Subscribe Widget', 'prettycreative' ),
-	'description' => __( 'This is the full width subscription widget on the home page', 'prettycreative' ),
+    'id'          => 'home-subscribe-widget',
+    'name'        => __( 'Home Subscribe Widget', 'prettycreative' ),
+    'description' => __( 'This is the full width subscription widget on the home page', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'home-top',
-	'name'        => __( 'Full Width Image', 'prettycreative' ),
-	'description' => __( 'This is the full width image area on your home page.', 'prettycreative' ),
+    'id'          => 'home-top',
+    'name'        => __( 'Full Width Image', 'prettycreative' ),
+    'description' => __( 'This is the full width image area on your home page.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'home-page-1',
-	'name'        => __( 'Home Page 1', 'prettycreative' ),
-	'description' => __( 'This is the Home Page 1 Widget.', 'prettycreative' ),
+    'id'          => 'home-page-1',
+    'name'        => __( 'Home Page 1', 'prettycreative' ),
+    'description' => __( 'This is the Home Page 1 Widget.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'home-page-2',
-	'name'        => __( 'Home Page 2', 'prettycreative' ),
-	'description' => __( 'This is the Home Page 2 Widget.', 'prettycreative' ),
+    'id'          => 'home-page-2',
+    'name'        => __( 'Home Page 2', 'prettycreative' ),
+    'description' => __( 'This is the Home Page 2 Widget.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'home-page-3',
-	'name'        => __( 'Home Page 3', 'prettycreative' ),
-	'description' => __( 'This is the Home Page 3 Widget.', 'prettycreative' ),
+    'id'          => 'home-page-3',
+    'name'        => __( 'Home Page 3', 'prettycreative' ),
+    'description' => __( 'This is the Home Page 3 Widget.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'home-page-4',
-	'name'        => __( 'Home Page 4', 'prettycreative' ),
-	'description' => __( 'This is the Home Page 4 Widget.', 'prettycreative' ),
+    'id'          => 'home-page-4',
+    'name'        => __( 'Home Page 4', 'prettycreative' ),
+    'description' => __( 'This is the Home Page 4 Widget.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'home-page-5',
-	'name'        => __( 'Home Page 5', 'prettycreative' ),
-	'description' => __( 'This is the Home Page 5 Widget.', 'prettycreative' ),
+    'id'          => 'home-page-5',
+    'name'        => __( 'Home Page 5', 'prettycreative' ),
+    'description' => __( 'This is the Home Page 5 Widget.', 'prettycreative' ),
 ) );
 
 genesis_register_sidebar( array(
-	'id'          => 'home-portfolio-widget',
-	'name'        => __( 'Home Portfolio Widget', 'prettycreative' ),
-	'description' => __( 'This is the portfolio widget on your home page.', 'prettycreative' ),
+    'id'          => 'home-portfolio-widget',
+    'name'        => __( 'Home Portfolio Widget', 'prettycreative' ),
+    'description' => __( 'This is the portfolio widget on your home page.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'nav-widget-area',
-	'name'        => __( 'Nav Widget Area', 'prettycreative' ),
-	'description' => __( 'This widget appears in your navigation bar.', 'prettycreative' ),
+    'id'          => 'nav-widget-area',
+    'name'        => __( 'Nav Widget Area', 'prettycreative' ),
+    'description' => __( 'This widget appears in your navigation bar.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'author-box-custom',
-	'name'        => __( 'Author Box Widget', 'prettycreative' ),
-	'description' => __( 'This is the Author Box Custom widget', 'prettycreative' ),
+    'id'          => 'author-box-custom',
+    'name'        => __( 'Author Box Widget', 'prettycreative' ),
+    'description' => __( 'This is the Author Box Custom widget', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'portfolioblurb',
-	'name'        => __( 'Portfolio Archive Page Widget', 'prettycreative' ),
-	'description' => __( 'This widget appears above your portfolio items on your portfolio archive page.', 'prettycreative' ),
+    'id'          => 'portfolioblurb',
+    'name'        => __( 'Portfolio Archive Page Widget', 'prettycreative' ),
+    'description' => __( 'This widget appears above your portfolio items on your portfolio archive page.', 'prettycreative' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'before-footer',
-	'name'        => __( 'Before Footer', 'prettycreative' ),
-	'description' => __( 'This is the widget before the footer.', 'prettycreative' ),
+    'id'          => 'before-footer',
+    'name'        => __( 'Before Footer', 'prettycreative' ),
+    'description' => __( 'This is the widget before the footer.', 'prettycreative' ),
 ) );
 
 add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 
 add_filter( 'gform_submit_button_11', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
-    return "<button class='gform_button button cta' id='gform_submit_button_{$form['id']}'><span>Subscribe</span></button>";
+  return "<button class='gform_button button cta' id='gform_submit_button_{$form['id']}'><span>Subscribe</span></button>";
 }
 
 // Removes showing results
@@ -596,22 +596,20 @@ add_action('wp_ajax_previewemail', 'previewEmail');
 add_filter('genesis_attr_nav-primary', 'add_nav_class');
 
 function add_nav_class( $attributes ) {
-    $attributes['class'] .= ' nav-down';
-    return $attributes;
+  $attributes['class'] .= ' nav-down';
+  return $attributes;
 }
-
-
 
 
 
 
 add_action('woocommerce_before_shop_loop', 'ge_add_custom_links_to_store_page', 10);
 function ge_add_custom_links_to_store_page() {
-    ?>
-      <div class="custom_shop_links">
-        <a href="/products/music">MUSIC</a>
-        <a href="/products/tabs">TABS</a>
-        <a href="/products/merch">MERCH</a>
-      </div>
-    <?php
+  ?>
+  <div class="custom_shop_links">
+    <a href="/products/music">MUSIC</a>
+    <a href="/products/tabs">TABS</a>
+    <a href="/products/merch">MERCH</a>
+  </div>
+  <?php
 }

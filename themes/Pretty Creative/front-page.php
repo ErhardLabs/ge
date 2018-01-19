@@ -43,6 +43,7 @@ function prettycreative_home_genesis_meta() {
 	}
 }
 
+
 //* Add homepage widgets
 function prettycreative_homepage_widgets() {
 
