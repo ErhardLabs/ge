@@ -137,15 +137,28 @@ function get_slider_right( $loop, $args, $product ) {
 function get_headline( $args ) {
   echo ' <h3>';
   if ( $args['product_cat'] == 'music' ) {
-   echo'Newest Music';
+
+    if (is_front_page()) {
+      echo 'Latest Release';
+    } else {
+      echo 'Latest Releases';
+    }
 
   } elseif ( $args['product_cat'] == 'tabs' ) {
 
-    echo 'Featured Tabs';
+    if (is_front_page()) {
+      echo 'New Tabs';
+    } else {
+      echo 'Featured';
+    }
 
   } elseif ( $args['product_cat'] == 'merch' ) {
 
-    echo 'Featured Merch';
+    if (is_front_page()) {
+      echo 'New Merch';
+    } else {
+      echo 'Featured';
+    }
 
   }
 
