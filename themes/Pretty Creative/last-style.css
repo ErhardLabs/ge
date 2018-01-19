@@ -1569,8 +1569,7 @@ ul.dark li.tweets_avatar
 	border: none;
 	color: rgba(255,255,255,.9);
 	font-family: "MavenPro-Medium" !important;
-	margin: 100px 0;
-
+	margin: 100px 0 25px;
 }
 
 .footer-widgets .gform_wrapper .gform_footer
