@@ -57,10 +57,10 @@ function product_tabs( $num_products ) {
 
     $_product = new WC_Product( get_the_ID() );
 
-    get_slider_left( $loop, $args, $slider_num );
-
-    get_slider_right( $loop, $args, $_product );
-
+    if($_product->is_featured()) {
+      get_slider_left($loop, $args, $slider_num);
+      get_slider_right($loop, $args, $_product);
+    }
   }
   wp_reset_query();
 }
@@ -81,15 +81,18 @@ function product_merch( $num_products ) {
 
   $loop = new WP_Query( $args );
 
+
+
   while ( $loop->have_posts() ) {
 
     $loop->the_post();
 
-    $_product = new WC_Product( get_the_ID() );
+    $_product = wc_get_product( get_the_ID() );
 
-    get_slider_left( $loop, $args, $slider_num, $_product );
-
-    get_slider_right( $loop, $args, $_product );
+    if($_product->is_featured()) {
+      get_slider_left( $loop, $args, $slider_num, $_product );
+      get_slider_right( $loop, $args, $_product );
+    }
 
   }
   wp_reset_query();
