@@ -163,7 +163,7 @@ function get_headline( $args ) {
     if (is_front_page()) {
       echo 'Latest Release';
     } else {
-      echo 'Latest Releases';
+      echo 'Latest';
     }
 
   } elseif ( $args['product_cat'] == 'tabs' ) {

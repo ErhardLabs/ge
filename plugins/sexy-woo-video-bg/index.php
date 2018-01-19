@@ -16,13 +16,11 @@ define('SWVB_PATH', plugin_dir_path(__FILE__));
 add_action('wp_enqueue_scripts', 'swvb_scripts');
 function swvb_scripts() {
 
-  if (is_archive() || is_front_page()) {
+  if (is_product_category() || is_front_page()) {
     wp_register_script('swvb', SWVB_URL . 'assets/js/swvb.js', array('jquery'), false, true);
     wp_enqueue_script('swvb');
   }
 
 }
 
-if (is_archive() || is_front_page()) {
-  require_once('inc/category.php');
-}
+require_once('inc/category.php');
