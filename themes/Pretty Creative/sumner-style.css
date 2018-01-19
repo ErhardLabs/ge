@@ -415,6 +415,14 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   background: #1C1D1F;
 }
 
+.woocommerce-checkout .wc_payment_method {
+  padding: 30px 0;
+}
+
+.woocommerce-checkout .payment_method_paypal p {
+  line-height: 2em;
+}
+
 .woocommerce-checkout div.form-row,
 .woocommerce-checkout ul.payment_methods,
 .woocommerce-checkout div.payment_box {
@@ -451,7 +459,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 .woocommerce-checkout .woocommerce-billing-fields h3 {
   padding: 2em 0;
   font-family: 'roboto', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.3em !important;
   font-weight: 600;
 
 }

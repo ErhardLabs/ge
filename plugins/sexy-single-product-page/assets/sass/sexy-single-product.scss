@@ -18,6 +18,10 @@
 
   }
 
+  input.input-text.qty.text {
+    padding: 10px;
+  }
+
   .woocommerce div.product div.images {
     margin-bottom: 0;
 
@@ -27,6 +31,10 @@
     padding: 0 !important;
     .product {
       padding: 4em;
+    }
+
+    table.variations {
+      max-width: 400px;
     }
 
     .summary .product_meta {

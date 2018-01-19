@@ -132,12 +132,16 @@
 .single-product .ssp_div {
   clear: both;
   display: block; }
+.single-product input.input-text.qty.text {
+  padding: 10px; }
 .single-product .woocommerce div.product div.images {
   margin-bottom: 0; }
 .single-product .site-inner main.content {
   padding: 0 !important; }
   .single-product .site-inner main.content .product {
     padding: 4em; }
+  .single-product .site-inner main.content table.variations {
+    max-width: 400px; }
   .single-product .site-inner main.content .summary .product_meta {
     display: none; }
   .single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
