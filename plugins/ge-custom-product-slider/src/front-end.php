@@ -39,14 +39,26 @@ function product_tabs( $num_products ) {
 
   $slider_num = 2;
 
+  $meta_query  = WC()->query->get_meta_query();
+  $tax_query   = WC()->query->get_tax_query();
+  $tax_query[] = array(
+      'taxonomy' => 'product_visibility',
+      'field'    => 'name',
+      'terms'    => 'featured',
+      'operator' => 'IN',
+  );
+
   $args = array(
-    'post_type' => 'product',
-    'stock' => 1,
-    'posts_per_page' => $num_products,
-    'orderby' => 'meta_value_num',
-    'meta_key' => '_price',
-    'order' => 'DESC',
-    'product_cat' => 'tabs'
+      'post_type'           => 'product',
+      'post_status'         => 'publish',
+      'ignore_sticky_posts' => 1,
+      'product_cat' => 'tabs',
+      'stock'       =>  1,
+      'showposts'   =>  $num_products,
+      'orderby'     =>  'date',
+      'order'       =>  'DESC',
+      'meta_query'          => $meta_query,
+      'tax_query'           => $tax_query,
   );
 
   $loop = new WP_Query( $args );
@@ -57,10 +69,9 @@ function product_tabs( $num_products ) {
 
     $_product = new WC_Product( get_the_ID() );
 
-    if($_product->is_featured()) {
-      get_slider_left($loop, $args, $slider_num);
-      get_slider_right($loop, $args, $_product);
-    }
+    get_slider_left($loop, $args, $slider_num);
+    get_slider_right($loop, $args, $_product);
+
   }
   wp_reset_query();
 }
@@ -69,19 +80,29 @@ function product_merch( $num_products ) {
 
   $slider_num = 3;
 
+  $meta_query  = WC()->query->get_meta_query();
+  $tax_query   = WC()->query->get_tax_query();
+  $tax_query[] = array(
+      'taxonomy' => 'product_visibility',
+      'field'    => 'name',
+      'terms'    => 'featured',
+      'operator' => 'IN',
+  );
+
   $args = array(
-    'post_type' => 'product',
-    'stock' => 1,
-    'posts_per_page' => $num_products,
-    'orderby' => 'meta_value_num',
-    'meta_key' => '_price',
-    'order' => 'DESC',
-    'product_cat' => 'merch'
+      'post_type'           => 'product',
+      'post_status'         => 'publish',
+      'ignore_sticky_posts' => 1,
+      'product_cat' => 'merch',
+      'stock'       =>  1,
+      'showposts'   =>  $num_products,
+      'orderby'     =>  'date',
+      'order'       =>  'DESC',
+      'meta_query'          => $meta_query,
+      'tax_query'           => $tax_query,
   );
 
   $loop = new WP_Query( $args );
-
-
 
   while ( $loop->have_posts() ) {
 
@@ -89,10 +110,8 @@ function product_merch( $num_products ) {
 
     $_product = wc_get_product( get_the_ID() );
 
-    if($_product->is_featured()) {
-      get_slider_left( $loop, $args, $slider_num, $_product );
-      get_slider_right( $loop, $args, $_product );
-    }
+    get_slider_left( $loop, $args, $slider_num, $_product );
+    get_slider_right( $loop, $args, $_product );
 
   }
   wp_reset_query();
