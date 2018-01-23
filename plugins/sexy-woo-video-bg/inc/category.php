@@ -1,6 +1,5 @@
 <?php
 
-
 add_action('genesis_after_header', 'category_video_background', 1);
 
 function category_video_background() {
