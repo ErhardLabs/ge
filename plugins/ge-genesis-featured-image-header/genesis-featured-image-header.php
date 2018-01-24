@@ -90,9 +90,12 @@ add_action(get_option('gfih_action_location'), 'gfih_image_before_posts');
 
 function featured_image_wrapper() {
 	global $post;
-	
-	$thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
-	echo '<div class="featured_image_wrapper" style="background:url('."'". $thumbnail_src ."'); background-size: cover; background-attachment:fixed; background-repeat: no-repeat; background-position: 50% 0%;".'"></div>';
+
+	if (!is_product_category()) {
+    $thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
+    echo '<div class="featured_image_wrapper" style="background:url('."'". $thumbnail_src ."'); background-size: cover; background-attachment:fixed; background-repeat: no-repeat; background-position: 50% 0%;".'"></div>';
+  }
+
 }
 
 
