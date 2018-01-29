@@ -23,7 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <section class="woocommerce-order-downloads">
 	<?php if ( isset( $show_title ) ) : ?>
 		<h2 class="woocommerce-order-downloads__title"><?php _e( 'Downloads', 'woocommerce' ); ?></h2>
-        <h3>Songs come in .mp3 and .wav file formats</h3>
 	<?php endif; ?>
 
 	<table class="woocommerce-table woocommerce-table--order-downloads shop_table order_details">
@@ -35,8 +34,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 							do_action( 'woocommerce_account_downloads_column_' . $column_id, $download );
 						} else {
 							switch ( $column_id ) {
+
 								case 'download-product' : ?>
-									<a href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"><?php echo esc_html( $download['product_name'] ); ?></a>
+
+									<a href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"><?php echo esc_html( $download['download_name'] ); ?></a>
 									<?php
 								break;
 								case 'download-file' : ?>

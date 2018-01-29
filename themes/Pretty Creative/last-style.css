@@ -658,6 +658,10 @@ button.menu-toggle, button.sub-menu-toggle {
 	position: relative
 }
 
+#slider .cross-sells h2 {
+	margin-bottom: 25px;
+}
+
 .widget_products
 {
 	width: 100%!important
@@ -2599,4 +2603,8 @@ input[type="text"], textarea {
 
 .wc_payment_method {
 	margin: 30px 0;
+}
+
+.order-again {
+	display: none;
 }
