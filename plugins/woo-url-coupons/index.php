@@ -82,11 +82,19 @@ function ged_hide_coupon_field_on_checkout( $enabled ) {
 
   global $woocommerce;
 
-  if ((!empty($woocommerce->cart->applied_coupons)) && (is_checkout())) {
+  $isCheckout = false;
+
+  if (is_checkout()) {
+    $isCheckout = true;
+  } else if (strtolower(get_the_title()) === 'promo') {
+    $isCheckout = true;
+  }
+
+  if ((!empty($woocommerce->cart->applied_coupons)) && ($isCheckout)) {
 
     ged_hide_coupon_field();
 
-  } elseif (WC()->cart->total === 0) {
+  } elseif (floatval(WC()->cart->total) === 0.00) {
 
     ged_hide_coupon_field();
 
@@ -131,8 +139,8 @@ function ged_wc_billing_field_strings( $translated_text, $text, $domain ) {
 
 // 	echo $translated_text;
 
-  switch ( $translated_text ) {
-    case 'Billing details' :
+  switch ( strtolower($translated_text) ) {
+    case 'billing details' :
 
       $referrerHost = parse_url($_SERVER['HTTP_REFERER'])['host'];
 
@@ -146,10 +154,3 @@ function ged_wc_billing_field_strings( $translated_text, $text, $domain ) {
   }
   return $translated_text;
 }
-
-
-// jQuery(window).load(function() {
-/*
- jQuery('#place_order').attr('value', 'Start Subscription');
-});
-*/
