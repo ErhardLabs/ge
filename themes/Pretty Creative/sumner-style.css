@@ -522,10 +522,6 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   font-size: 1.5em;
 }
 
-.woocommerce-order-received .entry-content {
-  padding: 4em;
-}
-
 .woocommerce-order-received .site-container article {
   background: transparent !important;
   position: relative;
@@ -548,6 +544,16 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 .woocommerce-order-received tr th:last-child,
 .woocommerce-order-received tr td:last-child {
   text-align: right;
+}
+.woocommerce-order-received tr.download-title td{
+  text-align: left;
+  font-weight: 600;
+}
+
+
+.woocommerce-order-received .woocommerce-customer-details--email::before{
+  position: relative !important;
+  top: 2px;
 }
 
 .woocommerce-order-received .thankyou-continue {

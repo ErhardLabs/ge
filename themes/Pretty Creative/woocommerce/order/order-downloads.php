@@ -26,7 +26,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php endif; ?>
 
 	<table class="woocommerce-table woocommerce-table--order-downloads shop_table order_details">
+        <?php $previousValue = null ?>
 		<?php foreach ( $downloads as $download ) : ?>
+	        <?php if( $download['product_id'] != $previousValue['product_id'] ): ?>
+                <tr class="download-title">
+                    <td colspan="4">
+                        <a href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"><?php echo esc_html( $download['product_name'] ); ?></a>
+                    </td>
+                </tr>
+	        <?php endif; ?>
 			<tr>
 				<?php foreach ( wc_get_account_downloads_columns() as $column_id => $column_name ) : ?>
 					<td class="<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>"><?php
@@ -37,7 +45,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 								case 'download-product' : ?>
 
-									<a href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"><?php echo esc_html( $download['download_name'] ); ?></a>
+                                <?php $previousValue = $download; ?>
+									<a class="download-file-type" href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"> - <?php echo esc_html( $download['download_name'] ); ?></a>
 									<?php
 								break;
 								case 'download-file' : ?>
