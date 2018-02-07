@@ -457,6 +457,10 @@ button.menu-toggle,button.sub-menu-toggle
 	color: #101
 }
 
+.morning-ritual .entry-header {
+	margin-top: 100px;
+}
+
 .morning-ritual article {
 	background: linear-gradient(transparent, rgba(1,0,1,.5));
 }
