@@ -6,6 +6,14 @@
 @import "layout/_lyrics";
 @import "layout/_upsells";
 
+.blur_background_image {
+  @extend .ssp_background;
+  @include background-image-properties(no-repeat, center, fixed, cover);
+  @include blur(20px);
+  position: fixed;
+
+}
+
 .single-product {
 
   span.onsale {
@@ -85,14 +93,6 @@
     .variations tbody {
         border: none;
     }
-
-  }
-
-  .ssp_background_image {
-    @extend .ssp_background;
-    @include background-image-properties(no-repeat, center, fixed, cover);
-    @include blur(20px);
-    position: fixed;
 
   }
 

@@ -377,6 +377,34 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   font-size: 2em;
 }
 
+/* morning ritual page */
+
+.morning-ritual .entry-header{
+  margin: 0;
+  padding: 1em;
+}
+
+.morning-ritual .entry-header h1{
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 2em;
+}
+
+.morning-ritual .entry-content{
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
+}
+
+.morning-ritual .video-background {
+  filter: blur(20px);
+}
+
+.morning-ritual iframe{
+  box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.6);
+}
+
 /* Shop category */
 
 .woocommerce span.onsale {

@@ -75,7 +75,7 @@ function ssp_get_product_image() {
   if ( has_post_thumbnail( $id ) &&  !in_array( 'merch', $categories ) ) {
     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'thumbnail' );
 //    echo '<div class="ssp_background"></div>';
-    echo '<div class="ssp_background_image" style="background-image: url(' . esc_url( $image[0] ) . ');"></div>';
+    echo '<div class="blur_background_image" style="background-image: url(' . esc_url( $image[0] ) . ');"></div>';
   }
 }
 

@@ -1,5 +1,5 @@
 /* line 5, ../sass/utilities/_partials.scss */
-.ssp_background, .ssp_lyrics .ssp_lyrics_background, .single-product .ssp_background_image {
+.ssp_background, .ssp_lyrics .ssp_lyrics_background, .blur_background_image {
   position: absolute;
   top: 0;
   right: 0;
@@ -198,50 +198,64 @@
   }
 }
 
-/* line 11, ../sass/sexy-single-product.scss */
+/* line 9, ../sass/sexy-single-product.scss */
+.blur_background_image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(20px) brightness(50%);
+  filter: blur(20px) brightness(50%);
+  position: fixed;
+}
+
+/* line 19, ../sass/sexy-single-product.scss */
 .single-product span.onsale {
   display: none;
 }
-/* line 15, ../sass/sexy-single-product.scss */
+/* line 23, ../sass/sexy-single-product.scss */
 .single-product .ssp_div {
   clear: both;
   display: block;
 }
-/* line 21, ../sass/sexy-single-product.scss */
+/* line 29, ../sass/sexy-single-product.scss */
 .single-product input.input-text.qty.text {
   padding: 10px;
 }
-/* line 25, ../sass/sexy-single-product.scss */
+/* line 33, ../sass/sexy-single-product.scss */
 .single-product .woocommerce div.product div.images {
   margin-bottom: 0;
 }
-/* line 30, ../sass/sexy-single-product.scss */
+/* line 38, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content {
   padding: 0 !important;
 }
-/* line 32, ../sass/sexy-single-product.scss */
+/* line 40, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .product {
   padding: 4em;
 }
-/* line 36, ../sass/sexy-single-product.scss */
+/* line 44, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content table.variations {
   max-width: 400px;
 }
-/* line 40, ../sass/sexy-single-product.scss */
+/* line 48, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .summary .product_meta {
   display: none;
 }
-/* line 44, ../sass/sexy-single-product.scss */
+/* line 52, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 44, ../sass/sexy-single-product.scss */
+  /* line 52, ../sass/sexy-single-product.scss */
   .single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
     width: 48%;
   }
 }
-/* line 51, ../sass/sexy-single-product.scss */
+/* line 59, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .single_add_to_cart_button {
   box-shadow: inset 0 0 0 4px #ffe593 !important;
   color: #ffe593 !important;
@@ -256,41 +270,28 @@
   letter-spacing: 0.05rem !important;
   margin: 0 auto !important;
 }
-/* line 66, ../sass/sexy-single-product.scss */
+/* line 74, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .entry-title {
   text-shadow: 0 1px 1px #111;
   font-size: 2.5em !important;
 }
-/* line 71, ../sass/sexy-single-product.scss */
+/* line 79, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .price {
   text-align: center;
 }
-/* line 75, ../sass/sexy-single-product.scss */
+/* line 83, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .woocommerce-product-details__short-description {
   text-shadow: 1px 1px 1px black;
   font-family: "MavenPro-Regular", sans-serif;
   font-size: 1.2em;
 }
-/* line 81, ../sass/sexy-single-product.scss */
+/* line 89, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .woocommerce-product-details__short-description ol li, .single-product .site-inner main.content .woocommerce-product-details__short-description ul li {
   list-style-type: circle;
 }
-/* line 85, ../sass/sexy-single-product.scss */
+/* line 93, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .variations tbody {
   border: none;
-}
-/* line 91, ../sass/sexy-single-product.scss */
-.single-product .ssp_background_image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter: blur(20px) brightness(50%);
-  filter: blur(20px) brightness(50%);
-  position: fixed;
 }
 /* line 104, ../sass/sexy-single-product.scss */
 .single-product .summary, .single-product .ssp_video {
