@@ -172,12 +172,6 @@ section.related.products h2 {
 	background: #eca76f
 }
 
-/*
-.woocommerce-tabs.wc-tabs-wrapper {
-	display: none;
-}
-*/
-
 .nav-primary .genesis-nav-menu a:first-of-type {
 	padding: 20px 12px 20px 0px;
 }
@@ -197,9 +191,7 @@ section.related.products h2 {
 	text-align: center;
 	left: 0;
 	right: 0;
-	/*width: 74px;*/
 	width: 61px;
-	/*margin-top: 16px;*/
 	top: 8px;
 	z-index: 1;
 }
@@ -209,62 +201,10 @@ section.related.products h2 {
 
 }
 
-/*#media_image-2 a:hover {*/
-/*-webkit-animation-name: spin;*/
-/*-webkit-animation-duration: 4000ms;*/
-/*-webkit-animation-iteration-count: 3;*/
-/*-webkit-animation-timing-function: linear;*/
-/*-moz-animation-name: spin;*/
-/*-moz-animation-duration: 4000ms;*/
-/*-moz-animation-iteration-count: 3;*/
-/*-moz-animation-timing-function: linear;*/
-/*-ms-animation-name: spin;*/
-/*-ms-animation-duration: 4000ms;*/
-/*-ms-animation-iteration-count: 3;*/
-/*-ms-animation-timing-function: linear;*/
-
-/*animation-name: spin;*/
-/*animation-duration: 4000ms;*/
-/*animation-iteration-count: 3;*/
-/*animation-timing-function: linear;*/
-/*}*/
-
-
-/*@-ms-keyframes spin {*/
-/*from { -ms-transform: rotate(0deg); }*/
-/*to { -ms-transform: rotate(360deg); }*/
-/*}*/
-/*@-moz-keyframes spin {*/
-/*from { -moz-transform: rotate(0deg); }*/
-/*to { -moz-transform: rotate(360deg); }*/
-/*}*/
-/*@-webkit-keyframes spin {*/
-/*from { -webkit-transform: rotate(0deg); }*/
-/*to { -webkit-transform: rotate(360deg); }*/
-/*}*/
-/*@keyframes spin {*/
-/*from {*/
-/*transform:rotate(0deg);*/
-/*}*/
-/*to {*/
-/*transform:rotate(360deg);*/
-/*}*/
-/*}*/
-
-
-
-
 
 .home-page-2 {
-	/*background-image: url('/wp-content/uploads/sites/14/2016/10/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Pro-Press.jpg');*/
 	background: rgba(0,0,0,.97);
 }
-
-/*
-.up-sells.upsells.products {
-	clear:both;
-}
-*/
 
 .entry
 {
@@ -323,13 +263,6 @@ section.related.products h2 {
 	margin: 0 auto
 }
 
-/*.site-header*/
-/*{*/
-/*width: 100%;*/
-/*min-height: 1000px;*/
-/*display: block*/
-/*}*/
-
 .site-header .fa-angle-down
 {
 	text-align: center;
@@ -350,7 +283,6 @@ input[type="text"],textarea
 {
 	background: #111;
 	border: none;
-	/*border: 2px solid #222;*/
 	color: #fff
 }
 
@@ -377,7 +309,6 @@ article
 .nav-primary
 {
 	height: 80px;
-	/*box-shadow: 0 0 10px #eca76f;*/
 	background: #000
 }
 
@@ -403,8 +334,6 @@ article
 	color: #fff;
 	position: relative;
 	text-align: center;
-	/*max-width: 530px;*/
-	/*float: none!important*/
 }
 
 #sb_instagram .sb_instagram_header h3
@@ -465,22 +394,11 @@ button.menu-toggle,button.sub-menu-toggle
 	background: linear-gradient(transparent, rgba(1,0,1,.5));
 }
 
-/*.nav-primary div ul li a span*/
-/*{*/
-/*color: #fff*/
-/*}*/
-
 .genesis-nav-menu .widget-area
 {
 	padding: 6px 0 0 0;
 	background: transparent
 }
-
-/*.genesis-nav-menu .widget*/
-/*{*/
-/*margin-bottom: -100px;*/
-/*margin-top: 50px*/
-/*}*/
 
 .site-header
 {
@@ -526,7 +444,6 @@ h5,h6
 	font-family: inherit;
 	font-weight: 700;
 	font-weight: 700
-	/* text-transform: uppercase; */
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -614,7 +531,6 @@ button.menu-toggle, button.sub-menu-toggle {
 
 .home-top div .wrap
 {
-	/*background: rgba(0,0,0,.8);*/
 	border-radius: 2px
 }
 
@@ -661,7 +577,6 @@ button.menu-toggle, button.sub-menu-toggle {
 
 .home-top .one-widget .widget
 {
-	/* 	padding: 200px 20px; */
 	width: 100%;
 	position: relative
 }
@@ -695,12 +610,6 @@ button.menu-toggle, button.sub-menu-toggle {
 .site-inner {
 	margin-top: 80px !important;
 }
-
-/*
-.home-top div .wrap {
-  padding-top: 40px;
-}
-*/
 
 .cta:focus,
 .gform_wrapper .gform_footer input.button:focus {
@@ -767,35 +676,6 @@ button.menu-toggle, button.sub-menu-toggle {
 .gform_validation_error #gform_widget-5 .gform_footer {
 	margin-top: -110px !important;
 }
-
-
-/*.cta,#text-16 .widget-wrap .textwidget h4 a,.gform_button*/
-/*{*/
-/*background: #eca76f!important;*/
-/*border: none!important;*/
-/*color: #222!important;*/
-/*font-weight: bold;*/
-/*padding: 10px!important;*/
-/*border-radius: 3px!important;*/
-/*transition-property: background,border-radius!important;*/
-/*transition-duration: 1s!important;*/
-/*transition-timing-function: linear!important;*/
-/*box-shadow: 0 0 11px #222!important;*/
-/*outline: none!important*/
-/*}*/
-
-
-/*.cta:hover,#text-15 div div a:hover,#text-16 .widget-wrap .textwidget h4 a:hover,input[type="submit"]:hover*/
-/*{*/
-/*border-radius: 50%!important*/
-/*}*/
-
-
-
-
-
-
-
 
 .home-page-2 #text-18 .textwidget
 {
@@ -865,7 +745,6 @@ input[type="submit"], .button
 {
 	font-size: 5em !important;
 	font-family: "MavenPro-Black", sans-serif !important;
-	/*margin-bottom: 50px;*/
 	padding: 1em;
 }
 
@@ -889,15 +768,6 @@ input[type="submit"], .button
 .page-id-220 .woocommerce,.page-id-221 .woocommerce
 {
 	margin-top: 40px
-}
-
-#text-20
-{
-	/* shopping cart */
-	/*height: 44px;*/
-	/*position: absolute;*/
-	/*left: 120px;*/
-	/*display: none*/
 }
 
 #text-20 div div a
@@ -948,7 +818,6 @@ input[type="submit"], .button
 }
 
 .woocommerce input.input-text.qty.text,.woocommerce table.cart td.actions .coupon .input-text {
-	/*border: 1px solid #fff !important;*/
 	color: #fff !important;
 }
 
@@ -970,7 +839,6 @@ input[type="submit"], .button
 
 .woocommerce .cart .button,.woocommerce .cart input.button,.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,.woocommerce input.button
 {
-	/*background: #eca76f!important;*/
 	color: white !important
 }
 
@@ -1269,12 +1137,6 @@ hr
 	text-align: center
 }
 
-/*.woocommerce ul.product_list_widget li a img:hover,.woocommerce ul.products li.product a img:hover*/
-/*{*/
-/*background: #ff7b29;*/
-/*border-radius: 50%*/
-/*}*/
-
 .woocommerce ul.product_list_widget li a
 {
 	margin: 10px
@@ -1289,10 +1151,6 @@ hr
 .woocommerce ul.product_list_widget li a img,.woocommerce ul.products li.product a img
 {
 	width: auto!important;
-	/*transition-property: background,border-radius;*/
-	/*transition-duration: .5s;*/
-	/*transition-timing-function: linear;*/
-	/*border-radius: 10%;*/
 	float: none;
 	margin: 10px auto;
 	display: block;
@@ -1304,7 +1162,6 @@ hr
 .home-page-4
 {
 	background: url(/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Hair.png)!important;
-	/*height: 800px;*/
 	overflow: hidden;
 	background: rgba(51,3,3,.8);
 	background-size: cover;
@@ -1372,21 +1229,6 @@ hr
 	display: none!important
 }
 
-/*
-.home video, .home #yt_home_embed
-{
-	display: none
-}
-*/
-
-/*
-video, .home #yt_home_embed
-{
-	height: 100%;
-	width: 100%
-}
-*/
-
 .home-page-2 .widget-title
 {
 	position: absolute;
@@ -1405,40 +1247,12 @@ video, .home #yt_home_embed
 	border-bottom: none
 }
 
-/*
-#bit-events tr.no-dates td a
-{
-	background: #fff;
-	padding: 5px;
-	border-radius: 3px;
-	transition: border-radius 2s
-}
-*/
-
-/*
-#bit-events tr.no-dates td a:hover
-{
-	border-radius: 30px
-}
-
-#bit-events td .bit-uiButton
-{
-	height: auto
-}
-
-.bit-date
-{
-	width: 60px
-}
-*/
-
 .lineup
 {
 	display: none!important
 }
 
 /* SHOWS END */
-/* .home-page-5 START */
 .home_social_wrap
 {
 	width: 100%;
@@ -1479,12 +1293,6 @@ video, .home #yt_home_embed
 .home_social_wrap div
 {
 	background: rgba(255,147,74,.05)
-}
-
-.even_overlay
-{
-	/* background: rgba(255,255,255,.7) !important; */
-	/* background: rgba(175,0,255,.25) !important; */
 }
 
 .dunlop
@@ -1540,19 +1348,14 @@ video, .home #yt_home_embed
 	color: #fff
 }
 
-/* .home-page-5 START */
 /* FOOTER START */
 .footer-widgets {
 	background: rgba(1,0,1,.5);
-	/* 	background: transparent; */
 
 }
 
 #ssl
 {
-	/*text-align: center;*/
-	/*right: 0;*/
-	/*position: absolute;*/
 	padding: 20px;
 }
 
@@ -1724,7 +1527,6 @@ ul.dark li.tweets_avatar
 }
 
 .woocommerce-page .comment-respond label, .woocommerce-page h3, .woocommerce-page h2 {
-	/*text-transform: none !important;*/
 	letter-spacing: normal !important;
 }
 
@@ -1750,21 +1552,12 @@ a, .nav-primary .genesis-nav-menu a {
 
 .gform_wrapper .gform_footer {
 	clear: none !important;
-	/*
-    width: 25% !important;
-    float: right;
-  */
 	margin-top: 4px !important;
 	text-align: center;
 
 }
 
 .gform_wrapper .gform_body {
-	/*
-    width: 75% !important;
-    float: left;
-    margin-top: 20px;
-  */
 	text-align: center;
 }
 
@@ -1820,10 +1613,6 @@ section:nth-of-type(4) div div p .cta {
 }
 
 @media screen and (min-width: 585px) {
-
-	/*.post-type-archive-product .custom_shop_links {*/
-	/*display:none;*/
-	/*}*/
 
 	#menu-item-1233, #menu-item-1237, #menu-item-1238, #menu-item-1239 {
 		display: inline-block;
@@ -1889,7 +1678,6 @@ section:nth-of-type(4) div div p .cta {
 
 	.home-top div .wrap,.home-top div .wrap section,.home-top div .wrap
 	{
-		/*height: 800px*/
 		height: 90vh;
 	}
 
@@ -2007,7 +1795,6 @@ section:nth-of-type(4) div div p .cta {
 
 	.nav-primary
 	{
-		/*height: 53px;*/
 		background: rgba(0,0,0,.7)
 	}
 
@@ -2018,7 +1805,6 @@ section:nth-of-type(4) div div p .cta {
 
 	.nav-primary .genesis-nav-menu .menu-item a:hover,.current_page_item,.current_page_parent
 	{
-		/*background: rgba(255,147,74,.8) !important;*/
 		color: #ffe593
 	}
 
