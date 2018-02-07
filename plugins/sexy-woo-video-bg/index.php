@@ -16,7 +16,9 @@ define('SWVB_PATH', plugin_dir_path(__FILE__));
 add_action('wp_enqueue_scripts', 'swvb_scripts');
 function swvb_scripts() {
 
-  if (is_product_category() || is_front_page()) {
+  $videoID = get_post_meta( get_the_ID(), 'ge_video_bg', true );
+
+  if ((is_product_category()) || (is_front_page()) || ($videoID !== '')) {
     wp_register_script('swvb', SWVB_URL . 'assets/js/swvb.js', array('jquery'), false, true);
     wp_enqueue_script('swvb');
   }
@@ -24,3 +26,5 @@ function swvb_scripts() {
 }
 
 require_once('inc/category.php');
+require_once('inc/admin.php');
+require_once('inc/page.php');

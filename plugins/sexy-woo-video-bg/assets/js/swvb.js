@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     let fullPath = location.pathname + location.search + location.hash;
 
-    if ((fullPath.indexOf('/') >= 0) || (fullPath.indexOf('products') !== -1)) {
+    // if ((fullPath.indexOf('/') >= 0) || (fullPath.indexOf('products') !== -1)) {
 
       // INSERT VIDEO PLAYER
       $('body').prepend(
@@ -41,7 +41,7 @@ $(document).ready(function() {
         v[n].appendChild(div);
       }
 
-    }
+    // }
 
   }
 
