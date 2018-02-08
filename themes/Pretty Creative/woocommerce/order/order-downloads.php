@@ -35,28 +35,44 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </td>
                 </tr>
 	        <?php endif; ?>
+
 			<tr>
-				<?php foreach ( wc_get_account_downloads_columns() as $column_id => $column_name ) : ?>
-					<td class="<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>"><?php
-						if ( has_action( 'woocommerce_account_downloads_column_' . $column_id ) ) {
-							do_action( 'woocommerce_account_downloads_column_' . $column_id, $download );
-						} else {
-							switch ( $column_id ) {
+        <?php
+        $product = wc_get_product($download['product_id']);
 
-								case 'download-product' : ?>
+        // ASK USER TO LOOK AT EMAIL DOWNLOAD LINK TO MAKE SURE THEY GAVE A VALID EMAIL
+        if ($product->get_price() === '0') {
+          if( $download['product_id'] != $previousValue['product_id'] ):
+            echo "<td class='please-see-email'>" . __('See email for download links.') . "</td>";
+          endif;
+          $previousValue = $download;
+        } else {
 
-                                <?php $previousValue = $download; ?>
-									<a class="download-file-type" href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"> - <?php echo esc_html( $download['download_name'] ); ?></a>
-									<?php
-								break;
-								case 'download-file' : ?>
-									<a href="<?php echo esc_url( $download['download_url'] ); ?>" class="woocommerce-MyAccount-downloads-file button alt"><?php echo "Download" ?></a>
-									<?php
-								break;
-							}
-						}
-					?></td>
-				<?php endforeach; ?>
+          foreach ( wc_get_account_downloads_columns() as $column_id => $column_name ) : ?>
+            <td class="<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>"><?php
+
+                if ( has_action( 'woocommerce_account_downloads_column_' . $column_id ) ) {
+                  echo 'here';
+                  do_action( 'woocommerce_account_downloads_column_' . $column_id, $download );
+                } else {
+                  switch ( $column_id ) {
+                    case 'download-product' : ?>
+                      <?php $previousValue = $download; ?>
+                      <a class="download-file-type" href="<?php echo esc_url( get_permalink( $download['product_id'] ) ); ?>"> - <?php echo esc_html( $download['download_name'] ); ?></a>
+                      <?php
+                    break;
+                    case 'download-file' : ?>
+                      <a href="<?php echo esc_url( $download['download_url'] ); ?>" class="woocommerce-MyAccount-downloads-file button alt"><?php echo "Download" ?></a>
+                      <?php
+                    break;
+                  }
+                }
+
+            ?></td><?php
+          endforeach;
+
+        }
+        ?>
 			</tr>
 		<?php endforeach; ?>
 	</table>

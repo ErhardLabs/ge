@@ -38,12 +38,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     <?php else : ?>
 
-            <?php
+      <?php echo '<div class="background_image" style="background-image: url(/wp-content/uploads/sites/14/2016/10/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Hair.jpg);"></div>'; ?>
 
-          echo '<div class="background_image" style="background-image: url(/wp-content/uploads/sites/14/2016/10/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Hair.jpg);"></div>'; ?>
-
-
-          <h1 class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you', 'woocommerce' ), $order ); ?></h1>
+      <h1 class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you', 'woocommerce' ), $order ); ?></h1>
 
     <?php endif; ?>
 
