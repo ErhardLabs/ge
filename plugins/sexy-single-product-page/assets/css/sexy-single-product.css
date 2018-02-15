@@ -212,50 +212,55 @@
   position: fixed;
 }
 
-/* line 19, ../sass/sexy-single-product.scss */
+/* line 17, ../sass/sexy-single-product.scss */
+.single-product .site-container {
+  background: linear-gradient(300deg, #434343 0%, #000000 100%);
+}
+
+/* line 23, ../sass/sexy-single-product.scss */
 .single-product span.onsale {
   display: none;
 }
-/* line 23, ../sass/sexy-single-product.scss */
+/* line 27, ../sass/sexy-single-product.scss */
 .single-product .ssp_div {
   clear: both;
   display: block;
 }
-/* line 29, ../sass/sexy-single-product.scss */
+/* line 33, ../sass/sexy-single-product.scss */
 .single-product input.input-text.qty.text {
   padding: 10px;
 }
-/* line 33, ../sass/sexy-single-product.scss */
+/* line 37, ../sass/sexy-single-product.scss */
 .single-product .woocommerce div.product div.images {
   margin-bottom: 0;
 }
-/* line 38, ../sass/sexy-single-product.scss */
+/* line 42, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content {
   padding: 0 !important;
 }
-/* line 40, ../sass/sexy-single-product.scss */
+/* line 44, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .product {
   padding: 4em;
 }
-/* line 44, ../sass/sexy-single-product.scss */
+/* line 48, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content table.variations {
   max-width: 400px;
 }
-/* line 48, ../sass/sexy-single-product.scss */
+/* line 52, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .summary .product_meta {
   display: none;
 }
-/* line 52, ../sass/sexy-single-product.scss */
+/* line 56, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 52, ../sass/sexy-single-product.scss */
+  /* line 56, ../sass/sexy-single-product.scss */
   .single-product .site-inner main.content .summary, .single-product .site-inner main.content .woocommerce-product-gallery {
     width: 48%;
   }
 }
-/* line 59, ../sass/sexy-single-product.scss */
+/* line 63, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .single_add_to_cart_button {
   box-shadow: inset 0 0 0 4px #ffe593 !important;
   color: #ffe593 !important;
@@ -270,30 +275,45 @@
   letter-spacing: 0.05rem !important;
   margin: 0 auto !important;
 }
-/* line 74, ../sass/sexy-single-product.scss */
+/* line 78, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .entry-title {
   text-shadow: 0 1px 1px #111;
   font-size: 2.5em !important;
 }
-/* line 79, ../sass/sexy-single-product.scss */
+/* line 83, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .price {
   text-align: center;
 }
-/* line 83, ../sass/sexy-single-product.scss */
+/* line 87, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .woocommerce-product-details__short-description {
   text-shadow: 1px 1px 1px black;
   font-family: "MavenPro-Regular", sans-serif;
   font-size: 1.2em;
 }
-/* line 89, ../sass/sexy-single-product.scss */
+/* line 93, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .woocommerce-product-details__short-description ol li, .single-product .site-inner main.content .woocommerce-product-details__short-description ul li {
   list-style-type: circle;
 }
-/* line 93, ../sass/sexy-single-product.scss */
+/* line 97, ../sass/sexy-single-product.scss */
 .single-product .site-inner main.content .variations tbody {
   border: none;
 }
-/* line 104, ../sass/sexy-single-product.scss */
+/* line 108, ../sass/sexy-single-product.scss */
 .single-product .summary, .single-product .ssp_video {
   position: relative;
+}
+/* line 113, ../sass/sexy-single-product.scss */
+.single-product .tmls .tmls_text {
+  max-width: 1000px;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+/* line 119, ../sass/sexy-single-product.scss */
+.single-product .tmls.style1 .tmls_next_prev.tmls_bottom {
+  bottom: 61px;
+  right: 0px;
+  left: 0px;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
 }
