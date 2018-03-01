@@ -24,6 +24,7 @@ function custom_script() {
   wp_enqueue_script( 'song-kick', get_bloginfo( 'stylesheet_directory' ) . '/js/widget.js', array(), '', true );
   wp_enqueue_script('autosize', get_bloginfo( 'stylesheet_directory' )  . '/lib/js/autosize.min.js', array('jquery'), false, true);
   wp_enqueue_script('sumner-js', get_bloginfo( 'stylesheet_directory' )  . '/js/sumner.js', array('jquery'), false, true);
+  wp_enqueue_script('nav-search-js', get_bloginfo( 'stylesheet_directory' )  . '/js/nav-search.js', array('jquery'), false, true);
   wp_enqueue_script( 'grayson');
 }
 

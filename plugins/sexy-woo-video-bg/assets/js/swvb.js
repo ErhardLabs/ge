@@ -16,11 +16,12 @@ $(document).ready(function() {
           '<div class="video-background">' +
           '<div class="video-foreground">' +
           '<iframe class="home_video" id="yt_home_embed" width="1280" height="720" src="https://www.youtube.com/embed/' + homeVideo + '?rel=0&controls=0&showinfo=0&autoplay=1&loop=1&enablejsapi=1&playlist=79EUORqIh0c" frameborder="0" allowfullscreen volume="0"></iframe>' +
+          //'<iframe class="home_video" id="yt_home_embed" width="1280" height="720" src="https://www.youtube.com/embed/?listType=playlist&controls=0&showinfo=0&autoplay=1&loop=1&enablejsapi=1&list=PLCcd4NlKH5YzNrrji-f_3elED_tmifwUz" frameborder="0" allowfullscreen volume="0"></iframe>' +
           '</div>' +
           '</div>'
       );
 
-      // This code loads the IFrame Player API code asynchronously.
+      // Loads the IFrame Player API code asynchronously.
       let tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
@@ -28,7 +29,6 @@ $(document).ready(function() {
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       let player;
-
 
       // LOAD iFrame after content loads and a button is clicked
       let div, n,
@@ -52,14 +52,6 @@ $(document).ready(function() {
 
 
 });
-
-
-
-
-
-
-
-
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt_home_embed', {

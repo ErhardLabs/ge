@@ -38,8 +38,10 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   /*top: -80px !important;*/
 /*}*/
 
+/****** Search Bar ********/
+
 .nav-primary .aws-search-field {
-  height: 28px;
+  height: 22px;
   color: white;
   width: 2em;
   border: none;
@@ -51,8 +53,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   content: "\f002";
   font-family: FontAwesome;
   position:absolute;
-  top: 11px;
-  font-size: 1.3em;
+  top: 8px;
 }
 
 .search_box.hidden::after {
@@ -60,7 +61,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 .nav-primary .aws-search-field:focus {
-  width: 15em;
+  width: 13em;
   border-bottom: 1px solid #fee492;
 }
 
