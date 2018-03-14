@@ -61,7 +61,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 .nav-primary .aws-search-field:focus {
-  width: 13em;
+  width: 12em;
   border-bottom: 1px solid #fee492;
 }
 
@@ -118,6 +118,20 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 .genesis-nav-menu a,
 .genesis-nav-menu a span {
   font-family: "MavenPro-Black";
+}
+
+#menu-item-1950 i.dashicons-email-alt {
+  font-size: 20px !important;
+}
+
+#menu-item-1950 a {
+  padding-right: 0;
+  padding-left: 0;
+  color: white !important;
+}
+#menu-item-1947 {
+  text-align: center;
+  padding-right: 7px;
 }
 
 .home-top #text-15 .widget-wrap {
@@ -676,11 +690,28 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   }
 }
 
+@media (min-width: 430px) {
+  .nav-primary .aws-search-field:focus {
+    width: 15em;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-primary .aws-search-field:focus {
+    width: 21em;
+  }
+}
+
 /* =================================
   Tablet Layout Styles
 ==================================== */
 
 @media (min-width: 769px) {
+
+  .nav-primary .aws-search-field:focus {
+    height: 25px;
+    width: 25em;
+  }
 
   .fa-shopping-cart.fa-3x {
     font-size: 2.5em;
@@ -762,6 +793,10 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 ==================================== */
 
 @media (min-width: 1025px) {
+
+  .nav-primary .aws-search-field:focus {
+    width: 40em;
+  }
 
   .home-top .logo_wrap {
     max-width: 800px;
