@@ -193,7 +193,7 @@ function get_product_image( $loop, $args ) {
   echo '<div class="ge-slider-product">';
     if ( has_post_thumbnail( $loop->post->ID ) ) {
       echo '<a href="'.get_permalink($loop->post->ID).'">'; //start product link
-      echo get_the_post_thumbnail($loop->post->ID, array( 300, 300 ));
+      echo get_the_post_thumbnail($loop->post->ID, array( 400, 400 ));
       echo '</a>'; // close product link
 
     }

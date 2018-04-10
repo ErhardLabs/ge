@@ -34,8 +34,62 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   transition: top 0.2s ease-in-out;
 }
 
-.nav-up {
-  top: -80px !important;
+/*.nav-up {*/
+  /*top: -80px !important;*/
+/*}*/
+
+/****** Search Bar ********/
+
+.nav-primary .aws-search-field {
+  height: 22px;
+  color: white;
+  width: 2em;
+  border: none;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+}
+
+.search_box::after {
+  content: "\f002";
+  font-family: FontAwesome;
+  position:absolute;
+  top: 8px;
+}
+
+.search_box.hidden::after {
+  display: none;
+}
+
+.nav-primary .aws-search-field:focus {
+  width: 12em;
+  border-bottom: 1px solid #fee492;
+}
+
+.nav-primary .aws-search-field:hover {
+  cursor: pointer;
+}
+
+.aws-search-result {
+  background: #1C1D1F;
+  border: none;
+  -webkit-box-shadow: -1px 33px 74px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 33px 74px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 33px 74px 0px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+.aws-search-result ul li {
+ border-color: #424242;
+}
+
+.aws-search-result ul li:hover {
+  background: #3c3c3c !important;
+}
+
+.aws_result_title,
+.aws_result_title strong,
+.aws_result_title span,
+.aws_result_price span {
+  color: #fff !important;
 }
 
 /*.nav-primary {*/
@@ -64,6 +118,20 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 .genesis-nav-menu a,
 .genesis-nav-menu a span {
   font-family: "MavenPro-Black";
+}
+
+#menu-item-1950 i.dashicons-email-alt {
+  font-size: 20px !important;
+}
+
+#menu-item-1950 a {
+  padding-right: 0;
+  padding-left: 0;
+  color: white !important;
+}
+#menu-item-1947 {
+  text-align: center;
+  padding-right: 7px;
 }
 
 .home-top #text-15 .widget-wrap {
@@ -622,11 +690,28 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   }
 }
 
+@media (min-width: 430px) {
+  .nav-primary .aws-search-field:focus {
+    width: 15em;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-primary .aws-search-field:focus {
+    width: 21em;
+  }
+}
+
 /* =================================
   Tablet Layout Styles
 ==================================== */
 
 @media (min-width: 769px) {
+
+  .nav-primary .aws-search-field:focus {
+    height: 25px;
+    width: 25em;
+  }
 
   .fa-shopping-cart.fa-3x {
     font-size: 2.5em;
@@ -708,6 +793,10 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 ==================================== */
 
 @media (min-width: 1025px) {
+
+  .nav-primary .aws-search-field:focus {
+    width: 40em;
+  }
 
   .home-top .logo_wrap {
     max-width: 800px;
