@@ -188,23 +188,6 @@ section.related.products h2 {
 	max-width: none;
 }
 
-#media_image-2 {
-	position: absolute;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-	left: 0;
-	right: 0;
-	width: 61px;
-	top: 8px;
-	z-index: 1;
-}
-
-#media_image-2 a {
-	padding: 0px;
-
-}
-
 
 .home-page-2 {
 	background: rgba(0,0,0,.97);
@@ -782,12 +765,16 @@ input[type="submit"], .button
 
 .fa-shopping-cart {
 	font-size: 20px !important;
-	margin-top: 12px;
+	margin-top: -6px;
 	margin-left: 5px;
 }
 
 .fa-shopping-cart:hover {
 	color: #ffe593;
+}
+
+.genesis-nav-menu .fa-shopping-cart {
+	margin-right: -5px;
 }
 
 .genesis-nav-menu aside {
@@ -1561,24 +1548,12 @@ a, .nav-primary .genesis-nav-menu a {
 
 }
 
-.dashicons-email-alt:hover {
-	color: #ffe593;
-}
-
-#search:hover {
-	color: #ffe593;
-}
-
 .gform_wrapper .gform_body {
 	text-align: center;
 }
 
 #field_16_2 label {
 	display: none;
-}
-
-.nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
-	font-size: 8px;
 }
 
 
@@ -1624,6 +1599,406 @@ section:nth-of-type(4) div div p .cta {
 	max-width: 200px;
 }
 
+
+.video-foreground, .video-background iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+.home .youtube_channel.responsive .ytc_video_container h3
+{
+	height: 20px
+}
+
+#social_stickers_widget-3
+{
+	display: none
+}
+
+.sidebar-primary
+{
+	margin-top: 0
+}
+
+.woocommerce ul.cart_list li,.woocommerce ul.product_list_widget li
+{
+	width: 33.3%;
+	float: left
+}
+
+.genesis-nav-menu .sub-menu .sub-menu a {
+	background: #000;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -55px 0 0 228px;
+}
+
+.nav-primary .genesis-nav-menu a {
+	margin: 21px 12px 20px 0px;
+	padding:0px;
+}
+
+.nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
+	font-size: 12px;
+}
+
+nav .dashicons-email-alt:hover {
+	color: #ffe593;
+}
+
+nav #search:hover {
+	color: #ffe593;
+}
+
+nav .widget_media_image {
+	position: absolute;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	left: 0;
+	right: 0;
+	width: 61px;
+	top: 9px;
+	z-index: 1;
+}
+
+nav .widget_media_image div a {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+
+.video-background {
+	background: #000;
+	position: fixed;
+	top: -20px;
+	right: 0;
+	left: 0;
+	bottom: -20px;
+	z-index: -99;
+}
+
+.video-foreground, .video-background iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+
+input::placeholder, textarea::placeholder {
+	color: #777 !important;
+}
+
+.select2-container--default .select2-selection--single {
+	border: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	background: #1C1D1F;
+	border: none;
+	border-bottom: 2px solid #fff;
+	height: auto;
+	color: #fff;
+	line-height: 43px;
+	margin-top: -3px;
+
+}
+
+.select2-results__option {
+	background: rgba(0,0,0,.8);
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected=true]{
+	background-color: #0073aa;
+}
+
+.select2-container--open .select2-dropdown--below {
+	margin-top: 20px;
+}
+
+/*.woocommerce-checkout .cart .button, .woocommerce-checkout .cart input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce input.button {*/
+/*color: black !important;*/
+/*}*/
+
+input[type="text"], textarea {
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+
+.woocommerce-checkout .col2-set .col-1,
+.woocommerce-checkout .woocommerce-page .col2-set .col-1 {
+	width: 100%;
+}
+
+.woocommerce-checkout .entry-content .woocommerce {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.woocommerce-checkout .col2-set .col-2,
+.woocommerce-checkout .woocommerce-page .col2-set .col-2 {
+	float: right;
+	width: 100%;
+	margin: 40px 0px;
+}
+
+#place_order {
+	height: 60px;
+}
+
+.wc-item-downloads a {
+	color: #ffe593 !important;
+}
+
+.wc-item-downloads a:hover {
+	color: #eca76f !important;
+}
+
+#text-33 {
+	width:100%;
+}
+
+#text-33 .widget-wrap h4 {
+	display: block;
+}
+
+#text-33 .widget-wrap .textwidget p {
+	display: block;
+	max-width: 200px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+#text-33 .widget-wrap .textwidget p a {
+	display: block;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+	min-height: 67px;
+}
+
+.woocommerce ul.products li.product .price {
+	margin-bottom: 1em;
+}
+
+.woocommerce-checkout .genesis-nav-menu .menu-item {
+	display: none !important;
+}
+
+.woocommerce-checkout .genesis-nav-menu .fa-shopping-cart {
+	display: none !important;
+}
+
+.wc_payment_method {
+	margin: 30px 0;
+}
+
+.order-again {
+	display: none;
+}
+
+#stripe-card-element {
+	background: none !important;
+}
+
+
+
+
+
+
+
+
+@media (min-aspect-ratio: 16/9) {
+	.video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+	.video-foreground { width: 300%; left: -100%; }
+}
+
+@media screen and (min-width: 1165px) {
+	/* FEATURED PRODUCTS START */
+	.home-page-1
+	{
+		padding: 100px
+	}
+
+	/* FEATURED PRODUCTS END */
+	.home .site-container .site-header .wrap
+	{
+		display: none
+	}
+
+	.home .site-header
+	{
+		display: block
+	}
+
+	.home-page-5
+	{
+		height: 300px
+	}
+
+	.home_social_wrap
+	{
+		width: 25%!important
+	}
+
+	.featured_image_wrapper
+	{
+		width: 100%;
+		height: 500px;
+		background-size: cover
+	}
+
+	.entry-header
+	{
+		margin-top: -200px;
+		margin-bottom: 200px
+	}
+
+	.home-top div div section div div p
+	{
+		padding: 0 200px
+	}
+
+	nav .wrap ul .widget-area
+	{
+		display: block!important
+	}
+
+	#sb_instagram.sbi_col_2 #sbi_images .sbi_item {
+		width: 25%;
+	}
+
+	#text-20
+	{
+		position: relative;
+		display: block;
+		left: 0
+	}
+
+	.home_social_wrap:hover
+	{
+		background-size: 600px 600px!important
+	}
+
+	#social_stickers_widget-3
+	{
+		display: block
+	}
+
+	.page-id-503 .sidebar
+	{
+		display: none
+	}
+
+	body
+	{
+		/* 		min-height: 2000px; */
+		background: transparent;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: -200px 70px;
+		background-attachment: fixed;
+		-webkit-animation: fadein 5s;
+		/* Safari, Chrome and Opera > 12.1 */
+		-moz-animation: fadein 5s;
+		/* Firefox < 16 */
+		-ms-animation: fadein 5s;
+		/* Internet Explorer */
+		-o-animation: fadein 5s;
+		/* Opera < 12.1 */
+		animation: fadein 5s
+	}
+
+	.page-id-503 .entry-title
+	{
+		margin-bottom: 0
+	}
+
+	.page-id-503
+	{
+		background: url(/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Pro%20Press.jpg);
+		background-repeat: no-repeat;
+		background-position: -200px 0
+	}
+
+	.page-id-503 h3
+	{
+		margin-top: 0;
+		line-height: 2em;
+		color: #ebebeb
+	}
+
+	.page-id-503 p
+	{
+		color: #ebebeb;
+		line-height: 2em
+	}
+
+	.page-id-503 .content
+	{
+		width: 100%
+	}
+
+	.page-id-503 article
+	{
+		max-width: 1400px
+	}
+
+	.page-id-503 .entry-content
+	{
+		width: 600px;
+		padding: 20px;
+		float: right;
+		clear: both
+	}
+
+	.page-id-503 .entry-header
+	{
+		width: 600px;
+		float: right;
+	}
+
+	.home
+	{
+		background: #000 !important;
+	}
+
+	.page-id-503 .site-inner,.page-id-503 .content .entry
+	{
+		background: transparent;
+		border: none
+	}
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+	.video-foreground { width: 300%; left: -100%; }
+}
+
+
 @media screen and (min-width: 585px) {
 
 	#menu-item-1233, #menu-item-1237, #menu-item-1238, #menu-item-1239 {
@@ -1632,6 +2007,10 @@ section:nth-of-type(4) div div p .cta {
 
 	#menu-item-1242,#menu-item-1241 {
 		display: none;
+	}
+
+	.nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
+		font-size: 14px;
 	}
 
 }
@@ -1652,6 +2031,18 @@ section:nth-of-type(4) div div p .cta {
 		float: left;
 		margin: 0px;
 		padding: 5px;
+	}
+
+	nav .widget_media_image {
+		position: absolute;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		left: 0;
+		right: 0;
+		width: 61px;
+		top: 19px;
+		z-index: 1;
 	}
 
 	.site-header
@@ -1890,10 +2281,6 @@ section:nth-of-type(4) div div p .cta {
 		margin: -55px 0 0 228px;
 	}
 
-	.nav-primary .genesis-nav-menu a {
-		padding: 21px 12px;
-	}
-
 }
 
 @media screen and (min-width: 1165px) {
@@ -2051,369 +2438,4 @@ section:nth-of-type(4) div div p .cta {
 		background: transparent;
 		border: none
 	}
-}
-
-.video-foreground, .video-background iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-}
-
-#vidtop-content {
-	top: 0;
-	color: #fff;
-}
-
-@media (min-aspect-ratio: 16/9) {
-	.video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-	.video-foreground { width: 300%; left: -100%; }
-}
-
-.ytc_video_container, .youtube_channel.responsive .ytc_video_container
-{
-	width: 50%!important
-}
-
-.home .youtube_channel.responsive .ytc_video_container h3
-{
-	height: 20px
-}
-
-#social_stickers_widget-3
-{
-	display: none
-}
-
-.sidebar-primary
-{
-	margin-top: 0
-}
-
-.woocommerce ul.cart_list li,.woocommerce ul.product_list_widget li
-{
-	width: 33.3%;
-	float: left
-}
-
-.genesis-nav-menu .sub-menu .sub-menu a {
-	background: #000;
-}
-
-.genesis-nav-menu .sub-menu .sub-menu {
-	margin: -55px 0 0 228px;
-}
-
-.nav-primary .genesis-nav-menu a {
-	margin: 21px 12px 20px 0px;
-	padding:0px;
-}
-
-@media screen and (min-width: 1165px) {
-	/* FEATURED PRODUCTS START */
-	.home-page-1
-	{
-		padding: 100px
-	}
-
-	/* FEATURED PRODUCTS END */
-	.home .site-container .site-header .wrap
-	{
-		display: none
-	}
-
-	.home .site-header
-	{
-		display: block
-	}
-
-	.home-page-5
-	{
-		height: 300px
-	}
-
-	.home_social_wrap
-	{
-		width: 25%!important
-	}
-
-	.featured_image_wrapper
-	{
-		width: 100%;
-		height: 500px;
-		background-size: cover
-	}
-
-	.entry-header
-	{
-		margin-top: -200px;
-		margin-bottom: 200px
-	}
-
-	.home-top div div section div div p
-	{
-		padding: 0 200px
-	}
-
-	nav .wrap ul .widget-area
-	{
-		display: block!important
-	}
-
-	#sb_instagram.sbi_col_2 #sbi_images .sbi_item {
-		width: 25%;
-	}
-
-	#text-20
-	{
-		position: relative;
-		display: block;
-		left: 0
-	}
-
-	.home_social_wrap:hover
-	{
-		background-size: 600px 600px!important
-	}
-
-	#social_stickers_widget-3
-	{
-		display: block
-	}
-
-	.page-id-503 .sidebar
-	{
-		display: none
-	}
-
-	body
-	{
-		/* 		min-height: 2000px; */
-		background: transparent;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: -200px 70px;
-		background-attachment: fixed;
-		-webkit-animation: fadein 5s;
-		/* Safari, Chrome and Opera > 12.1 */
-		-moz-animation: fadein 5s;
-		/* Firefox < 16 */
-		-ms-animation: fadein 5s;
-		/* Internet Explorer */
-		-o-animation: fadein 5s;
-		/* Opera < 12.1 */
-		animation: fadein 5s
-	}
-
-	.page-id-503 .entry-title
-	{
-		margin-bottom: 0
-	}
-
-	.page-id-503
-	{
-		background: url(/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Pro%20Press.jpg);
-		background-repeat: no-repeat;
-		background-position: -200px 0
-	}
-
-	.page-id-503 h3
-	{
-		margin-top: 0;
-		line-height: 2em;
-		color: #ebebeb
-	}
-
-	.page-id-503 p
-	{
-		color: #ebebeb;
-		line-height: 2em
-	}
-
-	.page-id-503 .content
-	{
-		width: 100%
-	}
-
-	.page-id-503 article
-	{
-		max-width: 1400px
-	}
-
-	.page-id-503 .entry-content
-	{
-		width: 600px;
-		padding: 20px;
-		float: right;
-		clear: both
-	}
-
-	.page-id-503 .entry-header
-	{
-		width: 600px;
-		float: right;
-	}
-
-	.home
-	{
-		background: #000 !important;
-	}
-
-	.page-id-503 .site-inner,.page-id-503 .content .entry
-	{
-		background: transparent;
-		border: none
-	}
-}
-
-.video-background {
-	background: #000;
-	position: fixed;
-	top: -20px;
-	right: 0;
-	left: 0;
-	bottom: -20px;
-	z-index: -99;
-}
-
-.video-foreground, .video-background iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-}
-
-#vidtop-content {
-	top: 0;
-	color: #fff;
-}
-
-@media (min-aspect-ratio: 16/9) {
-	.video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-	.video-foreground { width: 300%; left: -100%; }
-}
-
-input::placeholder, textarea::placeholder {
-	color: #777 !important;
-}
-
-.select2-container--default .select2-selection--single {
-	border: none;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-	background: #1C1D1F;
-	border: none;
-	border-bottom: 2px solid #fff;
-	height: auto;
-	color: #fff;
-	line-height: 43px;
-	margin-top: -3px;
-
-}
-
-.select2-results__option {
-	background: rgba(0,0,0,.8);
-}
-
-.select2-container--default .select2-results__option--highlighted[aria-selected],
-.select2-container--default .select2-results__option[aria-selected=true]{
-	background-color: #0073aa;
-}
-
-.select2-container--open .select2-dropdown--below {
-	margin-top: 20px;
-}
-
-/*.woocommerce-checkout .cart .button, .woocommerce-checkout .cart input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce input.button {*/
-/*color: black !important;*/
-/*}*/
-
-input[type="text"], textarea {
-	border: none;
-	border-bottom: 2px solid #fff;
-}
-
-.woocommerce-checkout .col2-set .col-1,
-.woocommerce-checkout .woocommerce-page .col2-set .col-1 {
-	width: 100%;
-}
-
-.woocommerce-checkout .entry-content .woocommerce {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.woocommerce-checkout .col2-set .col-2,
-.woocommerce-checkout .woocommerce-page .col2-set .col-2 {
-	float: right;
-	width: 100%;
-	margin: 40px 0px;
-}
-
-#place_order {
-	height: 60px;
-}
-
-.wc-item-downloads a {
-	color: #ffe593 !important;
-}
-
-.wc-item-downloads a:hover {
-	color: #eca76f !important;
-}
-
-#text-33 {
-	width:100%;
-}
-
-#text-33 .widget-wrap h4 {
-	display: block;
-}
-
-#text-33 .widget-wrap .textwidget p {
-	display: block;
-	max-width: 200px;
-	text-align: center;
-	margin: 10px auto;
-}
-
-#text-33 .widget-wrap .textwidget p a {
-	display: block;
-}
-
-.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
-	min-height: 67px;
-}
-
-.woocommerce ul.products li.product .price {
-	margin-bottom: 1em;
-}
-
-.woocommerce-checkout .genesis-nav-menu .menu-item {
-	display: none !important;
-}
-
-.woocommerce-checkout .genesis-nav-menu .fa-shopping-cart {
-	display: none !important;
-}
-
-.wc_payment_method {
-	margin: 30px 0;
-}
-
-.order-again {
-	display: none;
-}
-
-#stripe-card-element {
-	background: none !important;
 }
