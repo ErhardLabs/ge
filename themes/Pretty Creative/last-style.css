@@ -2402,3 +2402,7 @@ input[type="text"], textarea {
 .order-again {
 	display: none;
 }
+
+#stripe-card-element {
+	background: none !important;
+}
