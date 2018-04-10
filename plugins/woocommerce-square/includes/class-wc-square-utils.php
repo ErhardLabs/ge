@@ -44,7 +44,7 @@ class WC_Square_Utils {
 			$formatted['name']        = __( 'Regular', 'woocommerce-square' );
 			$formatted['price_money'] = array(
 				'currency_code' => apply_filters( 'woocommerce_square_currency', get_woocommerce_currency() ),
-				'amount'        => WC_Square_Utils::format_amount_to_square( version_compare( WC_VERSION, '3.0.0', '<' ) ? $variation->get_display_price() : wc_get_price_excluding_tax( $variation ) ),
+				'amount'        => (int) WC_Square_Utils::format_amount_to_square( version_compare( WC_VERSION, '3.0.0', '<' ) ? $variation->get_display_price() : wc_get_price_excluding_tax( $variation ) ),
 			);
 			$formatted['sku']         = $variation->get_sku();
 
@@ -64,6 +64,19 @@ class WC_Square_Utils {
 	}
 
 	/**
+	 * Normalize description text to Square
+	 * Square expects no HTML to be in the description and
+	 * the limit of characters is 4095.
+	 *
+	 * @since 1.0.27
+	 * @param mixed $description
+	 * @return string
+	 */
+	public static function normalize_description( $description = '' ) {
+		return substr( wp_strip_all_tags( $description ), 0, 4095 );
+	}
+
+	/**
 	 * Convert a WC Product into a Square Item for Update
 	 *
 	 * Updates (PUT) don't accept the same parameters (namely variations) as Creation
@@ -77,12 +90,14 @@ class WC_Square_Utils {
 
 		$formatted = array(
 			'name'        => $wc_product->get_title(),
-			'description' => wp_strip_all_tags( version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_product->post->post_content : $wc_product->get_description() ),
+			'description' => self::normalize_description( version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_product->post->post_content : $wc_product->get_description() ),
 			'visibility'  => 'PUBLIC',
 		);
 
 		if ( $include_category ) {
-			if ( $square_cat_id = self::get_square_category_id_for_wc_product( $wc_product ) ) {
+			$square_cat_id = self::get_square_category_id_for_wc_product( $wc_product );
+
+			if ( $square_cat_id ) {
 				$formatted['category_id'] = $square_cat_id;
 			}
 		}
@@ -109,7 +124,7 @@ class WC_Square_Utils {
 		if ( 'simple' === ( version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_product->product_type : $wc_product->get_type() ) ) {
 
 			$formatted['variations'] = array(
-				WC_Square_Utils::format_wc_variation_for_square_api( $wc_product, $include_inventory )
+				WC_Square_Utils::format_wc_variation_for_square_api( $wc_product, $include_inventory ),
 			);
 
 		} elseif ( 'variable' === ( version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_product->product_type : $wc_product->get_type() ) ) {
@@ -219,7 +234,9 @@ class WC_Square_Utils {
 		}
 
 		if ( $include_category && isset( $square_item->category->id ) ) {
-			if ( $wc_cat_id = self::get_wc_category_id_for_square_category_id( $square_item->category->id ) ) {
+			$wc_cat_id = self::get_wc_category_id_for_square_category_id( $square_item->category->id );
+
+			if ( $wc_cat_id ) {
 				$formatted['categories'] = array( $wc_cat_id );
 			}
 		}
@@ -235,13 +252,14 @@ class WC_Square_Utils {
 
 			}
 
-			$formatted['attributes'] = array( array(
-				'name'      => 'Attribute',
-				'slug'      => 'attribute',
-				'position'  => 0,
-				'visible'   => true,
-				'variation' => true,
-				'options'   => wp_list_pluck( $square_item->variations, 'name' ),
+			$formatted['attributes'] = array(
+				array(
+					'name'      => 'Attribute',
+					'slug'      => 'attribute',
+					'position'  => 0,
+					'visible'   => true,
+					'variation' => true,
+					'options'   => wp_list_pluck( $square_item->variations, 'name' ),
 				),
 			);
 
@@ -275,9 +293,10 @@ class WC_Square_Utils {
 			'sku'            => ! empty( $square_item_variation->sku ) ? $square_item_variation->sku : '',
 			'regular_price'  => self::format_square_price_for_wc( $square_item_variation->price_money->amount ),
 			'stock_quantity' => null,
-			'attributes'     => array( array(
-				'name'   => 'Attribute',
-				'option' => ! empty( $square_item_variation->name ) ? $square_item_variation->name : '',
+			'attributes'     => array(
+				array(
+					'name'   => 'Attribute',
+					'option' => ! empty( $square_item_variation->name ) ? $square_item_variation->name : '',
 				),
 			),
 		);
@@ -423,7 +442,9 @@ class WC_Square_Utils {
 
 			}
 
-			if ( $square_cat_id = self::get_wc_term_square_id( $top_level_id ) ) {
+			$square_cat_id = self::get_wc_term_square_id( $top_level_id );
+
+			if ( $square_cat_id ) {
 				return $square_cat_id;
 			}
 		}
@@ -712,6 +733,10 @@ class WC_Square_Utils {
 
 		$wc_variation_ids = array();
 
+		if ( ! is_object( $wc_product ) ) {
+			return $wc_variation_ids;
+		}
+
 		if ( 'simple' === ( version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_product->product_type : $wc_product->get_type() ) ) {
 
 			if ( $wc_product->managing_stock() ) {
@@ -806,25 +831,25 @@ class WC_Square_Utils {
 
 		switch ( strtoupper( $currency ) ) {
 			// Zero decimal currencies
-			case 'BIF' :
-			case 'CLP' :
-			case 'DJF' :
-			case 'GNF' :
-			case 'JPY' :
-			case 'KMF' :
-			case 'KRW' :
-			case 'MGA' :
-			case 'PYG' :
-			case 'RWF' :
-			case 'VND' :
-			case 'VUV' :
-			case 'XAF' :
-			case 'XOF' :
-			case 'XPF' :
+			case 'BIF':
+			case 'CLP':
+			case 'DJF':
+			case 'GNF':
+			case 'JPY':
+			case 'KMF':
+			case 'KRW':
+			case 'MGA':
+			case 'PYG':
+			case 'RWF':
+			case 'VND':
+			case 'VUV':
+			case 'XAF':
+			case 'XOF':
+			case 'XPF':
 				$total = absint( $total );
 				break;
-			default :
-				$total = round( $total, 2 ) * 100; // In cents
+			default:
+				$total = absint( wc_format_decimal( ( (float) $total * 100 ), wc_get_price_decimals() ) ); // In cents.
 				break;
 		}
 
@@ -842,24 +867,24 @@ class WC_Square_Utils {
 
 		switch ( strtoupper( $currency ) ) {
 			// Zero decimal currencies
-			case 'BIF' :
-			case 'CLP' :
-			case 'DJF' :
-			case 'GNF' :
-			case 'JPY' :
-			case 'KMF' :
-			case 'KRW' :
-			case 'MGA' :
-			case 'PYG' :
-			case 'RWF' :
-			case 'VND' :
-			case 'VUV' :
-			case 'XAF' :
-			case 'XOF' :
-			case 'XPF' :
+			case 'BIF':
+			case 'CLP':
+			case 'DJF':
+			case 'GNF':
+			case 'JPY':
+			case 'KMF':
+			case 'KRW':
+			case 'MGA':
+			case 'PYG':
+			case 'RWF':
+			case 'VND':
+			case 'VUV':
+			case 'XAF':
+			case 'XOF':
+			case 'XPF':
 				$total = absint( $total );
 				break;
-			default :
+			default:
 				$total = wc_format_decimal( absint( $total ) / 100 );
 				break;
 		}
@@ -900,6 +925,8 @@ class WC_Square_Utils {
 		delete_transient( 'wc_square_inventory' );
 
 		delete_transient( 'wc_square_polling' );
+
+		delete_transient( 'wc_square_manual_sync_processing' );
 
 		return true;
 	}

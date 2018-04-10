@@ -1,5 +1,40 @@
 *** WooCommerce Square Changelog ***
 
+2018-04-04 - version 1.0.28
+* Fix   - Double inventory sync for newly created products.
+* Fix   - Infinite loop with pagination, where Square keeps sending the same link.
+* Fix   - Remove usage of deprecated jQuery method.
+* Fix   - Sync job should not be sending anything if there are no stock changes.
+* Fix   - Trigger to decrease stock upon purchase not working
+* Tweak - Add logging and skip sync in case store's currency/country is not allowed.
+* Tweak - Improve debug logging when fetching inventory
+* Tweak - Inventory reduction in Square will be treated as stock sale.
+
+2018-02-19 - version 1.0.27
+* Fix - In some cases request timeouts are not set long enough causing timeout errors.
+* Fix - Square to WC sync sets products with 0 quantity to In Stock.
+* Fix - Potential issue with Square to WC sync when response is not an array.
+* Fix - When description is more than 4095 characters, sync fails to Square.
+* Fix - Add checks to product object before scheduling an event to prevent errors in cron job.
+* Fix - Add check to prevent auto inventory poll from running when a manual sync is in progress.
+
+2018-01-29 - version 1.0.26
+* Fix - Call to undefined method causes error.
+
+2018-01-29 - version 1.0.25
+* Tweaks - Error handling.
+* Add - Public Release on .org
+
+2017-12-13 - version 1.0.24
+* Fix - In some cases rounding issues occur causing payment unable to process.
+* Update - WC tested up to version.
+* Add - Readme.txt.
+
+2017-11-10 - version 1.0.23
+* Add - WC minimum requirements in header.
+* Fix - WC Product sometimes is not a proper object preventing sync.
+* Fix - PHP 7 notice with amount not cast an int.
+
 2017-09-06 - version 1.0.22
 * Tweak - Increase inventory polling cache and add timeout limit.
 * Fix - CRON scheduling time not using UTC causes delay in CRON job.

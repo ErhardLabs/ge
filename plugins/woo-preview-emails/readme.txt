@@ -2,8 +2,8 @@
 Contributors: digamberpradhan
 Tags: WooCommerce, Emails, Preview, WooCommerce Preview Emails
 Requires at least: 3.8
-Tested up to: 4.8
-Stable tag: 1.3.0
+Tested up to: 4.9.4
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,12 @@ You can now send test mails, to test on actual devices
 4. Example
 5. Send emails to yourself to check on other devices
 == Changelog ==
+= 1.4.0 =
+Fixed fatal error issue when selecting orders via dropdown
+
+= 1.3.1 =
+Added support for On Hold payment status using BACS, thanks again to @prasidhda https://profiles.wordpress.org/prasidhda for pointing out the issue
+
 = 1.3.0 =
 Fixed issue where emails send function was causing fatal error, thanks to @prasidhda https://profiles.wordpress.org/prasidhda
 

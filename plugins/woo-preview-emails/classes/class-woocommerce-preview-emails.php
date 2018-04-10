@@ -125,6 +125,7 @@ class WooCommercePreviewEmails{
 
 		if( is_admin() && isset( $_POST['preview_email'] ) && wp_verify_nonce( $_POST['preview_email'] , 'woocommerce_preview_email' ) ):
 			$condition = false;
+			$wc_payment_gateways = WC_Payment_Gateways::instance();
 					if( isset($_POST['choose_email']) 
 
 						&& ( $_POST['choose_email'] == 'WC_Email_Customer_New_Account' || $_POST['choose_email'] == 'WC_Email_Customer_Reset_Password' ) 
@@ -142,8 +143,9 @@ class WooCommercePreviewEmails{
 			/*Load the styles and scripts*/
 			require_once WOO_PREVIEW_EMAILS_DIR.'/includes/views/result/style.php';
 			require_once WOO_PREVIEW_EMAILS_DIR.'/includes/views/result/scripts.php';
-				
-				$orderID 		 = absint( $_POST['orderID'] );
+
+			    /*Make Sure serached order is selected */
+				$orderID 		 = absint( !empty($_POST['search_order'])? $_POST['search_order'] : $_POST['orderID'] );
 				$index  	 	 = esc_attr( $_POST['choose_email'] );
 				$recipeint_email = $_POST['email'];
 				

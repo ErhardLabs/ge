@@ -21,26 +21,33 @@ class WC_Square_Bulk_Sync_Handler {
 		$this->wc_to_square = $to_square;
 		$this->square_to_wc = $from_square;
 
-		add_action( 'wp_ajax_square_to_wc_ajax', array( $this, 'square_to_wc_ajax' ) );
-		add_action( 'wp_ajax_wc_to_square_ajax', array( $this, 'wc_to_square_ajax' ) );
+		add_action( 'wp_ajax_square_to_wc', array( $this, 'square_to_wc_ajax' ) );
+		add_action( 'wp_ajax_wc_to_square', array( $this, 'wc_to_square_ajax' ) );
+	}
 
+	/**
+	 * Sets manual sync processing flag to prevent
+	 * other processes from running such as inventory
+	 * polling.
+	 *
+	 * @since 1.0.27
+	 */
+	public function sync_processing() {
+		$cache_age = apply_filters( 'woocommerce_square_manual_sync_processing_cache', 2 * HOUR_IN_SECONDS );
+		set_transient( 'wc_square_manual_sync_processing', 'yes', $cache_age );
 	}
 
 	/**
 	 * Process Square to WC ajax
 	 *
-	 * @access public
 	 * @since 1.0.0
 	 * @version 1.0.14
 	 * @return bool
 	 */
 	public function square_to_wc_ajax() {
-		$nonce = $_POST['ajaxSyncNonce'];
+		check_ajax_referer( 'square-sync', 'security' );
 
-		// bail if nonce don't check out
-		if ( ! wp_verify_nonce( $nonce, '_wc_square_sync_nonce' ) ) {
-			wp_die( __( 'Cheatin&#8217; huh?', 'woocommerce-square' ) );		
-		}
+		$this->sync_processing();
 
 		/**
 		 * Fires if a valid bulk Square to WC sync is being processed.
@@ -71,9 +78,7 @@ class WC_Square_Bulk_Sync_Handler {
 		// if a WC to Square process still needs to be completed reset the caches
 		// as the two processes ( WC -> Square and Square -> WC ) use the same cache
 		if ( 'wc_to_square' === get_transient( 'sq_wc_sync_current_process' ) ) {
-
-			$this->connect->delete_all_caches();
-
+			WC_Square_Utils::delete_transients();
 		}
 
 		// set Square->WC as the current active process
@@ -104,7 +109,7 @@ class WC_Square_Bulk_Sync_Handler {
 		// run this only on first process
 		if ( $process === 0 ) {
 			$square_items    = $this->connect->get_square_products();
-			$square_item_ids = ! empty( $square_items ) ? array_unique( wp_list_pluck( $square_items, 'id' ) ) : array();
+			$square_item_ids = ! empty( $square_items ) ? array_unique( wp_list_pluck( (array) $square_items, 'id' ) ) : array();
 
 			// cache it
 			set_transient( 'wc_square_processing_total_count', count( $square_item_ids ), $cache_age );
@@ -145,31 +150,26 @@ class WC_Square_Bulk_Sync_Handler {
 				$this->send_sync_email( $emails, __( 'Sync Completed', 'woocommerce-square' ) );
 
 				// reset the processed ids
-				$this->connect->delete_all_caches();
+				WC_Square_Utils::delete_transients();
 
 				$message = __( 'Sync completed', 'woocommerce-square' );
 			}
 
 			wp_send_json( array( 'process' => $process, 'percentage' => $percentage, 'type' => 'square-to-wc', 'message' => $message ) );
-
 		}
 	}
 
 	/**
 	 * Process WC to Square ajax
 	 *
-	 * @access public
 	 * @since 1.0.0
 	 * @version 1.0.0
 	 * @return bool
 	 */
 	public function wc_to_square_ajax() {
-		$nonce = $_POST['ajaxSyncNonce'];
+		check_ajax_referer( 'square-sync', 'security' );
 
-		// bail if nonce don't check out
-		if ( ! wp_verify_nonce( $nonce, '_wc_square_sync_nonce' ) ) {
-		     wp_die( __( 'Cheatin&#8217; huh?', 'woocommerce-square' ) );		
-		}
+		$this->sync_processing();
 
 		$settings = get_option( 'woocommerce_squareconnect_settings' );
 		$emails = ! empty( $settings['sync_email'] ) ? $settings['sync_email'] : '';
@@ -193,9 +193,7 @@ class WC_Square_Bulk_Sync_Handler {
 		// if a Square to WC process still needs to be completed reset the caches
 		// as the two processes ( WC -> Square and Square -> WC ) use the same cache
 		if ( 'square_to_wc' === get_transient( 'sq_wc_sync_current_process' ) ) {
-
-			$this->connect->delete_all_caches();
-
+			WC_Square_Utils::delete_transients();
 		}
 
 		// set WC->Square as the current active process
@@ -256,7 +254,7 @@ class WC_Square_Bulk_Sync_Handler {
 				$this->send_sync_email( $emails, __( 'Sync Completed', 'woocommerce-square' ) );
 
 				// reset the processed ids
-				$this->connect->delete_all_caches();
+				WC_Square_Utils::delete_transients();
 
 				$message = __( 'Sync completed', 'woocommerce-square' );
 			}

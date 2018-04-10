@@ -1,5 +1,5 @@
 /*!
- * WP Googel Analytics Events | v2.5.0
+ * WP Googel Analytics Events | v2.5.1
  * Copyright (c) 2013 Yuval Oren (@yuvalo)
  * License: GPLv2
  */
@@ -21,7 +21,7 @@ var scroll_events = (function ($) {
         var event_category = !category ? '' : category;
         var event_action = !action ? '' : action;
         var event_label = !label ? '' : label;
-        var event_bounce = !bounce ? false : bounce;
+        var event_bounce = bounce === "true" ? true : false;
         var event_value = !evalue ? false : evalue;
 
         if( typeof ga_element === "undefined" ){

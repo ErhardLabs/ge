@@ -1,41 +1,29 @@
 <?php
 /**
  * Plugin Name: WooCommerce Square
- * Version: 1.0.22
+ * Version: 1.0.28
  * Plugin URI: https://woocommerce.com/products/square/
  * Description: Adds ability to sync inventory between WooCommerce and Square POS. In addition, you can also make purchases through the Square payment gateway.
  * Author: WooCommerce
  * Author URI: https://www.woocommerce.com/
  * Requires at least: 4.5.0
- * Tested up to: 4.7.2
- * Requires WooCommerce at least: 2.6.0
+ * Tested up to: 4.9
+ * WC requires at least: 2.6
+ * WC tested up to: 3.3
  * Text Domain: woocommerce-square
  * Domain Path: /languages
  *
  * @package WordPress
  * @author WooCommerce
- * Woo: 1770503:e907be8b86d7df0c8f8e0d0020b52638
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/**
- * Required functions
- */
-if ( ! function_exists( 'woothemes_queue_update' ) ) {
-	require_once( 'woo-includes/woo-functions.php' );
-}
-
-/**
- * Plugin updates
- */
-woothemes_queue_update( plugin_basename( __FILE__ ), 'e907be8b86d7df0c8f8e0d0020b52638', '1770503' );
-
 if ( ! class_exists( 'Woocommerce_Square' ) ) :
 
-	define( 'WC_SQUARE_VERSION', '1.0.22' );
+	define( 'WC_SQUARE_VERSION', '1.0.28' );
 
 	/**
 	 * Main class.
@@ -212,6 +200,10 @@ if ( ! class_exists( 'Woocommerce_Square' ) ) :
 		 * @return null
 		 */
 		public function check_environment() {
+			if ( ! current_user_can( 'manage_woocommerce' ) ) {
+				return;
+			}
+
 			if ( ! $this->is_allowed_countries() ) {
 				$admin_page = 'wc-settings';
 
@@ -290,7 +282,7 @@ if ( ! class_exists( 'Woocommerce_Square' ) ) :
 
 			register_deactivation_hook( __FILE__, array( 'WC_Square_Deactivation', 'deactivate' ) );
 
-			if ( is_woocommerce_active() ) {
+			if ( class_exists( 'WooCommerce' ) ) {
 
 				add_filter( 'woocommerce_integrations', array( $this, 'include_integration' ) );
 
@@ -332,9 +324,10 @@ if ( ! class_exists( 'Woocommerce_Square' ) ) :
 				wp_enqueue_script( 'wc-square-admin-scripts' );
 
 				$localized_vars = array(
-					'ajaxurl'       => admin_url( 'admin-ajax.php' ),
-					'ajaxSyncNonce' => wp_create_nonce( '_wc_square_sync_nonce' ),
-					'i18n'          => array(
+					'admin_ajax_url'   => admin_url( 'admin-ajax.php' ),
+					'ajaxSyncNonce'    => wp_create_nonce( 'square-sync' ),
+					'country_currency' => $this->is_allowed_countries() && $this->is_allowed_currencies(),
+					'i18n'             => array(
 						'confirm_sync' => __( 'This process may take awhile depending on the amount of items that need to be synced. Please do not close this tab/window or else the sync will terminate. Click OK to continue to sync.', 'woocommerce-square' ),
 					),
 				);

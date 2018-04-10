@@ -302,6 +302,11 @@ class WC_Square_Sync_From_Square {
 	 * @param stdClass $square_item
 	 */
 	public function sync_inventory( WC_Product $wc_product, $square_item ) {
+		if ( ! Woocommerce_Square::instance()->is_allowed_countries()
+			|| ! Woocommerce_Square::instance()->is_allowed_currencies() ) {
+			WC_Square_Sync_Logger::log( '[Square -> WC] Error syncing inventory for WC Product - Country or Currency mismatch' );
+			return;
+		}
 
 		$wc_variation_ids = WC_Square_Utils::get_stock_managed_wc_variation_ids( $wc_product );
 		$square_inventory = $this->connect->get_square_inventory();
@@ -323,6 +328,14 @@ class WC_Square_Sync_From_Square {
 
 					$square_stock = (int) $square_inventory[ $square_variation_id ];
 					$wc_variation = wc_get_product( $wc_variation_id );
+
+					$current_stock = $wc_variation->get_stock_quantity();
+
+					// Do not trigger sync if setting same stock quantity
+					if ( $square_stock === $current_stock ) {
+						continue;
+					}
+
 					$result       = version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_variation->set_stock( $square_stock ) : wc_update_product_stock( $wc_variation, $square_stock );
 
 				}
@@ -335,6 +348,12 @@ class WC_Square_Sync_From_Square {
 	 * @todo if searching for square id fails, check for SKU
 	 */
 	public function sync_all_inventory() {
+		if ( ! Woocommerce_Square::instance()->is_allowed_countries()
+			|| ! Woocommerce_Square::instance()->is_allowed_currencies() ) {
+			WC_Square_Sync_Logger::log( '[Square -> WC] Error syncing all inventory - Country or Currency mismatch' );
+			return;
+		}
+
 		try {
 			set_time_limit( apply_filters( 'woocommerce_square_inventory_sync_timeout_limit', 200 ) );
 
@@ -366,6 +385,14 @@ class WC_Square_Sync_From_Square {
 					$product_id = version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_variation_product->id : $wc_variation_product->get_id();
 				} elseif ( 'variation' === ( version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_variation_product->product_type : $wc_variation_product->get_type() ) ) {
 					$product_id = version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_variation_product->parent->id : $wc_variation_product->get_parent_id();
+				}
+
+				$current_stock = $wc_variation_product->get_stock_quantity();
+
+				// Do not trigger sync if setting same stock quantity
+				if ( $stock === $current_stock ) {
+					WC_Square_Sync_Logger::log( sprintf( '[Square -> WC] Syncing WC product inventory for Square Item ID %s - No change in stock quantity for product/variation, skipping.', $variation_id ) );
+					continue;
 				}
 
 				if ( is_object( $wc_variation_product ) && ! WC_Square_Utils::skip_product_sync( $product_id ) ) {

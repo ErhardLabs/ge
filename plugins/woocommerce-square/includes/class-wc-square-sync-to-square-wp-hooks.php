@@ -50,6 +50,14 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 	protected $enabled = true;
 
 	/**
+	 * Keep track of which products have already assigned a sync job
+	 *
+	 * @var array
+	 */
+	protected $products_synced = array(
+	);
+
+	/**
 	 * WC_Square_Sync_To_Square_WordPress_Hooks constructor.
 	 *
 	 * @param WC_Integration           $integration
@@ -115,9 +123,13 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 
 			if ( 'WC_Square_Integration' !== $param ) {
 
-				add_action( 'woocommerce_product_set_stock', array( $this, 'schedule_on_product_set_stock' ) );
+				// Only add the stock hooks for versions below 3.0. In versions
+				// >= 3.0 the save hook will take care of stock inventory as well.
+				if ( version_compare( WC_VERSION, '3.0.0', '<' ) ) {
+					add_action( 'woocommerce_product_set_stock', array( $this, 'schedule_on_product_set_stock' ) );
 
-				add_action( 'woocommerce_variation_set_stock', array( $this, 'schedule_on_variation_set_stock' ) );
+					add_action( 'woocommerce_variation_set_stock', array( $this, 'schedule_on_variation_set_stock' ) );
+				}
 			}
 		}
 
@@ -142,16 +154,10 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 		}
 
 		if ( is_object( $wc_product ) && ! empty( $wc_product ) ) {
-			$this->square->sync_product( $wc_product, $this->sync_categories, $this->sync_inventory, $this->sync_images );
+			$this->square->sync_product( $wc_product, $this->sync_categories, $this->sync_categories, $this->sync_images );
 		}
 
-		$this->delete_all_caches();
-
-		if ( version_compare( WC_VERSION, '3.0.0', '<' ) ) {
-			add_action( 'save_post', array( $this, 'pre_wc_30_on_save_post' ), 10, 2 );
-		} else {
-			add_action( 'woocommerce_before_product_object_save', array( $this, 'on_save_post' ), 10, 2 );
-		}
+		WC_Square_Utils::delete_transients();
 	}
 
 	/**
@@ -166,7 +172,7 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 		$post = get_post( $product->get_id() );
 
 		if ( ! $this->enabled
-			|| ( defined( 'DOING_AJAX' ) && DOING_AJAX ) // TODO: Look into removing this check.
+			|| in_array( $product->get_id(), $this->products_synced )
 			|| ( defined( 'WP_LOAD_IMPORTERS' ) && WP_LOAD_IMPORTERS )
 			|| wp_is_post_revision( $post )
 			|| wp_is_post_autosave( $post )
@@ -176,14 +182,17 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 			return;
 		}
 
+		// Because of metaboxes, core may fire save on the product a couple of times.
+		// TODO: This workaround should be resolved once we re-architecture Square to
+		// use Action Scheduler (or something similar, a queue) to manage jobs.
+		$this->products_synced[] = $product->get_id();
+
 		$args = array(
 			$product->get_id(),
 			uniqid(), // this is needed due to WP not scheduling new events with same name and args
 		);
 
 		wp_schedule_single_event( time() + 60, 'wc_square_save_post_event', $args );
-
-		remove_action( 'woocommerce_before_product_object_save', array( $this, 'on_save_post' ) );
 	}
 
 	/**
@@ -213,8 +222,6 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 		);
 
 		wp_schedule_single_event( time() + 60, 'wc_square_save_post_event', $args );
-
-		remove_action( 'save_post', array( $this, 'pre_wc_30_on_save_post' ) );
 	}
 
 	/**
@@ -237,6 +244,10 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 	 * @version 1.0.16
 	 */
 	public function schedule_on_product_set_stock( WC_Product $wc_product ) {
+		if ( ! is_object( $wc_product ) || empty( $wc_product ) ) {
+			return;
+		}
+
 		$args = array(
 			$wc_product,
 			uniqid(), // this is needed due to WP not scheduling new events with same name and args
@@ -256,6 +267,10 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 	 * @version 1.0.16
 	 */
 	public function schedule_on_variation_set_stock( WC_Product_Variation $wc_variation ) {
+		if ( ! is_object( $wc_variation ) || empty( $wc_variation ) ) {
+			return;
+		}
+
 		$args = array(
 			$wc_variation,
 			uniqid(), // this is needed due to WP not scheduling new events with same name and args
@@ -285,28 +300,5 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 	public function on_variation_set_stock( $wc_variation ) {
 		$product = version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_variation->parent : wc_get_product( $wc_variation->get_parent_id() );
 		$this->square->sync_inventory( $product );
-	}
-
-	/**
-	 * Deletes cached data ( both Square and WC )
-	 *
-	 * @access public
-	 * @since 1.0.14
-	 * @version 1.0.14
-	 * @return bool
-	 */
-	public function delete_all_caches() {
-
-		delete_transient( 'wc_square_processing_total_count' );
-
-		delete_transient( 'wc_square_processing_ids' );
-
-		delete_transient( 'wc_square_syncing_square_inventory' );
-
-		delete_transient( 'sq_wc_sync_current_process' );
-
-		delete_transient( 'wc_square_inventory' );
-
-		return true;
 	}
 }

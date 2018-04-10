@@ -208,11 +208,11 @@ function get_product_background_svg( $args ) {
 
     if ( $args['product_cat'] == 'music' ){
 
-      echo '<img class="product-background record" src="'. plugin_dir_url() . '/ge-custom-product-slider/assets/icons/recordIcon.svg" alt="Placeholder"/>';
+      echo '<img class="product-background record" src="'. plugin_dir_url(__FILE__) . '/ge-custom-product-slider/assets/icons/recordIcon.svg" alt="Placeholder"/>';
 
     } elseif ( $args['product_cat'] == 'tabs' ) {
 
-      echo '<img class="product-background tabs" src="'. plugin_dir_url() . '/ge-custom-product-slider/assets/icons/tabsIcon.svg" alt="Placeholder"/>';
+      echo '<img class="product-background tabs" src="'. plugin_dir_url(__FILE__) . '/ge-custom-product-slider/assets/icons/tabsIcon.svg" alt="Placeholder"/>';
 
     }
 

@@ -2,7 +2,7 @@
 Contributors: yuvalo
 Tags: analytics, google, events, ga, google analytics, tracking
 Tested up to: 4.8.2
-Stable tag: 2.5.0
+Stable tag: 2.5.1
 License: GPLv2
 Requires at least: 3.0
 
@@ -90,6 +90,9 @@ If you are looking for more in-depth support, we encourage you to check out [WP 
 3. Plugin Scroll Settings screenshot-5.png
 2. Google Analytics real time events screenshot-2.png
 == Changelog ==
+
+= Version 2.5.1 =
+1. Fixed an issue with the none-interaction field
 
 = Version 2.5.0 =
 1. Added support for Global Site Tags - The new tracking code from Google Analytics

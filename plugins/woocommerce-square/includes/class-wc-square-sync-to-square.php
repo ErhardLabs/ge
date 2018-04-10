@@ -174,6 +174,12 @@ class WC_Square_Sync_To_Square {
 
 		}
 
+		if ( ! Woocommerce_Square::instance()->is_allowed_countries()
+			|| ! Woocommerce_Square::instance()->is_allowed_currencies() ) {
+			WC_Square_Sync_Logger::log( '[WC -> Square] Error syncing inventory for WC Product - Country or Currency mismatch' );
+			return;
+		}
+
 		// Look for a Square Item with a matching SKU
 		$square_item = $this->get_square_item_for_wc_product( $wc_product );
 
@@ -219,6 +225,12 @@ class WC_Square_Sync_To_Square {
 	 * @param bool $create
 	 */
 	public function sync_inventory( WC_Product $wc_product, $create = false ) {
+		if ( ! Woocommerce_Square::instance()->is_allowed_countries()
+			|| ! Woocommerce_Square::instance()->is_allowed_currencies() ) {
+			WC_Square_Sync_Logger::log( '[WC -> Square] Error syncing inventory for WC Product - Country or Currency mismatch' );
+			return;
+		}
+
 		// refresh cache first to get the latest inventory
 		$this->connect->refresh_inventory_cache();
 
@@ -245,7 +257,25 @@ class WC_Square_Sync_To_Square {
 
 				$delta = $wc_stock - $square_stock;
 
-				$result = $this->connect->update_square_inventory( $square_variation_id, $delta );
+				// Do not trigger inventory update if there is no stock changes.
+				if ( $delta == 0 ) {
+					WC_Square_Sync_Logger::log( sprintf( '[WC -> Square] Syncing WC product inventory for WC Product %d - No change in stock quantity for product/variation, skipping.', $wc_variation_id ) );
+					continue;
+				}
+
+				// Assume delta is gt 0, i.e. we received stock
+				$type = 'RECEIVE_STOCK';
+
+				if ( $delta < 0 ) {
+					// Delta is lt 0, so it is treated as sales
+					$type = 'SALE';
+				}
+
+				$result = $this->connect->update_square_inventory(
+					$square_variation_id,
+					$delta,
+					apply_filters( 'woocommerce_square_inventory_type', $type, $delta )
+				);
 
 				if ( ! $result ) {
 
@@ -297,6 +327,15 @@ class WC_Square_Sync_To_Square {
 	 * @return object|bool Updated Square Item object on success, boolean False on failure.
 	 */
 	public function update_product( WC_Product $wc_product, $square_item, $include_category = false, $include_inventory = false ) {
+		if ( empty( $square_item ) || empty( $square_item->id ) ) {
+			WC_Square_Sync_Logger::log( sprintf( '[WC -> Square] Error updating Square Item ID N/A (WC Product %d).', version_compare( WC_VERSION, '3.0.0', '<' ) ? $wc_product->id : $wc_product->get_id() ) );
+			return false;
+		}
+
+		if ( empty( $wc_product ) ) {
+			WC_Square_Sync_Logger::log( sprintf( '[WC -> Square] Error updating Square Item ID %s (WC Product N/A).', $square_item->id ) );
+			return false;
+		}
 
 		$square_item = $this->connect->update_square_product( $wc_product, $square_item->id, $include_category, $include_inventory );
 

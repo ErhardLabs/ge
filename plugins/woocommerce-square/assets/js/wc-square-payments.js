@@ -114,7 +114,7 @@
 					// remove any error messages first
 					$( '.payment_method_square .woocommerce-error' ).remove();
 
-					if ( $( '#payment_method_square' ).is( ':checked' ) && $( 'input.square-nonce' ).size() === 0 ) {
+					if ( $( '#payment_method_square' ).is( ':checked' ) && $( 'input.square-nonce' ).length === 0 ) {
 						wcSquarePaymentForm.requestCardNonce();
 
 						return false;
@@ -128,7 +128,7 @@
 					// remove any error messages first
 					$( '.payment_method_square .woocommerce-error' ).remove();
 
-					if ( $( '#payment_method_square' ).is( ':checked' ) && $( 'input.square-nonce' ).size() === 0 ) {
+					if ( $( '#payment_method_square' ).is( ':checked' ) && $( 'input.square-nonce' ).length === 0 ) {
 						wcSquarePaymentForm.requestCardNonce();
 
 						return false;

@@ -452,6 +452,7 @@ if ( ! class_exists( 'SS_WC_Settings_MailChimp' ) ) {
 						'options'     => array(
 							'woocommerce_checkout_before_customer_details' => __( 'Above customer details', 'woocommerce-mailchimp' ),
 							'woocommerce_checkout_after_customer_details' => __( 'Below customer details', 'woocommerce-mailchimp' ),
+							'woocommerce_checkout_before_order_review' => __( 'Order review above cart/product table.', 'woocommerce-mailchimp' ),
 							'woocommerce_review_order_before_submit' => __( 'Order review above submit', 'woocommerce-mailchimp' ),
 							'woocommerce_review_order_after_submit' => __( 'Order review below submit', 'woocommerce-mailchimp' ),
 							'woocommerce_review_order_before_order_total' => __( 'Order review above total', 'woocommerce-mailchimp' ),
@@ -613,7 +614,7 @@ if ( ! class_exists( 'SS_WC_Settings_MailChimp' ) ) {
 			if ( $this->mailchimp() && $this->has_list() ) {
 				$interest_groups = $this->mailchimp()->get_interest_categories_with_interests( $this->get_list() );
 			} else {
-				return false;
+				return array();
 			}
 
 			if ( $interest_groups === false ) {
@@ -621,7 +622,7 @@ if ( ! class_exists( 'SS_WC_Settings_MailChimp' ) ) {
 				add_action( 'admin_notices',         array( $this, 'mailchimp_api_error_msg' ) );
 				add_action( 'network_admin_notices', array( $this, 'mailchimp_api_error_msg' ) );
 
-				return false;
+				return array();
 
 			}
 

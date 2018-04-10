@@ -70,7 +70,7 @@ class WC_Square_WC_Products {
 
 		// Validate ID
 		if ( empty( $id ) ) {
-			return new WP_Error( "woocommerce_api_invalid_{$resource_name}_id", sprintf( __( 'Invalid %s ID', 'woocommerce' ), $type ), array( 'status' => 404 ) );
+			return new WP_Error( "woocommerce_api_invalid_{$resource_name}_id", sprintf( __( 'Invalid %s ID', 'woocommerce-square' ), $type ), array( 'status' => 404 ) );
 		}
 
 		// Only custom post types have per-post type/permission checks
@@ -79,7 +79,7 @@ class WC_Square_WC_Products {
 			$post = get_post( $id );
 
 			if ( null === $post ) {
-				return new WP_Error( "woocommerce_api_no_{$resource_name}_found", sprintf( __( 'No %1$s found with the ID equal to %2$s', 'woocommerce' ), $resource_name, $id ), array( 'status' => 404 ) );
+				return new WP_Error( "woocommerce_api_no_{$resource_name}_found", sprintf( __( 'No %1$s found with the ID equal to %2$s', 'woocommerce-square' ), $resource_name, $id ), array( 'status' => 404 ) );
 			}
 
 			// For checking permissions, product variations are the same as the product post type
@@ -87,7 +87,7 @@ class WC_Square_WC_Products {
 
 			// Validate post type
 			if ( $type !== $post_type ) {
-				return new WP_Error( "woocommerce_api_invalid_{$resource_name}", sprintf( __( 'Invalid %s', 'woocommerce' ), $resource_name ), array( 'status' => 404 ) );
+				return new WP_Error( "woocommerce_api_invalid_{$resource_name}", sprintf( __( 'Invalid %s', 'woocommerce-square' ), $resource_name ), array( 'status' => 404 ) );
 			}
 
 			// Validate permissions
@@ -95,19 +95,19 @@ class WC_Square_WC_Products {
 
 				case 'read':
 					if ( ! $this->is_readable( $post ) ) {
-						return new WP_Error( "woocommerce_api_user_cannot_read_{$resource_name}", sprintf( __( 'You do not have permission to read this %s', 'woocommerce' ), $resource_name ), array( 'status' => 401 ) );
+						return new WP_Error( "woocommerce_api_user_cannot_read_{$resource_name}", sprintf( __( 'You do not have permission to read this %s', 'woocommerce-square' ), $resource_name ), array( 'status' => 401 ) );
 					}
 					break;
 
 				case 'edit':
 					if ( ! $this->is_editable( $post ) ) {
-						return new WP_Error( "woocommerce_api_user_cannot_edit_{$resource_name}", sprintf( __( 'You do not have permission to edit this %s', 'woocommerce' ), $resource_name ), array( 'status' => 401 ) );
+						return new WP_Error( "woocommerce_api_user_cannot_edit_{$resource_name}", sprintf( __( 'You do not have permission to edit this %s', 'woocommerce-square' ), $resource_name ), array( 'status' => 401 ) );
 					}
 					break;
 
 				case 'delete':
 					if ( ! $this->is_deletable( $post ) ) {
-						return new WP_Error( "woocommerce_api_user_cannot_delete_{$resource_name}", sprintf( __( 'You do not have permission to delete this %s', 'woocommerce' ), $resource_name ), array( 'status' => 401 ) );
+						return new WP_Error( "woocommerce_api_user_cannot_delete_{$resource_name}", sprintf( __( 'You do not have permission to delete this %s', 'woocommerce-square' ), $resource_name ), array( 'status' => 401 ) );
 					}
 					break;
 			}
@@ -246,21 +246,21 @@ class WC_Square_WC_Products {
 
 		try {
 			if ( ! isset( $data['product'] ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_data', sprintf( __( 'No %1$s data specified to create %1$s', 'woocommerce' ), 'product' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_data', sprintf( __( 'No %1$s data specified to create %1$s', 'woocommerce-square' ), 'product' ), 400 );
 			}
 
 			$data = $data['product'];
 
 			// Check permissions.
 			if ( ! current_user_can( 'publish_products' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_create_product', __( 'You do not have permission to create products', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_create_product', __( 'You do not have permission to create products', 'woocommerce-square' ), 401 );
 			}
 
 			$data = apply_filters( 'woocommerce_api_create_product_data', $data, $this );
 
 			// Check if product title is specified.
 			if ( ! isset( $data['title'] ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_title', sprintf( __( 'Missing parameter %s', 'woocommerce' ), 'title' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_title', sprintf( __( 'Missing parameter %s', 'woocommerce-square' ), 'title' ), 400 );
 			}
 
 			// Check product type.
@@ -275,7 +275,7 @@ class WC_Square_WC_Products {
 
 			// Validate the product type.
 			if ( ! in_array( wc_clean( $data['type'] ), array_keys( wc_get_product_types() ) ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_type', sprintf( __( 'Invalid product type - the product type must be any of these: %s', 'woocommerce' ), implode( ', ', array_keys( wc_get_product_types() ) ) ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_type', sprintf( __( 'Invalid product type - the product type must be any of these: %s', 'woocommerce-square' ), implode( ', ', array_keys( wc_get_product_types() ) ) ), 400 );
 			}
 
 			// Enable description html tags.
@@ -351,7 +351,7 @@ class WC_Square_WC_Products {
 	public function edit_product( $id, $data ) {
 		try {
 			if ( ! isset( $data['product'] ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_data', sprintf( __( 'No %1$s data specified to edit %1$s', 'woocommerce' ), 'product' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_data', sprintf( __( 'No %1$s data specified to edit %1$s', 'woocommerce-square' ), 'product' ), 400 );
 			}
 
 			$data = $data['product'];
@@ -402,7 +402,7 @@ class WC_Square_WC_Products {
 
 			// Validate the product type.
 			if ( isset( $data['type'] ) && ! in_array( wc_clean( $data['type'] ), array_keys( wc_get_product_types() ) ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_type', sprintf( __( 'Invalid product type - the product type must be any of these: %s', 'woocommerce' ), implode( ', ', array_keys( wc_get_product_types() ) ) ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_type', sprintf( __( 'Invalid product type - the product type must be any of these: %s', 'woocommerce-square' ), implode( ', ', array_keys( wc_get_product_types() ) ) ), 400 );
 			}
 
 			// Check for featured/gallery images, upload it and set it.
@@ -447,7 +447,7 @@ class WC_Square_WC_Products {
 		try {
 			// Permissions check
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_categories', __( 'You do not have permission to read product categories', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_categories', __( 'You do not have permission to read product categories', 'woocommerce-square' ), 401 );
 			}
 
 			$product_categories = array();
@@ -478,18 +478,18 @@ class WC_Square_WC_Products {
 
 			// Validate ID
 			if ( empty( $id ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_category_id', __( 'Invalid product category ID', 'woocommerce' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_category_id', __( 'Invalid product category ID', 'woocommerce-square' ), 400 );
 			}
 
 			// Permissions check
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_categories', __( 'You do not have permission to read product categories', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_categories', __( 'You do not have permission to read product categories', 'woocommerce-square' ), 401 );
 			}
 
 			$term = get_term( $id, 'product_cat' );
 
 			if ( is_wp_error( $term ) || is_null( $term ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_category_id', __( 'A product category with the provided ID could not be found', 'woocommerce' ), 404 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_category_id', __( 'A product category with the provided ID could not be found', 'woocommerce-square' ), 404 );
 			}
 
 			$term_id = intval( $term->term_id );
@@ -533,12 +533,12 @@ class WC_Square_WC_Products {
 
 		try {
 			if ( ! isset( $data['product_category'] ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_category_data', sprintf( __( 'No %1$s data specified to create %1$s', 'woocommerce' ), 'product_category' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_category_data', sprintf( __( 'No %1$s data specified to create %1$s', 'woocommerce-square' ), 'product_category' ), 400 );
 			}
 
 			// Check permissions
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_create_product_category', __( 'You do not have permission to create product categories', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_create_product_category', __( 'You do not have permission to create product categories', 'woocommerce-square' ), 401 );
 			}
 
 			$defaults = array(
@@ -558,7 +558,7 @@ class WC_Square_WC_Products {
 			if ( $data['parent'] ) {
 				$parent = get_term_by( 'id', $data['parent'], 'product_cat' );
 				if ( ! $parent ) {
-					throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_category_parent', __( 'Product category parent is invalid', 'woocommerce' ), 400 );
+					throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_category_parent', __( 'Product category parent is invalid', 'woocommerce-square' ), 400 );
 				}
 			}
 
@@ -608,7 +608,7 @@ class WC_Square_WC_Products {
 
 		try {
 			if ( ! isset( $data['product_category'] ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_category', sprintf( __( 'No %1$s data specified to edit %1$s', 'woocommerce' ), 'product_category' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_category', sprintf( __( 'No %1$s data specified to edit %1$s', 'woocommerce-square' ), 'product_category' ), 400 );
 			}
 
 			$id   = absint( $id );
@@ -616,7 +616,7 @@ class WC_Square_WC_Products {
 
 			// Check permissions.
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_edit_product_category', __( 'You do not have permission to edit product categories', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_edit_product_category', __( 'You do not have permission to edit product categories', 'woocommerce-square' ), 401 );
 			}
 
 			$data     = apply_filters( 'woocommerce_api_edit_product_category_data', $data, $this );
@@ -646,7 +646,7 @@ class WC_Square_WC_Products {
 
 			$update = wp_update_term( $id, 'product_cat', $data );
 			if ( is_wp_error( $update ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_cannot_edit_product_catgory', __( 'Could not edit the category', 'woocommerce' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_cannot_edit_product_catgory', __( 'Could not edit the category', 'woocommerce-square' ), 400 );
 			}
 
 			if ( ! empty( $data['display'] ) ) {
@@ -923,7 +923,7 @@ class WC_Square_WC_Products {
 				if ( ! empty( $new_sku ) ) {
 					$unique_sku = wc_product_has_unique_sku( $product_id, $new_sku );
 					if ( ! $unique_sku ) {
-						throw new WC_Square_API_Exception( 'woocommerce_api_product_sku_already_exists', __( 'The SKU already exists on another product', 'woocommerce' ), 400 );
+						throw new WC_Square_API_Exception( 'woocommerce_api_product_sku_already_exists', __( 'The SKU already exists on another product', 'woocommerce-square' ), 400 );
 					} else {
 						update_post_meta( $product_id, '_sku', $new_sku );
 					}
@@ -1141,6 +1141,9 @@ class WC_Square_WC_Products {
 				update_post_meta( $product_id, '_backorders', $backorders );
 			} else {
 				$backorders = get_post_meta( $product_id, '_backorders', true );
+				if ( '' === $backorders ) {
+					$backorders = 'no';
+				}
 			}
 
 			if ( 'grouped' === $product_type ) {
@@ -1316,7 +1319,7 @@ class WC_Square_WC_Products {
 			}
 
 			// Generate a useful post title
-			$variation_post_title = sprintf( __( 'Variation #%1$s of %2$s', 'woocommerce' ), $variation_id, esc_html( get_the_title( $id ) ) );
+			$variation_post_title = sprintf( __( 'Variation #%1$s of %2$s', 'woocommerce-square' ), $variation_id, esc_html( get_the_title( $id ) ) );
 
 			// Update or Add post
 			if ( ! $variation_id ) {
@@ -1363,7 +1366,7 @@ class WC_Square_WC_Products {
 					if ( ! empty( $new_sku ) ) {
 						$unique_sku = wc_product_has_unique_sku( $variation_id, $new_sku );
 						if ( ! $unique_sku ) {
-							throw new WC_Square_API_Exception( 'woocommerce_api_product_sku_already_exists', __( 'The SKU already exists on another product', 'woocommerce' ), 400 );
+							throw new WC_Square_API_Exception( 'woocommerce_api_product_sku_already_exists', __( 'The SKU already exists on another product', 'woocommerce-square' ), 400 );
 						} else {
 							update_post_meta( $variation_id, '_sku', $new_sku );
 						}
@@ -1819,8 +1822,8 @@ class WC_Square_WC_Products {
 				'created_at' => $this->format_datetime( time() ), // Default to now
 				'updated_at' => $this->format_datetime( time() ),
 				'src'        => wc_placeholder_img_src(),
-				'title'      => __( 'Placeholder', 'woocommerce' ),
-				'alt'        => __( 'Placeholder', 'woocommerce' ),
+				'title'      => __( 'Placeholder', 'woocommerce-square' ),
+				'alt'        => __( 'Placeholder', 'woocommerce-square' ),
 				'position'   => 0,
 			);
 		}
@@ -1941,7 +1944,7 @@ class WC_Square_WC_Products {
 
 		// Check parsed URL.
 		if ( ! $parsed_url || ! is_array( $parsed_url ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_' . $upload_for, sprintf( __( 'Invalid URL %s', 'woocommerce' ), $image_url ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_' . $upload_for, sprintf( __( 'Invalid URL %s', 'woocommerce-square' ), $image_url ), 400 );
 		}
 
 		// Ensure url is valid.
@@ -1949,13 +1952,13 @@ class WC_Square_WC_Products {
 
 		// Get the file.
 		$response = wp_safe_remote_get( $image_url, array(
-			'timeout' => 10,
+			'timeout' => 45,
 		) );
 
 		if ( is_wp_error( $response ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_remote_' . $upload_for, sprintf( __( 'Error getting remote image %s.', 'woocommerce' ), $image_url ) . ' ' . sprintf( __( 'Error: %s.', 'woocommerce' ), $response->get_error_message() ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_remote_' . $upload_for, sprintf( __( 'Error getting remote image %s.', 'woocommerce-square' ), $image_url ) . ' ' . sprintf( __( 'Error: %s.', 'woocommerce-square' ), $response->get_error_message() ), 400 );
 		} elseif ( 200 !== wp_remote_retrieve_response_code( $response ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_remote_' . $upload_for, sprintf( __( 'Error getting remote image %s.', 'woocommerce' ), $image_url ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_remote_' . $upload_for, sprintf( __( 'Error getting remote image %s.', 'woocommerce-square' ), $image_url ), 400 );
 		}
 
 		// Ensure we have a file name and type.
@@ -1976,7 +1979,7 @@ class WC_Square_WC_Products {
 			$wp_filetype = wp_check_filetype( $file_name, wc_rest_allowed_image_mime_types() );
 
 			if ( ! $wp_filetype['type'] ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_' . $upload_for, __( 'Invalid image type.', 'woocommerce' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_' . $upload_for, __( 'Invalid image type.', 'woocommerce-square' ), 400 );
 			}
 		}
 
@@ -1993,7 +1996,7 @@ class WC_Square_WC_Products {
 		if ( 0 == $filesize ) {
 			@unlink( $upload['file'] );
 			unset( $upload );
-			throw new WC_Square_API_Exception( 'woocommerce_api_' . $upload_for . '_upload_file_error', __( 'Zero size file downloaded', 'woocommerce' ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_' . $upload_for . '_upload_file_error', __( 'Zero size file downloaded', 'woocommerce-square' ), 400 );
 		}
 
 		unset( $response );
@@ -2159,7 +2162,7 @@ class WC_Square_WC_Products {
 		try {
 			// Permissions check.
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_attributes', __( 'You do not have permission to read product attributes', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_attributes', __( 'You do not have permission to read product attributes', 'woocommerce-square' ), 401 );
 			}
 
 			$product_attributes   = array();
@@ -2198,12 +2201,12 @@ class WC_Square_WC_Products {
 
 			// Validate ID
 			if ( empty( $id ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_id', __( 'Invalid product attribute ID', 'woocommerce' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_id', __( 'Invalid product attribute ID', 'woocommerce-square' ), 400 );
 			}
 
 			// Permissions check
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_attributes', __( 'You do not have permission to read product attributes', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_read_product_attributes', __( 'You do not have permission to read product attributes', 'woocommerce-square' ), 401 );
 			}
 
 			$attribute = $wpdb->get_row( $wpdb->prepare( "
@@ -2213,7 +2216,7 @@ class WC_Square_WC_Products {
 			 ", $id ) );
 
 			if ( is_wp_error( $attribute ) || is_null( $attribute ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_id', __( 'A product attribute with the provided ID could not be found', 'woocommerce' ), 404 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_id', __( 'A product attribute with the provided ID could not be found', 'woocommerce-square' ), 404 );
 			}
 
 			$product_attribute = array(
@@ -2245,25 +2248,25 @@ class WC_Square_WC_Products {
 	 */
 	protected function validate_attribute_data( $name, $slug, $type, $order_by, $new_data = true ) {
 		if ( empty( $name ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_attribute_name', sprintf( __( 'Missing parameter %s', 'woocommerce' ), 'name' ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_attribute_name', sprintf( __( 'Missing parameter %s', 'woocommerce-square' ), 'name' ), 400 );
 		}
 
 		if ( strlen( $slug ) >= 28 ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_slug_too_long', sprintf( __( 'Slug "%s" is too long (28 characters max). Shorten it, please.', 'woocommerce' ), $slug ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_slug_too_long', sprintf( __( 'Slug "%s" is too long (28 characters max). Shorten it, please.', 'woocommerce-square' ), $slug ), 400 );
 		} elseif ( wc_check_if_attribute_name_is_reserved( $slug ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_slug_reserved_name', sprintf( __( 'Slug "%s" is not allowed because it is a reserved term. Change it, please.', 'woocommerce' ), $slug ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_slug_reserved_name', sprintf( __( 'Slug "%s" is not allowed because it is a reserved term. Change it, please.', 'woocommerce-square' ), $slug ), 400 );
 		} elseif ( $new_data && taxonomy_exists( wc_attribute_taxonomy_name( $slug ) ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_slug_already_exists', sprintf( __( 'Slug "%s" is already in use. Change it, please.', 'woocommerce' ), $slug ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_slug_already_exists', sprintf( __( 'Slug "%s" is already in use. Change it, please.', 'woocommerce-square' ), $slug ), 400 );
 		}
 
 		// Validate the attribute type
 		if ( ! in_array( wc_clean( $type ), array_keys( wc_get_attribute_types() ) ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_type', sprintf( __( 'Invalid product attribute type - the product attribute type must be any of these: %s', 'woocommerce' ), implode( ', ', array_keys( wc_get_attribute_types() ) ) ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_type', sprintf( __( 'Invalid product attribute type - the product attribute type must be any of these: %s', 'woocommerce-square' ), implode( ', ', array_keys( wc_get_attribute_types() ) ) ), 400 );
 		}
 
 		// Validate the attribute order by
 		if ( ! in_array( wc_clean( $order_by ), array( 'menu_order', 'name', 'name_num', 'id' ) ) ) {
-			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_order_by', sprintf( __( 'Invalid product attribute order_by type - the product attribute order_by type must be any of these: %s', 'woocommerce' ), implode( ', ', array( 'menu_order', 'name', 'name_num', 'id' ) ) ), 400 );
+			throw new WC_Square_API_Exception( 'woocommerce_api_invalid_product_attribute_order_by', sprintf( __( 'Invalid product attribute order_by type - the product attribute order_by type must be any of these: %s', 'woocommerce-square' ), implode( ', ', array( 'menu_order', 'name', 'name_num', 'id' ) ) ), 400 );
 		}
 
 		return true;
@@ -2281,14 +2284,14 @@ class WC_Square_WC_Products {
 
 		try {
 			if ( ! isset( $data['product_attribute'] ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_attribute_data', sprintf( __( 'No %1$s data specified to create %1$s', 'woocommerce' ), 'product_attribute' ), 400 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_missing_product_attribute_data', sprintf( __( 'No %1$s data specified to create %1$s', 'woocommerce-square' ), 'product_attribute' ), 400 );
 			}
 
 			$data = $data['product_attribute'];
 
 			// Check permissions.
 			if ( ! current_user_can( 'manage_product_terms' ) ) {
-				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_create_product_attribute', __( 'You do not have permission to create product attributes', 'woocommerce' ), 401 );
+				throw new WC_Square_API_Exception( 'woocommerce_api_user_cannot_create_product_attribute', __( 'You do not have permission to create product attributes', 'woocommerce-square' ), 401 );
 			}
 
 			$data = apply_filters( 'woocommerce_api_create_product_attribute_data', $data, $this );

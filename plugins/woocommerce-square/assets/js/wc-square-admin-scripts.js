@@ -3,7 +3,6 @@ jQuery( document ).ready( function( $ ) {
 
 	// create namespace to avoid any possible conflicts
 	$.wc_square_admin = {
-
 		/**
 		 * Loops through the sync process
 		 *
@@ -14,15 +13,18 @@ jQuery( document ).ready( function( $ ) {
 		 */
 		sync: function( process, type ) {
 			var data = {
-					ajaxSyncNonce: wc_square_local.ajaxSyncNonce,
-					action: 'wc-to-square' === type ? 'wc_to_square_ajax' : 'square_to_wc_ajax',
-					process: parseInt( process, 10 )
-				};
+				security: wc_square_local.ajaxSyncNonce,
+				process: parseInt( process, 10 ),
+				action: 'wc-to-square' === type ? 'wc_to_square' : 'square_to_wc'
+			};
 
-			$.post( wc_square_local.ajaxurl, data, function( response ) {
-
+			$.ajax({
+				type:    'POST',
+				data:    data,
+				url:     wc_square_local.admin_ajax_url
+			}).done( function( response ) {
 				if ( 'done' === response.process ) {
-					// triggers when all processing is done
+					// Triggers when all processing is done.
 					$( 'body' ).trigger( 'woocommerce_square_wc_to_square_sync_complete', [ response ] );
 
 					$( 'table.form-table' ).unblock();
@@ -36,10 +38,18 @@ jQuery( document ).ready( function( $ ) {
 
 					$.wc_square_admin.sync( parseInt( response.process, 10 ), response.type );
 				}
+			}).fail( function( jqXHR, textStatus, errorThrown ) {
+				$( 'table.form-table' ).unblock();
+				console.log( errorThrown );
+				alert( errorThrown );
 			});
 		},
 
-		init: function() {
+		init_sync_buttons: function() {
+			if ( ! wc_square_local.country_currency ) {
+				$( '#wc-to-square, #square-to-wc' ).attr( 'disabled', 'disabled' );
+				return;
+			}
 
 			$( '.woocommerce_page_wc-settings' ).on( 'click', '#wc-to-square, #square-to-wc', function( e ) {
 				e.preventDefault();
@@ -69,6 +79,11 @@ jQuery( document ).ready( function( $ ) {
 
 				$.wc_square_admin.sync( 0, $( this ).attr( 'id' ) );
 			});
+
+		},
+
+		init: function() {
+			this.init_sync_buttons();
 
 			$( document.body ).on( 'change', '#woocommerce_square_testmode', function() {
 				if ( $( this ).is( ':checked' ) ) {

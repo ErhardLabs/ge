@@ -162,7 +162,20 @@ if ( ! defined( 'ABSPATH' ) ) {
       </tr>
 
     </table>
-    
+
+      <hr>
+      <h2 class="section-title">ViewCategory Event</h2>
+      <p>ViewCategory is added on product categories and it is required for Facebook Dynamic Product Ads.</p>
+      <table class="layout">
+          <tr class="">
+              <td colspan="2" class="narrow">
+                  <input type="checkbox" name="pys[woo][on_view_category]" value="1" class="woo-option"
+                      <?php pys_checkbox_state( 'woo', 'on_view_category' ); ?> >
+                  <strong>Enable ViewCategory on product categories</strong>
+              </td>
+          </tr>
+      </table>
+      
     <hr>
     <h2 class="section-title">AddToCart Event</h2>
     <p>AddToCart event will be added on add to cart button click and on cart page. It is required for Facebook Dynamic Product Ads.</p>
@@ -178,9 +191,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <tr>
             <td colspan="2" class="narrow">
+
+                <?php
+                $checked = get_option( 'woocommerce_cart_redirect_after_add' ) === 'yes' || pys_get_option( 'woo', 'on_add_to_cart_page' ) == "1";
+                $disabled = get_option( 'woocommerce_cart_redirect_after_add' ) === 'yes';
+                ?>
+
                 <input type="checkbox" name="pys[woo][on_add_to_cart_page]" value="1" class="woo-option"
-                    <?php pys_checkbox_state( 'woo', 'on_add_to_cart_page' ); ?> >
+                    <?php checked( $checked ); disabled( $disabled ); ?> >
                 <strong>Enable AddToCart on cart page</strong>
+                <?php if ( $disabled ) : ?>
+                    <span class="help">In order to disable the event you need to turn off the "Redirect to the cart
+                        page after successful addition" option from <a href="<?php echo admin_url( 'admin.php?page=wc-settings&tab=products' ); ?>"
+                                                                       target="_blank">WooCommerce</a> settings</span>
+                <?php endif; ?>
             </td>
         </tr>
 

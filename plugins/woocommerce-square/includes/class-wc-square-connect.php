@@ -54,7 +54,7 @@ class WC_Square_Connect {
 	 */
 	public function add_debug_tool( $tools ) {
 		if ( ! empty( $_GET['action'] ) && 'wcsquare_clear_transients' === $_GET['action'] && version_compare( WC_VERSION, '3.0', '<' ) ) {
-			$this->delete_all_caches();
+			WC_Square_Utils::delete_transients();
 
 			echo '<div class="updated"><p>' . esc_html__( 'Square Sync Transients Cleared', 'woocommerce-square' ) . '</p></div>';
 		}
@@ -70,31 +70,6 @@ class WC_Square_Connect {
 		}
 
 		return $tools;
-	}
-
-	/**
-	 * Deletes cached data ( both Square and WC )
-	 *
-	 * @access public
-	 * @since 1.0.5
-	 * @version 1.0.14
-	 * @return bool
-	 */
-	public function delete_all_caches() {
-
-		delete_transient( 'wc_square_processing_total_count' );
-
-		delete_transient( 'wc_square_processing_ids' );
-
-		delete_transient( 'wc_square_syncing_square_inventory' );
-
-		delete_transient( 'sq_wc_sync_current_process' );
-
-		delete_transient( 'wc_square_inventory' );
-
-		delete_transient( 'wc_square_polling' );
-
-		return true;
 	}
 
 	/**

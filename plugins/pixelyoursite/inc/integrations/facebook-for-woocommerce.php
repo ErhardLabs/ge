@@ -21,7 +21,7 @@ if ( class_exists( 'WC_Facebookcommerce' ) && ! class_exists( 'WC_Facebookcommer
 	/** @noinspection PhpUndefinedClassInspection */
 	class WC_Facebookcommerce_EventsTracker {
 
-		public function __construct( $pixel_id, $user_info ) {
+		public function __construct( $pixel_id = null, $user_info = null ) {
 		}
 
 		public function inject_base_pixel() {
@@ -72,20 +72,28 @@ if ( class_exists( 'WC_Facebookcommerce' ) ) :
 			return $content_id;
 		}
 
-		// Call $product->get_id() instead of ->id to account for Variable
-		// products, which have their own variant_ids.
-		$retailer_id =  $product->get_sku() ? $product->get_sku() . '_' .
-			$product->get_id() : 'wc_post_id_' . $product->get_id();
+		if ( $sku = $product->get_sku() ) {
+			$value = $product->get_sku() . '_' . $product->get_id();
+		} else {
+			$value = 'wc_post_id_' . $product->get_id();
+		}
 
-		$ids = array(
-			$product->get_sku(),
-			'wc_post_id_' . $product->get_id(),
-			$retailer_id
-		);
-
-		return $ids;
+		return array( $value );
 
 	}
+    
+    add_filter( 'pys_event_params', 'fb_for_woo_pys_event_params', 99, 2 );
+    function fb_for_woo_pys_event_params( $params, $event ) {
+        
+        if ( pys_get_option( 'woo', 'content_id_format' ) == 'facebook_for_woocommerce' ) {
+            // Unset 'contents' parameter to avoid conflict with Facebook for WooCommerce plugin as of it is not
+            // support new Dynamic Ads parameters
+            unset( $params['contents'] );
+        }
+        
+        return $params;
+        
+    }
 
 	add_filter( 'pys_fb_pixel_woo_product_content_type', 'fb_for_woo_pys_fb_pixel_woo_product_content_type', 10, 4 );
 	function fb_for_woo_pys_fb_pixel_woo_product_content_type( $content_type, $product_type, $product, $content_id_format ) {

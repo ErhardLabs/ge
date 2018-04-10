@@ -280,7 +280,7 @@ class WC_Square_Gateway extends WC_Payment_Gateway {
 			$data = array(
 				'idempotency_key' => uniqid(),
 				'amount_money'    => array(
-					'amount'   => WC_Square_Utils::format_amount_to_square( $order->get_total(), $currency ),
+					'amount'   => (int) WC_Square_Utils::format_amount_to_square( $order->get_total(), $currency ),
 					'currency' => $currency,
 				),
 				'reference_id'        => (string) $order->get_order_number(),
@@ -489,7 +489,7 @@ class WC_Square_Gateway extends WC_Payment_Gateway {
 
 					if ( ! is_null( $amount ) ) {
 						$body['amount_money'] = array(
-							'amount'   => WC_Square_Utils::format_amount_to_square( $amount ),
+							'amount'   => (int) WC_Square_Utils::format_amount_to_square( $amount ),
 							'currency' => version_compare( WC_VERSION, '3.0.0', '<' ) ? $order->get_order_currency() : $order->get_currency(),
 						);
 					}

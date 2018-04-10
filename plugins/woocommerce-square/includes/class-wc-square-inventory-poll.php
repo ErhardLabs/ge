@@ -40,9 +40,10 @@ class WC_Square_Inventory_Poll {
 	}
 
 	public function sync() {
-		$sync = ( 'yes' === $this->integration->get_option( 'inventory_polling' ) );
+		$sync                   = ( 'yes' === $this->integration->get_option( 'inventory_polling' ) );
+		$manual_sync_processing = get_transient( 'wc_square_manual_sync_processing' );
 
-		if ( $sync ) {
+		if ( $sync && ! $manual_sync_processing ) {
 			$this->to_wc->sync_all_inventory();
 		}
 	}
