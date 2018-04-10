@@ -712,7 +712,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 @media (min-width: 769px) {
 
   .nav-primary .aws-search-field:focus {
-    height: 25px;
+    height: 30px;
     width: 25em;
   }
 
