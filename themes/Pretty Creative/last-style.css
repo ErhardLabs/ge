@@ -172,8 +172,12 @@ section.related.products h2 {
 	background: #eca76f
 }
 
-.nav-primary .genesis-nav-menu a:first-of-type {
-	padding: 20px 12px 20px 0px;
+/*.nav-primary .genesis-nav-menu a:first-of-type {*/
+	/*margin: 20px 12px 20px 0px;*/
+/*}*/
+
+.aws-container .aws-search-field {
+	padding: 0px;
 }
 
 .home-page-3 {
@@ -1557,6 +1561,14 @@ a, .nav-primary .genesis-nav-menu a {
 
 }
 
+.dashicons-email-alt:hover {
+	color: #ffe593;
+}
+
+#search:hover {
+	color: #ffe593;
+}
+
 .gform_wrapper .gform_body {
 	text-align: center;
 }
@@ -1627,7 +1639,8 @@ section:nth-of-type(4) div div p .cta {
 @media screen and (min-width: 768px) {
 
 	.fa-shopping-cart {
-		font-size: 1.5em !important;
+		font-size: 1.4em !important;
+		margin-top: -10px;
 	}
 
 	.nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
@@ -2060,7 +2073,6 @@ section:nth-of-type(4) div div p .cta {
 @media (max-aspect-ratio: 16/9) {
 	.video-foreground { width: 300%; left: -100%; }
 }
-}
 
 .ytc_video_container, .youtube_channel.responsive .ytc_video_container
 {
@@ -2097,9 +2109,8 @@ section:nth-of-type(4) div div p .cta {
 }
 
 .nav-primary .genesis-nav-menu a {
-	padding: 21px 12px;
-}
-
+	margin: 21px 12px 20px 0px;
+	padding:0px;
 }
 
 @media screen and (min-width: 1165px) {

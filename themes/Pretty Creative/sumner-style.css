@@ -129,9 +129,12 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   padding-left: 0;
   color: white !important;
 }
-#menu-item-1947 {
+
+.menu-item-type-yawp_wim {
   text-align: center;
-  padding-right: 7px;
+  /*padding-right: 7px;*/
+  padding-right: 0px;
+  margin-left: 0px;
 }
 
 .home-top #text-15 .widget-wrap {
