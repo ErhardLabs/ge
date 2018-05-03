@@ -1,11 +1,5 @@
 <?php
 
-function get_attributes( $atts ){
-    if( $atts['free'] == "true" ) {
-
-    }
-}
-
 function product_music( $num_products ) {
 
   $slider_num = 1;
@@ -225,7 +219,6 @@ function get_product_background_svg( $args ) {
   <ul class="slides">
       <?php
       $classes = get_body_class();
-      get_attributes( $atts );
       if ( in_array('home',$classes ) ) {
         product_music( 1 );
         product_tabs( 1 );

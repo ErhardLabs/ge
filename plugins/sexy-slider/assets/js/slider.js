@@ -21,6 +21,35 @@ $(document).ready(function() {
     slideshow: false
   });
 
+  $('.ssp_lyrics_wrap').flexslider({
+    selector: ".lyrics",
+    slideshow: false,
+    touch: true
+  });
+
+  // $.each('.lyrics', function (i) {
+  //   //let height = $(this).height();
+  //   console.log(i);
+  // });
+
+
+
+  // Create FlexSlider from array of videos
+  $('.single-product  .ssp_container').flexslider({
+    selector: ".ssp_video_wrap",
+    slideshow: false,
+    touch: true
+  });
+
+  //Upsell slider
+  // $('.single-product .upsells').flexslider({
+  //   selector: ".products > .product",
+  //   slideshow: false,
+  //   touch: true,
+  //   minItems: 3,
+  //   maxItems: 3
+  // });
+
   $('.ge-slider-add-to-cart a').addClass('cta');
   $('.button.add_to_cart_button').addClass('cta');
 
