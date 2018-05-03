@@ -1,8 +1,8 @@
 <?php
 if ( get_the_content() !== '' ) :
 
-	// Delimit by /lyric
-	$lyrics = explode( '/lyric', get_the_content_with_formatting() );
+	// Delimit by comma and Remove whitespaces
+	$lyrics = explode( '[/lyrics]', get_the_content_with_formatting() );
 
 	?>
     <div class="ssp_lyrics ssp_div">
