@@ -88,10 +88,9 @@ function ssp_video() {
 add_action( 'woocommerce_after_single_product', 'ssp_lyrics', 10 );
 
 function ssp_lyrics() {
-//	echo do_shortcode('[]');
-	include_once( SSP_PATH . 'includes/product-lyrics.php' );
+	echo do_shortcode( '[sexy_slider lyrics=true]' );
+	//include_once( SSP_PATH . 'includes/product-lyrics.php' );
 }
-
 
 add_action( 'woocommerce_after_single_product', 'ssp_output_upsells', 15 );
 

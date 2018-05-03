@@ -98,11 +98,43 @@
   position: relative;
   padding: 50px;
 }
-/* line 6, ../sass/layout/_lyrics.scss */
+@media (max-width: 575px) {
+  /* line 7, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics .flex-direction-nav .flex-next {
+    right: -40px;
+  }
+  /* line 11, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics .flex-direction-nav .flex-prev {
+    left: -40px;
+  }
+}
+@media (min-width: 576px) {
+  /* line 19, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics:hover .flex-direction-nav a {
+    opacity: 1;
+  }
+  /* line 23, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics .flex-direction-nav .flex-next {
+    right: -50px;
+  }
+  /* line 27, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics .flex-direction-nav .flex-prev {
+    left: -50px;
+  }
+  /* line 31, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics:hover .flex-direction-nav .flex-next {
+    right: -50px;
+  }
+  /* line 36, ../sass/layout/_lyrics.scss */
+  .ssp_lyrics:hover .flex-direction-nav .flex-prev {
+    left: -50px;
+  }
+}
+/* line 42, ../sass/layout/_lyrics.scss */
 .ssp_lyrics h1, .ssp_lyrics h3 {
   font-size: 2.5em;
 }
-/* line 9, ../sass/layout/_lyrics.scss */
+/* line 45, ../sass/layout/_lyrics.scss */
 .ssp_lyrics .ssp_lyrics_background {
   background: -moz-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: -webkit-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
@@ -110,12 +142,16 @@
   background: -ms-linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
   background: linear-gradient(-180deg, rgba(127, 140, 141, 0.0902) 0%, #000000 100%);
 }
-/* line 14, ../sass/layout/_lyrics.scss */
+/* line 50, ../sass/layout/_lyrics.scss */
 .ssp_lyrics .ssp_lyrics_wrap {
   position: relative;
   z-index: 1;
+  min-height: 700px;
+  min-width: 400px;
+  max-width: 500px;
+  margin: 0 auto;
 }
-/* line 19, ../sass/layout/_lyrics.scss */
+/* line 59, ../sass/layout/_lyrics.scss */
 .ssp_lyrics .lyrics {
   padding: 20px 0 20px 0;
   text-align: center;
@@ -126,44 +162,45 @@
   position: relative;
   background: #000000;
   padding: 2em 4em;
+  clear: both;
 }
-/* line 7, ../sass/layout/_upsells.scss */
+/* line 8, ../sass/layout/_upsells.scss */
 .single-product .up-sells h2 {
   font-family: "MavenPro-Black", sans-serif;
   font-size: 2.5em;
 }
 @media (min-width: 992px) {
-  /* line 7, ../sass/layout/_upsells.scss */
+  /* line 8, ../sass/layout/_upsells.scss */
   .single-product .up-sells h2 {
     font-size: 4.5em;
   }
 }
-/* line 15, ../sass/layout/_upsells.scss */
+/* line 16, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav a {
   opacity: 1;
 }
-/* line 19, ../sass/layout/_upsells.scss */
+/* line 20, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav .flex-next {
   right: -90px;
 }
-/* line 23, ../sass/layout/_upsells.scss */
+/* line 24, ../sass/layout/_upsells.scss */
 .single-product .up-sells .flex-direction-nav .flex-prev {
   left: -90px;
 }
-/* line 27, ../sass/layout/_upsells.scss */
+/* line 28, ../sass/layout/_upsells.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-next {
   right: -50px;
 }
-/* line 32, ../sass/layout/_upsells.scss */
+/* line 33, ../sass/layout/_upsells.scss */
 .single-product .up-sells:hover .flex-direction-nav .flex-prev {
   left: -50px;
 }
-/* line 43, ../sass/layout/_upsells.scss */
+/* line 44, ../sass/layout/_upsells.scss */
 .single-product .up-sells ul.products {
   display: flex;
   margin: 0;
 }
-/* line 47, ../sass/layout/_upsells.scss */
+/* line 48, ../sass/layout/_upsells.scss */
 .single-product .up-sells li.product {
   text-align: center;
   margin: 0 auto !important;
@@ -171,12 +208,12 @@
   padding: 0 !important;
 }
 @media (min-width: 768px) {
-  /* line 47, ../sass/layout/_upsells.scss */
+  /* line 48, ../sass/layout/_upsells.scss */
   .single-product .up-sells li.product {
     padding: 2em !important;
   }
 }
-/* line 58, ../sass/layout/_upsells.scss */
+/* line 59, ../sass/layout/_upsells.scss */
 .single-product .up-sells .add_to_cart_button {
   box-shadow: inset 0 0 0 4px #ffe593 !important;
   color: #ffe593 !important;
@@ -192,7 +229,7 @@
   margin: 0 auto !important;
 }
 @media (max-width: 575px) {
-  /* line 58, ../sass/layout/_upsells.scss */
+  /* line 59, ../sass/layout/_upsells.scss */
   .single-product .up-sells .add_to_cart_button {
     font: 200 .5rem 'Roboto Slab', sans-serif !important;
   }
