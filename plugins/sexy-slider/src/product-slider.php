@@ -11,7 +11,7 @@ function product_music( $num_products ) {
     'orderby' => 'date',
     'order' => 'DESC',
     'product_cat' => 'music',
-    'post_status' => 'publsih'
+    'post_status' => 'publish'
   );
 
   $loop = new WP_Query( $args );
