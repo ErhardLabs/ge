@@ -71,8 +71,7 @@ function ssp_get_product_image() {
 	$terms = wp_get_post_terms( $id, 'product_cat' );
 	foreach ( $terms as $term ) $categories[] = $term->slug;
 
-	// Don't create product image background if the product is from the merch category
-	if ( has_post_thumbnail( $id ) &&  !in_array( 'merch', $categories ) ) {
+	if ( has_post_thumbnail( $id ) ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'thumbnail' );
 //    echo '<div class="ssp_background"></div>';
 		echo '<div class="blur_background_image" style="background-image: url(' . esc_url( $image[0] ) . ');"></div>';
