@@ -203,11 +203,11 @@ function get_product_background_svg( $args ) {
 
     if ( $args['product_cat'] == 'music' ){
 
-      echo '<img class="product-background record" src="wp-content/plugins/ge-custom-product-slider/assets/icons/recordIcon.svg" alt="Placeholder"/>';
+      echo '<img class="product-background record" src="' . SEXY_SLIDER_URL . 'assets/icons/recordIcon.svg" alt="Placeholder"/>';
 
     } elseif ( $args['product_cat'] == 'tabs' ) {
 
-      echo '<img class="product-background tabs" src="wp-content/plugins/ge-custom-product-slider/assets/icons/tabsIcon.svg" alt="Placeholder"/>';
+      echo '<img class="product-background tabs" src="' . SEXY_SLIDER_URL . 'assets/icons/tabsIcon.svg" alt="Placeholder"/>';
 
     }
 
