@@ -1,0 +1,334 @@
+/* =================================
+  General Styles
+==================================== */
+
+
+/******* FONTS *********/
+
+.ge-flexslider h4 {
+  text-align: center;
+}
+
+.listings-height {
+  display: none !important;
+}
+
+.ge-flexslider .ge-slider-product-headline h3 {
+   font-family: "MavenPro-Black", sans-serif !important;
+   margin: 0 !important;
+}
+
+.ge-flexslider .ge-slider-product-headline.mobile h3 {
+  font-size: 2.5em;
+}
+
+.ge-flexslider .ge-slider-product-title {
+  padding-top: 15px;
+}
+
+.ge-flexslider .ge-slider-product-title h4 {
+  font-family: "MavenPro-Regular", sans-serif !important;
+  margin: 0 !important;
+}
+
+.ge-flexslider .ge-slider-product-price h4 {
+  font-family: "MavenPro-Bold", sans-serif !important;
+  font-size: 24px !important;
+}
+
+
+.bg0 {
+  background-image: linear-gradient(171deg, #7F8C8D -50%, #000000 45%) !important;
+}
+
+.bg1 {
+  background-image: linear-gradient(171deg, #526B6E -50%, #000000 45%) !important;
+}
+
+.bg2 {
+  background-image: linear-gradient(171deg, #686546 -50%, #000000 45%) !important;
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+.flexslider {
+  margin: 0;
+}
+
+.product-shadow {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+}
+
+.ge-slider-product img:first-child {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+}
+
+/* =================================
+  Mobile First Layout Styles
+==================================== */
+
+.ge-flexslider .desktop {
+  display: none;
+}
+
+.ge-flexslider .ge-slider-product {
+  margin-top: 20px;
+}
+
+.ge-flexslider .ge-slider {
+  padding: 0 2em;
+}
+
+.ge-flexslider .ge-slider-product-headline.mobile{
+  padding: 0 0 30px 0;
+}
+
+.ge-flexslider .flexslider {
+  background: none !important;
+  border: none !important;
+}
+
+.ge-flexslider .ge-slider-product-headline h3 {
+  letter-spacing: 2px !important;
+}
+
+.ge-flexslider .ge-slider-product-title h4 {
+  letter-spacing: 4px !important;
+  font-size: 24px;
+}
+
+.ge-flexslider .ge-slider-product {
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin: 20px auto;
+  padding: 0 0 10px 0;
+}
+
+.ge-flexslider .ge-slider-product .record {
+  width: 250px;
+  height: 250px;
+}
+
+.ge-flexslider .ge-slider-product .record,
+.ge-flexslider .ge-slider-product .tabs {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.ge-flexslider .ge-slider-product .record {
+  left: 43px;
+}
+.ge-flexslider .ge-slider-product .tabs {
+  left: 43px;
+}
+
+.ge-flexslider .ge-slider-product-headline,
+.ge-flexslider .ge-slider-product-title,
+.ge-flexslider .ge-slider-product-price {
+  padding: 15px 0 15px 0;
+}
+
+.ge-slider-add-to-cart {
+  display: flex;
+}
+
+.flex-direction-nav a {
+  height: 50px !important;
+}
+
+.flex-control-nav li {
+  padding-left: 0 !important;
+}
+
+.flex-direction-nav a:before {
+  color: white !important;
+}
+
+.flex-control-paging li a.flex-active {
+  background-color: white !important;
+}
+
+.flex-control-paging li a {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+}
+
+.video-slider {
+  position: relative;
+}
+
+.video-slider:hover .flex-direction-nav a {
+  opacity: 1;
+}
+
+.video-slider:hover .flex-direction-nav .flex-next {
+  right: 10px;
+}
+
+.video-slider:hover .flex-direction-nav .flex-prev {
+  left: 10px;
+}
+
+.video-slider .flex-control-nav {
+  bottom: -55px !important;
+}
+
+.home-page-4 {
+  background-image: linear-gradient(-12deg, #7F8C8D -84%, #000000 45%) !important;
+}
+
+.home-page-2 .wrap {
+  padding: 0 !important;
+}
+
+.home-page-2 .wrap .ytc_video_container {
+  padding: 0 !important;
+}
+
+.home-page-2 .video-slider {
+  padding: 20px 0 30px 0;
+}
+
+.home-page-2 {
+  padding-bottom: 30px;
+}
+
+/* =================================
+  Extra small Screens
+==================================== */
+
+@media (max-width: 350px) {
+
+  .ge-flexslider .ge-slider-product .tabs {
+    left: 27px;
+  }
+  .ge-flexslider .ge-slider-product .record {
+    left: 17px;
+  }
+}
+
+
+@media (max-width: 575px) {
+
+  .ge-flexslider .ge-slider {
+    padding: 0;
+  }
+}
+
+
+/* =================================
+  Tablet Layout Styles
+==================================== */
+
+@media (min-width: 769px) {
+
+  .flexslider {
+    padding: 0 0 2em;
+  }
+
+  .ge-flexslider .ge-slider-product .tabs {
+    left: 86px;
+
+  }
+
+  .ge-flexslider .ge-slider-product .record {
+    left: 80px;
+  }
+
+  .ge-flexslider .ge-slider-product {
+    width: 400px;
+  }
+
+  .ge-flexslider .ge-slider-product .record {
+    width: 400px;
+    height: 400px;
+  }
+
+  .ge-flexslider .ge-slider-product .record {
+    left: 160px;
+  }
+
+  .archive.woocommerce .ge-flexslider {
+    padding: 4em 4em 2em 4em;
+  }
+
+}
+
+/* =================================
+  Desktop Layout Styles
+==================================== */
+
+@media (min-width: 1025px) {
+
+  .ge-flexslider .ge-slider-right {
+    padding-left: 5em;
+  }
+
+  .ge-flexslider .desktop {
+    display: block;
+  }
+
+  .ge-flexslider .mobile {
+    display: none;
+  }
+
+  .ge-flexslider .ge-slider {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .ge-flexslider .ge-slider-product {
+    margin: 0 auto;
+  }
+
+  .ge-flexslider .ge-slider-product-headline.desktop h3 {
+    font-size: 3.5em !important;
+  }
+
+  .home-page-2 .textwidget {
+    margin: 20px 0 40px 0;
+  }
+
+  .home-page-2 .video-slider {
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 1500px) {
+
+  .ge-flexslider .ge-slider-product {
+    width: 500px;
+  }
+
+  .ge-flexslider .ge-slider-product .record {
+    width: 500px;
+    height: 500px;
+  }
+
+}

@@ -4,7 +4,7 @@ Tags: credit card, square, woocommerce, inventory sync
 Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 5.6
-Stable tag: 1.0.28
+Stable tag: 1.0.29
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -57,23 +57,10 @@ If you get stuck, you can ask for help in the Plugin Forum.
 
 == Changelog ==
 
-= 1.0.28 - 2018-04-04 =
-* Fix   - Double inventory sync for newly created products.
-* Fix   - Infinite loop with pagination, where Square keeps sending the same link.
-* Fix   - Remove usage of deprecated jQuery method.
-* Fix   - Sync job should not be sending anything if there are no stock changes.
-* Fix   - Trigger to decrease stock upon purchase not working
-* Tweak - Add logging and skip sync in case store's currency/country is not allowed.
-* Tweak - Improve debug logging when fetching inventory
-* Tweak - Inventory reduction in Square will be treated as stock sale.
-
-= 1.0.27 - 2018-02-19 =
-* Fix - In some cases request timeouts are not set long enough causing timeout errors.
-* Fix - Square to WC sync sets products with 0 quantity to In Stock.
-* Fix - Potential issue with Square to WC sync when response is not an array.
-* Fix - When description is more than 4095 characters, sync fails to Square.
-* Fix - Add checks to product object before scheduling an event to prevent errors in cron job.
-* Fix - Add check to prevent auto inventory poll from running when a manual sync is in progress.
+= 1.0.29 - 2018-04-17 =
+* Fix - If more than 1000 items, next batch is ignored.
+* Fix - Wrong setting used when syncing product.
+* Fix - Japan locale does not support Diners/Discover, so do not show these brands on checkout.
 
 == Upgrade Notice ==
 

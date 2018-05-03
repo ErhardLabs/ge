@@ -1,5 +1,10 @@
 *** WooCommerce Square Changelog ***
 
+= 1.0.29 - 2018-04-17 =
+* Fix - If more than 1000 items, next batch is ignored.
+* Fix - Wrong setting used when syncing product.
+* Fix - Japan locale does not support Diners/Discover, so do not show these brands on checkout.
+
 2018-04-04 - version 1.0.28
 * Fix   - Double inventory sync for newly created products.
 * Fix   - Infinite loop with pagination, where Square keeps sending the same link.

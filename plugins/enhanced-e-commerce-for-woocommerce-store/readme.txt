@@ -7,8 +7,8 @@ Author URI: http://www.tatvic.com/
 Author: Tatvic
 Requires at least: 3.6
 Tested up to: 4.9
-Stable tag: 2.0.0
-Version: 2.0.0
+Stable tag: 2.0.1
+Version: 2.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,9 +110,9 @@ Reason :
 
 Yes our plugin supports new Global Site Tag (gtag.js).
 
-= Since I have Implemented Old GA Script (UA Script) Manually in my store, I didn't enable Add Global site Tracking Code option, but seems that it is not working. =
+= Since I have Implemented Old GA Script (UA Script) Manually in my store, I didn't enable Add Global site Tracking Code option gtag.js, but seems that it is not working. =
 
-When you have the Old UA script implemented Manually in your store, it is not working with our plugin
+When you have the Old UA script implemented Manually in your store, it is not working with our plugin.
 
 Reason :
 
@@ -161,7 +161,7 @@ Our plugin does not support Multilingual Wordpress site.
 
 = Does your plugin supports Child/Custom Theme? =
 
-The free version of our plugin is not fully compatible with the child/custom theme. Request you to go through the <a href="https://codecanyon.net/item/actionable-google-analytics-for-woocommerce/9899552?ref=tatvic" target="_blank">premium version</a> of our plugin which is fully compatible with the child/custom theme. We are not providing any kind of support for Child/Custom Theme. For more information kindly contact us at analytics2(at)tatvic(dot)com.
+The free version of our plugin is not fully compatible with the child/custom theme. Request you to go through the <a href="https://codecanyon.net/item/actionable-google-analytics-for-woocommerce/9899552?ref=tatvic" target="_blank">premium version</a> of our plugin which is fully compatible with the child/custom theme. We are not providing any kind of support for Child/Custom Theme in the Free version of our plugin. For more information kindly contact us at analytics2(at)tatvic(dot)com.
 
 = Have you Provided Full support for the free version plugin? =
 
@@ -282,4 +282,7 @@ Important Note: When you update the plugin, please save your settings again.
  = 2.0.0 - 07/03/2018 =
  * New Implementation with Global Site Tag (gtag.js)
  * gtag.js supported
+ * Minor Bug Fixes & Optimization.
+
+  = 2.0.1 - 24/04/2018 =
  * Minor Bug Fixes & Optimization.

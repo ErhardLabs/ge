@@ -262,8 +262,8 @@ if ( ! class_exists( 'AWS_Table' ) ) :
 
                 $sku = $product->get_sku();
 
-                $title = apply_filters( 'the_title', get_the_title( $data['id'] ) );
-                $content = apply_filters( 'the_content', get_post_field( 'post_content', $data['id'] ) );
+                $title = apply_filters( 'the_title', get_the_title( $data['id'] ), $data['id'] );
+                $content = apply_filters( 'the_content', get_post_field( 'post_content', $data['id'] ), $data['id'] );
                 $excerpt = get_post_field( 'post_excerpt', $data['id'] );
 
 
@@ -389,8 +389,8 @@ if ( ! class_exists( 'AWS_Table' ) ) :
                                     $translated_post_data['lang'] = $lang_obj->language_code;
                                     $translated_post_data['terms'] = array();
 
-                                    $translated_title = apply_filters( 'the_title', get_the_title( $translated_post->ID ) );
-                                    $translated_content = apply_filters( 'the_content', get_post_field( 'post_content', $translated_post->ID ) );
+                                    $translated_title = apply_filters( 'the_title', get_the_title( $translated_post->ID ), $translated_post->ID );
+                                    $translated_content = apply_filters( 'the_content', get_post_field( 'post_content', $translated_post->ID ), $translated_post->ID );
                                     $translated_excerpt = get_post_field( 'post_excerpt', $translated_post->ID );
 
                                     $translated_content = AWS_Helpers::strip_shortcodes( $translated_content );
@@ -623,8 +623,6 @@ if ( ! class_exists( 'AWS_Table' ) ) :
          */
         private function extract_terms( $str ) {
 
-            $stopwords = AWS()->get_settings( 'stopwords' );
-
             $str = AWS_Helpers::html2txt( $str );
 
             // Avoid single A-Z.
@@ -678,22 +676,7 @@ if ( ! class_exists( 'AWS_Table' ) ) :
             $str = trim( preg_replace( '/\s+/', ' ', $str ) );
 
             $str_array = array_count_values( explode( ' ', $str ) );
-
-
-            if ( $stopwords && $str_array && ! empty( $str_array ) ) {
-                $stopwords_array = explode( ',', $stopwords );
-                if ( $stopwords_array && ! empty( $stopwords_array ) ) {
-                    $stopwords_array = array_map( 'trim', $stopwords_array );
-
-                    foreach ( $str_array as $str_word => $str_count ) {
-                        if ( in_array( $str_word, $stopwords_array ) ) {
-                            unset( $str_array[$str_word] );
-                        }
-                    }
-
-                }
-            }
-
+            $str_array = AWS_Helpers::filter_stopwords( $str_array );
 
             return $str_array;
 

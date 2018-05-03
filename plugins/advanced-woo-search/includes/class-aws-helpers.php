@@ -51,7 +51,7 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
 
             if ( $wpdb->get_var( "SHOW TABLES LIKE '{$table_name}'" ) === $table_name ) {
 
-                $sql = "SELECT FOUND_ROWS() as rows FROM {$table_name} GROUP BY ID;";
+                $sql = "SELECT COUNT(*) FROM {$table_name} GROUP BY ID;";
 
                 $indexed_products = $wpdb->query( $sql );
 
@@ -102,6 +102,32 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
             
             return apply_filters( 'aws_special_chars', $chars );
             
+        }
+
+        /*
+         * Replace stopwords
+         */
+        static public function filter_stopwords( $str_array ) {
+
+            $stopwords = AWS()->get_settings( 'stopwords' );
+
+            if ( $stopwords && $str_array && ! empty( $str_array ) ) {
+                $stopwords_array = explode( ',', $stopwords );
+                if ( $stopwords_array && ! empty( $stopwords_array ) ) {
+
+                    $stopwords_array = array_map( 'trim', $stopwords_array );
+
+                    foreach ( $str_array as $str_word => $str_count ) {
+                        if ( in_array( $str_word, $stopwords_array ) ) {
+                            unset( $str_array[$str_word] );
+                        }
+                    }
+
+                }
+            }
+
+            return $str_array;
+
         }
 
         /*

@@ -154,7 +154,7 @@ class WC_Square_Sync_To_Square_WordPress_Hooks {
 		}
 
 		if ( is_object( $wc_product ) && ! empty( $wc_product ) ) {
-			$this->square->sync_product( $wc_product, $this->sync_categories, $this->sync_categories, $this->sync_images );
+			$this->square->sync_product( $wc_product, $this->sync_categories, $this->sync_inventory, $this->sync_images );
 		}
 
 		WC_Square_Utils::delete_transients();

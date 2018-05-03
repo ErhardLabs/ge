@@ -389,6 +389,7 @@
         $( d.resultBlock ).on( 'mouseenter', '.aws_result_item', function() {
             methods.removeHovered();
             $(this).addClass('hovered');
+            $searchField.trigger('mouseenter');
         });
 
 

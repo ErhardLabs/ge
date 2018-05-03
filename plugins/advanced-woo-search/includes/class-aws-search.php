@@ -567,9 +567,15 @@ if ( ! class_exists( 'AWS_Search' ) ) :
             $excludes = '';
             $search_query = '';
 
-            foreach ( $this->data['search_terms'] as $search_term ) {
-                $like = '%' . $wpdb->esc_like($search_term) . '%';
-                $search_array[] = $wpdb->prepare('( name LIKE %s )', $like);
+            $filtered_terms = AWS_Helpers::filter_stopwords( array_count_values( $this->data['search_terms'] ) );
+
+            if ( $filtered_terms && ! empty( $filtered_terms ) ) {
+                foreach ( $this->data['search_terms'] as $search_term ) {
+                    $like = '%' . $wpdb->esc_like($search_term) . '%';
+                    $search_array[] = $wpdb->prepare('( name LIKE %s )', $like);
+                }
+            } else {
+                return $result_array;
             }
 
             $search_query .= sprintf( ' AND ( %s )', implode( ' OR ', $search_array ) );

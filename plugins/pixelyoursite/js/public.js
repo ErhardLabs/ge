@@ -11,57 +11,77 @@ jQuery(document).ready(function( $ ) {
         t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
         document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    var fbAddToCart = function ($button) {
-
-        var data = {
-            action: 'pys_woo_addtocart_params',
-            product_id: undefined,
-            variation_id: undefined,
-            quantity: 1
-        };
-
-        $.each($button.data(), function (key, value) {
-            data[key] = value;
-        });
-
-        var $variations_form = $button.closest('form.variations_form.cart'),
-            $single_form = $button.closest('form.cart');
-
-        if ($variations_form.length === 1) {
-            data.product_id = parseInt($single_form.find('*[name="add-to-cart"]').val());
-            data.variation_id = parseInt($variations_form.find('input[name="variation_id"]').val());
-            data.quantity = parseInt($variations_form.find('input[name="quantity"]').val());
-        } else if ($single_form.length === 1) {
-            data.product_id = parseInt($single_form.find('*[name="add-to-cart"]').val());
-            data.quantity = parseInt($single_form.find('input[name="quantity"]').val());
-        }
-
-        $.ajax({
-            url: pys_fb_pixel_options.ajax_url,
-            data: data,
-            dataType: 'json',
-            async: false,
-            success: function (response) {
-
-                if (!response || response.error) {
-                    return;
-                }
-
-                fbq('track', 'AddToCart', response.data);
-
-            }
-        });
-
-    };
-
     /**
      * WooCommerce AddToCart on button
      */
-    if (pys_fb_pixel_options.woo.addtocart_enabled && typeof wc_add_to_cart_params !== 'undefined'
-        && wc_add_to_cart_params.cart_redirect_after_add !== 'yes') {
+    if (pys_fb_pixel_options.woo.addtocart_enabled) {
 
-        $(document.body).on('added_to_cart', function (e, fragments, cart_hash, $button) {
-            fbAddToCart($button);
+        window.pys_woo_product_data = window.pys_woo_product_data || [];
+
+        // Loop, any kind of "simple" product, except external
+        $('.add_to_cart_button:not(.product_type_variable)').click(function (e) {
+
+            var product_id = $(this).data('product_id');
+
+            if (typeof product_id !== 'undefined') {
+                if (typeof pys_woo_product_data[product_id] !== 'undefined') {
+                    fbq('track', 'AddToCart', pys_woo_product_data[product_id]);
+                }
+            }
+
+        });
+
+        // Single Product
+        $('.single_add_to_cart_button').click(function (e) {
+
+            var $button = $(this),
+                $form = $button.closest('form'),
+                is_variable = false,
+                qty,
+                product_id = pys_fb_pixel_options.woo.product_id;
+
+            if ($button.hasClass('disabled')) {
+                return;
+            }
+
+            if ($form.length === 0) {
+                return; // is external product, not supported on Free
+            }
+
+            if ($form.hasClass('variations_form')) {
+                is_variable = true;
+            }
+
+            if (is_variable) {
+
+                qty = parseInt($form.find('input[name="quantity"]').val());
+
+                if (pys_fb_pixel_options.woo.product_data !== 'main') {
+                    product_id = parseInt($form.find('input[name="variation_id"]').val());
+                }
+
+            } else {
+
+                qty = parseInt($form.find('input[name="quantity"]').val());
+
+            }
+
+            if (typeof pys_woo_product_data[product_id] !== 'undefined') {
+
+                var params = pys_woo_product_data[product_id];
+
+                // maybe customize value option
+                if (pys_fb_pixel_options.woo.product_value_enabled && pys_fb_pixel_options.woo.product_value_option !== 'global') {
+                    params.value = params.value * qty;
+                }
+
+                // update contents qty param
+                params.contents[0].quantity = qty;
+
+                fbq('track', 'AddToCart', params);
+
+            }
+
         });
 
     }

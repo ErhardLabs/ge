@@ -110,6 +110,40 @@ $options['form'][] = array(
 
 // Search Results Settings
 
+
+$options['results'][] = array(
+    "name"  => __( "Description source", "aws" ),
+    "desc"  => __( "From where to take product description.<br>If first source is empty data will be taken from other sources.", "aws" ),
+    "id"    => "desc_source",
+    "value" => 'content',
+    "type"  => "radio",
+    'choices' => array(
+        'content'  => __( 'Content', 'aws' ),
+        'excerpt'  => __( 'Excerpt', 'aws' ),
+    )
+);
+
+$options['results'][] = array(
+    "name"  => __( "Description length", "aws" ),
+    "desc"  => __( "Maximal allowed number of words for product description.", "aws" ),
+    "id"    => "excerpt_length",
+    "value" => 20,
+    "type"  => "number"
+);
+
+$options['results'][] = array(
+    "name"  => __( "Max number of results", "aws" ),
+    "desc"  => __( "Maximum number of displayed search results.", "aws" ),
+    "id"    => "results_num",
+    "value" => 10,
+    "type"  => "number"
+);
+
+$options['results'][] = array(
+    "name"    => __( "View", "aws" ),
+    "type"    => "heading"
+);
+
 $options['results'][] = array(
     "name"  => __( "Show image", "aws" ),
     "desc"  => __( "Show product image for each search result.", "aws" ),
@@ -132,26 +166,6 @@ $options['results'][] = array(
         'true'  => __( 'On', 'aws' ),
         'false'  => __( 'Off', 'aws' ),
     )
-);
-
-$options['results'][] = array(
-    "name"  => __( "Description source", "aws" ),
-    "desc"  => __( "From where to take product description.<br>If first source is empty data will be taken from other sources.", "aws" ),
-    "id"    => "desc_source",
-    "value" => 'content',
-    "type"  => "radio",
-    'choices' => array(
-        'content'  => __( 'Content', 'aws' ),
-        'excerpt'  => __( 'Excerpt', 'aws' ),
-    )
-);
-
-$options['results'][] = array(
-    "name"  => __( "Description length", "aws" ),
-    "desc"  => __( "Maximal allowed number of words for product description.", "aws" ),
-    "id"    => "excerpt_length",
-    "value" => 20,
-    "type"  => "number"
 );
 
 $options['results'][] = array(
@@ -237,12 +251,4 @@ $options['results'][] = array(
         'true'  => __( 'On', 'aws' ),
         'false' => __( 'Off', 'aws' ),
     )
-);
-
-$options['results'][] = array(
-    "name"  => __( "Max number of results", "aws" ),
-    "desc"  => __( "Maximum number of displayed search results.", "aws" ),
-    "id"    => "results_num",
-    "value" => 10,
-    "type"  => "number"
 );

@@ -229,21 +229,21 @@ class WC_Square_Client {
 			$link_header = wp_remote_retrieve_header( $response, 'Link' );
 
 			// Look for the next page, if specified
-			if ( ! preg_match( '/Link:( |)<(.+)>;rel=("|\')next("|\')/i', $link_header ) ) {
+			if ( ! preg_match( '/<(.+)>;rel=("|\')next("|\')/i', $link_header ) ) {
 				return $return_data;
 			}
 
 			$rel_link_matches = array();
 
 			// Set up the next page URL for the following loop
-			if ( ( 'GET' === $method ) && preg_match( '/Link:( |)<(.+)>;rel=("|\')next("|\')/i', $link_header, $rel_link_matches ) ) {
+			if ( ( 'GET' === $method ) && preg_match( '/<(.+)>;rel=("|\')next("|\')/i', $link_header, $rel_link_matches ) ) {
 
 				// Check if we're at the end of pagination.
-				if ( $request_url === $rel_link_matches[2] ) {
+				if ( $request_url === $rel_link_matches[1] ) {
 					return $return_data;
 				}
 
-				$request_url = $rel_link_matches[2];
+				$request_url = $rel_link_matches[1];
 				$body        = null;
 				$page_count++;
 				$page_label  = sprintf( ' - Fetching page %d', $page_count );

@@ -56,6 +56,15 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   margin: 0 auto;
 }
 
+.post-password-form p label {
+  font-size: 0 !important;
+}
+
+.post-password-form input[type="submit"]{
+  margin-top: 4em;
+  border-color: #ffe593 !important;
+}
+
 /****** Search Bar ********/
 
 .nav-primary .aws-search-field {
