@@ -1,20 +1,20 @@
 <?php
 
 /**
- * GE Custom Product Slider
+ * Sexy slider
  *
- * @package     geCustomProductSlider
+ * @package     sexy-slider
  * @author      Sumner Erhard
  * @copyright   2017 Sumner Erhard Erhard Development LLC
  * @license     GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: GE Custom Product Slider
+ * Plugin Name: Sexy Slider
  * Description: Slide between newest products and Popular products in that category
  * Version:     1.0.0
  * Author:      Sumner Erhard
  * Author URI:  https://sumnererhard.com
- * Text Domain: geCustomProductSlider
+ * Text Domain: sexy-slider
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -60,7 +60,7 @@ function ge_custom_slider_widgets() {
 
 add_action( 'widgets_init', 'ge_custom_slider_widgets' );
 
-//[ge_custom_slider free="false"]
+//[sexy_lyrics_slider content="lyrics"]
 function ge_custom_slider_shortcode( $atts = null, $content = null ){
 
   ob_start();
