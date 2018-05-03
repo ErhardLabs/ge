@@ -10,7 +10,8 @@ function product_music( $num_products ) {
     'posts_per_page' => $num_products,
     'orderby' => 'date',
     'order' => 'DESC',
-    'product_cat' => 'music'
+    'product_cat' => 'music',
+    'post_status' => 'publsih'
   );
 
   $loop = new WP_Query( $args );
