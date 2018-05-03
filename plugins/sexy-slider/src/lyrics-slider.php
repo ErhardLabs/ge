@@ -1,7 +1,7 @@
 <?php
 if ( get_the_content() !== '' ) :
 
-	// Delimit by comma and Remove whitespaces
+	// Delimit by /lyric
 	$lyrics = explode( '/lyric', get_the_content_with_formatting() );
 
 	?>

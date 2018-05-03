@@ -88,8 +88,8 @@ function ssp_video() {
 add_action( 'woocommerce_after_single_product', 'ssp_lyrics', 10 );
 
 function ssp_lyrics() {
-//	echo do_shortcode('[tmls category="-1" layout="tmls_slider" style="style1" image_size="large_image" image_radius="large_radius" text_font_family="" text_font_color="#777777" text_font_size="1.2em" name_font_family="" name_font_color="#777777" neme_font_size="15px" neme_font_weight="bold" position_font_family="" position_font_color="#777777" position_font_size="12px" order_by="date" order="DESC" auto_play="true" transitioneffect="crossfade" pause_on_hover="false" next_prev_visibility="tmls_visible" next_prev_radius="large_radius" next_prev_position="tmls_bottom" next_prev_bgcolor="#F5F5F5" next_prev_arrowscolor="tmls_lightgrayarrows" scroll_duration="500" pause_duration="9000" ratingstars="enabled" ratingstarssize="16px" ratingstarscolor="#F47E00" ]');
-	include_once( SSP_PATH . 'includes/product-lyrics.php' );
+	echo do_shortcode( '[sexy_slider lyrics=true]' );
+	//include_once( SSP_PATH . 'includes/product-lyrics.php' );
 }
 
 

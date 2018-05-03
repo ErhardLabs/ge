@@ -3,6 +3,42 @@
   position: relative;
   padding: 50px;
 
+  @include media-query('xs') {
+    .flex-direction-nav .flex-next {
+      right: -40px;
+
+    }
+    .flex-direction-nav .flex-prev {
+      left: -40px;
+
+    }
+
+  }
+
+  @include media-query('sm') {
+    &:hover .flex-direction-nav a {
+      opacity: 1;
+
+    }
+    .flex-direction-nav .flex-next {
+      right: -50px;
+
+    }
+    .flex-direction-nav .flex-prev {
+      left: -50px;
+
+    }
+    &:hover .flex-direction-nav .flex-next {
+      right: -50px;
+
+    }
+
+    &:hover .flex-direction-nav .flex-prev {
+      left: -50px;
+
+    }
+  }
+
   h1, h3 {
     font-size: 2.5em;
   }
@@ -14,6 +50,13 @@
   .ssp_lyrics_wrap {
     position: relative;
     z-index: 1;
+    max-width: 500px;
+    margin: 0 auto;
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
 
   }
   .lyrics {
