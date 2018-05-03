@@ -1,4 +1,4 @@
-.ssp_background, .ssp_lyrics .ssp_lyrics_background, .single-product .ssp_background_image {
+.ssp_background, .ssp_lyrics .ssp_lyrics_background, .blur_background_image {
   position: absolute;
   top: 0;
   right: 0;
@@ -127,6 +127,21 @@
       .single-product .up-sells .add_to_cart_button {
         font: 200 .5rem 'Roboto Slab', sans-serif !important; } }
 
+.blur_background_image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(20px) brightness(50%);
+  filter: blur(20px) brightness(50%);
+  position: fixed; }
+
+.single-product .site-container {
+  background: linear-gradient(300deg, #434343 0%, #000000 100%); }
+
 .single-product span.onsale {
   display: none; }
 .single-product .ssp_div {
@@ -175,18 +190,18 @@
     list-style-type: circle; }
   .single-product .site-inner main.content .variations tbody {
     border: none; }
-.single-product .ssp_background_image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter: blur(20px) brightness(50%);
-  filter: blur(20px) brightness(50%);
-  position: fixed; }
 .single-product .summary, .single-product .ssp_video {
   position: relative; }
+.single-product .tmls .tmls_text {
+  max-width: 1000px;
+  padding: 0 2em;
+  margin: 0 auto; }
+.single-product .tmls.style1 .tmls_next_prev.tmls_bottom {
+  bottom: 61px;
+  right: 0px;
+  left: 0px;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=sexy-single-product.css.map */

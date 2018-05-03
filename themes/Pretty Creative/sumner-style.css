@@ -38,6 +38,24 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   /*top: -80px !important;*/
 /*}*/
 
+
+/******** password protected pages *********/
+
+.post-password-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post-password-form p {
+  line-height: unset !important;
+}
+
+.post-password-form p:nth-of-type(2) {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 /****** Search Bar ********/
 
 .nav-primary .aws-search-field {
@@ -120,11 +138,11 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   font-family: "MavenPro-Black";
 }
 
-#menu-item-1950 i.dashicons-email-alt {
+.menu-contact i.dashicons-email-alt {
   font-size: 20px !important;
 }
 
-#menu-item-1950 a {
+.menu-contact a {
   padding-right: 0;
   padding-left: 0;
   color: white !important;

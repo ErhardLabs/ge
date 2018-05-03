@@ -11,7 +11,7 @@ $(document).ready(function() {
     if($(window).width() > 585){
       $('nav #menu-header-right li:not(:last-child)').css('display', 'none');
     } else {
-      $('#menu-item-1950').css('display', 'none');
+      $('.menu-contact').css('display', 'none');
     }
 
     $('nav .widget-area .image').fadeOut('fast');
@@ -24,7 +24,7 @@ $(document).ready(function() {
       if($(window).width() > 585){
         $('nav #menu-header-right li:not(:last-child)').fadeIn('fast');
       } else {
-        $('#menu-item-1950').fadeIn('fast');
+        $('.menu-contact').fadeIn('fast');
       }
 
       $('nav .widget-area .image').css('display', 'inline-block');
