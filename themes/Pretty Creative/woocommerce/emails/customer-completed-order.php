@@ -547,8 +547,10 @@
                             <br style="line-height: 20.8px;">
                             <span style="line-height: 20.8px;"><?php echo $order->get_formatted_billing_address(); ?></span>
                             <br style="line-height: 20.8px;">
-                            <span style="line-height: 20.8px;"> <?php if($order->billing_address_2 != ""){ echo '<br>' . $order->billing_address_2;}?><br>
-                                                        <span style="line-height: 20.8px;"></span></span>
+                            <span style="line-height: 20.8px;"> <?php if($order->billing_address_2 != ""){ echo '<br>' . $order->billing_address_2;}?>
+                            <br><span style="line-height: 20.8px;"></span></span>
+                            <span style="line-height: 20.8px;"> <?php $order->country ?>
+                              <br><span style="line-height: 20.8px;"></span></span>
                           </td>
                         </tr>
                         </tbody>
