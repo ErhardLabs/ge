@@ -280,7 +280,7 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   cursor: pointer !important;
   line-height: 1.5 !important;
   font: 700 .7rem 'Roboto Slab', sans-serif !important;
-  padding: 1em 2em !important;
+  padding: 1em 2em;
   letter-spacing: 0.05rem !important;
   margin: 0 auto !important;
 }

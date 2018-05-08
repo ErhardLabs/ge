@@ -1829,12 +1829,33 @@ input[type="text"], textarea {
 	color: #ffe593bd;
 }
 
+article {
+	background: #060606;
+	color: #dddddd;
+}
 
+article p {
+	color: #dddddd;
+}
 
+.woocommerce-lost-password .woocommerce form .form-row {
+	text-align: center;
+	margin: 10px auto;
+	float: none;
+}
 
+.woocommerce-lost-password .woocommerce form {
+	text-align: center;
+}
 
+input[name='save_account_details'] {
+	margin: 20px;
+}
 
-
+.woocommerce-form-login .woocommerce-form__label-for-checkbox {
+	display: block !important;
+	margin: 10px 0px;
+}
 
 
 
