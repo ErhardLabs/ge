@@ -7,6 +7,14 @@ $(document).ready(function() {
 
     if (($('#billing_first_name').val() == '') || ($('#billing_last_name').val() == '') || ($('#billing_email').val() == '')) {
       alert('Please make sure you have filled out first name, last name, and email to receive your order.');
+    } else if (($('input[name="ss_wc_mailchimp_opt_in"]:checked').length < 1) && (localized_sexy_config.total == 0)){
+      let result = confirm("Please consider allowing me to email you my new new music and show announcements. It's the only way I can continue giving away free music! Please click OK to accept!");
+      if (result) {
+        $('input[name="ss_wc_mailchimp_opt_in"]').prop('checked', true);
+        $('form[name="checkout"]').submit();
+      } else {
+        $('form[name="checkout"]').submit();
+      }
     } else {
       $('form[name="checkout"]').submit();
     }

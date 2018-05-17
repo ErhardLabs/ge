@@ -173,7 +173,7 @@ section.related.products h2 {
 }
 
 /*.nav-primary .genesis-nav-menu a:first-of-type {*/
-	/*margin: 20px 12px 20px 0px;*/
+/*margin: 20px 12px 20px 0px;*/
 /*}*/
 
 .aws-container .aws-search-field {
@@ -1822,9 +1822,82 @@ input[type="text"], textarea {
 
 .name_your_price_wrap {
 	float: left;
-  margin-right: 20px;
+	margin-right: 20px;
 }
-	
+
+.lyrics h4 {
+	color: #ffe593bd;
+}
+
+article {
+	background: #060606;
+	color: #dddddd;
+}
+
+article p {
+	color: #dddddd;
+}
+
+.woocommerce-lost-password .woocommerce form .form-row {
+	text-align: center;
+	margin: 10px auto;
+	float: none;
+}
+
+.woocommerce-lost-password .woocommerce form {
+	text-align: center;
+}
+
+input[name='save_account_details'] {
+	margin: 20px;
+}
+
+.woocommerce-form-login .woocommerce-form__label-for-checkbox {
+	display: block !important;
+	margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

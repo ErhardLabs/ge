@@ -380,7 +380,7 @@
                                   <tr>
                                     <th valign="top" class="kmTextContent" style="color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:left;width:35%;padding-top:4px;font-weight:bold;padding-bottom:4px;padding-left:0px;padding-right:0px;">Item</th>
                                     <th valign="top" class="kmTextContent" style="color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:left;width:45%;padding-top:4px;font-weight:bold;padding-bottom:4px;padding-left:0px;padding-right:0px;"></th>
-                                    <th valign="top" class="kmTextContent" style="color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:right;padding-top:4px;font-weight:bold;padding-bottom:4px;padding-left:0px;padding-right:0px;">Qty</th>
+<!--                                    <th valign="top" class="kmTextContent" style="color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:right;padding-top:4px;font-weight:bold;padding-bottom:4px;padding-left:0px;padding-right:0px;">Qty</th>-->
                                     <th valign="top" class="kmTextContent" style="color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:right;padding-top:4px;font-weight:bold;padding-bottom:4px;padding-left:0px;padding-right:0px;">Price</th>
                                   </tr>
                                   </thead>
@@ -438,9 +438,9 @@
                                         }
                                         ?>
                                       </td>
-                                      <td valign="top" class="kmTextContent" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:right;;border-top-style:solid;padding-bottom:4px;padding-right:0px;padding-left:0px;padding-top:4px;border-top-color:#d9d9d9;border-top-width:1px;">
-                                        <p style="margin:0;padding-bottom:0"><?php echo $qty; ?></p>
-                                      </td>
+<!--                                      <td valign="top" class="kmTextContent" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;text-align:right;;border-top-style:solid;padding-bottom:4px;padding-right:0px;padding-left:0px;padding-top:4px;border-top-color:#d9d9d9;border-top-width:1px;">-->
+<!--                                        <p style="margin:0;padding-bottom:0">--><?php //echo $qty; ?><!--</p>-->
+<!--                                      </td>-->
                                       <td valign="top" class="kmTextContent" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;color:#505050;font-family:Helvetica, Arial;font-size:14px;line-height:150%;text-align:left;border-right:none;text-align:right;;border-top-style:solid;padding-bottom:4px;padding-right:0px;padding-left:0px;padding-top:4px;border-top-color:#d9d9d9;border-top-width:1px;">$<?php echo number_format((float) $sub_total, 2, '.', '' );?></td>
                                     </tr>
 
@@ -547,8 +547,10 @@
                             <br style="line-height: 20.8px;">
                             <span style="line-height: 20.8px;"><?php echo $order->get_formatted_billing_address(); ?></span>
                             <br style="line-height: 20.8px;">
-                            <span style="line-height: 20.8px;"> <?php if($order->billing_address_2 != ""){ echo '<br>' . $order->billing_address_2;}?><br>
-                                                        <span style="line-height: 20.8px;"></span></span>
+                            <span style="line-height: 20.8px;"> <?php if($order->billing_address_2 != ""){ echo '<br>' . $order->billing_address_2;}?>
+                            <br><span style="line-height: 20.8px;"></span></span>
+                            <span style="line-height: 20.8px;"> <?php $order->country ?>
+                              <br><span style="line-height: 20.8px;"></span></span>
                           </td>
                         </tr>
                         </tbody>
