@@ -1,0 +1,103 @@
+/*.rb_resume-template-default main.content {*/
+  /*background: #536976;  !* fallback for old browsers *!*/
+  /*background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #292E49, #536976, #BBD2C5); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+/*}*/
+
+.rb_resume-template-default main.content {
+  background: #29323c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1e242b, #343f4a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1e242b, #343f4a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.rb-resume-body .rb-resume-exp-block .rb-resume-exp-job-degree {
+  opacity: .8 !important;
+}
+
+.rb_resume-template-default article {
+  background: none !important;
+}
+
+.rb_resume-template-default .rb-resume-skill-rating {
+  display: none !important;
+}
+
+.rb_resume-template-default .entry-header {
+  visibility: hidden !important;
+  margin-bottom: 7em !important;
+}
+
+.rb_resume-template-default .rb-resume-introduction div{
+  color: #fff !important;
+}
+
+.rb_resume-template-default .rb-resume-introduction a{
+  color: #FFE188 !important;
+}
+
+.rb_resume-template-default .rb-resume-photo img{
+  border-radius: 10px !important;
+  box-shadow: 0px 7px 46px 0px rgba(41, 41, 41, 0.75);
+  -webkit-box-shadow: 0px 7px 46px 0px rgba(41, 41, 41, 0.75);
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .rb_resume-template-default .entry-content ol, .entry-content ul {
+    margin-left: 20px !important;
+  }
+
+  .rb_resume-template-default .entry-header {
+    margin-bottom: 0 !important;
+  }
+
+  .rb_resume-template-default .rb-resume-photo img{
+    width: 350px !important;
+    margin: 0 auto !important;
+  }
+
+  .rb_resume-template-default .rb-resume-title,
+  .rb_resume-template-default .rb-resume-subtitle {
+    text-align: center !important;
+  }
+
+    .rb-resume-header.rb-resume-has-photo .rb-resume-intro-content {
+    width: 100% !important;
+  }
+
+  .rb-resume-header.rb-resume-has-photo .rb-resume-photo {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+
+  .rb_resume-template-default .entry-header {
+    margin-bottom: 10em !important;
+  }
+
+  .rb_resume-template-default .rb-resume-default-template-left{
+    width: 100%;
+    clear: both;
+    float: none;
+    padding: 0;
+  }
+
+  .rb_resume-template-default .rb-resume-default-template-right {
+    width: 100%;
+  }
+
+  .rb_resume-template-default .rb-resume-intro-content{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .rb-resume-template-wrapper .rb-resume-header.rb-resume-has-photo .rb-resume-photo {
+    display: block !important;
+  }
+}
