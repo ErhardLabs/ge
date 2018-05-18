@@ -70,7 +70,7 @@ function ssp_get_product_image() {
 	$id = $product->get_id();
 	$terms = wp_get_post_terms( $id, 'product_cat' );
 	foreach ( $terms as $term ) $categories[] = $term->slug;
-
+	
 	if ( has_post_thumbnail( $id ) ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $id), 'thumbnail' );
 //    echo '<div class="ssp_background"></div>';

@@ -118,6 +118,22 @@ if ( ! class_exists( 'AWS_Versions' ) ) :
 
                 }
 
+                if ( version_compare( $current_version, '1.41', '<' ) ) {
+
+                    if ( AWS_Helpers::is_index_table_has_terms() == 'no_terms' ) {
+
+                        global $wpdb;
+                        $table_name =  $wpdb->prefix . AWS_INDEX_TABLE_NAME;
+
+                        $wpdb->query("
+                            ALTER TABLE {$table_name}
+                            ADD COLUMN `term_id` BIGINT(20) UNSIGNED NOT NULL DEFAULT 0
+                        ");
+
+                    }
+
+                }
+
             }
 
             update_option( 'aws_plugin_ver', AWS_VERSION );
@@ -129,7 +145,7 @@ if ( ! class_exists( 'AWS_Versions' ) ) :
          */
         public function admin_notice_no_index() { ?>
             <div class="updated notice is-dismissible">
-                <p><?php printf( esc_html__( 'Advanced Woo Search: Please go to plugin setting page and start the indexing of your products. %s', 'aws' ), '<a class="button button-secondary" href="'.esc_url( admin_url('admin.php?page=aws-options') ).'">'.esc_html__( 'Reindex Table', 'aws' ).'</a>'  ); ?></p>
+                <p><?php printf( esc_html__( 'Advanced Woo Search: Please go to plugin setting page and start the indexing of your products. %s', 'aws' ), '<a class="button button-secondary" href="'.esc_url( admin_url('admin.php?page=aws-options') ).'">'.esc_html__( 'Go to Settings Page', 'aws' ).'</a>'  ); ?></p>
             </div>
         <?php }
 
@@ -138,7 +154,7 @@ if ( ! class_exists( 'AWS_Versions' ) ) :
          */
         public function admin_notice_reindex() { ?>
             <div class="updated notice is-dismissible">
-                <p><?php printf( esc_html__( 'Advanced Woo Search: Please reindex table for proper work of new plugin features. %s', 'aws' ), '<a class="button button-secondary" href="'.esc_url( admin_url('admin.php?page=aws-options') ).'">'.esc_html__( 'Reindex Table', 'aws' ).'</a>'  ); ?></p>
+                <p><?php printf( esc_html__( 'Advanced Woo Search: Please reindex table for proper work of new plugin features. %s', 'aws' ), '<a class="button button-secondary" href="'.esc_url( admin_url('admin.php?page=aws-options') ).'">'.esc_html__( 'Go to Settings Page', 'aws' ).'</a>'  ); ?></p>
             </div>
         <?php }
 

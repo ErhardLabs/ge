@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: widget, plugin, woocommerce, search, product search, woocommerce search, ajax search, live search, custom search, ajax, shortcode, better search, relevance search, relevant search, search by sku, search plugin, shop, store, wordpress search, wp ajax search, wp search, wp search plugin, sidebar, ecommerce, merketing, products, category search, instant-search, search highlight, woocommerce advanced search, woocommerce live search, WooCommerce Plugin, woocommerce product search
 Requires at least: 4.0
 Tested up to: 4.9.5
-Stable tag: 1.40
+Stable tag: 1.41
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,16 +17,19 @@ Advanced Woo Search - powerful live search plugin for WooCommerce. Just start ty
 = Main Features =
 
 * **Products search** - Search across all your WooCommerce products
-* **Settings page** - User-friendly settings page with lot of options
 * **Search in** - Search in product title, content, excerpt, categories, tags and sku. Or just in some of them
-* **Shortcode** - Use shortcode to place search box anywhere you want
+* **Settings page** - User-friendly settings page with lot of options
+* **Shortcode** and **widget** - Use shortcode and widget to place search box anywhere you want
 * **Product image** - Each search result contains product image
 * **Product price** - Each search result contains product price
 * **Terms search** - Search for product categories and tags
 * **Smart ordering** - Search results ordered by the priority of source where they were found
 * **Fast** - Nothing extra. Just what you need for proper work
 * **WPML**, **Polylang**, **WooCommerce Multilingual**, **qTranslate** support
-* Supports variable products
+* **Stop Words** support to exclude certain words from search.
+* Supports **variable products**
+* Support for your current **search page**. Plugin search results will be integrated to your current page layout.
+* Automatically synchronize all products data. No need to re-index all content manually after avery change.
 * Plurals support
 * Google Analytics support
 * Custom Product Tabs for WooCommerce plugin support
@@ -37,14 +40,19 @@ Advanced Woo Search - powerful live search plugin for WooCommerce. Just start ty
 [Premium Version Demo](https://advanced-woo-search.com/)
 	
 * Search **results layouts**
+* Search **form layouts**
 * **Filters**. Switch between tabs to show different search results
 * **Unlimited** amount of search form instances
+* Product **attributes** search ( including custom attributes)
+* Product **custom taxonomies** search
 * **Advanced settings page** with lot of options
-* **Exclude** spicific products by its categories or tags from search results
+* **Exclude/include** spicific products by its ids, categories or tags from search results
 * Ability to specify **source of image** for search results: featured image, gallery, product content, product short description or set default image if there is no other images
-* **Visibility option** - choose what catalog visibility must be for product to displayed in search results
+* **Visibility/stock status option** - choose what catalog visibility and stock status must be for product to displayed in search results
 * Show product **categories** and **variations** in search results
 * Support for [WooCommerce Brands plugin](https://woocommerce.com/products/brands/)
+
+[Features list](https://advanced-woo-search.com/features/)
 
 == Installation ==
 
@@ -73,9 +81,16 @@ Yep. This plugin is always compatible with the latest version of Woocommerce?
 == Screenshots ==
 
 1. Front-end view
-2. Plugin settings page
+2. Plugin settings page. General options
+3. Plugin settings page. Search form options
+4. Plugin settings page. Search results options
 
 == Changelog ==
+
+= 1.41 =
+* Add new column form index table - term_id. With id help it is possible to sunc any changes in product term
+* Add shortcode to settings page
+* Update search page integration
 
 = 1.40 =
 * Fix bug with not working stop-words for taxonomies

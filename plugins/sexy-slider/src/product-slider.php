@@ -201,15 +201,15 @@ function get_product_image( $loop, $args ) {
 
 function get_product_background_svg( $args ) {
 
-    if ( $args['product_cat'] == 'music' ){
+	if ( $args['product_cat'] == 'music' ){
 
-      echo '<img class="product-background record" src="' . SEXY_SLIDER_URL . 'assets/icons/recordIcon.svg" alt="Placeholder"/>';
+		echo '<img class="product-background record" src="' . SEXY_SLIDER_URL . 'assets/icons/recordIcon.svg" alt="Placeholder"/>';
 
-    } elseif ( $args['product_cat'] == 'tabs' ) {
+	} elseif ( $args['product_cat'] == 'tabs' ) {
 
-      echo '<img class="product-background tabs" src="' . SEXY_SLIDER_URL . 'assets/icons/tabsIcon.svg" alt="Placeholder"/>';
+		echo '<img class="product-background tabs" src="' . SEXY_SLIDER_URL . 'assets/icons/tabsIcon.svg" alt="Placeholder"/>';
 
-    }
+	}
 
 }
 

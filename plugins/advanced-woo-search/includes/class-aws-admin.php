@@ -127,6 +127,11 @@ class AWS_Admin {
 
         echo '<div class="wrap">';
 
+        echo '<h1></h1>';
+
+        echo '<h1 class="aws-instance-name">Advanced Woo Search</h1>';
+        echo '<div class="aws-instance-shortcode">[aws_search_form]</div>';
+
         echo $tabs_html;
 
         echo '<form action="" name="aws_form" id="aws_form" method="post">';

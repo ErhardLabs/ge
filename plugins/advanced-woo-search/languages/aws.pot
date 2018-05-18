@@ -27,6 +27,9 @@ msgstr ""
 msgid "Reindex table"
 msgstr ""
 
+msgid "Go to Settings Page"
+msgstr ""
+
 #: includes/class-aws-admin.php:352
 msgid ""
 "Update all data in plugins index table. Index table - table with products "

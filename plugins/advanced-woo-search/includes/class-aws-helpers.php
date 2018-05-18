@@ -39,6 +39,19 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
         }
 
         /*
+         * Check if index table exist
+         */
+        static public function is_table_not_exist() {
+
+            global $wpdb;
+
+            $table_name = $wpdb->prefix . AWS_INDEX_TABLE_NAME;
+
+            return ( $wpdb->get_var( "SHOW TABLES LIKE '{$table_name}'" ) != $table_name );
+
+        }
+
+        /*
          * Get amount of indexed products
          */
         static public function get_indexed_products_count() {
@@ -58,6 +71,35 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
             }
 
             return $indexed_products;
+
+        }
+
+        /*
+         * Check if index table has new terms columns
+         */
+        static public function is_index_table_has_terms() {
+
+            global $wpdb;
+
+            $table_name =  $wpdb->prefix . AWS_INDEX_TABLE_NAME;
+
+            $return = false;
+
+            if ( $wpdb->get_var( "SHOW TABLES LIKE '{$table_name}'" ) === $table_name ) {
+
+                $columns = $wpdb->get_row("
+                    SELECT * FROM {$table_name} LIMIT 0, 1
+                ", ARRAY_A );
+
+                if ( $columns && ! isset( $columns['term_id'] ) ) {
+                    $return = 'no_terms';
+                } else {
+                    $return = 'has_terms';
+                }
+
+            }
+
+            return $return;
 
         }
         
@@ -136,6 +178,32 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
         static public function strip_shortcodes( $str ) {
             $str = preg_replace( '#\[[^\]]+\]#', '', $str );
             return $str;
+        }
+
+        /*
+         * Get index table specific source name from taxonomy name
+         *
+         * @return string Source name
+         */
+        static public function get_source_name( $taxonomy ) {
+
+            switch ( $taxonomy ) {
+
+                case 'product_cat':
+                    $source_name = 'category';
+                    break;
+
+                case 'product_tag':
+                    $source_name = 'tag';
+                    break;
+
+                default:
+                    $source_name = '';
+
+            }
+
+            return $source_name;
+
         }
 
     }

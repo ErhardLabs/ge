@@ -3,7 +3,7 @@
 /*
 Plugin Name: Advanced Woo Search
 Description: Advance ajax WooCommerce product search.
-Version: 1.40
+Version: 1.41
 Author: ILLID
 Author URI: https://advanced-woo-search.com/
 Text Domain: aws
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWS_VERSION', '1.40' );
+define( 'AWS_VERSION', '1.41' );
 
 
 define( 'AWS_DIR', dirname( __FILE__ ) );
@@ -93,8 +93,8 @@ final class AWS_Main {
      * Include required core files used in admin and on the frontend.
      */
     public function includes() {
-        include_once( 'includes/class-aws-versions.php' );
         include_once( 'includes/class-aws-helpers.php' );
+        include_once( 'includes/class-aws-versions.php' );
         include_once( 'includes/class-aws-admin.php' );
         include_once( 'includes/class-aws-cache.php' );
         include_once( 'includes/class-aws-table.php' );
