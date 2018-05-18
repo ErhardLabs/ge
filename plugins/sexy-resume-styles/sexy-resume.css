@@ -1,7 +1,7 @@
 /*.rb_resume-template-default main.content {*/
-  /*background: #536976;  !* fallback for old browsers *!*/
-  /*background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  !* Chrome 10-25, Safari 5.1-6 *!*/
-  /*background: linear-gradient(to right, #292E49, #536976, #BBD2C5); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+/*background: #536976;  !* fallback for old browsers *!*/
+/*background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  !* Chrome 10-25, Safari 5.1-6 *!*/
+/*background: linear-gradient(to right, #292E49, #536976, #BBD2C5); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 
 /*}*/
 
@@ -9,6 +9,15 @@
   background: #29323c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1e242b, #343f4a);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1e242b, #343f4a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.rb_resume-template-default .rb-resume-title {
+  font-size: 2.5rem;
+
+}
+.rb_resume-template-default .rb-resume-subtitle {
+  line-height: 2.5rem;
+  font-size: 1.2rem !important;
 }
 
 .rb-resume-body .rb-resume-exp-block .rb-resume-exp-job-degree {
@@ -38,8 +47,14 @@
 
 .rb_resume-template-default .rb-resume-photo img{
   border-radius: 10px !important;
-  box-shadow: 0px 7px 46px 0px rgba(41, 41, 41, 0.75);
-  -webkit-box-shadow: 0px 7px 46px 0px rgba(41, 41, 41, 0.75);
+  box-shadow: 0px 7px 46px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 46px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 1400px) {
+  .rb_resume-template-default .rb-resume-photo img{
+    max-width: 287px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -62,7 +77,7 @@
     text-align: center !important;
   }
 
-    .rb-resume-header.rb-resume-has-photo .rb-resume-intro-content {
+  .rb-resume-header.rb-resume-has-photo .rb-resume-intro-content {
     width: 100% !important;
   }
 
@@ -99,5 +114,10 @@
 @media screen and (max-width: 540px) {
   .rb-resume-template-wrapper .rb-resume-header.rb-resume-has-photo .rb-resume-photo {
     display: block !important;
+  }
+
+  .rb_resume-template-default .rb-resume-title {
+    font-size: 1.5rem !important;
+
   }
 }
