@@ -2,6 +2,8 @@ $=jQuery;
 
 $(document).ready(function() {
 
+  // IF THERE AREN'T ANY SHOWS, DISPLAY SHOWS AS NONE.
+
   $('#place_order').unbind().click(function(e) {
     e.preventDefault();
 

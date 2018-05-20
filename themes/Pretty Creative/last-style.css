@@ -1152,7 +1152,7 @@ hr
 /* SHOWS START */
 .home-page-4
 {
-	background: url(/wp-content/themes/Pretty%20Creative/img/Grayson%20Erhard%20Colorado%20Guitarist%20and%20Singer%20Songwriter%20Hair.png)!important;
+	background: url(/wp-content/uploads/sites/14/2018/05/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Hair.jpg)!important;
 	overflow: hidden;
 	background: rgba(51,3,3,.8);
 	background-size: cover;
@@ -1526,7 +1526,11 @@ ul.dark li.tweets_avatar
 }
 
 
-a, .nav-primary .genesis-nav-menu a {
+.nav-primary .genesis-nav-menu a {
+	color: #fefefe;
+}
+
+.fa-times-circle {
 	color: #fefefe;
 }
 
