@@ -1861,7 +1861,9 @@ input[name='save_account_details'] {
 	margin: 10px 0px;
 }
 
-
+.woocommerce div.product form.cart div.quantity {
+	display: none;
+}
 
 
 
