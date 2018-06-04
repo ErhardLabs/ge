@@ -22,12 +22,15 @@ $(document).ready(function() {
     }
   });
 
-  // Remove by songkick logo (can't remove with css)
-
+  // Remove songkick logo (can't remove with css)
   $('#powered').css('display', 'none');
 
 
   $('.home-subscribe-widget').hide();
+
+  if(!readCookie('disableLandingPagePopUpNew3')) {
+    $('.home-subscribe-widget').fadeIn('fast');
+  }
 
   $('.filter-drop-spacer').remove();
 
@@ -37,13 +40,12 @@ $(document).ready(function() {
     var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
 
     document.cookie =
-        'disableLandingPagePopUpNew=1; '+
+        'disableLandingPagePopUpNew3=1; '+
         'expires='+nextweek+';' +
         'path=/';
 
     $('.home-subscribe-widget').fadeOut('fast');
   });
-
 
   // $('#social_stickers_widget-3').html().replace('spotify.png', 's.png');
   // $('#social_stickers_widget-3').html().replace('facebook.png', 'fb.png');
@@ -52,23 +54,17 @@ $(document).ready(function() {
   // $('#social_stickers_widget-3').html().replace('instagram.png', 'i.png');
 
 
+
+
   if ($(window).width() < 768) {
 
-
-
-    $('.featured_image_wrapper').css({'background-attachment': 'scroll'});
-    $('.home-top').css({'background-attachment': 'scroll'});
-    $('.home-page-2').css({'background-attachment': 'scroll'});
+    /*
+        $('.featured_image_wrapper').css({'background-attachment': 'scroll'});
+        $('.home-top').css({'background-attachment': 'scroll'});
+        $('.home-page-2').css({'background-attachment': 'scroll'});
+    */
 
   } else { // DESKTOP AND TABLET VIEW
-
-
-
-
-
-    if(!readCookie('disableLandingPagePopUpNew')) {
-      $('.home-subscribe-widget').fadeIn('fast');
-    }
 
     $('.menu-item a').unbind().click(function(e) {
       if ($(this).attr('href') == '#') {
@@ -77,29 +73,26 @@ $(document).ready(function() {
       }
     });
 
-    var fullPath = location.pathname + location.search + location.hash;
-
-    if(fullPath === "/") {
-
-      $('.site-header').append('<span class="home-down"><i class="fa fa-angle-down"></i></span>');
-
-      var timer;
-      $(document).mousemove(function() {
-        if (timer) {
-          clearTimeout(timer);
-          timer = 0;
-        }
-
-        $('.home-down .fa-angle-down').fadeIn('slow');
-        timer = setTimeout(function() {
-          $('.home-down .fa-angle-down').fadeOut()
-        }, 2000)
-      });
-
-
-
-
-    }
+    // var fullPath = location.pathname + location.search + location.hash;
+    //
+    // if(fullPath === "/") {
+    //
+    //   $('.site-header').append('<span class="home-down"><i class="fa fa-angle-down"></i></span>');
+    //
+    //   var timer;
+    //   $(document).mousemove(function() {
+    //     if (timer) {
+    //       clearTimeout(timer);
+    //       timer = 0;
+    //     }
+    //
+    //     $('.home-down .fa-angle-down').fadeIn('slow');
+    //     timer = setTimeout(function() {
+    //       $('.home-down .fa-angle-down').fadeOut()
+    //     }, 2000)
+    //   });
+    //
+    // }
 
 
 

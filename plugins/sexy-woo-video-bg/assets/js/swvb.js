@@ -12,34 +12,34 @@ $(document).ready(function() {
 
     // if ((fullPath.indexOf('/') >= 0) || (fullPath.indexOf('products') !== -1)) {
 
-      // INSERT VIDEO PLAYER
-      $('body').prepend(
-          '<div class="video-background">' +
-          '<div class="video-foreground">' +
-          '<iframe class="home_video" id="yt_home_embed" width="1280" height="720" src="https://www.youtube.com/embed/' + homeVideo + '?rel=0&controls=0&showinfo=0&autoplay=1&loop=1&enablejsapi=1&playlist=79EUORqIh0c&start='+homeVideoStartTime+'" frameborder="0" allowfullscreen volume="0"></iframe>' +
-          '</div>' +
-          '</div>'
-      );
+    // INSERT VIDEO PLAYER
+    $('body').prepend(
+        '<div class="video-background">' +
+        '<div class="video-foreground">' +
+        '<iframe class="home_video" id="yt_home_embed" width="1280" height="720" src="https://www.youtube.com/embed/' + homeVideo + '?rel=0&controls=0&showinfo=0&autoplay=1&loop=1&enablejsapi=1&playlist=79EUORqIh0c&start='+homeVideoStartTime+'" frameborder="0" allowfullscreen volume="0"></iframe>' +
+        '</div>' +
+        '</div>'
+    );
 
-      // Loads the IFrame Player API code asynchronously.
-      let tag = document.createElement('script');
+    // Loads the IFrame Player API code asynchronously.
+    let tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      let firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    tag.src = "https://www.youtube.com/iframe_api";
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      let player;
+    let player;
 
-      // LOAD iFrame after content loads and a button is clicked
-      let div, n,
-          v = document.getElementsByClassName("youtube-player");
-      for (n = 0; n < v.length; n++) {
-        div = document.createElement("div");
-        div.setAttribute("data-id", v[n].dataset.id);
-        div.innerHTML = labnolThumb(v[n].dataset.id);
-        div.onclick = labnolIframe;
-        v[n].appendChild(div);
-      }
+    // LOAD iFrame after content loads and a button is clicked
+    let div, n,
+        v = document.getElementsByClassName("youtube-player");
+    for (n = 0; n < v.length; n++) {
+      div = document.createElement("div");
+      div.setAttribute("data-id", v[n].dataset.id);
+      div.innerHTML = labnolThumb(v[n].dataset.id);
+      div.onclick = labnolIframe;
+      v[n].appendChild(div);
+    }
 
     // }
 
@@ -62,9 +62,9 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady() {
-  player.playVideo();
   // Mute!
   player.mute();
+  player.playVideo();
 }
 
 

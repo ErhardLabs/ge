@@ -614,3 +614,15 @@ function ge_add_custom_links_to_store_page() {
   </div>
   <?php
 }
+
+if (get_site_url() === 'https://graysonerhard-com.grayson.staging.wpengine.com') {
+  $pluginsToDeactivate = array(
+      'autoptimize/autoptimize.php',
+      'duracelltomi-google-tag-manager/duracelltomi-google-tag-manager-for-wordpress.php',
+      'enhanced-e-commerce-for-woocommerce-store/woocommerce-enhanced-ecommerce-google-analytics-integration.php',
+      'genesis-gtm4wp/plugin.php',
+      'pixelyoursite/facebook-pixel-master.php',
+      'woocommerce-square/woocommerce-square.php'
+  );
+  deactivate_plugins($pluginsToDeactivate);
+}
