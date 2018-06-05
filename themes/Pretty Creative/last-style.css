@@ -1835,7 +1835,9 @@ input[name='save_account_details'] {
 	display: none;
 }
 
-
+.single-post .site-inner {
+	background: linear-gradient(to right, #0b0b0b, #29333f);
+}
 
 
 
