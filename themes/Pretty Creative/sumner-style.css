@@ -876,3 +876,79 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+
+/** Blog post styles start **/
+
+.single-post .post {
+  background: none;
+}
+
+.single-post .site-container .site-inner main {
+  padding: 20px 0;
+}
+
+.single-post .entry-content {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.single-post .entry-meta {
+  text-align: center;
+}
+
+.single-post .entry-header{
+  margin-top: -350px;
+}
+
+.single-post .entry-title {
+  font-size: 32px !important;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.single-post .lyte-wrapper.fourthree {
+  margin: 0 auto !important;
+}
+
+.single-post .lyte-wrapper.fourthree .tT {
+  display: none;
+}
+
+.single-post .featured_image_wrapper {
+  background: url(/wp-content/uploads/sites/14/2018/06/blogImage.jpeg) !important;
+}
+
+
+/* =================================
+  Tablet Layout Styles
+==================================== */
+
+@media (min-width: 500px) {
+  .single-post .entry-header{
+    margin-top: -280px;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .single-post .site-container .site-inner main {
+    padding: 20px 3em;
+  }
+
+  .single-post .entry-header{
+    margin-top: -270px;
+  }
+
+  .single-post .entry-title {
+    font-size: 2em !important;
+  }
+
+}
+
+
+/* =================================
+  Desktop Layout Styles
+==================================== */
+
+@media (min-width: 1025px) {}
