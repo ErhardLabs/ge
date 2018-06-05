@@ -1643,7 +1643,7 @@ section:nth-of-type(4) div div p .cta {
 }
 
 .nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
-	font-size: 12px;
+	font-size: 9px;
 }
 
 nav .dashicons-email-alt:hover {
@@ -2043,6 +2043,24 @@ input[name='save_account_details'] {
 
 
 
+
+
+
+
+@media screen and (min-width: 390px) {
+
+	.nav-secondary .genesis-nav-menu a, .nav-primary .genesis-nav-menu a {
+		font-size: 12px;
+	}
+
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 585px) {
 
 	#menu-item-1233, #menu-item-1237, #menu-item-1238, #menu-item-1239 {
@@ -2058,6 +2076,13 @@ input[name='save_account_details'] {
 	}
 
 }
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
 
