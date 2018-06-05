@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 
   $('.home-subscribe-widget').hide();
-
+  
   if(!readCookie('disableLandingPagePopUpNew3')) {
     $('.home-subscribe-widget').fadeIn('fast');
   }
@@ -58,11 +58,11 @@ $(document).ready(function() {
 
   if ($(window).width() < 768) {
 
-    /*
-        $('.featured_image_wrapper').css({'background-attachment': 'scroll'});
-        $('.home-top').css({'background-attachment': 'scroll'});
-        $('.home-page-2').css({'background-attachment': 'scroll'});
-    */
+/*
+    $('.featured_image_wrapper').css({'background-attachment': 'scroll'});
+    $('.home-top').css({'background-attachment': 'scroll'});
+    $('.home-page-2').css({'background-attachment': 'scroll'});
+*/
 
   } else { // DESKTOP AND TABLET VIEW
 

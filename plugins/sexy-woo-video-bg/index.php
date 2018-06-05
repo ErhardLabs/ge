@@ -19,6 +19,7 @@ function swvb_scripts() {
   $videoID = get_post_meta( get_the_ID(), 'ge_video_bg', true );
 
   if ((is_product_category()) || (is_front_page()) || ($videoID !== '')) {
+    wp_enqueue_style( 'swvb', SWVB_URL . 'assets/css/swvb-styles.css', false);
     wp_register_script('swvb', SWVB_URL . 'assets/js/swvb.js', array('jquery'), false, true);
     wp_enqueue_script('swvb');
   }

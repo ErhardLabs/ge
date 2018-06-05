@@ -26,6 +26,7 @@ $std_events = get_option( 'pixel_your_site_std_events' );
 			<li id="pys-menu-dynamic-events" class="nav-tab <?php echo $pys_active_tab == 'dynamic-events' ? 'nav-tab-active selected' : null; ?>">Dynamic Events</li>
 			<li id="pys-menu-woo" class="nav-tab <?php echo $pys_active_tab == 'woo' ? 'nav-tab-active selected' : null; ?>">WooCommerce Setup</li>
 			<li id="pys-menu-edd" class="nav-tab <?php echo $pys_active_tab == 'edd' ? 'nav-tab-active selected' : null; ?>"><?php _e( 'Easy Digital Downloads', 'pys' ); ?></li>
+            <li id="pys-menu-gdpr" class="nav-tab <?php echo $pys_active_tab == 'gdpr' ? 'nav-tab-active selected' : null; ?>"><?php _e( 'GDPR', 'pys' ); ?></li>
 		</ul>
 		
 		<div class="pys-content">
@@ -108,6 +109,10 @@ $std_events = get_option( 'pixel_your_site_std_events' );
 					<?php include "html-box-middle.php"; ?>
 
 				</div><!-- #pys-panel-edd -->
+
+                <div id="pys-panel-gdpr" class="pys-panel" <?php echo $pys_active_tab == 'gdpr' ? 'style="display: block;"' : null; ?>>
+	                <?php include "html-tab-gdpr.php"; ?>
+                </div><!-- #pys-panel-gdpr -->
 
 			</form>
 		</div><!-- .pys-content -->

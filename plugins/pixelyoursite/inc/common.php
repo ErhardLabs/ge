@@ -1065,7 +1065,9 @@ if( !function_exists( 'pys_get_default_options' ) ) {
 		$options['edd']['purchase_add_address']        = true;
 		$options['edd']['purchase_add_payment_method'] = true;
 		$options['edd']['purchase_add_coupons']        = true;
-
+		
+		$options['gdpr']['enable_before_consent'] = true;
+		
 		return apply_filters( 'pys_fb_pixel_setting_defaults', $options );
 
 	}

@@ -543,6 +543,18 @@ function pys_pixel_options() {
 		$options['woo']['product_value_option']  = pys_get_option( 'woo', 'add_to_cart_value_option' );
 
 	}
+	
+	/**
+	 * GDPR
+	 */
+	
+	$options['gdpr'] = array(
+        'disable' => apply_filters( 'pys_disable_by_gdpr', false ),
+        'enable_before_consent' => pys_get_option( 'gdpr', 'enable_before_consent' ),
+//        'gdpr_enabled' => pys_is_gdpr_plugin_activated() && pys_get_option( 'gdpr', 'gdpr_enabled' ),
+        'ginger_enabled' => pys_is_ginger_plugin_activated() && pys_get_option( 'gdpr', 'ginger_enabled' ),
+        'cookiebot_enabled' => pys_is_cookiebot_plugin_activated() && pys_get_option( 'gdpr', 'cookiebot_enabled' )
+    );
 
     return $options;
     

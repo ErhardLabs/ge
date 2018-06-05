@@ -6,3 +6,4 @@ uploads/sites/14/wc-logs
 uploads/wp-migrate-db
 mysql.sql
 beforeSnR.sql
+cache/*
