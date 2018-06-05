@@ -916,7 +916,9 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 .single-post .featured_image_wrapper {
-  background: url(/wp-content/uploads/sites/14/2018/06/blogImage.jpeg) !important;
+  background: url(/wp-content/uploads/sites/14/2018/06/blogImageMobile.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 
@@ -931,6 +933,10 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 }
 
 @media (min-width: 769px) {
+
+  .single-post .featured_image_wrapper {
+    background: url(/wp-content/uploads/sites/14/2018/06/blogImage.jpeg) !important;
+  }
 
   .single-post .site-container .site-inner main {
     padding: 20px 3em;
