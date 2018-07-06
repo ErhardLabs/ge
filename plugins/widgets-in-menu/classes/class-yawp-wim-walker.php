@@ -1,16 +1,26 @@
 <?php
+
+// prevent direct access
+defined( 'ABSPATH' ) || exit;
+
 if ( ! class_exists( 'YAWP_WIM_Walker' ) ) {
 
+	/**
+	 * Class to extend Menu Walker
+	 */
 	class YAWP_WIM_Walker {
 
-		public function init() {
+		/**
+		 * Hook into walker
+		 */
+		public function hook() {
 			// filter the nav menu item output for rendering widgets
 			add_filter( 'walker_nav_menu_start_el', array( $this, 'start_el' ), 1, 4 );
 		}
 
 		/**
 		 * Render the widget in the nav menu
-		 * 
+		 *
 		 * @global      array		$wp_registered_widgets	All registered widgets
 		 * @global      array		$wp_registered_sidebars All registered sidebars
 		 * @param       string		$item_output			The html output of the widget.
@@ -37,11 +47,11 @@ if ( ! class_exists( 'YAWP_WIM_Walker' ) ) {
 				return $item_output;
 			}
 
-			// get our sidebar/widget area 
+			// get our sidebar/widget area
 			$sidebar = array_merge(
 				// our sidebar is at the index 'yawp_wim'
 				$wp_registered_sidebars[ YAWP_WIM_PREFIX ],
-				// we merge our current widget into it 
+				// we merge our current widget into it
 				array(
 				'widget_id' => $id,
 				'widget_name' => $wp_registered_widgets[ $id ][ 'name' ]
@@ -102,12 +112,12 @@ if ( ! class_exists( 'YAWP_WIM_Walker' ) ) {
 			$yawp_wim_widget = $wp_registered_widgets[ $id ];
 
 			/**
-			 * Fires before a widget's display callback is called. 
-			 * 
+			 * Fires before a widget's display callback is called.
+			 *
 			 * Note: Similar to 'dynamic_sidebar' action.
 			 *
 			 * @since 0.0.1
-			 * 
+			 *
 			 * @see dynamic_sidebar()
 			 *
 			 * @param array $yawp_wim_widget {

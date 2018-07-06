@@ -116,13 +116,47 @@ if ( ! class_exists( 'AWS_Search' ) ) :
             $posts_ids = $this->query_index_table();
             $products_array = $this->get_products( $posts_ids );
 
+            /**
+             * Filters array of products before they displayed in search results
+             *
+             * @since 1.42
+             *
+             * @param array $products_array Array of products results
+             * @param string $s Search query
+             */
+            $products_array = apply_filters( 'aws_search_results_products', $products_array, $s );
+
 
             if ( $show_cats === 'true' ) {
+
                 $categories_array = $this->get_taxonomies( 'product_cat' );
+
+                /**
+                 * Filters array of product categories before they displayed in search results
+                 *
+                 * @since 1.42
+                 *
+                 * @param array $categories_array Array of products categories
+                 * @param string $s Search query
+                 */
+                $categories_array = apply_filters( 'aws_search_results_categories', $categories_array, $s );
+
             }
 
             if ( $show_tags === 'true' ) {
+
                 $tags_array = $this->get_taxonomies( 'product_tag' );
+
+                /**
+                 * Filters array of product tags before they displayed in search results
+                 *
+                 * @since 1.42
+                 *
+                 * @param array $tags_array Array of products tags
+                 * @param string $s Search query
+                 */
+                $tags_array = apply_filters( 'aws_search_results_tags', $tags_array, $s );
+
             }
 
             $result_array = array(
@@ -131,11 +165,19 @@ if ( ! class_exists( 'AWS_Search' ) ) :
                 'products' => $products_array
             );
 
+            /**
+             * Filters array of all results data before they displayed in search results
+             *
+             * @since 1.43
+             *
+             * @param array $brands_array Array of products data
+             * @param string $s Search query
+             */
+            $result_array = apply_filters( 'aws_search_results_all', $result_array, $s );
 
             if ( $cache === 'true' && ! $keyword  ) {
                 AWS()->cache->insert_into_cache_table( $cache_option_name, $result_array );
             }
-
 
             return $result_array;
 
@@ -387,7 +429,12 @@ if ( ! class_exists( 'AWS_Search' ) ) :
                         $marked_content = $this->mark_search_words( $title, $excerpt );
 
                         $title   = $marked_content['title'];
-                        $excerpt = $marked_content['content'];
+
+                        if ( $marked_content['content'] ) {
+                            $excerpt = $marked_content['content'];
+                        } else {
+                            $excerpt = wp_trim_words( $excerpt, $excerpt_length, '...' );
+                        }
 
                     } else {
                         $excerpt = wp_trim_words( $excerpt, $excerpt_length, '...' );

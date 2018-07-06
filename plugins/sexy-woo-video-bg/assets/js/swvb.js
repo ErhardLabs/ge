@@ -31,27 +31,28 @@ $(document).ready(function() {
             '</div>'
         );
 
-        // Loads the IFrame Player API code asynchronously.
-        let tag = document.createElement('script');
+    }
+    
+    // Loads the IFrame Player API code asynchronously.
+    let tag = document.createElement('script');
 
-        tag.src = "https://www.youtube.com/iframe_api";
-        let firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    tag.src = "https://www.youtube.com/iframe_api";
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        let player;
+    let player;
 
-        // LOAD iFrame after content loads and a button is clicked
-        let div, n,
-            v = document.getElementsByClassName("youtube-player");
-        for (n = 0; n < v.length; n++) {
-          div = document.createElement("div");
-          div.setAttribute("data-id", v[n].dataset.id);
-          div.innerHTML = labnolThumb(v[n].dataset.id);
-          div.onclick = labnolIframe;
-          v[n].appendChild(div);
-        }
-
-      }
+    // LOAD iFrame after content loads and a button is clicked
+    let div, n,
+        v = document.getElementsByClassName("youtube-player");
+    for (n = 0; n < v.length; n++) {
+      div = document.createElement("div");
+      div.setAttribute("data-id", v[n].dataset.id);
+      div.innerHTML = labnolThumb(v[n].dataset.id);
+      div.onclick = labnolIframe;
+      v[n].appendChild(div);
+    }
+      
 
   }
 

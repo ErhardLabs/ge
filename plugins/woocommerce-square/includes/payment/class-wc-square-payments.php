@@ -68,7 +68,12 @@ class WC_Square_Payments {
 			return $actions;
 		}
 
-		$order = wc_get_order( $_REQUEST['post'] );
+		$order = wc_get_order( absint( $_REQUEST['post'] ) );
+
+		// Bail if order is not found.
+		if ( empty( $order ) ) {
+			return $actions;
+		}
 
 		// bail if the order wasn't paid for with this gateway
 		if ( 'square' !== ( version_compare( WC_VERSION, '3.0.0', '<' ) ? $order->payment_method : $order->get_payment_method() ) ) {

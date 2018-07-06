@@ -199,7 +199,7 @@ if ( ! class_exists( 'AWS_Table' ) ) :
             $sql = "CREATE TABLE {$this->table_name} (
                       id BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,
                       term VARCHAR(50) NOT NULL DEFAULT 0,
-                      term_source VARCHAR(20) NOT NULL DEFAULT 0,
+                      term_source VARCHAR(50) NOT NULL DEFAULT 0,
                       type VARCHAR(50) NOT NULL DEFAULT 0,
                       count BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,
                       in_stock INT(11) NOT NULL DEFAULT 0,
@@ -712,8 +712,26 @@ if ( ! class_exists( 'AWS_Table' ) ) :
 
             $str = trim( preg_replace( '/\s+/', ' ', $str ) );
 
+            /**
+             * Filters extracted string
+             *
+             * @since 1.44
+             *
+             * @param string $str String of product content
+             */
+            $str = apply_filters( 'aws_extracted_string', $str );
+
             $str_array = array_count_values( explode( ' ', $str ) );
             $str_array = AWS_Helpers::filter_stopwords( $str_array );
+
+            /**
+             * Filters extracted terms before adding to index table
+             *
+             * @since 1.44
+             *
+             * @param string $str_array Array of terms
+             */
+            $str_array = apply_filters( 'aws_extracted_terms', $str_array );
 
             return $str_array;
 

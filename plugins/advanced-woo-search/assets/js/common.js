@@ -6,6 +6,8 @@
     var pluginPfx = 'aws_opts';
     var translate = {
         sale      : aws_vars.sale,
+        sku       : aws_vars.sku,
+        showmore  : aws_vars.showmore,
         noresults : aws_vars.noresults
     };
 
@@ -160,7 +162,7 @@
                         }
 
                         if ( result.sku ) {
-                            html += '<span class="aws_result_sku">SKU: ' + result.sku + '</span>';
+                            html += '<span class="aws_result_sku">' + translate.sku + ': ' + result.sku + '</span>';
                         }
 
                         if ( result.excerpt ) {
@@ -184,7 +186,10 @@
 
                     });
 
-                    //html += '<li class="aws_result_item aws_search_more"><a href="' + opts.siteUrl + '/?s=' + searchFor + '&post_type=product">View all</a></li>';
+                    if ( d.showMore ) {
+                        html += '<li class="aws_result_item aws_search_more"><a href="#">' + translate.showmore + '</a></li>';
+                    }
+
                     //html += '<li class="aws_result_item"><a href="#">Next Page</a></li>';
 
                 }
@@ -325,6 +330,7 @@
         self.data( pluginPfx, {
             minChars  : ( self.data('min-chars')   !== undefined ) ? self.data('min-chars') : 1,
             showLoader: ( self.data('show-loader') !== undefined ) ? self.data('show-loader') : true,
+            showMore: ( self.data('show-more') !== undefined ) ? self.data('show-more') : true,
             showPage: ( self.data('show-page') !== undefined ) ? self.data('show-page') : true,
             useAnalytics: ( self.data('use-analytics') !== undefined ) ? self.data('use-analytics') : false,
             instance: instance,
@@ -395,6 +401,12 @@
 
         $( d.resultBlock ).on( 'mouseleave', '.aws_result_item', function() {
             methods.removeHovered();
+        });
+
+
+        $( d.resultBlock ).on( 'click', '.aws_search_more', function(e) {
+            e.preventDefault();
+            $searchForm.submit();
         });
 
 

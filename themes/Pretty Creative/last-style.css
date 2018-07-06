@@ -513,7 +513,8 @@ button.menu-toggle, button.sub-menu-toggle {
 {
 	font-size: 18px;
 	color: #fff;
-	padding: 0
+	padding: 0;
+	text-shadow: 1px 1px 1px black;
 }
 
 .home-top div .wrap

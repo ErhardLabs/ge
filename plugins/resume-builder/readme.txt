@@ -3,9 +3,9 @@ Contributors: boxystudio
 Donate link: https://paypal.me/boxypayment
 Tags: resume, resumes, skills, education, experience
 Requires at least: 4.7
-Tested up to: 4.9.5
-Stable tag: 2.0.4.2
-Requires PHP: 5.6
+Tested up to: 4.9.7
+Stable tag: 2.0.5
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,10 +56,15 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 
 == Upgrade Notice ==
 
-= 2.0.4.2 =
-Fixed a PHP error when a resume has no "Experience" content.
+= 2.0.5 =
+Minor tweaks and fixes.
 
 == Changelog ==
+
+= 2.0.5 =
+* **TWEAK:** Changed `<span>` tags to `<div>` tags in the resume template to meet HTML5 validation requirements.
+* **TWEAK:** Dropped support for PHP 5.6 (still works for now, just not testing with it anymore).
+* **TWEAK:** Font Awesome update.
 
 = 2.0.4.2 =
 * **FIX:** Fixed a PHP error when a resume has no "Experience" content.

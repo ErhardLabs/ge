@@ -3,12 +3,12 @@
 /*
 Plugin Name: Advanced Woo Search
 Description: Advance ajax WooCommerce product search.
-Version: 1.41
+Version: 1.44
 Author: ILLID
 Author URI: https://advanced-woo-search.com/
 Text Domain: aws
 WC requires at least: 3.0.0
-WC tested up to: 3.3.0
+WC tested up to: 3.4.0
 */
 
 
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWS_VERSION', '1.41' );
+define( 'AWS_VERSION', '1.44' );
 
 
 define( 'AWS_DIR', dirname( __FILE__ ) );
@@ -141,8 +141,10 @@ final class AWS_Main {
 		wp_enqueue_style( 'aws-style', AWS_URL . '/assets/css/common.css', array(), AWS_VERSION );
         wp_enqueue_script('aws-script', AWS_URL . '/assets/js/common.js', array('jquery'), AWS_VERSION, true);
         wp_localize_script('aws-script', 'aws_vars', array(
-            'sale' => __('Sale!', 'aws'),
-            'noresults' => $this->get_settings('not_found_text') ? $this->get_settings('not_found_text') : __('Nothing found', 'aws')
+            'sale'      => __('Sale!', 'aws'),
+            'sku'       => __('SKU', 'aws'),
+            'showmore'  => __('View all results', 'aws'),
+            'noresults' => $this->get_settings('not_found_text') ? AWS_Helpers::translate( 'not_found_text', stripslashes( $this->get_settings('not_found_text') ) ) : __('Nothing found', 'aws')
         ));
 	}
 

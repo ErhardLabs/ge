@@ -1,24 +1,27 @@
 <?php
+/**
+ * Contains the main plugin class
+ */
+// prevent direct access
+defined( 'ABSPATH' ) || exit;
+
 if ( ! class_exists( 'YAWP_WIM' ) ) {
 
+	/**
+	 * Main Plugin Class
+	 */
 	class YAWP_WIM {
 
 		/**
 		 *
-		 * @var string A string prefix for html element attributes 
+		 * @var string A string prefix for html element attributes
 		 */
 		public $attr_prefix;
 
 		/**
-		 *
-		 * @var string The text-domain
-		 */
-		public $domain = 'yawp-wim';
-
-		/**
 		 * Hooks to the necessary actions and filters
 		 */
-		public function init() {
+		public function hook() {
 			// initialise translations
 			add_action( 'plugins_loaded', array( $this, 'localise' ) );
 
@@ -33,7 +36,7 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 
 			// filter the menu item display on edit screen
 			add_filter( 'wp_setup_nav_menu_item', array( $this, 'label' ), 10, 1 );
-			
+
 			// replace the default menu add ajax
 			add_action( 'admin_init', array($this, 'filter_ajax'));
 		}
@@ -43,7 +46,7 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 		 */
 		public function localise() {
 			load_plugin_textdomain(
-				$this->domain, false, plugin_dir_path( __FILE__ ) . '/languages'
+				'yawp-wim', false, plugin_dir_path( __FILE__ ) . '/languages'
 			);
 		}
 
@@ -52,11 +55,11 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 		 */
 		public function sidebar() {
 			register_sidebar( array(
-				'name' => __( 'Widgets in Menu', $this->domain ),
+				'name' => __( 'Widgets in Menu', 'yawp-wim' ),
 				'id' => YAWP_WIM_PREFIX,
 				"before_widget" => '<div id="%1$s" class="' . YAWP_WIM_PREFIX . '_widget %2$s">',
 				"after_widget" => '</div>',
-				'description' => __( 'Widgets in this area will be shown on the edit menu screen.', $this->domain ),
+				'description' => __( 'Widgets in this area will be shown on the edit menu screen.', 'yawp-wim' ),
 				'before_title' => '<span class="' . YAWP_WIM_PREFIX . '_title">',
 				'after_title' => '</span>'
 			) );
@@ -67,14 +70,14 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 		 */
 		public function menu_setup() {
 			add_meta_box(
-				'add-widget-section', __( 'Widgets', $this->domain ), array( $this, 'meta_box' ), 'nav-menus', 'side', 'default'
+				'add-widget-section', __( 'Widgets', 'yawp-wim' ), array( $this, 'meta_box' ), 'nav-menus', 'side', 'default'
 			);
 		}
 
 		/**
 		 * Add a custom metabox on edit menu screen for widgets
-		 * 
-		 * @globa		int			$_nav_menu_placeholder	A placeholder index for the menu item
+		 *
+		 * @global		int			$_nav_menu_placeholder	A placeholder index for the menu item
 		 * @global		int|string	$nav_menu_selected_id	(id, name or slug) of the currently-selected menu
 		 * @global      array		$wp_registered_widgets	All registered widgets
 		 * @global      array		$wp_registered_sidebars All registered sidebars
@@ -98,14 +101,14 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 				// the default output
 				$no_widgets_output = '<p>';
 				$no_widgets_output .= sprintf( __( '<a href="%s">Please add a '
-						. 'widget</a> to the <em>Widgets in Menu</em> area', $this->domain ), admin_url( "widgets.php" ) );
+						. 'widget</a> to the <em>Widgets in Menu</em> area', 'yawp-wim' ), admin_url( "widgets.php" ) );
 				$no_widgets_output .= '</p>';
 
 				/**
-				 * Filters the html displayed if no widgets are present in the sidebar. 
-				 * 
+				 * Filters the html displayed if no widgets are present in the sidebar.
+				 *
 				 * @since 0.1.0
-				 * 
+				 *
 				 * @param string $no_widgets_output The default output
 				 */
 				$no_widgets_output = apply_filters( 'yawp_wim_no_widgets_message', $no_widgets_output );
@@ -140,7 +143,7 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 					$widget_saved = get_option( 'widget_' . $widget_slug, array() );
 
 					// get the title from the saved settings
-					$widget_title = $widget_saved[ $widget_num ][ 'title' ];
+					$widget_title = (isset($widget_saved[ $widget_num ][ 'title' ])) ? $widget_saved[ $widget_num ][ 'title' ] : '';
 
 					// get the name
 					$widget_name = $widget[ 'name' ];
@@ -195,13 +198,12 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 				}
 
 				$output .= '<p style="display:none;" class="msg-yawp_sim">';
-				// no text-domain, so that the Strings translated by WordPress are used
-				$output .= __( 'Settings', $this->domain )
+				$output .= __( 'Settings', 'yawp-wim' )
 					. ': '
 					. sprintf( '<a href="%s">', admin_url( "widgets.php" ) )
-					. __( 'Appearance', $this->domain )
+					. __( 'Appearance', 'yawp-wim' )
 					. ' > '
-					. __( 'Widgets', $this->domain ) . '</a>';
+					. __( 'Widgets', 'yawp-wim' ) . '</a>';
 				$output .= '<p>';
 				$output .= '</ul>';
 			}
@@ -220,14 +222,14 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 			</div><!-- /.customlinkdiv -->
 			<?php
 		}
-		
+
 		/**
 		 * Removes default menu add function & replaces with custom
-		 * 
+		 *
 		 * @since 0.2.0
 		 */
 		public function filter_ajax(){
-		
+
 			// add our own function
 			add_action('wp_ajax_add-menu-item', array($this, '_add_menu_item'), 0);
 
@@ -239,11 +241,11 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 		 * @since 0.2.0
 		 */
 		public function _add_menu_item() {
-			
+
 			// remove default WP function
 			// first extra line in the wp_ajax_add_menu_item clone that this method actually is :(
 			remove_action('wp_ajax_add-menu-item', 'wp_ajax_add_menu_item');
-			
+
 			check_ajax_referer( 'add-menu_item', 'menu-settings-column-nonce' );
 
 			if ( ! current_user_can( 'edit_theme_options' ) )
@@ -255,7 +257,7 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 			// The following is a hacky way to restore them when adding non-custom items.
 
 			$menu_items_data = array();
-			
+
 			foreach ( ( array ) $_POST[ 'menu-item' ] as $menu_item_data ) {
 				if (
 					! empty( $menu_item_data[ 'menu-item-type' ] ) &&
@@ -323,7 +325,7 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 
 		/**
 		 * Enqueue our js for hooking into wpNavMenu class
-		 * 
+		 *
 		 * @param string $hook A string to identify the current screen
 		 * @return null
 		 */
@@ -344,16 +346,16 @@ if ( ! class_exists( 'YAWP_WIM' ) ) {
 
 		/**
 		 * Changes the label from 'Custom' to 'Widget' on the individual menu item
-		 * 
+		 *
 		 * @param object $item The menu item
 		 * @return object
 		 */
 		function label( $item ) {
-			
+
 			if ( $item->object === YAWP_WIM_PREFIX ) {
 
 				// setup our label
-				$item->type_label = __( 'Widget', $this->domain );
+				$item->type_label = __( 'Widget', 'yawp-wim' );
 			}
 			return $item;
 		}

@@ -26,9 +26,10 @@ if ( ! class_exists( 'AWS_Markup' ) ) :
             }
 
 
-            $placeholder   = AWS()->get_settings( 'search_field_text' );
+            $placeholder   = AWS_Helpers::translate( 'search_field_text', AWS()->get_settings( 'search_field_text' ) );
             $min_chars     = AWS()->get_settings( 'min_chars' );
             $show_loader   = AWS()->get_settings( 'show_loader' );
+            $show_more     = AWS()->get_settings( 'show_more' );
             $show_page     = AWS()->get_settings( 'show_page' );
             $use_analytics = AWS()->get_settings( 'use_analytics' );
 
@@ -46,6 +47,7 @@ if ( ! class_exists( 'AWS_Markup' ) ) :
                 'data-url'           => admin_url('admin-ajax.php'),
                 'data-siteurl'       => home_url(),
                 'data-show-loader'   => $show_loader,
+                'data-show-more'     => $show_more,
                 'data-show-page'     => $show_page,
                 'data-use-analytics' => $use_analytics,
                 'data-min-chars'     => $min_chars,

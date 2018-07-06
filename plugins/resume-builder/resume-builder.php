@@ -7,7 +7,7 @@ Plugin URI: 	https://demos.boxystudio.com/resume-builder/
 Description: 	Create beautiful resumes with ease.
 Author: 		Boxy Studio
 Author URI: 	https://boxystudio.com
-Version: 		2.0.4.2
+Version: 		2.0.5
 Text Domain: 	resume-builder
 Domain Path: 	languages
 License:     	GPL2
@@ -29,7 +29,7 @@ along with Resume Builder. If not, see http://www.gnu.org/licenses/.
 
 // Plugin Version Definition
 if ( ! defined( 'RBUILDER_VERSION' ) ) {
-	define( 'RBUILDER_VERSION', '2.0.4.2' );
+	define( 'RBUILDER_VERSION', '2.0.5' );
 }
 
 // Exit if accessed directly.

@@ -71,7 +71,9 @@ class Resume_Builder_Admin_Enqueues {
 				);
 
 				// FontAwesome 5
-				wp_enqueue_style( 'rbuilder-fa5', RBUILDER_URL . 'assets/css/fontawesome-all.min.css', array(), '5.0.4' );
+				if ( true == apply_filters( 'rb_load_fontawesome', true ) ):
+					wp_enqueue_style( 'rbuilder-fa5', RBUILDER_URL . 'assets/css/fontawesome-all.min.css', array(), '5.1.0' );
+				endif;
 
 				// Resume Builder Admin Style Assets
 				wp_enqueue_style( 'rbuilder-admin', RBUILDER_URL . 'assets/admin/css/style.min.css', array(), RBUILDER_VERSION );

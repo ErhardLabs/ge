@@ -2,8 +2,8 @@
 Contributors: automattic, woothemes, allendav, kellychoffman, jkudish, jeffstieler, nabsul, robobot3000, danreylop, mikeyarce, shaunkuschel, orangesareorange, pauldechov, dappermountain
 Tags: canada-post, shipping, stamps, usps, woocommerce, taxes, payment, stripe
 Requires at least: 4.6
-Tested up to: 4.9.5
-Stable tag: 1.13.3
+Tested up to: 4.9.6
+Stable tag: 1.15.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,6 +90,29 @@ The source code is freely available [in GitHub](https://github.com/Automattic/wo
 10. Checking and exporting the label purchase reports
 
 == Changelog ==
+
+= 1.15.1 =
+* Fix the "Save changes" button staying disabled after failing to save the shipping method settings
+* Remove emojis from the shipping rates messages, they were causing problems at checkout on sites with a non-default MySQL charset configuration
+
+= 1.15.0 =
+* Several bugfixes and improvements for Automated Taxes
+* Immediately save the shipping method configuration when it's added to a shipping zone
+* Allow to bypass the address verification when purchasing a shipping label
+* Show which WordPress.com user can add a credit card for shipping label purchases
+* Tweak the list of purchased labels for an order so it's less cluttered
+
+= 1.14.1 =
+* Fix error when adding shipping method price adjustments
+
+= 1.14.0 =
+* GDPR - Added WCS section to the privacy policy guide
+* GDPR - Support for personal data export functionality
+* GDPR - Support for personal data erasure functionality
+* Minor changes to the settings page UI
+* Fix the PHP warning on the Status page when logs are empty
+* Fix log file retrieval on Status page to work with new WC 3.4 format that includes the date
+* Add error message on manual service data refresh failure
 
 = 1.13.3 =
 * Fix broken admin after product featured in 'missing weight' notice is deleted

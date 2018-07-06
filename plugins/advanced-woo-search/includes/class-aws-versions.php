@@ -134,6 +134,35 @@ if ( ! class_exists( 'AWS_Versions' ) ) :
 
                 }
 
+                if ( version_compare( $current_version, '1.42', '<' ) ) {
+
+                    $settings = get_option( 'aws_settings' );
+
+                    if ( $settings ) {
+                        if ( ! isset( $settings['show_more'] ) ) {
+                            $settings['show_more'] = 'false';
+                            update_option( 'aws_settings', $settings );
+                        }
+                    }
+
+                }
+
+                if ( version_compare( $current_version, '1.43', '<' ) ) {
+
+                    if ( ! AWS_Helpers::is_table_not_exist() ) {
+
+                        global $wpdb;
+                        $table_name =  $wpdb->prefix . AWS_INDEX_TABLE_NAME;
+
+                        $wpdb->query("
+                            ALTER TABLE {$table_name}
+                            MODIFY term_source varchar(50);
+                        ");
+
+                    }
+
+                }
+
             }
 
             update_option( 'aws_plugin_ver', AWS_VERSION );

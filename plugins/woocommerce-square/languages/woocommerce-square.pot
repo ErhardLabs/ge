@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WooCommerce Square package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Square 1.0.28\n"
+"Project-Id-Version: WooCommerce Square 1.0.30\n"
 "Report-Msgid-Bugs-To: "
 "https://github.com/woocommerce/woocommerce-square/issues\n"
-"POT-Creation-Date: 2018-04-04 08:49:02+00:00\n"
+"POT-Creation-Date: 2018-06-05 14:39:13+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,6 +15,7 @@ msgstr ""
 "X-Generator: grunt-wp-i18n1.0.1\n"
 
 #: includes/admin/class-wc-square-admin-integration.php:20
+#: includes/admin/class-wc-square-privacy.php:12
 #: includes/payment/class-wc-square-gateway.php:16
 msgid "Square"
 msgstr ""
@@ -51,17 +52,17 @@ msgid ""
 msgstr ""
 
 #: includes/admin/class-wc-square-admin-integration.php:69
-#: includes/payment/class-wc-square-gateway.php:149
+#: includes/payment/class-wc-square-gateway.php:152
 msgid "Logging"
 msgstr ""
 
 #: includes/admin/class-wc-square-admin-integration.php:70
-#: includes/payment/class-wc-square-gateway.php:150
+#: includes/payment/class-wc-square-gateway.php:153
 msgid "Log debug messages"
 msgstr ""
 
 #: includes/admin/class-wc-square-admin-integration.php:72
-#: includes/payment/class-wc-square-gateway.php:152
+#: includes/payment/class-wc-square-gateway.php:155
 msgid "Save debug messages to the WooCommerce System Status log."
 msgstr ""
 
@@ -245,6 +246,31 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
+#: includes/admin/class-wc-square-privacy.php:14
+#: includes/admin/class-wc-square-privacy.php:15
+msgid "WooCommerce Square Customer Data"
+msgstr ""
+
+#: includes/admin/class-wc-square-privacy.php:23
+msgid ""
+"By using this extension, you may be storing personal data or sharing data "
+"with an external service. <a href=\"%s\" target=\"_blank\">Learn more about "
+"how this works, including what you may want to include in your privacy "
+"policy.</a>"
+msgstr ""
+
+#: includes/admin/class-wc-square-privacy.php:61
+msgid "Customer Data"
+msgstr ""
+
+#: includes/admin/class-wc-square-privacy.php:65
+msgid "Square customer id"
+msgstr ""
+
+#: includes/admin/class-wc-square-privacy.php:98
+msgid "Square User Data Erased."
+msgstr ""
+
 #: includes/class-wc-square-connect.php:59
 msgid "Square Sync Transients Cleared"
 msgstr ""
@@ -263,7 +289,7 @@ msgid ""
 "Useful when sync failed halfway through."
 msgstr ""
 
-#: includes/class-wc-square-utils.php:44
+#: includes/class-wc-square-utils.php:50
 msgid "Regular"
 msgstr ""
 
@@ -433,173 +459,173 @@ msgid ""
 "4111111111111111 with any CVC and a valid expiration date."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:80
+#: includes/payment/class-wc-square-gateway.php:83
 msgid ""
-"Square is enabled, but the <a href=\"%s\">force SSL option</a> is disabled; "
-"your checkout is not secured! Please enable SSL and ensure your server has "
-"a valid SSL certificate."
+"Square is enabled, but a SSL certificate is not detected. Your checkout may "
+"not be secure! Please ensure your server has a valid <a href=\"%1$s\" "
+"target=\"_blank\">SSL certificate</a>"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:116
+#: includes/payment/class-wc-square-gateway.php:119
 msgid "Enable/Disable"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:117
+#: includes/payment/class-wc-square-gateway.php:120
 msgid "Enable Square"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:123
+#: includes/payment/class-wc-square-gateway.php:126
 msgid "Title"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:125
+#: includes/payment/class-wc-square-gateway.php:128
 msgid "This controls the title which the user sees during checkout."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:126
+#: includes/payment/class-wc-square-gateway.php:129
 msgid "Credit card (Square)"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:129
+#: includes/payment/class-wc-square-gateway.php:132
 msgid "Description"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:131
+#: includes/payment/class-wc-square-gateway.php:134
 msgid "This controls the description which the user sees during checkout."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:132
+#: includes/payment/class-wc-square-gateway.php:135
 msgid "Pay with your credit card via Square."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:135
+#: includes/payment/class-wc-square-gateway.php:138
 msgid "Delay Capture"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:136
+#: includes/payment/class-wc-square-gateway.php:139
 msgid "Enable Delay Capture"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:138
+#: includes/payment/class-wc-square-gateway.php:141
 msgid ""
 "When enabled, the request will only perform an Auth on the provided card. "
 "You can then later perform either a Capture or Void."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:142
+#: includes/payment/class-wc-square-gateway.php:145
 msgid "Create Customer"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:143
+#: includes/payment/class-wc-square-gateway.php:146
 msgid "Enable Create Customer"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:145
+#: includes/payment/class-wc-square-gateway.php:148
 msgid "When enabled, processing a payment will create a customer profile on Square."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:182
+#: includes/payment/class-wc-square-gateway.php:185
 msgid "Card Number"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:187
+#: includes/payment/class-wc-square-gateway.php:190
 msgid "Expiry (MM/YY)"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:188
-#: includes/payment/class-wc-square-gateway.php:255
+#: includes/payment/class-wc-square-gateway.php:191
+#: includes/payment/class-wc-square-gateway.php:258
 msgid "MM / YY"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:192
+#: includes/payment/class-wc-square-gateway.php:195
 msgid "Card Code"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:193
-#: includes/payment/class-wc-square-gateway.php:256
+#: includes/payment/class-wc-square-gateway.php:196
+#: includes/payment/class-wc-square-gateway.php:259
 msgid "CVV"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:197
-#: includes/payment/class-wc-square-gateway.php:198
-#: includes/payment/class-wc-square-gateway.php:257
+#: includes/payment/class-wc-square-gateway.php:200
+#: includes/payment/class-wc-square-gateway.php:201
+#: includes/payment/class-wc-square-gateway.php:260
 msgid "Card Postal Code"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:254
+#: includes/payment/class-wc-square-gateway.php:257
 msgid "•••• •••• •••• ••••"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:315
-#: includes/payment/class-wc-square-gateway.php:322
-#: includes/payment/class-wc-square-gateway.php:346
+#: includes/payment/class-wc-square-gateway.php:318
+#: includes/payment/class-wc-square-gateway.php:325
+#: includes/payment/class-wc-square-gateway.php:349
 msgid ""
 "Error: Square was unable to complete the transaction. Please try again "
 "later or use another means of payment."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:327
+#: includes/payment/class-wc-square-gateway.php:330
 msgid "Payment Error: "
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:359
-#: includes/payment/class-wc-square-payments.php:131
+#: includes/payment/class-wc-square-gateway.php:362
+#: includes/payment/class-wc-square-payments.php:136
 msgid "Square charge complete (Charge ID: %s)"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:368
+#: includes/payment/class-wc-square-gateway.php:371
 msgid ""
 "Square charge authorized (Authorized ID: %s). Process order to take "
 "payment, or cancel to remove the pre-authorization."
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:390
-#: includes/payment/class-wc-square-gateway.php:522
+#: includes/payment/class-wc-square-gateway.php:393
+#: includes/payment/class-wc-square-gateway.php:525
 msgid "Error: %s"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:422
+#: includes/payment/class-wc-square-gateway.php:425
 msgid "Guest"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:441
-#: includes/payment/class-wc-square-gateway.php:442
-#: includes/payment/class-wc-square-gateway.php:447
-#: includes/payment/class-wc-square-gateway.php:448
+#: includes/payment/class-wc-square-gateway.php:444
+#: includes/payment/class-wc-square-gateway.php:445
+#: includes/payment/class-wc-square-gateway.php:450
+#: includes/payment/class-wc-square-gateway.php:451
 msgid "Error creating customer: %s"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:454
+#: includes/payment/class-wc-square-gateway.php:457
 msgid "Customer created on Square: %s"
 msgstr ""
 
-#: includes/payment/class-wc-square-gateway.php:511
+#: includes/payment/class-wc-square-gateway.php:514
 msgid "Refunded %1$s - Refund ID: %2$s - Reason: %3$s"
 msgstr ""
 
-#: includes/payment/class-wc-square-payments.php:83
+#: includes/payment/class-wc-square-payments.php:88
 msgid "Capture Charge"
 msgstr ""
 
-#: includes/payment/class-wc-square-payments.php:123
-#: includes/payment/class-wc-square-payments.php:127
+#: includes/payment/class-wc-square-payments.php:128
+#: includes/payment/class-wc-square-payments.php:132
 msgid "Unable to capture charge!"
 msgstr ""
 
-#: includes/payment/class-wc-square-payments.php:137
+#: includes/payment/class-wc-square-payments.php:142
 msgid "Error unable to capture charge: %s"
 msgstr ""
 
-#: includes/payment/class-wc-square-payments.php:167
-#: includes/payment/class-wc-square-payments.php:170
+#: includes/payment/class-wc-square-payments.php:172
+#: includes/payment/class-wc-square-payments.php:175
 msgid "Unable to void charge!"
 msgstr ""
 
-#: includes/payment/class-wc-square-payments.php:174
+#: includes/payment/class-wc-square-payments.php:179
 msgid "Square charge voided! (Charge ID: %s)"
 msgstr ""
 
-#: includes/payment/class-wc-square-payments.php:180
+#: includes/payment/class-wc-square-payments.php:185
 msgid "Unable to void charge!: %s"
 msgstr ""
 
@@ -615,26 +641,26 @@ msgid ""
 "GBP, JPY, or USD."
 msgstr ""
 
-#: woocommerce-square.php:331
+#: woocommerce-square.php:332
 msgid ""
 "This process may take awhile depending on the amount of items that need to "
 "be synced. Please do not close this tab/window or else the sync will "
 "terminate. Click OK to continue to sync."
 msgstr ""
 
-#: woocommerce-square.php:389
+#: woocommerce-square.php:390
 msgid ""
 "WooCommerce Square Plugin requires WooCommerce to be installed and active. "
 "You can download %s here."
 msgstr ""
 
-#: woocommerce-square.php:407
+#: woocommerce-square.php:408
 msgid ""
 "WooCommerce Square is almost ready. To get started, %1$sconnect your Square "
 "Account.%2$s"
 msgstr ""
 
-#: woocommerce-square.php:411
+#: woocommerce-square.php:412
 msgid ""
 "WooCommerce Square is almost ready. Please %1$sset your business "
 "location.%2$s"

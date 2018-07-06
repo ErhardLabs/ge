@@ -3,8 +3,8 @@ Contributors: Mihail Barinov
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GSE37FC4Y7CEY
 Tags: widget, plugin, woocommerce, search, product search, woocommerce search, ajax search, live search, custom search, ajax, shortcode, better search, relevance search, relevant search, search by sku, search plugin, shop, store, wordpress search, wp ajax search, wp search, wp search plugin, sidebar, ecommerce, merketing, products, category search, instant-search, search highlight, woocommerce advanced search, woocommerce live search, WooCommerce Plugin, woocommerce product search
 Requires at least: 4.0
-Tested up to: 4.9.5
-Stable tag: 1.41
+Tested up to: 4.9.6
+Stable tag: 1.44
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,12 +45,15 @@ Advanced Woo Search - powerful live search plugin for WooCommerce. Just start ty
 * **Unlimited** amount of search form instances
 * Product **attributes** search ( including custom attributes)
 * Product **custom taxonomies** search
+* Product **custom fields** search
 * **Advanced settings page** with lot of options
 * **Exclude/include** spicific products by its ids, categories or tags from search results
 * Ability to specify **source of image** for search results: featured image, gallery, product content, product short description or set default image if there is no other images
 * **Visibility/stock status option** - choose what catalog visibility and stock status must be for product to displayed in search results
 * Show product **categories** and **variations** in search results
+* AND or OR search logic
 * Support for [WooCommerce Brands plugin](https://woocommerce.com/products/brands/)
+* Support for Advanced Custom Fields plugin
 
 [Features list](https://advanced-woo-search.com/features/)
 
@@ -86,6 +89,23 @@ Yep. This plugin is always compatible with the latest version of Woocommerce?
 4. Plugin settings page. Search results options
 
 == Changelog ==
+
+= 1.44 =
+* Make SKU string in search results translatable
+* Strip some new special chars from products content
+* Add 'aws_extracted_string' and 'aws_extracted_terms' filters
+* Fix bug with empty excerpt
+
+= 1.43 =
+* Add 'aws_search_results_all' filter
+* Update WPML string translation
+* Fix bug with term_source column in index table
+
+= 1.42 =
+* Add option to display ‘View All Results’ button in the bottom of search results list
+* Fix bug with stop words option
+* Fix bug with links in 'noresults' fiels
+* Add 'aws_search_results_products', 'aws_search_results_categories', 'aws_search_results_tags' filters
 
 = 1.41 =
 * Add new column form index table - term_id. With id help it is possible to sunc any changes in product term

@@ -140,6 +140,9 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
                 "/",
                 "[",
                 "]",
+                "’",
+                "“",
+                "”"
             );
             
             return apply_filters( 'aws_special_chars', $chars );
@@ -203,6 +206,48 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
             }
 
             return $source_name;
+
+        }
+
+        /*
+         * Registers the WPML translations
+         *
+         */
+        static public function register_wpml_translations( $params = false ) {
+
+            // No WPML
+            if ( ! function_exists( 'icl_register_string' ) ) {
+                return;
+            }
+
+            // These options are registered
+            $options_to_reg = array(
+                "search_field_text" => "Search",
+                "not_found_text"    => "Nothing found",
+            );
+
+            if ( ! $params ) {
+                $params = $options_to_reg;
+            }
+
+            foreach ( $options_to_reg as $key => $option ) {
+                icl_register_string( 'aws', $key, $params[$key] );
+            }
+
+        }
+
+        /*
+         * Wrapper for WPML print
+         *
+         * @return string Source name
+         */
+        static public function translate( $name, $value ) {
+
+            if ( function_exists( 'icl_t' ) ) {
+                return icl_t( 'aws', $name, $value );
+            }
+
+            return $value;
 
         }
 

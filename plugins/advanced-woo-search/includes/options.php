@@ -96,6 +96,18 @@ $options['form'][] = array(
 );
 
 $options['form'][] = array(
+    "name"  => __( "Show 'View All Results'", "aws" ),
+    "desc"  => __( "Show link to search results page at the bottom of search results block.", "aws" ),
+    "id"    => "show_more",
+    "value" => 'false',
+    "type"  => "radio",
+    'choices' => array(
+        'true'  => __( 'On', 'aws' ),
+        'false' => __( 'Off', 'aws' )
+    )
+);
+
+$options['form'][] = array(
     "name"  => __( "Search Results", "aws" ),
     "desc"  => __( "Choose how to view search results.", "aws" ),
     "id"    => "show_page",

@@ -119,6 +119,8 @@ class AWS_Admin {
 
             update_option( 'aws_settings', $update_settings );
 
+            AWS_Helpers::register_wpml_translations( $update_settings );
+
             do_action( 'aws_settings_saved' );
             
             do_action( 'aws_cache_clear' );

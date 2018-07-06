@@ -12,11 +12,11 @@ class WC_Square_Gateway extends WC_Payment_Gateway {
 	 * Constructor
 	 */
 	public function __construct() {
-		$this->id		            = 'square';
-		$this->method_title 	    = __( 'Square', 'woocommerce-square' );
-		$this->method_description   = __( 'Square works by adding payments fields in an iframe and then sending the details to Square for verification and processing.', 'woocommerce-square' );
-		$this->has_fields 	        = true;
-		$this->supports 	        = array(
+		$this->id                 = 'square';
+		$this->method_title       = __( 'Square', 'woocommerce-square' );
+		$this->method_description = __( 'Square works by adding payments fields in an iframe and then sending the details to Square for verification and processing.', 'woocommerce-square' );
+		$this->has_fields         = true;
+		$this->supports           = array(
 			'products',
 			'refunds',
 		);
@@ -78,9 +78,9 @@ class WC_Square_Gateway extends WC_Payment_Gateway {
 			return;
 		}
 
-		// Show message if enabled and FORCE SSL is disabled and WordpressHTTPS plugin is not detected
-		if ( ! WC_SQUARE_ENABLE_STAGING && get_option( 'woocommerce_force_ssl_checkout' ) === 'no' && ! class_exists( 'WordPressHTTPS' ) ) {
-			echo '<div class="error"><p>' . sprintf( __( 'Square is enabled, but the <a href="%s">force SSL option</a> is disabled; your checkout is not secured! Please enable SSL and ensure your server has a valid SSL certificate.', 'woocommerce-square' ), admin_url( 'admin.php?page=wc-settings&tab=checkout' ) ) . '</p></div>';
+		// Show message if SSL is not detected in checkout page.
+		if ( ! WC_SQUARE_ENABLE_STAGING && ! wc_checkout_is_https() ) {
+			echo '<div class="error"><p>' . sprintf( __( 'Square is enabled, but a SSL certificate is not detected. Your checkout may not be secure! Please ensure your server has a valid <a href="%1$s" target="_blank">SSL certificate</a>', 'woocommerce-square' ), 'https://en.wikipedia.org/wiki/Transport_Layer_Security' ) . '</p></div>';
 		}
 	}
 

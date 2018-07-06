@@ -1,9 +1,20 @@
 *** WooCommerce Square Changelog ***
 
+= 1.0.31 - 2018-06-05 =
+* Fix - SSL notice in admin shows even though SSL is provided.
+* Update - Send WC active prices to Square instead of tax exclusive.
+* Add - Hook `wc_square_sync_to_square_price` to filter prices sent to Square.
+
+= 1.0.30 - 2018-05-23 =
+* Update - WC tested up to version 3.4
+* Update - Privacy policy notification.
+* Update - Export/erasure hooks added.
+
 = 1.0.29 - 2018-04-17 =
-* Fix - If more than 1000 items, next batch is ignored.
-* Fix - Wrong setting used when syncing product.
-* Fix - Japan locale does not support Diners/Discover, so do not show these brands on checkout.
+* Fix    - If more than 1000 items, next batch is ignored.
+* Fix    - Wrong setting used when syncing product.
+* Fix    - Japan locale does not support Diners/Discover, so do not show these brands on checkout.
+* Update - WC tested up to version 3.4
 
 2018-04-04 - version 1.0.28
 * Fix   - Double inventory sync for newly created products.

@@ -40,11 +40,17 @@ class WC_Square_Utils {
 		);
 
 		if ( $variation instanceof WC_Product ) {
+			if ( version_compare( WC_VERSION, '3.0.0', '<' ) ) {
+				$price = $variation->get_display_price();
+			} else {
+				// Will send the active price as is.
+				$price = $variation->get_price();
+			}
 
 			$formatted['name']        = __( 'Regular', 'woocommerce-square' );
 			$formatted['price_money'] = array(
 				'currency_code' => apply_filters( 'woocommerce_square_currency', get_woocommerce_currency() ),
-				'amount'        => (int) WC_Square_Utils::format_amount_to_square( version_compare( WC_VERSION, '3.0.0', '<' ) ? $variation->get_display_price() : wc_get_price_excluding_tax( $variation ) ),
+				'amount'        => (int) WC_Square_Utils::format_amount_to_square( apply_filters( 'wc_square_sync_to_square_price', $price, $variation ) ),
 			);
 			$formatted['sku']         = $variation->get_sku();
 

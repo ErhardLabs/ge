@@ -7,8 +7,8 @@ Author URI: http://www.tatvic.com/
 Author: Tatvic
 Requires at least: 3.6
 Tested up to: 4.9
-Stable tag: 2.0.1
-Version: 2.0.1
+Stable tag: 2.0.3
+Version: 2.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,6 +32,8 @@ Provides integration between Enhanced Ecommerce feature of Google Analytics and 
 8. Captures Product Impressions, Add to Cart & Product Clicks events on Recent Product Section on Homepage
 9. Captures Product Impressions, Add to Cart & Product Clicks events on Related Product Section on Productpage 
 10. Set your local currency
+11. Google Analytics Opt Out
+12. IP Anonymization
 
 
 = Installation Instructions  =
@@ -83,6 +85,10 @@ Starting the WooCommerce 2.1 release there are no conflicts. However for earlier
 = Do I Need to add any custom code for it? =
 
 As our plugin automatically tracks all the Enhanced Ecommerce data ( including product name, price, etc dynamically) for your store, you don't need to add any custom/manual code to trackEcommerce events on your store from your end.
+
+= Does this plugin match with GDPR compliance? =
+
+Yes, our plugin is under GDPR complaince. For more information, read the <a href="https://www.tatvic.com/privacy-policy/?ref=plugin_policy&utm_source=plugin_backend&utm_medium=woocommerce_free_plugin&utm_campaign=GDPR_complaince_ecomm_plugins" target="_blank">privacy policy</a> of our plugin.
 
 = Why are my PayPal transaction data not getting recorded in GA? =
 
@@ -284,5 +290,13 @@ Important Note: When you update the plugin, please save your settings again.
  * gtag.js supported
  * Minor Bug Fixes & Optimization.
 
-  = 2.0.1 - 24/04/2018 =
+ = 2.0.1 - 24/04/2018 =
  * Minor Bug Fixes & Optimization.
+
+ = 2.0.2 - 23/05/2018 =
+ * IP Anonymization Feature
+ * Google Analytics Opt Out
+ * Update the Privacy Policy under GDPR Compliance
+
+ = 2.0.3 - 04/06/2018 =
+ * Minor Bug Fixes

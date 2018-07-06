@@ -28,7 +28,7 @@ $(document).ready(function() {
 
   $('.home-subscribe-widget').hide();
   
-  if(!readCookie('disableLandingPagePopUpNew3')) {
+  if(!readCookie('disableLandingPagePopUpNew')) {
     $('.home-subscribe-widget').fadeIn('fast');
   }
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
     var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
 
     document.cookie =
-        'disableLandingPagePopUpNew3=1; '+
+        'disableLandingPagePopUpNew=1; '+
         'expires='+nextweek+';' +
         'path=/';
 

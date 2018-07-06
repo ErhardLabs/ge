@@ -4,7 +4,7 @@ Plugin Name: WP YouTube Lyte
 Plugin URI: http://blog.futtta.be/wp-youtube-lyte/
 Description: Lite and accessible YouTube audio and video embedding.
 Author: Frank Goossens (futtta)
-Version: 1.7.1
+Version: 1.7.4
 Author URI: http://blog.futtta.be/
 Text Domain: wp-youtube-lyte
 Domain Path: /languages
@@ -82,7 +82,7 @@ add_action('after_setup_theme','lyte_settings_enforcer');
 
 function lyte_parse($the_content,$doExcerpt=false) {
     /** bail if amp */
-    if ( is_amp()) { return $the_content; }
+    if ( is_amp()) { return str_replace( 'httpv://', 'https://', $the_content ); }
     
     /** main function to parse the content, searching and replacing httpv-links */
     global $lyteSettings, $toCache_index, $postID, $cachekey;
@@ -237,7 +237,16 @@ function lyte_parse($the_content,$doExcerpt=false) {
 
                 $noscript="<noscript><a href=\"".$lyteSettings['scheme']."://youtu.be/".$vid."\"><img src=\"".$lyteSettings['scheme']."://i.ytimg.com/vi/".$vid."/0.jpg\" alt=\"\" width=\"".$lyteSettings[2]."\" height=\"".$NSimgHeight."\" />".$noscript_post."</a></noscript>";
             }
-
+            
+            // add disclaimer to lytelinks
+            $disclaimer = '<span class="lyte_disclaimer">' . wp_kses_data( get_option( 'lyte_disclaimer', '') ) . '</span>';
+            
+            if ( $disclaimer && empty( $lytelinks_txt ) ) {
+                $lytelinks_txt = "<div class=\"lL\" style=\"max-width:100%;width:".$lyteSettings[2]."px;".$lyteSettings['pos']."\">".$diclaimer."</div>";
+            } else if ( $disclaimer ) {
+                $lytelinks_txt = str_replace('</div>','<br/>'.$disclaimer.'</div>',$lytelinks_txt);
+            }
+            
             // fetch data from YT api (v2 or v3)
             $isPlaylist=false;
             if ($plClass===" playlist") {
@@ -339,14 +348,15 @@ function lyte_parse($the_content,$doExcerpt=false) {
                 $lytetemplate = $wrapper."<div class=\"lyMe".$audioClass.$hidefClass.$plClass.$qsaClass."\" id=\"WYL_".$vid."\"><div id=\"lyte_".$vid."\" data-src=\"".$thumbUrl."\" class=\"pL\">";
 
                 if (isset($yt_resp_array) && !empty($yt_resp_array) && !empty($yt_resp_array["title"])) {
-                                        $lytetemplate .= "<div class=\"tC".$titleClass."\"><div class=\"tT\">".$yt_resp_array['title']."</div></div>";
-                                }
+                    $lytetemplate .= "<div class=\"tC".$titleClass."\"><div class=\"tT\">".$yt_resp_array['title']."</div></div>";
+                }
                 
                 $lytetemplate .= "<div class=\"play\"></div><div class=\"ctrl\"><div class=\"Lctrl\"></div><div class=\"Rctrl\"></div></div></div>".$noscript."</div></div>".$lytelinks_txt;
                 $templateType="post";
             }
 
             /** API: filter hook to parse template before being applied */
+            $lytetemplate = str_replace('$','&#36;',$lytetemplate);
             $lytetemplate = apply_filters( 'lyte_match_postparse_template',$lytetemplate,$templateType );
             $the_content = preg_replace($lytes_regexp, $lytetemplate, $the_content, 1);
         }

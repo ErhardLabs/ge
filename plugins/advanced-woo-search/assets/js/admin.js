@@ -40,6 +40,7 @@ jQuery(document).ready(function ($) {
                 data: data
             },
             dataType: "json",
+            timeout:0,
             success: function (response) {
                 if ( 'sync' !== syncStatus ) {
                     return;

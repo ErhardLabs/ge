@@ -61,6 +61,12 @@ msgstr ""
 msgid "Sale!"
 msgstr ""
 
+msgid "SKU"
+msgstr ""
+
+msgid "View all results"
+msgstr ""
+
 #: advanced-woo-search.php:127
 msgid "Settings"
 msgstr ""
@@ -176,6 +182,12 @@ msgstr ""
 
 #: includes/options.php:38
 msgid "Show loader animation while searching."
+msgstr ""
+
+msgid "Show 'View All Results'"
+msgstr ""
+
+msgid "Show link to search results page at the bottom of search results block."
 msgstr ""
 
 msgid "Search Results"
