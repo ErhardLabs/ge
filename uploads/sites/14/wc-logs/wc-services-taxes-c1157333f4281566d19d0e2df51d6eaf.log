@@ -1,0 +1,1 @@
+05-18-2018 @ 13:15:19 - Error retrieving the tax rates. Received (400): {"error":"Bad Request","detail":"No amount or line items provided","status":400} (WCS Tax)

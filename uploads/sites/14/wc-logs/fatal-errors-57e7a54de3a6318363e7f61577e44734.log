@@ -1,0 +1,416 @@
+2017-12-05T00:41:55+00:00 CRITICAL Uncaught Error: Call to undefined function d() in /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php:33
+Stack trace:
+#0 [internal function]: sexy_get_product_image('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('sexy_get_produc...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-content/plugins/genesis-connect-woocommerce/templates/single-product.php(66): do_action('woocommerce_bef...')
+#5 [internal function]: gencwooc_single_product_loop('')
+#6 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('gencwooc_single...', Array)
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#8 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /nas/
+
+2017-12-05T00:54:47+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php:30
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php(22): sexy_get_product_image()
+#1 [internal function]: sexy_single_product_scripts_styles('')
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('sexy_single_pro...', Array)
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /nas/content/staging/grayson/wp-includes/script-loader.php(1435): do_action('wp_enqueue_scri...')
+#6 [internal function]: wp_enqueue_scripts('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_enqueue_scri...', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#9 
+
+2017-12-07T23:51:42+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_text_area() in /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php:53
+Stack trace:
+#0 [internal function]: ssp_add_custom_fields('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('ssp_add_custom_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(159): do_action('woocommerce_pro...')
+#5 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(43): WC_Meta_Box_Product_Data::output_tabs()
+#7 
+
+2017-12-08T13:08:30+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/includes/product-lyrics.php:1
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php(104): include_once()
+#1 [internal function]: ssp_lyrics('')
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('ssp_lyrics', Array)
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /nas/content/staging/grayson/wp-content/plugins/genesis-connect-woocommerce/templates/single-product.php(78): do_action('woocommerce_aft...')
+#6 [internal function]: gencwooc_single_product_loop('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('gencwooc_single...', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_fi
+
+2018-01-09T18:52:49+00:00 CRITICAL Uncaught Error: Call to undefined function is_empty() in /nas/content/staging/grayson/wp-content/plugins/bandcamp-woocommerce-product-player/index.php:94
+Stack trace:
+#0 [internal function]: new_product_image_iframe('<div data-thumb...')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('new_product_ima...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters('<div data-thumb...', Array)
+#3 /nas/content/staging/grayson/wp-content/plugins/woocommerce/templates/single-product/product-image.php(58): apply_filters('woocommerce_sin...', '<div data-thumb...', '702')
+#4 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-core-functions.php(209): include('/nas/content/st...')
+#5 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-template-functions.php(893): wc_get_template('single-product/...')
+#6 [internal function]: woocommerce_show_product_images('')
+#7 /nas/content/staging/grayson/wp-includes/cla
+
+2018-01-16T13:37:04+00:00 CRITICAL Uncaught Error: Class 'viwptf_TwitterTweets' not found in /nas/content/staging/grayson/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /nas/content/staging/grayson/wp-includes/widgets.php(115): WP_Widget_Factory->register('viwptf_TwitterT...')
+#1 /nas/content/staging/grayson/wp-content/plugins/wp-twitter-feeds/wp-latest-twitter-tweets.php(45): register_widget('viwptf_TwitterT...')
+#2 [internal function]: viwptf_reg_widget('')
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('viwptf_reg_widg...', Array)
+#4 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /nas/content/staging/grayson/wp-includes/widgets.php(1645): do_action('widgets_init')
+#7 [internal function]: wp_widgets_init('')
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_widgets_init', Array)
+#9 /nas/content/staging/g
+
+2018-01-16T14:38:19+00:00 CRITICAL Uncaught Error: Call to undefined function prettycreative_widget_area_class() in /nas/content/staging/grayson/wp-content/plugins/sexy-woo-video-bg/inc/category.php:8
+Stack trace:
+#0 [internal function]: category_video_background('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('category_video_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-content/themes/genesis/header.php(35): do_action('genesis_after_h...')
+#5 /nas/content/staging/grayson/wp-includes/template.php(688): require_once('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-includes/template.php(647): load_template('/nas/content/st...', true)
+#7 /nas/content/staging/grayson/wp-includes/general-template.php(41): locate_template(Array, true)
+#8 /nas/content/staging/grayson/wp-content/themes/genesis/lib/framework.php(
+
+2018-01-16T15:02:06+00:00 CRITICAL Uncaught Error: Class 'viwptf_TwitterTweets' not found in /nas/content/staging/grayson/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /nas/content/staging/grayson/wp-includes/widgets.php(115): WP_Widget_Factory->register('viwptf_TwitterT...')
+#1 /nas/content/staging/grayson/wp-content/plugins/wp-twitter-feeds/wp-latest-twitter-tweets.php(45): register_widget('viwptf_TwitterT...')
+#2 [internal function]: viwptf_reg_widget('')
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('viwptf_reg_widg...', Array)
+#4 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /nas/content/staging/grayson/wp-includes/widgets.php(1645): do_action('widgets_init')
+#7 [internal function]: wp_widgets_init('')
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_widgets_init', Array)
+#9 /nas/content/staging/g
+
+2018-01-16T15:02:09+00:00 CRITICAL Uncaught Error: Class 'viwptf_TwitterTweets' not found in /nas/content/staging/grayson/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /nas/content/staging/grayson/wp-includes/widgets.php(115): WP_Widget_Factory->register('viwptf_TwitterT...')
+#1 /nas/content/staging/grayson/wp-content/plugins/wp-twitter-feeds/wp-latest-twitter-tweets.php(45): register_widget('viwptf_TwitterT...')
+#2 [internal function]: viwptf_reg_widget('')
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('viwptf_reg_widg...', Array)
+#4 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /nas/content/staging/grayson/wp-includes/widgets.php(1645): do_action('widgets_init')
+#7 [internal function]: wp_widgets_init('')
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_widgets_init', Array)
+#9 /nas/content/staging/g
+
+2018-01-16T15:02:28+00:00 CRITICAL Uncaught Error: Class 'viwptf_TwitterTweets' not found in /nas/content/staging/grayson/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /nas/content/staging/grayson/wp-includes/widgets.php(115): WP_Widget_Factory->register('viwptf_TwitterT...')
+#1 /nas/content/staging/grayson/wp-content/plugins/wp-twitter-feeds/wp-latest-twitter-tweets.php(45): register_widget('viwptf_TwitterT...')
+#2 [internal function]: viwptf_reg_widget('')
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('viwptf_reg_widg...', Array)
+#4 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /nas/content/staging/grayson/wp-includes/widgets.php(1645): do_action('widgets_init')
+#7 [internal function]: wp_widgets_init('')
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_widgets_init', Array)
+#9 /nas/content/staging/g
+
+2018-01-16T15:02:36+00:00 CRITICAL Uncaught Error: Class 'viwptf_TwitterTweets' not found in /nas/content/staging/grayson/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /nas/content/staging/grayson/wp-includes/widgets.php(115): WP_Widget_Factory->register('viwptf_TwitterT...')
+#1 /nas/content/staging/grayson/wp-content/plugins/wp-twitter-feeds/wp-latest-twitter-tweets.php(45): register_widget('viwptf_TwitterT...')
+#2 [internal function]: viwptf_reg_widget('')
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('viwptf_reg_widg...', Array)
+#4 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /nas/content/staging/grayson/wp-includes/widgets.php(1645): do_action('widgets_init')
+#7 [internal function]: wp_widgets_init('')
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_widgets_init', Array)
+#9 /nas/content/staging/g
+
+2018-01-16T15:02:45+00:00 CRITICAL Uncaught Error: Class 'viwptf_TwitterTweets' not found in /nas/content/staging/grayson/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /nas/content/staging/grayson/wp-includes/widgets.php(115): WP_Widget_Factory->register('viwptf_TwitterT...')
+#1 /nas/content/staging/grayson/wp-content/plugins/wp-twitter-feeds/wp-latest-twitter-tweets.php(45): register_widget('viwptf_TwitterT...')
+#2 [internal function]: viwptf_reg_widget('')
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('viwptf_reg_widg...', Array)
+#4 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /nas/content/staging/grayson/wp-includes/widgets.php(1645): do_action('widgets_init')
+#7 [internal function]: wp_widgets_init('')
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('wp_widgets_init', Array)
+#9 /nas/content/staging/g
+
+2018-01-16T15:20:19+00:00 CRITICAL Uncaught Error: Call to undefined function prettycreative_widget_area_class() in /nas/content/staging/grayson/wp-content/plugins/sexy-woo-video-bg/inc/category.php:8
+Stack trace:
+#0 [internal function]: category_video_background('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('category_video_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-content/themes/genesis/header.php(35): do_action('genesis_after_h...')
+#5 /nas/content/staging/grayson/wp-includes/template.php(688): require_once('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-includes/template.php(647): load_template('/nas/content/st...', true)
+#7 /nas/content/staging/grayson/wp-includes/general-template.php(41): locate_template(Array, true)
+#8 /nas/content/staging/grayson/wp-content/themes/genesis/lib/framework.php(
+
+2018-01-17T19:25:06+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_header_body_classes() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:78
+Stack trace:
+#0 [internal function]: genesis_header_body_classes(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_header_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php(602): get_body_class()
+#5 /nas/content/staging/grayson/wp-settings.php(424): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#7 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#8 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/
+
+2018-01-17T19:25:14+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_header_body_classes() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:78
+Stack trace:
+#0 [internal function]: genesis_header_body_classes(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_header_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php(602): get_body_class()
+#5 /nas/content/staging/grayson/wp-settings.php(424): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#7 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#8 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/
+
+2018-01-17T19:25:15+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_header_body_classes() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:78
+Stack trace:
+#0 [internal function]: genesis_header_body_classes(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_header_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php(602): get_body_class()
+#5 /nas/content/staging/grayson/wp-settings.php(424): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#7 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#8 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/
+
+2018-01-17T19:25:28+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_header_body_classes() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:78
+Stack trace:
+#0 [internal function]: genesis_header_body_classes(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_header_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php(602): get_body_class()
+#5 /nas/content/staging/grayson/wp-settings.php(424): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#7 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#8 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/
+
+2018-01-17T19:25:43+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_header_body_classes() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:78
+Stack trace:
+#0 [internal function]: genesis_header_body_classes(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_header_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php(602): get_body_class()
+#5 /nas/content/staging/grayson/wp-settings.php(424): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#7 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#8 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/
+
+2018-01-17T19:25:47+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_header_body_classes() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:78
+Stack trace:
+#0 [internal function]: genesis_header_body_classes(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_header_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php(602): get_body_class()
+#5 /nas/content/staging/grayson/wp-settings.php(424): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#7 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#8 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/
+
+2018-01-17T19:28:16+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to genesis_custom_body_class() must be of the type array, null given in /nas/content/staging/grayson/wp-content/themes/genesis/lib/structure/layout.php:55
+Stack trace:
+#0 [internal function]: genesis_custom_body_class(NULL)
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_custom_...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/post-template.php(770): apply_filters('body_class', Array, Array)
+#4 /nas/content/staging/grayson/wp-content/themes/genesis/lib/functions/markup.php(334): get_body_class()
+#5 [internal function]: genesis_attributes_body(Array)
+#6 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('genesis_attribu...', Array)
+#7 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters(Array, Array)
+#8 /nas/content/staging/grayson/wp-content/themes/genesis/li
+
+2018-01-17T19:42:49+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_page_title() in /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php:610
+Stack trace:
+#0 /nas/content/staging/grayson/wp-settings.php(424): include()
+#1 /nas/content/staging/grayson/wp-config.php(145): require_once('/nas/content/st...')
+#2 /nas/content/staging/grayson/wp-load.php(37): require_once('/nas/content/st...')
+#3 /nas/content/staging/grayson/wp-blog-header.php(13): require_once('/nas/content/st...')
+#4 /nas/content/staging/grayson/index.php(17): require('/nas/content/st...')
+#5 {main}
+  thrown
+
+2018-01-17T19:45:14+00:00 CRITICAL Uncaught Error: Call to undefined function get_woocommerce_page_title() in /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php:608
+Stack trace:
+#0 [internal function]: ge_add_custom_links_to_store_page('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('ge_add_custom_l...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-content/plugins/genesis-connect-woocommerce/lib/template-loader.php(269): do_action('woocommerce_bef...')
+#5 /nas/content/staging/grayson/wp-content/plugins/genesis-connect-woocommerce/templates/archive-product.php(84): genesiswooc_content_product()
+#6 [internal function]: genesiswooc_archive_product_loop('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('genesiswooc_arc...', Array)
+#8 /nas/content/stag
+
+2018-02-06T19:06:19+00:00 CRITICAL Uncaught Error: Call to undefined function get_postmeta() in /nas/content/staging/grayson/wp-content/plugins/sexy-woo-video-bg/inc/page.php:9
+Stack trace:
+#0 [internal function]: ge_page_video_background('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('ge_page_video_b...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-content/themes/genesis/header.php(35): do_action('genesis_after_h...')
+#5 /nas/content/staging/grayson/wp-includes/template.php(688): require_once('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-includes/template.php(647): load_template('/nas/content/st...', true)
+#7 /nas/content/staging/grayson/wp-includes/general-template.php(41): locate_template(Array, true)
+#8 /nas/content/staging/grayson/wp-content/themes/genesis/lib/framework.php(24): get_header()
+#9 /n
+
+2018-02-07T13:20:58+00:00 CRITICAL Uncaught Error: Call to a member function get_product_categories() on null in /nas/content/staging/grayson/wp-content/plugins/woocommerce-square/includes/class-wc-square-sync-to-square.php:53
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/woocommerce-square/includes/class-wc-square-sync-to-square-wp-hooks.php(227): WC_Square_Sync_To_Square->sync_categories()
+#1 [internal function]: WC_Square_Sync_To_Square_WordPress_Hooks->on_category_modified(59)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array(Array, Array)
+#3 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /nas/content/staging/grayson/wp-includes/taxonomy.php(2233): do_action('created_product...', 59, 59)
+#6 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-wc-install.php(478): wp_insert_term('Uncategorized', 'product_cat', Array)
+#7 /na
+
+2018-04-10T17:32:57+00:00 CRITICAL Uncaught Exception: Invalid data store. in /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-wc-data-store.php:94
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(129): WC_Data_Store->__construct('webhook')
+#1 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php(102): WC_Data_Store::load('webhook')
+#2 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-woocommerce.php(630): wc_load_webhooks()
+#3 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-woocommerce.php(483): WooCommerce->load_webhooks()
+#4 [internal function]: WooCommerce->init('')
+#5 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array(Array, Array)
+#6 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#7 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#8 /nas/co
+
+2018-05-02T22:57:07+00:00 CRITICAL Uncaught Error: Call to undefined function get_attributes() in /nas/content/staging/grayson/wp-content/plugins/sexy-slider/src/product-slider.php:222
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(81): require()
+#1 [internal function]: sexy_slider_shortcode(Array, '', 'sexy_slider')
+#2 /nas/content/staging/grayson/wp-includes/shortcodes.php(319): call_user_func('sexy_slider_sho...', Array, '', 'sexy_slider')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /nas/content/staging/grayson/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(sexy_s...', 'do_shortcode_ta...', '[sexy_slider ly...')
+#5 /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php(91): do_shortcode('[sexy_slider ly...')
+#6 [internal function]: sexy_slider_lyrics('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('sexy_slider_lyr...', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->ap
+
+2018-05-02T22:59:19+00:00 CRITICAL Uncaught Error: Call to undefined function get_attributes() in /nas/content/staging/grayson/wp-content/plugins/sexy-slider/src/product-slider.php:222
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(80): require()
+#1 [internal function]: sexy_slider_shortcode(Array, '', 'sexy_slider')
+#2 /nas/content/staging/grayson/wp-includes/shortcodes.php(319): call_user_func('sexy_slider_sho...', '', '', 'sexy_slider')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /nas/content/staging/grayson/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(sexy_s...', 'do_shortcode_ta...', '[sexy_slider]')
+#5 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(97): do_shortcode('[sexy_slider]')
+#6 [internal function]: add_product_slider('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('add_product_sli...', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#9 
+
+2018-05-02T22:59:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_attributes() in /nas/content/staging/grayson/wp-content/plugins/sexy-slider/src/product-slider.php:222
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(80): require()
+#1 [internal function]: sexy_slider_shortcode(Array, '', 'sexy_slider')
+#2 /nas/content/staging/grayson/wp-includes/shortcodes.php(319): call_user_func('sexy_slider_sho...', '', '', 'sexy_slider')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /nas/content/staging/grayson/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(sexy_s...', 'do_shortcode_ta...', '[sexy_slider]')
+#5 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(97): do_shortcode('[sexy_slider]')
+#6 [internal function]: add_product_slider('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('add_product_sli...', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#9 
+
+2018-05-03T01:23:46+00:00 CRITICAL Uncaught Error: Call to undefined function the_content_() in /nas/content/staging/grayson/wp-content/plugins/sexy-slider/src/lyrics-slider.php:15
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(78): require()
+#1 [internal function]: sexy_slider_shortcode(Array, '', 'sexy_slider')
+#2 /nas/content/staging/grayson/wp-includes/shortcodes.php(319): call_user_func('sexy_slider_sho...', Array, '', 'sexy_slider')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /nas/content/staging/grayson/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(sexy_s...', 'do_shortcode_ta...', '[sexy_slider ly...')
+#5 /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php(91): do_shortcode('[sexy_slider ly...')
+#6 [internal function]: ssp_lyrics('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('ssp_lyrics', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-05-03T01:24:29+00:00 CRITICAL Uncaught Error: Call to undefined function the_content_() in /nas/content/staging/grayson/wp-content/plugins/sexy-slider/src/lyrics-slider.php:15
+Stack trace:
+#0 /nas/content/staging/grayson/wp-content/plugins/sexy-slider/index.php(78): require()
+#1 [internal function]: sexy_slider_shortcode(Array, '', 'sexy_slider')
+#2 /nas/content/staging/grayson/wp-includes/shortcodes.php(319): call_user_func('sexy_slider_sho...', Array, '', 'sexy_slider')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /nas/content/staging/grayson/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(sexy_s...', 'do_shortcode_ta...', '[sexy_slider ly...')
+#5 /nas/content/staging/grayson/wp-content/plugins/sexy-single-product-page/index.php(91): do_shortcode('[sexy_slider ly...')
+#6 [internal function]: ssp_lyrics('')
+#7 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('ssp_lyrics', Array)
+#8 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Arra
+
+2018-05-18T13:48:22+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /nas/content/staging/grayson/wp-content/plugins/sexy-ajax-woocheckout/includes/woocommerce/ajax.php:99
+Stack trace:
+#0 [internal function]: sexy_add_custom_price_to_product('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('sexy_add_custom...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-admin/admin-ajax.php(97): do_action('wp_ajax_sexy_ad...')
+#5 {main}
+  thrown
+
+2018-05-18T13:48:42+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /nas/content/staging/grayson/wp-content/plugins/sexy-ajax-woocheckout/includes/woocommerce/ajax.php:99
+Stack trace:
+#0 [internal function]: sexy_add_custom_price_to_product('')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(286): call_user_func_array('sexy_add_custom...', Array)
+#2 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /nas/content/staging/grayson/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /nas/content/staging/grayson/wp-admin/admin-ajax.php(97): do_action('wp_ajax_sexy_ad...')
+#5 {main}
+  thrown
+
+2018-05-18T16:07:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_product_id() in /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php:630
+Stack trace:
+#0 [internal function]: custom_woocommerce_product_add_to_cart_text('Add to cart')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('custom_woocomme...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters('Add to cart', Array)
+#3 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-wc-product-simple.php(56): apply_filters('woocommerce_pro...', 'Add to cart', Object(WC_Product_Simple))
+#4 /nas/content/staging/grayson/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(31): WC_Product_Simple->add_to_cart_text()
+#5 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-template-functions
+
+2018-05-18T16:35:19+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php:626
+Stack trace:
+#0 [internal function]: custom_woocommerce_product_add_to_cart_text('Add to cart')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('custom_woocomme...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters('Add to cart', Array)
+#3 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-wc-product-simple.php(56): apply_filters('woocommerce_pro...', 'Add to cart', Object(WC_Product_Simple))
+#4 /nas/content/staging/grayson/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(31): WC_Product_Simple->add_to_cart_text()
+#5 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-template-functions.php(880): wc_get_temp
+
+2018-05-18T16:35:32+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /nas/content/staging/grayson/wp-content/themes/Pretty Creative/functions.php:626
+Stack trace:
+#0 [internal function]: custom_woocommerce_product_add_to_cart_text('Add to cart')
+#1 /nas/content/staging/grayson/wp-includes/class-wp-hook.php(288): call_user_func_array('custom_woocomme...', Array)
+#2 /nas/content/staging/grayson/wp-includes/plugin.php(203): WP_Hook->apply_filters('Add to cart', Array)
+#3 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/class-wc-product-simple.php(56): apply_filters('woocommerce_pro...', 'Add to cart', Object(WC_Product_Simple))
+#4 /nas/content/staging/grayson/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(31): WC_Product_Simple->add_to_cart_text()
+#5 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/nas/content/st...')
+#6 /nas/content/staging/grayson/wp-content/plugins/woocommerce/includes/wc-template-functions.php(880): wc_get_temp
+
