@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="ge staging" autoUploadExternalChanges="true" showDifferentInSync="false" showNewOnSourceInSync="false">
+    <serverData>
+      <paths name="ge staging">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/wp-content/mu-plugins" />
+            <excludedPath path="/wp-content/updraft" />
+            <excludedPath path="/wp-content/plugins/php-compatibility-checker" />
+            <excludedPath local="true" path="$PROJECT_DIR$/mu-plugins" />
+            <excludedPath local="true" path="$PROJECT_DIR$/updraft" />
+            <excludedPath path="/wp-content/graysonerhard-com.grayson.staging.wpengine.com" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
