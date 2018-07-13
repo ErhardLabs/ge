@@ -1,9 +1,9 @@
-html {
-  height: 800px;
-}
-
 .song_links .entry-header {
   display: none;
+}
+
+.song_links .content .entry {
+  padding: 0;
 }
 
 .song_links .entry-content {
@@ -12,6 +12,7 @@ html {
 
 .song_links .entry-content .sexy_song_link_container {
   background-size: cover !important;
+  background-position: center !important;
 }
 
 .sexy_song_link_brightness {
@@ -20,7 +21,6 @@ html {
   flex-direction: column;
   text-align: center;
   padding-top: 140px;
-  height: 100vh;
   margin-top: -80px;
 }
 
@@ -89,4 +89,10 @@ html {
 
 .song_links .footer-widgets, .song_links footer {
   display: none;
+}
+
+@media screen and (min-height: 768px) {
+  .sexy_song_link_brightness {
+    height: 100vh;
+  }
 }
