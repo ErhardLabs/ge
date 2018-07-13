@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2c6f56-3831-4e1e-b93b-99428bf1a2f2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/sexy-animations" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-animations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/activation.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/activation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/activation.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/activation.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/admin.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/admin.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/network-order-widget.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/network-order-widget.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/twenty-seventeen.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/twenty-seventeen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/wc-setup.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/wc-setup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/woocommerce.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/woocommerce.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/woocommerce.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Pretty Creative/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Pretty Creative/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sumner-style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sumner-style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="220" column="70" selection-start-line="220" selection-start-column="70" selection-end-line="220" selection-end-column="70" />
+            <state relative-caret-position="131">
+              <caret line="952" column="2" selection-start-line="952" selection-start-column="2" selection-end-line="973" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -45,8 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.ge-flexslider .ge-slider</find>
-      <find>nav-primary</find>
       <find>woocommerce-ch</find>
       <find>just</find>
       <find>bwpp_iframe_wrap</find>
@@ -75,6 +76,8 @@
       <find>lyric</find>
       <find>video-foreground</find>
       <find>video</find>
+      <find>woo</find>
+      <find>video-background</find>
     </findStrings>
     <replaceStrings>
       <replace>localized_sexy_config</replace>
@@ -103,8 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugins/bandcamp-woocommerce-product-player/index.php" />
-        <option value="$PROJECT_DIR$/plugins/sexy-thankyou/index.php" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/woocommerce/checkout/thankyou.php" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/style.css" />
         <option value="$PROJECT_DIR$/plugins/bandcamp-woocommerce-product-player/assets/css/bwpp-styles.css" />
@@ -149,11 +150,13 @@
         <option value="$PROJECT_DIR$/plugins/sexy-resume-styles/index.php" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-resume-styles/sexy-resume.css" />
         <option value="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" />
-        <option value="$PROJECT_DIR$/themes/Pretty Creative/functions.php" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/blogPost.php" />
-        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/sumner-style.css" />
         <option value="&lt;4839b472-9b51-4d95-bfb0-c6e1b377810c&gt;/wp-content/themes/Pretty Creative/sumner-style.css" />
+        <option value="$PROJECT_DIR$/themes/Pretty Creative/functions.php" />
+        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/functions.php" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css" />
+        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/sumner-style.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -179,9 +182,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="y" value="270" />
+    <option name="y" value="397" />
     <option name="width" value="1280" />
-    <option name="height" value="778" />
+    <option name="height" value="651" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -223,21 +226,6 @@
               <item name="ge" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="Pretty Creative" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ge" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="Pretty Creative" type="462c0819:PsiDirectoryNode" />
-              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ge" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="Pretty Creative" type="462c0819:PsiDirectoryNode" />
-              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="emails" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,12 +341,13 @@
       <workItem from="1528087642743" duration="15000" />
       <workItem from="1528087668781" duration="16000" />
       <workItem from="1528144845067" duration="6598000" />
-      <workItem from="1531247517273" duration="963000" />
+      <workItem from="1531247517273" duration="1050000" />
+      <workItem from="1531439583954" duration="3030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320135000" />
+    <option name="totallyTimeSpent" value="323252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="270" width="1280" height="778" extended-state="6" />
@@ -367,14 +356,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5056543" side_tool="true" weight="0.33586627" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="7" type="SLIDING" weight="0.31914893" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.21428572" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.33586627" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.23182553" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2956381" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" visible="true" weight="0.33586627" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.23182553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30048466" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -384,7 +373,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="7" type="SLIDING" weight="0.31914893" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -396,13 +385,13 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.16969697" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3287879" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.39242426" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503231" side_tool="true" weight="0.16969697" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="8" type="SLIDING" weight="0.31969696" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -677,15 +666,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="627" column="1" selection-start-line="627" selection-start-column="1" selection-end-line="627" selection-end-column="1" />
+        <state relative-caret-position="350">
+          <caret line="629" selection-start-line="629" selection-end-line="636" selection-end-column="1" />
+          <folding>
+            <element signature="e#19#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="220" column="70" selection-start-line="220" selection-start-column="70" selection-end-line="220" selection-end-column="70" />
+        <state relative-caret-position="131">
+          <caret line="952" column="2" selection-start-line="952" selection-start-column="2" selection-end-line="973" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>

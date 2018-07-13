@@ -216,16 +216,10 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   font-size: 1em !important;
 }
 
-.home .video-foreground {
+.home .video-background{
   opacity: .8;
   background-image: radial-gradient(50% 96%, #7F8C8D 0%, #1B1400 96%);
 
-}
-
-.video-background .video-foreground {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
 }
 
 .home-down {
@@ -954,6 +948,29 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
 
   .single-post .entry-title {
     font-size: 2em !important;
+  }
+
+  .video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+  }
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
   }
 
 }

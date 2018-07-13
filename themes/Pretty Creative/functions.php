@@ -626,3 +626,12 @@ if (get_site_url() === 'https://graysonerhard-com.grayson.staging.wpengine.com')
   );
   deactivate_plugins($pluginsToDeactivate);
 }
+
+/**
+ * Change the default state and country on the checkout page
+ */
+add_filter( 'default_checkout_billing_country', 'change_default_checkout_country' );
+
+function change_default_checkout_country() {
+	return 'US'; // country code
+}
