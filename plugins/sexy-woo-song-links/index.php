@@ -162,39 +162,41 @@ function display_song_links() {
 
     echo "<div class='sexy_song_link_container' style='background: url($image[0])'>";
       echo "<div class='sexy_song_link_brightness'>";
-        echo "<h2>$productTitle</h2>";
-        echo "<h4>Grayson Erhard</h4>";
+      echo "<span class='listen_to'>LISTEN TO</span>";
+      echo "<h2>$productTitle</h2>";
+      echo "<h4>Grayson Erhard</h4>";
+
 
         if( !empty( $spotify ) )
-          echo "<a class='sexy_song_link youtube' href='#'>YouTube</a>";
+          echo "<a class='sexy_song_link youtube' id='youtube_newmusic' href='#'><i class='fa fa-2x fa-youtube'></i><span>YouTube</span></a>";
 
         echo "<div class='sexy_song_link_video_wrap'>";
         echo '<iframe width="420" height="240" src="https://www.youtube.com/embed/'. $youtubeID[0].'?rel=0&showinfo=0&loop=1&enablejsapi=1&list=PLCcd4NlKH5YzNrrji-f_3elED_tmifwUz&start='.$youtubeVideoStartTime.'" frameborder="0" allowfullscreen></iframe>';
         echo "</div>";
 
         if( !empty( $spotify ) )
-          echo "<a class='sexy_song_link' href='$spotify' target='_blank'>Spotify</a>";
+          echo "<a class='sexy_song_link' href='$spotify' id='spotify_newmusic' target='_blank'><i class='fa fa-2x fa-spotify'></i><span>Spotify</span></a>";
 
         if( !empty( $appleMusic ) )
-          echo "<a class='sexy_song_link' href='$appleMusic' target='_blank'>Apple Music</a>";
+          echo "<a class='sexy_song_link' href='$appleMusic' id='apple_newmusic' target='_blank'><i class='fa fa-2x fa-apple'></i><span>Apple Music</span></a>";
 
-        echo "<a class='sexy_song_link' href='$webstoreLink' target='_blank'>Webstore</a>";
+        echo "<a class='sexy_song_link' href='$webstoreLink' id='webstore_newmusic' target='_blank'><img src='/wp-content/plugins/sexy-woo-song-links/assets/img/Grayson-Erhard-Logo-Emblem-OPAC-BLACK.png' /><span>Webstore</span></a>";
 
         if( !empty( $tidal ) )
-          echo "<a class='sexy_song_link' href='$tidal' target='_blank'>Tidal</a>";
+          echo "<a class='sexy_song_link' href='$tidal' id='tidal_newmusic' target='_blank'><img src='/wp-content/plugins/sexy-woo-song-links/assets/img/tidal-square.png' /><span>Tidal</span></a>";
 
         if( !empty( $googlePlay ) )
-          echo "<a class='sexy_song_link' href='$googlePlay' target='_blank'>Google Play</a>";
+          echo "<a class='sexy_song_link' href='$googlePlay' id='google_newmusic' target='_blank'><img src='/wp-content/plugins/sexy-woo-song-links/assets/img/google-play.png' /><span>Google Play</span></a>";
 
         if( !empty( $deezer ) )
-          echo "<a class='sexy_song_link' href='$deezer' target='_blank'>Deezer</a>";
+          echo "<a class='sexy_song_link' href='$deezer' id='deezer_newmusic' target='_blank'><img src='/wp-content/plugins/sexy-woo-song-links/assets/img/deezer.svg' /><span>Deezer</span></a>";
 
         if( !empty( $amazon ) )
-          echo "<a class='sexy_song_link' href='$amazon' target='_blank'>Amazon</a>";
+          echo "<a class='sexy_song_link' href='$amazon' id='amazon_newmusic' target='_blank'><i class='fa fa-2x fa-amazon'></i><span>Amazon</span></a>";
 
 
 
-        echo "<a class='song_link_share' id='song_link_share' href='". $current_url . "?pid=".$productID."'>Share</a>";
+        echo "<a class='song_link_share' id='share_newmusic' href='". $current_url . "?pid=".$productID."'><i class='fa fa-2x fa-share-alt'></i>Share</a>";
 
         echo "<div class='link_copied'>LINK COPIED TO CLIPBOARD</div>";
       echo "</div>"; // sexy_song_link_brightness

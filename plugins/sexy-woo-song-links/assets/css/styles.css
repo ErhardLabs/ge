@@ -31,10 +31,39 @@
   display: none;
 }
 
+.listen_to {
+  margin-bottom: 10px;
+}
+
 .song_links iframe {
   z-index: 1;
   margin: 20px auto;
 }
+
+.sexy_song_link .fa, .song_link_share .fa, .sexy_song_link img {
+  position: absolute;
+  left: 20px;
+  width: 32px;
+}
+
+.sexy_song_link .fa, .song_link_share .fa {
+  top: 7px;
+}
+
+.song_link_share .fa {
+  color: whitesmoke;
+}
+
+.sexy_song_link img {
+  width: 32px;
+  height: 32px;
+}
+
+.sexy_song_link:hover {
+  background: rgba(255,255,255, .8);
+  color: #222 !important;
+}
+
 
 .sexy_song_link, .song_link_share {
   text-align: center;
@@ -59,7 +88,7 @@
 
 .song_link_share {
   margin-top: 40px;
-  background: #111;
+  background: rgba(17,17,17,.8);
   color: whitesmoke;
   border: 1px solid whitesmoke;
 }
@@ -92,7 +121,11 @@
 }
 
 @media screen and (min-height: 768px) {
+  .song_links .entry-content .sexy_song_link_container {
+    min-height: 101vh;
+  }
+
   .sexy_song_link_brightness {
-    height: 100vh;
+    min-height: 101vh;
   }
 }

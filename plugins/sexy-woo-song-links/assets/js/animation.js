@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('.sexy_song_link_video_wrap').slideToggle();
   });
 
-  document.getElementById("song_link_share").addEventListener("click", function(e) {
+  document.getElementById("share_newmusic").addEventListener("click", function(e) {
     e.preventDefault();
     copyToClipboard(document.getElementById("song_link_share"));
   });
