@@ -196,7 +196,7 @@ function display_song_links() {
 
 
 
-        echo "<a class='song_link_share' id='share_newmusic' href='". $current_url . "?pid=".$productID."'><i class='fa fa-2x fa-share-alt'></i>Share</a>";
+        echo "<a class='song_link_share' id='share_newmusic' href='".$current_url."'><i class='fa fa-2x fa-share-alt'></i>Share</a>";
 
         echo "<div class='link_copied'>LINK COPIED TO CLIPBOARD</div>";
       echo "</div>"; // sexy_song_link_brightness

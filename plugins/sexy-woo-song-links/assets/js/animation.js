@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   document.getElementById("share_newmusic").addEventListener("click", function(e) {
     e.preventDefault();
-    copyToClipboard(document.getElementById("song_link_share"));
+    copyToClipboard(document.getElementById("share_newmusic"));
   });
 
 
