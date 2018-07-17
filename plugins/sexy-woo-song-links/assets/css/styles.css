@@ -51,6 +51,7 @@
 .sexy_song_link {
   background: whitesmoke;
   color: #222;
+  opacity: 0;
 }
 
 .sexy_song_link.youtube {
