@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2c6f56-3831-4e1e-b93b-99428bf1a2f2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/Grayson-Erhard-Logo-Emblem-OPAC-BLACK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/deezer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/google-play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/tidal-square.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-animations" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-animations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/js/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/js/animation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/Pretty Creative/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/themes/Pretty Creative/functions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,20 +33,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="196" column="26" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -51,8 +42,23 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10846">
+            <state relative-caret-position="1141">
               <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
+              <folding>
+                <element signature="e#19#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="198" column="59" selection-start-line="198" selection-start-column="45" selection-end-line="198" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,9 +225,9 @@
       <path value="$PROJECT_DIR$/plugins/simple-social-icons/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
-    <option name="y" value="270" />
+    <option name="y" value="389" />
     <option name="width" value="1280" />
     <option name="height" value="778" />
   </component>
@@ -397,15 +403,15 @@
       <workItem from="1531772044327" duration="3817000" />
       <workItem from="1531778933831" duration="956000" />
       <workItem from="1531780548731" duration="1000" />
-      <workItem from="1531862193202" duration="1085000" />
+      <workItem from="1531862193202" duration="3037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331021000" />
+    <option name="totallyTimeSpent" value="332973000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="270" width="1280" height="778" extended-state="6" />
+    <frame x="1920" y="389" width="1280" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -413,7 +419,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.21428572" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.23630504" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.61702126" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3206785" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -483,6 +489,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10846">
           <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
+          <folding>
+            <element signature="e#19#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -507,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10846">
-          <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -530,15 +532,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="15" />
+        <state relative-caret-position="38">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1141">
+          <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
+          <folding>
+            <element signature="e#19#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="196" column="26" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+        <state relative-caret-position="529">
+          <caret line="198" column="59" selection-start-line="198" selection-start-column="45" selection-end-line="198" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
