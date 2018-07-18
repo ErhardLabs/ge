@@ -1,3 +1,7 @@
+.song_links .featured_image_wrapper {
+  display: none;
+}
+
 .song_links .entry-header {
   display: none;
 }
