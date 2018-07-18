@@ -137,14 +137,25 @@ function display_song_links() {
   // RUN PIXEL CAFFEINE FOR FB PIXEL PROCESSING
   (function_exists('PixelCaffeine')) ? PixelCaffeine() : false;
 
+  $slug = (isset($_GET['t'])) ? $_GET['t'] : false;
   $productID = (isset($_GET['pid'])) ? $_GET['pid'] : false;
-  $productID = preg_replace('/[^0-9]/', '', $productID);
+
+  if ($slug) {
+    $_product = get_page_by_path( $slug, OBJECT, 'product' );
+    $productID = $_product->ID;
+  } else if ($productID) {
+    $productID = (isset($_GET['pid'])) ? $_GET['pid'] : false;
+    $productID = preg_replace('/[^0-9]/', '', $productID);
+    $item = get_post( $productID );
+    $slug = $item->post_name;
+  }
 
   if ($productID) {
 
     $_product = wc_get_product($productID);
     $webstoreLink = $_product->get_permalink();
     $productTitle = $_product->get_title();
+
     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productID ), 'single-post-thumbnail' );
 
     $youtubeLink = get_post_meta($productID, '_youtube_text_area', true);

@@ -1,7 +1,8 @@
 $=jQuery;
 
 $(document).ready(function() {
-  $('.sexy_song_link.youtube').unbind().click(function() {
+  $('.sexy_song_link.youtube').unbind().click(function(e) {
+    e.preventDefault();
     $('.sexy_song_link_video_wrap').slideToggle();
   });
 
