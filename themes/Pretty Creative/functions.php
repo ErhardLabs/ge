@@ -635,3 +635,12 @@ add_filter( 'default_checkout_billing_country', 'change_default_checkout_country
 function change_default_checkout_country() {
 	return 'US'; // country code
 }
+
+add_action( 'woocommerce_before_checkout_form', 'add_social_login', 5 );
+
+function add_social_login() {
+    if ( !is_user_logged_in() ){
+        echo do_shortcode("[apsl-login-lite login_text='Login with Facebook']");
+    }
+
+}
