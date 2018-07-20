@@ -2,15 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2c6f56-3831-4e1e-b93b-99428bf1a2f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/Grayson-Erhard-Logo-Emblem-OPAC-BLACK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/deezer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/google-play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/img/tidal-square.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/js/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/js/animation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/plugin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/ClassLoader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_classmap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_namespaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_psr4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_real.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/Kint.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/config.default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/decorators/plain.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/decorators/rich.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/examples/overview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/inc/kintObject.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/inc/kintParser.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/inc/kintVariableData.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/classmethods.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/classstatics.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/color.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/fspath.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/json.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/microtime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/objectiterateable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/splobjectstorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/timestamp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/xml.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/objects/closure.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/objects/smarty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/objects/splfileinfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/base.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/aante-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/kint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/original.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/solarized-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/solarized.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/aante-light.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/original.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/solarized-dark.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/solarized.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-animations" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-animations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,62 +73,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sumner-style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css">
+      <file leaf-file-name="customizations.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/customizations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="949" column="30" selection-start-line="949" selection-start-column="30" selection-end-line="949" selection-end-column="30" />
+            <state relative-caret-position="53">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
+      <file leaf-file-name="sexy-woo-checkout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state relative-caret-position="44">
+              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
+      <file leaf-file-name="slider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1141">
-              <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
-              <folding>
-                <element signature="e#19#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="294">
+              <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
+      <file leaf-file-name="default-woo-checkout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="198" column="59" selection-start-line="198" selection-start-column="45" selection-end-line="198" selection-end-column="59" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js">
+      <file leaf-file-name="slider-div.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
+            <state relative-caret-position="-154">
+              <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sexy-animations.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/css/sexy-animations.css">
+      <file leaf-file-name="sexy-woo-checkout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="224">
+              <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="94" selection-start-line="94" selection-end-line="98" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -93,8 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>just</find>
-      <find>bwpp_iframe_wrap</find>
       <find>#gform_widget-6</find>
       <find>.slider</find>
       <find>h3</find>
@@ -123,6 +176,8 @@
       <find>woo</find>
       <find>video-background</find>
       <find>sexy_song_link</find>
+      <find>view_slider</find>
+      <find>cart_plus</find>
     </findStrings>
     <replaceStrings>
       <replace>localized_sexy_config</replace>
@@ -146,17 +201,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css" />
-        <option value="$PROJECT_DIR$/plugins/sexy-single-product-page/assets/sass/utilities/_mixins.scss" />
-        <option value="$PROJECT_DIR$/plugins/ge-custom-product-slider/assets/css/slider-style.css" />
-        <option value="&lt;4839b472-9b51-4d95-bfb0-c6e1b377810c&gt;/wp-content/themes/Pretty Creative/last-style.css" />
-        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/last-style.css" />
-        <option value="$PROJECT_DIR$/themes/Pretty Creative/woocommerce/order/order-downloads.php" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/woocommerce/order/order-downloads.php" />
         <option value="$PROJECT_DIR$/plugins/sexy-single-product-page/assets/sass/sexy-single-product.scss" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-single-product-page/assets/sass/sexy-single-product.scss" />
@@ -169,7 +218,6 @@
         <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/dynamicStyles.js" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/js/sumner.js" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/last-style.css" />
-        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/js/nav-search.js" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/js/nav-search.js" />
@@ -188,20 +236,27 @@
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-slider/src/product-slider.php" />
         <option value="$PROJECT_DIR$/plugins/sexy-resume-styles/index.php" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-resume-styles/sexy-resume.css" />
-        <option value="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/blogPost.php" />
         <option value="&lt;4839b472-9b51-4d95-bfb0-c6e1b377810c&gt;/wp-content/themes/Pretty Creative/sumner-style.css" />
-        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/functions.php" />
         <option value="$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/sumner-style.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/themes/Pretty Creative/functions.php" />
         <option value="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" />
         <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-woo-song-links/assets/css/styles.css" />
-        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-animations/src/js/recipes.js" />
-        <option value="$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js" />
         <option value="$PROJECT_DIR$/plugins/sexy-animations/src/css/sexy-animations.css" />
         <option value="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" />
+        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/plugins/sexy-animations/src/js/recipes.js" />
+        <option value="$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/themes/Pretty Creative/functions.php" />
+        <option value="&lt;6ea6628a-dbac-457a-8f00-2a4839a8d074&gt;/wp-content/themes/Pretty Creative/functions.php" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/customizations.php" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-checkout-page.css" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css" />
+        <option value="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js" />
+        <option value="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php" />
       </list>
     </option>
   </component>
@@ -225,11 +280,11 @@
       <path value="$PROJECT_DIR$/plugins/simple-social-icons/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="y" value="389" />
+    <option name="y" value="400" />
     <option name="width" value="1280" />
-    <option name="height" value="778" />
+    <option name="height" value="648" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -269,19 +324,43 @@
               <item name="ge" type="b2602c69:ProjectViewProjectNode" />
               <item name="ge" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="sexy-woo-song-links" type="462c0819:PsiDirectoryNode" />
+              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ge" type="b2602c69:ProjectViewProjectNode" />
               <item name="ge" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="sexy-woo-song-links" type="462c0819:PsiDirectoryNode" />
+              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ge" type="b2602c69:ProjectViewProjectNode" />
               <item name="ge" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ge" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ge" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ge" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="sexy-resume-styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -403,23 +482,24 @@
       <workItem from="1531772044327" duration="3817000" />
       <workItem from="1531778933831" duration="956000" />
       <workItem from="1531780548731" duration="1000" />
-      <workItem from="1531862193202" duration="3037000" />
+      <workItem from="1531862193202" duration="31363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332973000" />
+    <option name="totallyTimeSpent" value="361299000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="389" width="1280" height="778" extended-state="0" />
+    <frame x="1920" y="270" width="1280" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5056543" side_tool="true" weight="0.33586627" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="7" type="SLIDING" weight="0.31914893" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.21428572" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.61702126" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.3768997" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3206785" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -433,28 +513,28 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="7" type="SLIDING" weight="0.31914893" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.24474959" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1930533" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3206785" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="9" type="SLIDING" weight="0.31914893" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.16969697" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3287879" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.39242426" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503231" side_tool="true" weight="0.16969697" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.21428572" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="8" type="SLIDING" weight="0.31969696" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49434572" weight="0.3768997" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5056543" side_tool="true" weight="0.33586627" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -516,10 +596,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
+        <state relative-caret-position="325">
+          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -530,30 +624,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="-15">
+          <caret line="187" column="32" lean-forward="true" selection-start-line="187" selection-start-column="32" selection-end-line="187" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/assets/config.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/form-fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2599" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/admin/widget.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/includes/product-video.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/includes/product-lyrics.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1141">
-          <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
+        <state relative-caret-position="495">
+          <caret line="645" column="1" selection-start-line="645" selection-start-column="1" selection-end-line="645" selection-end-column="1" />
           <folding>
             <element signature="e#19#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="198" column="59" selection-start-line="198" selection-start-column="45" selection-end-line="198" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="427">
+          <caret line="94" selection-start-line="94" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/kint-php-debugger/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/customizations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-checkout-page.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/project-specific/project-specific-functions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/dynamicStyles.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
         </state>
       </provider>
     </entry>

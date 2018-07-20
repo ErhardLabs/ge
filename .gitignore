@@ -1,7 +1,7 @@
 .DS_Store
 .config.codekit3
 .idea
-.idea/
+.idea/workspace.xml
 
 uploads/sites/14/wc-logs
 uploads/wp-migrate-db
