@@ -179,11 +179,11 @@ function display_song_links() {
 
 
     if( !empty( $spotify ) )
-      echo "<a class='sexy_song_link youtube' id='youtube_newmusic' href='$youtubeLink' target='_blank'><i class='fa fa-2x fa-youtube'></i><span>YouTube</span></a>";
+//      echo "<a class='sexy_song_link youtube' id='youtube_newmusic' href='$youtubeLink' target='_blank'><i class='fa fa-2x fa-youtube'></i><span>YouTube</span></a>";
 
-//        echo "<div class='sexy_song_link_video_wrap'>";
-//        echo '<iframe width="420" height="240" src="https://www.youtube.com/embed/'. $youtubeID[0].'?rel=0&showinfo=0&loop=1&enablejsapi=1&list=PLCcd4NlKH5YzNrrji-f_3elED_tmifwUz&start='.$youtubeVideoStartTime.'" frameborder="0" allowfullscreen></iframe>';
-//        echo "</div>";
+        echo "<div class='sexy_song_link_video_wrap'>";
+        echo '<iframe width="420" height="240" src="https://www.youtube.com/embed/'. $youtubeID[0].'?rel=0&showinfo=0&loop=1&enablejsapi=1&list=PLCcd4NlKH5YzNrrji-f_3elED_tmifwUz&start='.$youtubeVideoStartTime.'" frameborder="0" allowfullscreen></iframe>';
+        echo "</div>";
 
     if( !empty( $spotify ) )
       echo "<a class='sexy_song_link' href='$spotify' id='spotify_newmusic' target='_blank'><i class='fa fa-2x fa-spotify'></i><span>Spotify</span></a>";

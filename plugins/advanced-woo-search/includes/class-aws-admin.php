@@ -386,6 +386,7 @@ class AWS_Admin {
             echo '<td>';
                 echo '<div id="aws-reindex"><input class="button" type="button" value="' . __( 'Reindex table', 'aws' ) . '"><span class="loader"></span><span class="reindex-progress">0%</span></div><br><br>';
                 echo '<span class="description">' .
+                    sprintf( __( 'This action only need for %s one time %s - after you activate this plugin. After this all products changes will be re-indexed automatically.', 'aws' ), '<strong>', '</strong>' ) . '<br>' .
                     __( 'Update all data in plugins index table. Index table - table with products data where plugin is searching all typed terms.<br>Use this button if you think that plugin not shows last actual data in its search results.<br><strong>CAUTION:</strong> this can take large amount of time.', 'aws' ) . '<br><br>' .
                     __( 'Products in index:', 'aws' ) . '<span id="aws-reindex-count"> <strong>' . AWS_Helpers::get_indexed_products_count() . '</strong></span>';
                 echo '</span>';

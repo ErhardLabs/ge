@@ -31,9 +31,10 @@
 .song_links h2, .song_links h4, .song_links .sexy_song_link_video_wrap {
   z-index: 1;
 }
-.song_links .sexy_song_link_video_wrap {
-  display: none;
-}
+
+/*.song_links .sexy_song_link_video_wrap {*/
+  /*display: none;*/
+/*}*/
 
 .listen_to {
   margin-bottom: 10px;

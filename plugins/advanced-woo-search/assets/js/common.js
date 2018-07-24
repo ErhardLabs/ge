@@ -62,6 +62,15 @@
                     methods.showLoader();
                 }
 
+                clearTimeout( keyupTimeout );
+                keyupTimeout = setTimeout( function() {
+                    methods.ajaxRequest();
+                }, 300 );
+
+            },
+
+            ajaxRequest: function() {
+
                 var data = {
                     action: 'aws_action',
                     keyword : searchFor,
@@ -312,6 +321,7 @@
             haveResults    = false,
             requests       = Array(),
             searchFor      = '',
+            keyupTimeout,
             cachedResponse = new Array();
 
 
