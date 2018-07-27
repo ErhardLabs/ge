@@ -27,6 +27,9 @@ msgstr ""
 msgid "Reindex table"
 msgstr ""
 
+msgid "This action only need for %s one time %s - after you activate this plugin. After this all products changes will be re-indexed automatically."
+msgstr ""
+
 msgid "Go to Settings Page"
 msgstr ""
 
@@ -314,7 +317,7 @@ msgid "Search in"
 msgstr ""
 
 #: includes/options.php:176
-msgid "Search source: Drag&drop sources order to change priority, or exclude by moving to deactivated sources."
+msgid "Search source: Drag&drop sources to activate or deactivate them."
 msgstr ""
 
 #: includes/options.php:30

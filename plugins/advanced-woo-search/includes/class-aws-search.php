@@ -71,9 +71,11 @@ if ( ! class_exists( 'AWS_Search' ) ) :
             $special_chars = AWS_Helpers::get_special_chars();
 
             $s = $keyword ? esc_attr( $keyword ) : esc_attr( $_POST['keyword'] );
+            $s = htmlspecialchars_decode( $s );
             $s = stripslashes( $s );
             $s = str_replace( array( "\r", "\n" ), '', $s );
             $s = str_replace( $special_chars, '', $s );
+            $s = trim( $s );
 
             $cache_option_name = '';
             
@@ -104,13 +106,27 @@ if ( ! class_exists( 'AWS_Search' ) ) :
             $categories_array = array();
             $tags_array = array();
 
-
             $this->data['s'] = $s;
             $this->data['results_num']  = $results_num ? $results_num : 10;
             $this->data['search_terms'] = array();
-            $this->data['search_terms'] = array_unique( explode( ' ', $s ) );
             $this->data['search_in']    = $search_in_arr;
             $this->data['outofstock']   = $outofstock;
+
+
+            $search_array = array_unique( explode( ' ', $s ) );
+
+            if ( is_array( $search_array ) && ! empty( $search_array ) ) {
+                foreach ( $search_array as $search_term ) {
+                    $search_term = trim( $search_term );
+                    if ( $search_term ) {
+                        $this->data['search_terms'][] = $search_term;
+                    }
+                }
+            }
+
+            if ( empty( $this->data['search_terms'] ) ) {
+                $this->data['search_terms'][] = '';
+            }
 
 
             $posts_ids = $this->query_index_table();

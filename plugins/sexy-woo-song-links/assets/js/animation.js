@@ -1,10 +1,10 @@
 $=jQuery;
 
 $(document).ready(function() {
-  $('.sexy_song_link.youtube').unbind().click(function(e) {
-    e.preventDefault();
-    $('.sexy_song_link_video_wrap').slideToggle();
-  });
+  // $('.sexy_song_link.youtube').unbind().click(function(e) {
+  //   e.preventDefault();
+  //   $('.sexy_song_link_video_wrap').slideToggle();
+  // });
 
   document.getElementById("share_newmusic").addEventListener("click", function(e) {
     e.preventDefault();

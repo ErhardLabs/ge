@@ -2,67 +2,307 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2c6f56-3831-4e1e-b93b-99428bf1a2f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/accesspress-social-login-lite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/backend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/font-awesome/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/css/frontend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Authentication/AccessToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Authentication/AccessTokenMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Authentication/OAuth2Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookAuthenticationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookAuthorizationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookClientException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookOtherException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookResponseException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookResumableUploadException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookSDKException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookServerException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Exceptions/FacebookThrottleException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Facebook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FacebookApp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FacebookBatchRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FacebookBatchResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FacebookClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FacebookRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FacebookResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FileUpload/FacebookFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FileUpload/FacebookResumableUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FileUpload/FacebookTransferChunk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FileUpload/FacebookVideo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/FileUpload/Mimetypes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/Birthday.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/Collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphAchievement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphAlbum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphCoverPhoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphEdge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphLocation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphNode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphNodeFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphObject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphObjectFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphPicture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphSessionInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/GraphNodes/GraphUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Helpers/FacebookCanvasHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Helpers/FacebookJavaScriptHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Helpers/FacebookPageTabHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Helpers/FacebookRedirectLoginHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Helpers/FacebookSignedRequestFromInputHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Http/GraphRawResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Http/RequestBodyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Http/RequestBodyMultipart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Http/RequestBodyUrlEncoded.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/FacebookCurl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/FacebookCurlHttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/FacebookGuzzleHttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/FacebookHttpClientInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/FacebookStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/FacebookStreamHttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/HttpClientsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/HttpClients/certs/DigiCertHighAssuranceEVRootCA.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PersistentData/FacebookMemoryPersistentDataHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PersistentData/FacebookSessionPersistentDataHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PersistentData/PersistentDataFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PersistentData/PersistentDataInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/McryptPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/OpenSslPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/PseudoRandomStringGeneratorFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/PseudoRandomStringGeneratorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/PseudoRandomStringGeneratorTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/RandomBytesPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/PseudoRandomString/UrandomPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/SignedRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Url/FacebookUrlDetectionHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Url/FacebookUrlManipulator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/Url/UrlDetectionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Authentication/AccessToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Authentication/AccessTokenMetadata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Authentication/OAuth2Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookAuthenticationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookAuthorizationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookClientException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookOtherException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookResponseException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookResumableUploadException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookSDKException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookServerException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Exceptions/FacebookThrottleException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Facebook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FacebookApp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FacebookBatchRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FacebookBatchResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FacebookClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FacebookRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FacebookResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FileUpload/FacebookFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FileUpload/FacebookResumableUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FileUpload/FacebookTransferChunk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FileUpload/FacebookVideo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/FileUpload/Mimetypes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/Birthday.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/Collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphAchievement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphAlbum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphCoverPhoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphEdge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphLocation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphNode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphNodeFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphObject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphObjectFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphPicture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphSessionInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/GraphNodes/GraphUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Helpers/FacebookCanvasHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Helpers/FacebookJavaScriptHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Helpers/FacebookPageTabHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Helpers/FacebookRedirectLoginHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Helpers/FacebookSignedRequestFromInputHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Http/GraphRawResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Http/RequestBodyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Http/RequestBodyMultipart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Http/RequestBodyUrlEncoded.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/FacebookCurl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/FacebookCurlHttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/FacebookGuzzleHttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/FacebookHttpClientInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/FacebookStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/FacebookStreamHttpClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/HttpClientsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/HttpClients/certs/DigiCertHighAssuranceEVRootCA.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PersistentData/FacebookMemoryPersistentDataHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PersistentData/FacebookSessionPersistentDataHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PersistentData/PersistentDataFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PersistentData/PersistentDataInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/McryptPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/OpenSslPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/PseudoRandomStringGeneratorFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/PseudoRandomStringGeneratorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/PseudoRandomStringGeneratorTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/RandomBytesPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/PseudoRandomString/UrandomPseudoRandomStringGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/SignedRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Url/FacebookUrlDetectionHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Url/FacebookUrlManipulator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/Url/UrlDetectionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/facebook/polyfills.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/facebook/polyfills.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/Abstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/AppIdentity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/AssertionCredentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/LoginTicket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/OAuth2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Auth/Simple.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Cache/Abstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Cache/Apc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Cache/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Cache/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Cache/Memcache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Cache/Null.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Http/Batch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Http/CacheParser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Http/MediaFileUpload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Http/REST.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Http/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/IO/Abstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/IO/Curl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/IO/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/IO/Stream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/IO/cacerts.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Service/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Service/Oauth2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Service/Plus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Service/Resource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Signer/Abstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Signer/P12.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Utils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Utils/URITemplate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Verifier/Abstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/google/Verifier/Pem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/buffer-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/buffer-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/buffer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/customize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/plugin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/preview-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/preview-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/preview-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/preview-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/theme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/images/top-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/backend/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/backend/activation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/backend/how-to-use.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/backend/main-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/backend/save-settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/backend/widget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/frontend/login_check.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/frontend/login_integration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/inc/frontend/shortcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/js/backend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/js/frontend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/languages/accesspress-social-login-lite.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/twitter/OAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/accesspress-social-login-lite/twitter/twitteroauth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/plugin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/Kint.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/config.default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/decorators/plain.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/decorators/rich.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/examples/overview.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/inc/kintObject.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/inc/kintParser.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/inc/kintVariableData.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/classmethods.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/classstatics.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/color.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/fspath.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/json.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/microtime.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/objectiterateable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/splobjectstorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/timestamp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/custom/xml.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/objects/closure.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/objects/smarty.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/parsers/objects/splfileinfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/base.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/aante-light.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/kint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/original.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/solarized-dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/compiled/solarized.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/aante-light.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/original.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/solarized-dark.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/kint-php-debugger/src/kint-php/kint/view/themes/solarized.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/advanced-woo-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/advanced-woo-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/assets/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/assets/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/assets/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/includes/class-aws-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/includes/class-aws-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/includes/class-aws-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/includes/class-aws-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/includes/options.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/includes/options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/languages/aws.pot" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/languages/aws.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/advanced-woo-search/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/advanced-woo-search/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/css/dnui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/dnui.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/html/backup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/html/images.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/html/log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/html/options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/html/warning.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/ctrl/backup-ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/ctrl/dnui-ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/ctrl/images-ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/ctrl/log-ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/ctrl/options-ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/dnui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/external/angular-animate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/external/angular-resource.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/external/angular.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/external/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/external/ui-bootstrap-tpls-1.2.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/resource/backup-resource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/resource/images-resource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/js/resource/options-resource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/languages/dnui-es_ES.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/languages/dnui-es_ES.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckerImageAbstractDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckerImageExcerptAllDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckerImageExcerptBestLuckDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckerImagePostAndPageAllDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckerImagePostAndPageBestLuckDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckerImagePostMetaDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/checkers/CheckersDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/converters/ConvertOptionsDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/converters/ConvertWordpressToDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/helpers/HelperDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/DatabaseDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/ErrorHandlerDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/ImageDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/ImageSizeDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/OptionsDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/RestResponseDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/StatusBackupDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/model/StatusDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/php5_3/JsonSerializable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/rest/BackupRestDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/rest/ConfRestDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/rest/ImageRestDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/php/rest/OptionsRestDNUI.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/dnui-delete-not-used-image-wordpress/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/sexy-animations" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-animations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/js/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/js/animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/activation.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/activation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/network-order-widget.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/network-order-widget.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/twenty-seventeen.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/twenty-seventeen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/wc-setup.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/wc-setup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/woocommerce/assets/css/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/woocommerce/assets/css/woocommerce.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,8 +316,8 @@
       <file leaf-file-name="customizations.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/customizations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="833">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -85,8 +325,8 @@
       <file leaf-file-name="sexy-woo-checkout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="1972">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
             </state>
           </provider>
         </entry>
@@ -94,7 +334,7 @@
       <file leaf-file-name="slider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="578">
               <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
             </state>
           </provider>
@@ -103,8 +343,8 @@
       <file leaf-file-name="default-woo-checkout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+            <state relative-caret-position="1734">
+              <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -112,8 +352,8 @@
       <file leaf-file-name="slider-div.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -121,7 +361,7 @@
       <file leaf-file-name="sexy-woo-checkout.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="2958">
               <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
             </state>
           </provider>
@@ -130,7 +370,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
+            <state relative-caret-position="1445">
               <caret line="94" selection-start-line="94" selection-end-line="98" selection-end-column="1" />
             </state>
           </provider>
@@ -280,11 +520,11 @@
       <path value="$PROJECT_DIR$/plugins/simple-social-icons/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
-    <option name="y" value="400" />
+    <option name="y" value="270" />
     <option name="width" value="1280" />
-    <option name="height" value="648" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -308,6 +548,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,34 +580,12 @@
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ge" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ge" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="sexy-ajax-woocheckout" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-              <item name="front-end" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ge" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="sexy-resume-styles" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,26 +701,26 @@
       <workItem from="1531772044327" duration="3817000" />
       <workItem from="1531778933831" duration="956000" />
       <workItem from="1531780548731" duration="1000" />
-      <workItem from="1531862193202" duration="31363000" />
+      <workItem from="1531862193202" duration="31777000" />
+      <workItem from="1532486264861" duration="2220000" />
+      <workItem from="1532720647884" duration="1054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361299000" />
+    <option name="totallyTimeSpent" value="364987000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="270" width="1280" height="778" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="270" width="1280" height="778" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5056543" side_tool="true" weight="0.33586627" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="7" type="SLIDING" weight="0.31914893" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.21428572" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.3768997" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3206785" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2714055" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -513,28 +732,29 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="7" type="SLIDING" weight="0.31914893" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3206785" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="9" type="SLIDING" weight="0.31914893" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676898" weight="0.21428572" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49434572" weight="0.3768997" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5056543" side_tool="true" weight="0.33586627" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" internal_type="SLIDING" order="9" type="SLIDING" weight="0.31914893" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -551,201 +771,101 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16133">
-          <caret line="949" column="30" selection-start-line="949" selection-start-column="30" selection-end-line="949" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10846">
-          <caret line="638" column="69" selection-start-line="638" selection-start-column="69" selection-end-line="638" selection-end-column="69" />
-          <folding>
-            <element signature="e#19#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/css/sexy-animations.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/sumner-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="949" column="30" selection-start-line="949" selection-start-column="30" selection-end-line="949" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/js/recipes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-animations/src/css/sexy-animations.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-woo-song-links/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="187" column="32" lean-forward="true" selection-start-line="187" selection-start-column="32" selection-end-line="187" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/assets/config.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/form-fields.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2599" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/admin/widget.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/admin/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/includes/product-video.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/includes/product-lyrics.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/Pretty Creative/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="645" column="1" selection-start-line="645" selection-start-column="1" selection-end-line="645" selection-end-column="1" />
-          <folding>
-            <element signature="e#19#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="94" selection-start-line="94" selection-end-line="98" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/kint-php-debugger/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/customizations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="833">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-checkout-page.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-resume-styles/sexy-resume.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/project-specific/project-specific-functions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/dynamicStyles.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="1972">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="578">
           <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="94" selection-start-line="94" selection-end-line="98" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
+        <state relative-caret-position="1411">
           <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/woocommerce/customizations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/sexy-woo-checkout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/includes/front-end/slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/css/default-woo-checkout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/sexy-woo-checkout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-single-product-page/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="94" selection-start-line="94" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sexy-ajax-woocheckout/assets/js/slider-div.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
         </state>
       </provider>
     </entry>

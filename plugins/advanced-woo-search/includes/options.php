@@ -19,7 +19,7 @@ $options['general'][] = array(
 
 $options['general'][] = array(
     "name"  => __( "Search in", "aws" ),
-    "desc"  => __( "Search source: Drag&drop sources order to change priority, or exclude by moving to deactivated sources.", "aws" ),
+    "desc"  => __( "Search source: Drag&drop sources to activate or deactivate them.", "aws" ),
     "id"    => "search_in",
     "value" => "title,content,sku,excerpt",
     "choices" => array( "title", "content", "sku", "excerpt", "category", "tag" ),
