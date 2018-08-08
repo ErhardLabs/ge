@@ -1840,7 +1840,9 @@ input[name='save_account_details'] {
 	background: linear-gradient(to right, #0b0b0b, #29333f);
 }
 
-
+ol, ul {
+	margin: 0 0 0 15px;
+}
 
 
 
