@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/bandcamp-woocommerce-product-player" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugins/sexy-ajax-woocheckout" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugins/sexy-animations" vcs="Git" />
   </component>
