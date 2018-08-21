@@ -2039,7 +2039,9 @@ ol, ul {
 	.page-id-503 .site-inner,.page-id-503 .content .entry
 	{
 		background: transparent;
-		border: none
+		border: none;
+		float: right;
+		margin-right: 100px;
 	}
 }
 

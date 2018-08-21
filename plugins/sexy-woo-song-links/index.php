@@ -93,6 +93,16 @@ function swsl_woo_add_custom_general_fields() {
       )
   );
 
+  woocommerce_wp_text_input(
+      array(
+          'id'          => '_pandora_text_field',
+          'label'       => __( 'Pandora', 'woocommerce' ),
+          'placeholder' => 'https://www.pandora.com/artist/grayson-erhard/driving-in-the-rain-single/driving-in-the-rain/TRbb6kfxcgqcd4V',
+          'desc_tip'    => 'true',
+          'description' => __( 'Enter the Pandora track share link here.', 'woocommerce' )
+      )
+  );
+
   echo '</div>';
 
 }
@@ -125,6 +135,10 @@ function swsl_woo_add_custom_general_fields_save($post_id) {
   $amazonTextField = $_POST['_amazon_text_field'];
   if( !empty( $amazonTextField ) )
     update_post_meta( $post_id, '_amazon_text_field', esc_attr( $amazonTextField ) );
+
+  $pandoraTextField = $_POST['_pandora_text_field'];
+  if( !empty( $pandoraTextField ) )
+    update_post_meta( $post_id, '_pandora_text_field', esc_attr( $pandoraTextField ) );
 
 }
 
@@ -161,6 +175,7 @@ function display_song_links() {
     $youtubeLink = get_post_meta($productID, '_youtube_text_area', true);
     $youtubeID = explode('?v=', $youtubeLink);
     $youtubeID = explode('&', $youtubeID[1]);
+    $youtubeID = explode(',', $youtubeID[0]);
     $youtubeVideoStartTime = 0;
 
     $spotify = get_post_meta($productID, '_spotify_text_field', true);
@@ -169,6 +184,7 @@ function display_song_links() {
     $googlePlay = get_post_meta($productID, '_google_play_text_field', true);
     $deezer = get_post_meta($productID, '_deezer_text_field', true);
     $amazon = get_post_meta($productID, '_amazon_text_field', true);
+    $pandora = get_post_meta($productID, '_pandora_text_field', true);
 
 
     echo "<div class='sexy_song_link_container' style='background: url($image[0])'>";
@@ -177,13 +193,12 @@ function display_song_links() {
     echo "<h2>$productTitle</h2>";
     echo "<h4>Grayson Erhard</h4>";
 
-
     if( !empty( $spotify ) )
 //      echo "<a class='sexy_song_link youtube' id='youtube_newmusic' href='$youtubeLink' target='_blank'><i class='fa fa-2x fa-youtube'></i><span>YouTube</span></a>";
 
-        echo "<div class='sexy_song_link_video_wrap'>";
-        echo '<iframe width="420" height="240" src="https://www.youtube.com/embed/'. $youtubeID[0].'?rel=0&showinfo=0&loop=1&enablejsapi=1&list=PLCcd4NlKH5YzNrrji-f_3elED_tmifwUz&start='.$youtubeVideoStartTime.'" frameborder="0" allowfullscreen></iframe>';
-        echo "</div>";
+      echo "<div class='sexy_song_link_video_wrap'>";
+    echo '<iframe width="420" height="240" src="https://www.youtube.com/embed/'. $youtubeID[0].'?rel=0&showinfo=0&loop=1&enablejsapi=1&list=PLCcd4NlKH5YzNrrji-f_3elED_tmifwUz&start='.$youtubeVideoStartTime.'" frameborder="0" allowfullscreen></iframe>';
+    echo "</div>";
 
     if( !empty( $spotify ) )
       echo "<a class='sexy_song_link' href='$spotify' id='spotify_newmusic' target='_blank'><i class='fa fa-2x fa-spotify'></i><span>Spotify</span></a>";
@@ -204,6 +219,9 @@ function display_song_links() {
 
     if( !empty( $amazon ) )
       echo "<a class='sexy_song_link' href='$amazon' id='amazon_newmusic' target='_blank'><i class='fa fa-2x fa-amazon'></i><span>Amazon</span></a>";
+
+    if ( !empty( $pandora ) )
+      echo "<a class='sexy_song_link' href='$pandora' id='pandora_newmusic' target='_blank'><img src='/wp-content/plugins/sexy-woo-song-links/assets/img/pandora-bw.png' /><span>Pandora</span></a>";
 
 
 
