@@ -1844,11 +1844,66 @@ ol, ul {
 	margin: 0 0 0 15px;
 }
 
+.social-links main {
+	background-image: url('/wp-content/uploads/sites/14/2018/05/Grayson-Erhard-Colorado-Guitarist-and-Singer-Songwriter-Hair.jpg');
+	background-size: cover;
+	background-position: center;
+  background-position: 500px;
+  background-repeat: no-repeat;
+}
 
+.social-links article {
+	background: transparent;
+}
 
+.social-links .entry-content {
+	background: transparent;
+}
 
+.social-links .entry-header {
+	margin-top: 50px !important;
+	margin-bottom: 0px !important;
+}
 
+.social-links .entry-content .links {
+	max-width: 800px;
+	margin: 0 auto;
+}
 
+.social-links .entry-content .links h4 {
+	text-align: center;
+	clear: both;
+	margin-top: 60px;
+	font-weight: bold;
+  letter-spacing: 2px !important;
+  font-size: 26px;
+}
+
+.social-links .entry-content .links .social_link {
+	margin-bottom: 25px;
+	height: 25px;
+}
+
+.social-links .entry-content .links .social_link .social_link_img_wrap {
+	float: left;
+	height: 25px;
+	width: 25px;
+	margin-right: 20px;
+}
+
+.social-links .entry-content .links .social_link a {
+	display: block;
+	float: left;
+  color: whitesmoke;
+}
+
+.social-links .entry-content .links .social_link a:hover {
+  color: #ffe593;
+}
+
+#home-page-4 {
+	display: none;
+}
 
 
 
