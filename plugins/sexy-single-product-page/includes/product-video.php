@@ -19,8 +19,14 @@ if ( !empty( get_post_meta( get_the_ID(), '_youtube_text_area', true) ) ):
 
   foreach ( $product_videos as $product_video ) :
 
-      preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $product_video, $matches );
-      $id = $matches[1]; ?>
+      if (strpos($product_video, 'youtu.be') !== false) {
+        $id = explode('youtu.be/', $product_video)[1];
+      } else {
+        preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $product_video, $matches );
+        $id = $matches[1];
+      }
+
+      ?>
 
         <div class="ssp_video_wrap">
             <iframe src="https://www.youtube.com/embed/<?php echo $id ?>?rel=0&showinfo=0&color=white&iv_load_policy=3"
