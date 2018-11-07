@@ -112,8 +112,10 @@ function social_links_loop()
       <div class="social_link_img_wrap">
         <img src="/wp-content/themes/Pretty Creative/img/link-icons/microphone.png"/>
       </div>
-      <a href="https://graysonerhard-com.grayson.staging.wpengine.com/shows">https://graysonerhard-com.grayson.staging.wpengine.com/shows</a>
+      <a href="https://graysonerhard.com/shows">https://graysonerhard.com/shows</a>
     </div>
+
+<!--    TODO: ADD PANDORA LINK https://www.pandora.com/artist/grayson-erhard/ARVf5nvqbq2cmX6 -->
   </div>
   <?php
 }

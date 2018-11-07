@@ -22,4 +22,7 @@ function swsl_scripts() {
 
 }
 
-require_once('admin.php');
+$pluginPath = plugin_dir_path( __FILE__ );
+$adminFile = '/admin.php';
+
+require_once($pluginPath . $adminFile);
