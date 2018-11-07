@@ -17,7 +17,7 @@ get_header();
 
 global $post;
 
-$image = wp_get_attachment_image_src( $post->ID, 'single-post-thumbnail' );
+$image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-thumbnail' );
 
 ?>
 

@@ -1,29 +1,37 @@
 .listen .menu-item,
-.listen nav .wrap ul .widget-area section {
+.follow .menu-item,
+.listen nav .wrap ul .widget-area section,
+.follow nav .wrap ul .widget-area section {
   display: none !important;
 }
 
-.listen nav .wrap ul .widget-area .widget_media_image {
+.listen nav .wrap ul .widget-area .widget_media_image,
+.follow nav .wrap ul .widget-area .widget_media_image {
   display: block !important;
 }
 
-.listen .featured_image_wrapper {
+.listen .featured_image_wrapper,
+.follow .featured_image_wrapper {
   display: none;
 }
 
-.listen .entry-header {
+.listen .entry-header,
+.follow .entry-header {
   display: none;
 }
 
-.listen .content .entry {
+.listen .content .entry,
+.follow .content .entry {
   padding: 0;
 }
 
-.listen .entry-content {
+.listen .entry-content,
+.follow .entry-content {
   padding: 0px;
 }
 
-.listen .entry-content .sexy_song_link_container {
+.listen .entry-content .sexy_song_link_container,
+.follow .entry-content .sexy_song_link_container {
   background-size: cover !important;
   background-position: center !important;
 }
@@ -37,19 +45,21 @@
   margin-top: -80px;
 }
 
-.listen h2, .listen h4, .listen .sexy_song_link_video_wrap {
+.listen h2, .listen h4, .listen .sexy_song_link_video_wrap,
+.follow h2, .follow h4, .follow .sexy_song_link_video_wrap {
   z-index: 1;
 }
 
 /*.listen .sexy_song_link_video_wrap {*/
-  /*display: none;*/
+/*display: none;*/
 /*}*/
 
 .listen_to {
   margin-bottom: 10px;
 }
 
-.listen iframe {
+.listen iframe,
+.follow iframe {
   z-index: 1;
   margin: 20px auto;
 }
@@ -96,6 +106,10 @@
   color: #222;
 }
 
+.follow #spotify_follow {
+  margin-top: 2em;
+}
+
 .sexy_song_link.youtube {
   margin-top: 30px;
 }
@@ -107,11 +121,13 @@
   border: 1px solid whitesmoke;
 }
 
-.listen .song_link_text {
+.listen .song_link_text,
+.follow .song_link_text {
   display: none;
 }
 
-.listen .link_copied {
+.listen .link_copied,
+.follow .link_copied {
   display: none;
   padding: 50px;
   background: #FFE593;
@@ -130,17 +146,20 @@
   box-shadow: 0px 0px 30px #333;
 }
 
-.listen .remember_dsp label {
+.listen .remember_dsp label,
+.follow .remember_dsp label {
   font-size: 14px;
   margin-left: 10px;
 }
 
-.listen .footer-widgets, .listen footer {
+.listen .footer-widgets, .listen footer,
+.follow .footer-widgets, .follow footer {
   display: none;
 }
 
 @media screen and (min-height: 768px) {
-  .listen .entry-content .sexy_song_link_container {
+  .listen .entry-content .sexy_song_link_container,
+  .follow .entry-content .sexy_song_link_container {
     min-height: 101vh;
   }
 

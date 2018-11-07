@@ -14,7 +14,7 @@ add_action('wp_enqueue_scripts', 'swsl_scripts');
 function swsl_scripts() {
 
   $classes = get_body_class();
-  if (in_array('listen',$classes)) {
+  if (in_array('listen',$classes) || in_array('follow',$classes)) {
     wp_enqueue_style('swsl-style',  plugin_dir_url(__FILE__) . '/assets/css/styles.css');
     wp_enqueue_script('swsl', plugin_dir_url(__FILE__) . '/assets/js/animation.js', array('jquery'), false, true);
   }
