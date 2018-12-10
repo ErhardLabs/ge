@@ -2,20 +2,20 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="4839b472-9b51-4d95-bfb0-c6e1b377810c" name="ge staging" url="http://grayson.sftp.wpengine.com">
-        <fileTransfer host="grayson.sftp.wpengine.com" port="2222" accessType="SFTP">
+      <webServer id="4839b472-9b51-4d95-bfb0-c6e1b377810c" name="ge staging" url="http://35.199.174.117">
+        <fileTransfer host="35.199.174.117" port="62155" rootFolder="/www/graysonerhard_700" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="2222" />
+          <option name="port" value="62155" />
         </fileTransfer>
       </webServer>
-      <webServer id="6ea6628a-dbac-457a-8f00-2a4839a8d074" name="ge live" url="http://grayson.sftp.wpengine.com">
-        <fileTransfer host="grayson.sftp.wpengine.com" port="2222" accessType="SFTP">
+      <webServer id="6ea6628a-dbac-457a-8f00-2a4839a8d074" name="ge live" url="http://35.199.174.117">
+        <fileTransfer host="35.199.174.117" port="19454" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="2222" />
+          <option name="port" value="19454" />
         </fileTransfer>
       </webServer>
     </option>
