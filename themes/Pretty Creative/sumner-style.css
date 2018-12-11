@@ -561,12 +561,20 @@ h1::after, h3::after, .home h2::after, #slider #text-30 h4::after {
   background: #1C1D1F;
 }
 
+.woocommerce-checkout .entry-content ul {
+  margin: 0 !important;
+}
+
 .woocommerce-checkout .wc_payment_method {
   padding: 30px 0;
 }
 
+.woocommerce-checkout p {
+  line-height: 2em !important;
+}
+
 .woocommerce-checkout .payment_method_paypal p {
-  line-height: 2em;
+  line-height: 2em !important;
 }
 
 .woocommerce-checkout h3#ship-to-different-address {
