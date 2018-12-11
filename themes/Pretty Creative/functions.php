@@ -615,7 +615,7 @@ function ge_add_custom_links_to_store_page() {
   <?php
 }
 
-if (get_site_url() === 'https://graysonerhard-com.grayson.staging.wpengine.com') {
+if (get_site_url() === 'https://staging-graysonerhard.kinsta.cloud') {
   $pluginsToDeactivate = array(
       'autoptimize/autoptimize.php',
       'duracelltomi-google-tag-manager/duracelltomi-google-tag-manager-for-wordpress.php',
@@ -636,9 +636,11 @@ function change_default_checkout_country() {
 	return 'US'; // country code
 }
 
-add_action( 'woocommerce_before_checkout_form', 'add_social_login', 5 );
+//add_action( 'woocommerce_before_checkout_form', 'add_social_login', 5 );
+
 function add_social_login() {
-	if ( !is_user_logged_in() ){
-		echo do_shortcode("[TheChamp-Login title='Checkout with your Social Account']");
-	}
+    if ( !is_user_logged_in() ){
+        echo do_shortcode("[apsl-login-lite login_text='Login with Facebook']");
+    }
+
 }
